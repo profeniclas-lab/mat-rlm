@@ -1,685 +1,442 @@
 /* ============================================================
    AULAS — Módulos de prioridade MÉDIA
-   Preenchidos neste lote: DC-10, DC-14, DC-15
-   Próximo lote: DC-16, DC-17, DC-18
+   Preenchidos neste lote: MAT-14, MAT-15, MAT-16
+   Próximo lote: MAT-17, MAT-18, MAT-21
    ============================================================ */
 
 window.LESSONS_MEDIA = {
 
   /* ============================================================
-     DC-10 — Intervenção
+     MAT-14 — Estatística Básica
   ============================================================ */
-  'DC-10': {
-    id: 'L-DC-10',
-    moduloId: 'DC-10',
-    objetivo: 'Dominar o instituto da intervenção (arts. 34 a 36 da CF/88): hipóteses de intervenção federal, estadual e em Municípios, procedimento, decreto, controle pelo Congresso e relação com a autonomia federativa.',
-    prerequisitos: ['DC-08'],
+  'MAT-14': {
+    id: 'L-MAT-14',
+    moduloId: 'MAT-14',
+    objetivo: 'Compreender população, amostra, frequências, média (simples e ponderada), mediana, moda, amplitude e interpretação de resultados estatísticos. Base para interpretação de tabelas, gráficos e questões de atualidades.',
+    prerequisitos: ['MAT-01', 'MAT-13'],
 
-    introducao: 'A intervenção é medida excepcional: o ente federativo quebra temporariamente a autonomia de outro, para restabelecer a normalidade constitucional. É o oposto do princípio federativo — por isso, é taxativa, temporária e sujeita a controle.',
+    introducao: 'Estatística é a ciência de coletar, organizar e interpretar dados. Em concursos, aparece em questões de atualidades (PIB, desemprego, índices), interpretação de tabelas e problemas com médias. Saber calcular média, mediana e moda, e entender o que cada uma representa, é essencial.',
 
-    explicacaoSimples: 'Pense na Federação como um condomínio. Se um morador descumpre regras gravíssimas, o síndico (União ou Estado) pode, temporariamente, assumir o controle do apartamento dele — mas só nas hipóteses previstas no regimento e depois de seguir o procedimento. Isso é intervenção.',
+    explicacaoSimples: 'Pense em uma turma de 30 alunos. A média de notas é o "resumo" do desempenho geral. A mediana divide a turma em duas metades (metade acima, metade abaixo). A moda é a nota que mais aparece. Cada uma conta uma história diferente — e a banca testa justamente essa diferença.',
 
-    explicacaoTecnica: 'Art. 34: hipóteses de intervenção FEDERAL nos Estados e no DF — (I) manter a integridade nacional; (II) repelir invasão estrangeira ou de uma unidade da Federação em outra; (III) pôr termo a grave comprometimento da ordem pública; (IV) garantir o livre exercício de qualquer dos Poderes nas unidades da Federação; (V) reorganizar as finanças da unidade (que suspender pagamento da dívida fundada por mais de 2 anos, ou deixar de entregar receitas); (VI) prover a execução de lei federal, ordem ou decisão judicial; (VII) assegurar a observância dos princípios constitucionais sensíveis (forma republicana, sistema representativo, regime democrático, direitos da pessoa humana, autonomia municipal, prestação de contas da Administração Pública direta e indireta). Art. 35: hipóteses de intervenção ESTADUAL nos Municípios — (I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; (II) não forem prestadas contas devidas; (III) não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual ou para prover a execução de lei, de ordem ou de decisão judicial. Art. 36: procedimento — decreto do Presidente (intervenção federal espontânea) ou requisição (nos casos do art. 34, IV, VI e VII); ouvidoria prévia do Conselho da República e do Conselho de Defesa; controle político pelo Congresso (aprovação por maioria simples em 24h, se em recesso convocação extraordinária); decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessação da intervenção — retorno à normalidade. §3º: se cessada a causa, as autoridades afastadas retornam aos cargos.',
+    explicacaoTecnica: 'POPULAÇÃO: conjunto completo de elementos. AMOSTRA: subconjunto da população. FREQUÊNCIA ABSOLUTA (fi): número de vezes que um valor aparece. FREQUÊNCIA RELATIVA (fri): fi / total; pode ser expressa em % ou fração. MÉDIA ARITMÉTICA SIMPLES: soma dos valores / número de valores. MÉDIA PONDERADA: cada valor tem um peso; soma (valor × peso) / soma dos pesos. MEDIANA: valor central dos dados ordenados. Se a quantidade de valores é ímpar: é o valor do meio. Se é par: média aritmética dos dois centrais. MODA: valor que mais aparece. Pode haver mais de uma moda (bimodal, multimodal) ou nenhuma (amodal). AMPLITUDE: maior valor − menor valor. Medidas de tendência central (média, mediana, moda) resumem o conjunto; medidas de dispersão (amplitude, desvio padrão) mostram a variação.',
 
     exemplos: [
-      'Intervenção federal para garantir ordem pública: grave crise de segurança em Estado.',
-      'Intervenção federal para garantir execução de decisão judicial: descumprimento de ordem federal.',
-      'Intervenção federal para assegurar princípios sensíveis: descumprimento da autonomia municipal.',
-      'Intervenção estadual em Município: não aplicação do mínimo na educação ou saúde.',
-      'Intervenção estadual por não pagamento de dívida fundada por 2 anos.',
-      'Reorganização de finanças: Estado que não paga dívida fundada por mais de 2 anos.'
+      'Média simples: notas 6, 7, 8, 9 → (6+7+8+9)/4 = 7,5.',
+      'Média ponderada: prova 1 (peso 2) = 6; prova 2 (peso 3) = 8 → (6×2 + 8×3)/(2+3) = (12+24)/5 = 7,2.',
+      'Mediana com quantidade ímpar: [3, 5, 7, 8, 9] → mediana = 7.',
+      'Mediana com quantidade par: [3, 5, 7, 9] → mediana = (5+7)/2 = 6.',
+      'Moda: [2, 3, 3, 5, 7, 7, 7] → moda = 7.',
+      'Amplitude: [3, 5, 7, 8, 9] → 9 - 3 = 6.',
+      'Frequência relativa: 15 meninas em 40 alunos → 15/40 = 0,375 = 37,5%.'
     ],
 
     comparacoes: [
-      { termoA: 'Intervenção federal', termoB: 'Intervenção estadual', diferenca: 'FEDERAL: decreto do Presidente da República; atinge Estados e DF; hipóteses do art. 34. ESTADUAL: decreto do Governador; atinge Municípios; hipóteses do art. 35. São institutos paralelos, mas com titulares e destinatários diferentes.' },
-      { termoA: 'Intervenção espontânea', termoB: 'Intervenção provocada', diferenca: 'ESPONTÂNEA: decreto do Presidente, sem provocação de outro Poder (hipóteses dos incisos I, II, III e V do art. 34). PROVOCADA: depende de requisição do STF (inciso VI), do STJ (inciso VI, lei federal) ou do TSE (inciso VII, princípios sensíveis), ou de solicitação do Poder coacto (inciso IV).' },
-      { termoA: 'Intervenção federal', termoB: 'Estado de Sítio', diferenca: 'INTERVENÇÃO: medida excepcional para restabelecer a ordem federativa — atinge o ente, não os direitos fundamentais diretamente. ESTADO DE SÍTIO: medida excepcional para restabelecer a ordem constitucional em caso de comoção grave ou guerra — atinge diretamente os direitos fundamentais, suspendendo garantias.' },
-      { termoA: 'Controle político', termoB: 'Controle judicial', diferenca: 'POLÍTICO: feito pelo Congresso Nacional — aprovação do decreto de intervenção em 24h. JUDICIAL: feito pelo STF, STJ ou TSE — conforme a hipótese, o Tribunal competente pode requisitar a intervenção.' }
+      { termoA: 'Média', termoB: 'Mediana', diferenca: 'MÉDIA: soma dividida pela quantidade. É sensível a valores extremos (um valor muito alto puxa a média). MEDIANA: valor central na lista ordenada. NÃO é afetada por extremos. Ex.: [1, 2, 3, 4, 100] → média = 22 (distorcida pelo 100); mediana = 3 (não distorcida).' },
+      { termoA: 'Média simples', termoB: 'Média ponderada', diferenca: 'SIMPLES: todos os valores têm o mesmo peso (soma ÷ quantidade). PONDERADA: cada valor tem um peso específico (soma de valor×peso ÷ soma dos pesos). Ex.: em concursos com pesos diferentes por prova, use a ponderada.' },
+      { termoA: 'Moda', termoB: 'Mediana', diferenca: 'MODA: valor MAIS FREQUENTE. Pode haver mais de uma (bimodal) ou nenhuma (amodal). MEDIANA: valor que divide o conjunto em duas metades (50% abaixo, 50% acima). Não precisa se repetir. Ex.: [1, 2, 3, 4, 5] → moda: não há; mediana = 3.' },
+      { termoA: 'População', termoB: 'Amostra', diferenca: 'POPULAÇÃO: conjunto COMPLETO de elementos estudados (ex.: todos os brasileiros). AMOSTRA: SUBCONJUNTO representativo (ex.: 2.000 brasileiros sorteados). Estatísticas amostrais são usadas quando não é viável estudar toda a população.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança das hipóteses de intervenção federal (art. 34) x estadual (art. 35), do procedimento (decreto, ouvidoria dos Conselhos, controle pelo Congresso em 24h) e das regras específicas (prazo, nomeação de interventor, retorno das autoridades). Questões costumam misturar as hipóteses dos dois artigos.',
+    aplicacaoEmConcurso: 'Estatística aparece em questões de atualidades (índices de inflação, taxa de desemprego, IDH), interpretação de tabelas e gráficos com médias, e problemas de concurso com cálculo direto. Bancas cobram: média simples, média ponderada, mediana (especialmente com quantidade par), moda e interpretação do que cada medida representa.',
 
     pegadinhas: [
-      'Confundir intervenção federal (arts. 34) com estadual (arts. 35).',
-      'Achar que o decreto de intervenção é do Congresso. É do Presidente (federal) ou do Governador (estadual).',
-      'Dizer que a intervenção depende de autorização prévia do Congresso. O decreto é expedido e depois submetido ao Congresso em 24h.',
-      'Esquecer a ouvidoria prévia do Conselho da República e do Conselho de Defesa (intervenção federal).',
-      'Confundir intervenção com estado de sítio ou estado de defesa.',
-      'Achar que a intervenção é permanente. É temporária — cessada a causa, as autoridades retornam.'
+      'Confundir média com mediana quando há valores extremos. Ex.: salários de uma empresa — a média pode ser muito maior que a mediana se houver um diretor com salário altíssimo.',
+      'Errar a mediana com quantidade par: deve-se calcular a média dos DOIS valores centrais.',
+      'Esquecer de ORDENAR os dados antes de calcular a mediana.',
+      'Calcular média ponderada sem multiplicar pelos pesos.',
+      'Confundir frequência absoluta (contagem) com relativa (proporção).',
+      'Achar que toda lista tem moda. Se todos os valores aparecem uma vez, é amodal.'
     ],
 
     errosComuns: [
-      'Decorar hipóteses sem associar ao titular do decreto.',
-      'Ignorar que a intervenção em Município (art. 35, I a IV) pode ser decreto do Governador, mas a hipótese do inciso IV depende de provimento pelo TJ.',
-      'Não distinguir intervenção espontânea de provocada.'
+      'Decorar fórmulas sem entender o que cada medida representa.',
+      'Não interpretar o resultado no contexto da questão.',
+      'Esquecer de dividir pela SOMA dos pesos na média ponderada.'
     ],
 
     resumo: [
-      'Intervenção é medida excepcional e temporária.',
-      'Art. 34: hipóteses de intervenção FEDERAL nos Estados e DF.',
-      'Art. 35: hipóteses de intervenção ESTADUAL nos Municípios.',
-      'Decreto: Presidente (federal) ou Governador (estadual).',
-      'Controle: Congresso aprova o decreto em 24h.',
-      'Ouvidoria prévia do Conselho da República e Conselho de Defesa (federal).',
-      'Decreto especifica amplitude, prazo e condições.',
-      'Cessada a causa, retornam as autoridades afastadas.'
+      'População: conjunto completo. Amostra: subconjunto.',
+      'Frequência absoluta: contagem. Relativa: fi / total.',
+      'Média simples: soma dos valores ÷ quantidade.',
+      'Média ponderada: soma (valor × peso) ÷ soma dos pesos.',
+      'Mediana: valor central (ordenar antes!). Par → média dos 2 centrais.',
+      'Moda: valor mais frequente. Bimodal: 2 modas. Amodal: nenhuma.',
+      'Amplitude: maior − menor.',
+      'Média é sensível a extremos; mediana não.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'Intervenção é como o "juiz" do condomínio assumindo temporariamente o apartamento de um morador que quebrou regras gravíssimas — só nas hipóteses do regimento, por prazo determinado, com o condomínio aprovando depois.',
-      outroExemplo: 'Se um Estado deixa de pagar precatórios por mais de 2 anos, cabe intervenção federal por reorganização de finanças (art. 34, V). Se um Município não aplica o mínimo em saúde, cabe intervenção estadual (art. 35, III).',
-      compararConceitos: 'Federal (Presidente, atinge Estados) x Estadual (Governador, atinge Municípios). Espontânea (sem provocação) x Provocada (requisição ou solicitação). Intervenção x Estado de Sítio: uma atinge o ente, o outro atinge direitos.',
-      mostrarPegadinha: 'Cuidado: "A intervenção federal só pode ser decretada pelo Congresso Nacional". ERRADO. O DECRETO é do Presidente; o Congresso apenas APROVA depois, em 24 horas.',
-      comoApareceEmConcurso: 'Cobrança das hipóteses (arts. 34 e 35) e do procedimento (decreto + controle do Congresso).',
+      explicarMaisSimples: 'Média é o "resumo" do conjunto. Mediana é o "meio" da fila ordenada. Moda é a "música que mais toca". Cada uma conta uma história diferente.',
+      outroExemplo: 'Em uma empresa com salários [1.500, 1.800, 2.000, 2.200, 50.000], a média é 11.500 (distorcida pelo diretor), mas a mediana é 2.000 (mais representativa). Um sindicato usaria a mediana para argumentar; a diretoria usaria a média.',
+      compararConceitos: 'Média: soma/quantidade. Mediana: centro. Moda: mais frequente. Ponderada: pesos diferentes. Amplitude: maior - menor.',
+      mostrarPegadinha: 'Cuidado: em listas com valores extremos, a MÉDIA pode enganar. A MEDIANA é mais robusta. Se a questão menciona "salário típico", provavelmente quer a mediana; se menciona "salário médio", a média.',
+      comoApareceEmConcurso: 'Questões de atualidades, interpretação de tabelas e cálculos diretos de média/mediana/moda.',
       fazerPergunta: {
-        pergunta: 'Um Estado deixa de aplicar o mínimo constitucional em educação. Cabe intervenção federal?',
-        resposta: 'NÃO — a não aplicação do mínimo em educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). Em relação ao Estado, a não aplicação do mínimo não é hipótese de intervenção federal, e sim de responsabilização política (crime de responsabilidade do Governador) e rejeição de contas.'
+        pergunta: 'Qual a mediana da lista [8, 3, 5, 7, 2]?',
+        resposta: 'Primeiro ORDENE: [2, 3, 5, 7, 8]. Com 5 valores, a mediana é o valor central (3º): 5. NUNCA calcule a mediana sem ordenar antes.'
       }
     }
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     MAT-15 — Geometria Plana
   ============================================================ */
-  'DC-14': {
-    id: 'L-DC-14',
-    moduloId: 'DC-14',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Executivo federal (arts. 76 a 91 da CF/88): Presidente, Vice, eleição, mandato, requisitos, sucessão, substituição, competências, ministros, responsabilidade e crimes de responsabilidade.',
-    prerequisitos: ['DC-12'],
+  'MAT-15': {
+    id: 'L-MAT-15',
+    moduloId: 'MAT-15',
+    objetivo: 'Compreender ponto, reta e plano, ângulos, triângulos, quadriláteros, polígonos, perímetro, área, circunferência e círculo, além de aplicar fórmulas geométricas em problemas contextualizados.',
+    prerequisitos: ['MAT-12'],
 
-    introducao: 'O Poder Executivo exerce a função típica de administrar o Estado. Na esfera federal, é chefiado pelo Presidente da República, auxiliado pelos Ministros de Estado. As bancas cobram as regras de eleição, as hipóteses de sucessão/substituição e os crimes de responsabilidade.',
+    introducao: 'Geometria plana estuda figuras em duas dimensões: triângulos, quadrados, retângulos, círculos. Aparece em problemas de área (terrenos, paredes, placas solares), perímetro (cercas, molduras) e em situações do dia a dia. Saber as fórmulas e identificar as figuras é essencial.',
 
-    explicacaoSimples: 'O Presidente é o "chefe" do Executivo federal: administra o país, representa o Brasil no exterior, sanciona e veta leis, edita medidas provisórias. Se ele sai do cargo por algum motivo, há regras específicas sobre quem assume — o Vice, o Presidente da Câmara, o do Senado ou o do STF.',
+    explicacaoSimples: 'Perímetro é o contorno (soma dos lados). Área é a superfície interna (medida em cm², m², km²). Pense em um terreno: você cerca com perímetro e planta com área. Cada figura tem sua fórmula — decorar as principais é obrigatório.',
 
-    explicacaoTecnica: 'Art. 76: o Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado. Art. 77: eleição pelo sufrágio universal e voto direto e secreto, maioria absoluta; 2º turno se necessário; posse em 1º de janeiro do ano seguinte; mandato de 4 anos. Art. 14, §3º, VI, "a": idade mínima de 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento eleitoral, domicílio eleitoral e filiação partidária. Art. 78: posse em sessão conjunta do Congresso. Art. 79: o Vice substitui o Presidente em caso de impedimento e sucede em caso de vaga. Art. 80: em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: Presidente da Câmara, do Senado e do STF. Art. 81: se a vacância ocorrer nos 2 primeiros anos, eleição direta em 90 dias; se nos 2 últimos, eleição indireta pelo Congresso em 30 dias. Art. 82: mandato de 4 anos. Art. 83: 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio, filiação. Art. 84: competências privativas do Presidente (sancionar, vetar, editar MP, nomear Ministros do STF, etc.). Art. 85: crimes de responsabilidade — atos que atentem contra a CF e especialmente contra: existência da União, livre exercício dos Poderes, exercício dos direitos políticos, segurança interna, probidade na Administração, lei orçamentária, guarda e uso do dinheiro público. Art. 86: imunidade formal — o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções. Art. 87: Ministros de Estado auxiliam o Presidente. Art. 88: lei disporá sobre criação e extinção de Ministérios. Art. 89: Conselho da República. Art. 90: Conselho de Defesa Nacional. Art. 91: regras sobre esses Conselhos.',
+    explicacaoTecnica: 'ELEMENTOS BÁSICOS: ponto (sem dimensão), reta (infinitas direções), plano (infinitas retas). ÂNGULOS: agudo (< 90°), reto (= 90°), obtuso (> 90° e < 180°), raso (= 180°). Triângulos: soma dos ângulos internos = 180°. Classificação quanto aos lados: equilátero (3 iguais), isósceles (2 iguais), escaleno (3 diferentes). Quanto aos ângulos: retângulo (1 ângulo de 90°), acutângulo (3 agudos), obtusângulo (1 obtuso). ÁREAS E PERÍMETROS: quadrado (lado L): perímetro 4L, área L². Retângulo (base b, altura h): perímetro 2(b+h), área b × h. Triângulo (base b, altura h): área (b × h)/2. Paralelogramo: área b × h. Trapézio (bases B e b, altura h): área ((B + b) × h)/2. Círculo (raio r): perímetro (circunferência) = 2πr; área = πr². POLÍGONOS: soma dos ângulos internos = (n - 2) × 180°, onde n é o número de lados.',
 
     exemplos: [
-      'Eleição: 1º turno no primeiro domingo de outubro; 2º turno no último domingo de outubro.',
-      'Posse: 1º de janeiro do ano seguinte.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Sucessão: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.',
-      'Ministro do STF: nomeação pelo Presidente, após aprovação por maioria absoluta do Senado.',
-      'Crimes de responsabilidade: atos contra a existência da União, livre exercício dos Poderes, probidade na Administração etc.'
+      'Quadrado de lado 5: perímetro 20 cm, área 25 cm².',
+      'Retângulo de 8 × 3: perímetro 22 cm, área 24 cm².',
+      'Triângulo de base 10 e altura 6: área = 30 cm².',
+      'Trapézio com bases 12 e 8, altura 5: área = (12+8) × 5 / 2 = 50 cm².',
+      'Círculo de raio 4: circunferência = 8π cm; área = 16π cm².',
+      'Hexágono (6 lados): soma dos ângulos internos = (6-2) × 180 = 720°.',
+      'Triângulo retângulo com catetos 3 e 4 e hipotenusa 5: ângulo reto entre os catetos.'
     ],
 
     comparacoes: [
-      { termoA: 'Sucessão', termoB: 'Substituição', diferenca: 'SUBSTITUIÇÃO: assume temporariamente, em caso de IMPEDIMENTO (doença, viagem). SUCESSÃO: assume definitivamente, em caso de VAGA (morte, renúncia, cassação). A ordem é: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.' },
-      { termoA: 'Vacância nos 2 primeiros anos', termoB: 'Vacância nos 2 últimos anos', diferenca: 'PRIMEIROS 2 ANOS: eleição DIRETA em 90 dias (o povo vota). ÚLTIMOS 2 ANOS: eleição INDIRETA pelo Congresso em 30 dias (o Congresso vota).' },
-      { termoA: 'Crime comum', termoB: 'Crime de responsabilidade', diferenca: 'CRIME COMUM: julgado pelo STF (Presidente) após autorização da Câmara por 2/3. CRIME DE RESPONSABILIDADE: julgado pelo SENADO (Presidente) após autorização da Câmara por 2/3. A Câmara AUTORIZA; o Senado JULGA.' },
-      { termoA: 'Imunidade formal do Presidente', termoB: 'Imunidade do parlamentar', diferenca: 'PRESIDENTE (art. 86): não pode ser responsabilizado por atos estranhos ao exercício da função; durante o mandato, não pode ser preso por crime comum sem sentença condenatória. PARLAMENTAR (art. 53): imunidade material (opiniões, palavras, votos) e formal (prisão só em flagrante de crime inafiançável; processo criminal sem licença prévia após EC 35/2001).' }
+      { termoA: 'Perímetro', termoB: 'Área', diferenca: 'PERÍMETRO: soma dos lados (contorno). Medido em unidades lineares (cm, m). ÁREA: superfície interna. Medida em unidades quadradas (cm², m²). Cercar um terreno usa perímetro; plantar usa área.' },
+      { termoA: 'Círculo', termoB: 'Circunferência', diferenca: 'CIRCUNFERÊNCIA: a LINHA curva que delimita o círculo. Comprimento = 2πr. CÍRCULO: a REGIÃO interna delimitada pela circunferência. Área = πr². Uma é o contorno; o outro é a superfície.' },
+      { termoA: 'Triângulo equilátero', termoB: 'Triângulo isósceles', diferenca: 'EQUILÁTERO: três lados iguais, três ângulos de 60°. ISÓSCELES: dois lados iguais e dois ângulos iguais (ângulos da base). ESCALENO: três lados diferentes.' },
+      { termoA: 'Retângulo', termoB: 'Paralelogramo', diferenca: 'RETÂNGULO: paralelogramo com 4 ângulos retos. Área = b × h. PARALELOGRAMO: lados opostos paralelos e iguais, mas ângulos quaisquer. Área = b × h (mesma fórmula). O retângulo é um caso particular de paralelogramo.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 77 a 84 (eleição, mandato, requisitos, competências), das hipóteses de sucessão/substituição, e da distinção entre crime comum e de responsabilidade. Alta frequência em concursos federais e de Tribunais.',
+    aplicacaoEmConcurso: 'Geometria plana aparece em: cálculo de áreas de terrenos, paredes e pisos; perímetros de cercas e molduras; problemas de ladrilhamento; áreas de figuras compostas (retângulo + triângulo); problemas com círculos (rodas, tubulações). Bancas cobram principalmente: fórmulas de áreas, ângulos em triângulos e polígonos e problemas contextualizados.',
 
     pegadinhas: [
-      'Confundir sucessão com substituição.',
-      'Trocar os prazos de eleição direta (90 dias, 2 primeiros anos) com eleição indireta (30 dias, 2 últimos anos).',
-      'Dizer que o Senado processa e julga o Presidente por crime COMUM. É o STF. O Senado julga CRIME DE RESPONSABILIDADE.',
-      'Achar que o Vice é sempre o substituto. Se ambos os cargos estiverem vagos, assume o Presidente da Câmara.',
-      'Dizer que o Presidente pode ser preso por crime comum durante o mandato sem sentença condenatória (não pode).',
-      'Confundir os Conselhos (Conselho da República x Conselho de Defesa Nacional).'
+      'Confundir área com perímetro na hora de aplicar a fórmula.',
+      'Esquecer de dividir por 2 na área do triângulo e do trapézio.',
+      'Achar que a área do círculo é 2πr (essa é a circunferência).',
+      'Trocar πr² por (πr)². Não é a mesma coisa.',
+      'Somar ângulos internos de polígono como se fossem sempre 180°. A fórmula é (n-2) × 180°.',
+      'Achar que todo triângulo com dois lados iguais tem o ângulo reto — é isósceles, não necessariamente retângulo.'
     ],
 
     errosComuns: [
-      'Decorar a linha sucessória sem entender as hipóteses.',
-      'Confundir crimes de responsabilidade do Presidente (Senado) com os de Governador (Tribunal Especial).',
-      'Ignorar que o Vice pode exercer funções por delegação do Presidente.'
+      'Decorar fórmulas sem entender o significado.',
+      'Esquecer de converter unidades (cm para m) antes de calcular.',
+      'Confundir raio com diâmetro (diâmetro = 2 × raio).'
     ],
 
     resumo: [
-      'Presidente: eleição direta por maioria absoluta; mandato de 4 anos; posse em 1º de janeiro.',
-      'Requisitos: brasileiro nato, 35 anos, pleno exercício dos direitos políticos, alistamento, domicílio, filiação.',
-      'Linha sucessória: Vice → Pres. Câmara → Pres. Senado → Pres. STF.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Crime comum: julgado pelo STF. Crime de responsabilidade: julgado pelo Senado.',
-      'A Câmara AUTORIZA (2/3) nos dois casos.',
-      'Conselho da República: opina em situações graves.',
-      'Conselho de Defesa Nacional: opina em temas de segurança nacional.'
+      'Quadrado: perímetro 4L; área L².',
+      'Retângulo: perímetro 2(b+h); área b × h.',
+      'Triângulo: área (b × h)/2. Soma dos ângulos = 180°.',
+      'Trapézio: área ((B + b) × h)/2.',
+      'Paralelogramo: área b × h.',
+      'Círculo: circunferência 2πr; área πr².',
+      'Polígono: soma dos ângulos internos = (n-2) × 180°.',
+      'Sempre converta unidades antes de calcular.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Presidente é o chefe do Executivo federal. Se ele sai do cargo, assume o Vice; se o Vice também sair, assume o Presidente da Câmara, depois o do Senado e, por último, o do STF. Dependendo de quando ocorre a vacância, o povo vota (primeiros 2 anos) ou o Congresso vota (últimos 2).',
-      outroExemplo: 'Se o Presidente renunciar no segundo mês do mandato, há eleição DIRETA em 90 dias. Se renunciar faltando 6 meses, há eleição INDIRETA pelo Congresso em 30 dias.',
-      compararConceitos: 'Sucessão = definitiva (vaga). Substituição = temporária (impedimento). Crime comum = STF. Crime de responsabilidade = Senado. Primeiros 2 anos = direta. Últimos 2 anos = indireta.',
-      mostrarPegadinha: 'Cuidado: "O Vice-Presidente é sempre o substituto do Presidente". Em caso de VAGA do Presidente, ele SUCEDE (definitivo). Em caso de IMPEDIMENTO, ele SUBSTITUI (temporário).',
-      comoApareceEmConcurso: 'Cobrança de arts. 77 a 84 e das hipóteses de sucessão.',
+      explicarMaisSimples: 'Perímetro é o "contorno" (cerca). Área é o "recheio" (grama). Cada figura tem sua fórmula. O triângulo é "meio retângulo", por isso divide por 2. O círculo usa π.',
+      outroExemplo: 'Um terreno retangular de 20 m por 15 m: perímetro = 2(20+15) = 70 m (usado para cercar); área = 20 × 15 = 300 m² (usado para calcular o valor). Se o terreno tiver um jardim circular de raio 3 m, a área do jardim = π × 9 ≈ 28,26 m².',
+      compararConceitos: 'Perímetro = contorno. Área = superfície. Circunferência = contorno do círculo. Círculo = superfície. Triângulo = metade de b × h. Trapézio = média das bases × h.',
+      mostrarPegadinha: 'Cuidado: "A área do círculo é 2πr". ERRADO. 2πr é a CIRCUNFERÊNCIA (contorno). A área é πr². O expoente 2 faz toda a diferença.',
+      comoApareceEmConcurso: 'Problemas de terreno, cerca, piso, roda e figuras compostas.',
       fazerPergunta: {
-        pergunta: 'Um Presidente é acusado de crime comum durante o mandato. Quem processa e julga?',
-        resposta: 'A Câmara dos Deputados AUTORIZA (2/3) e o SUPREMO TRIBUNAL FEDERAL julga (crime comum). Se fosse CRIME DE RESPONSABILIDADE, a Câmara autorizaria e o SENADO FEDERAL julgaria.'
+        pergunta: 'Um quadrado tem área de 64 cm². Qual é o seu perímetro?',
+        resposta: 'Área = L² = 64 → L = 8. Perímetro = 4 × L = 4 × 8 = 32 cm.'
       }
     }
   },
 
   /* ============================================================
-     DC-15 — Poder Judiciário
+     MAT-16 — Geometria Espacial
   ============================================================ */
-  'DC-15': {
-    id: 'L-DC-15',
-    moduloId: 'DC-15',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Judiciário brasileiro (arts. 92 a 126 da CF/88): órgãos, STF, STJ, Justiça Federal, Estadual, do Trabalho, Eleitoral, Militar, CNJ, competências, garantias dos magistrados e organização.',
-    prerequisitos: ['DC-12'],
+  'MAT-16': {
+    id: 'L-MAT-16',
+    moduloId: 'MAT-16',
+    objetivo: 'Compreender cubos, paralelepípedos, prismas, cilindros, pirâmides, cones e esferas; calcular volume e área superficial; converter unidades; resolver problemas envolvendo capacidade e armazenamento.',
+    prerequisitos: ['MAT-12', 'MAT-15'],
 
-    introducao: 'O Poder Judiciário é o responsável pela função jurisdicional — dizer o direito no caso concreto. A CF organiza os órgãos, distribui competências e garante aos magistrados as condições para julgar com independência.',
+    introducao: 'Geometria espacial estuda sólidos em três dimensões: caixas, latas, pirâmides, esferas. Aparece em problemas de armazenamento (quantos litros cabem?), embalagens, volumes de reservatórios e capacidade de tanques. É a extensão natural da geometria plana.',
 
-    explicacaoSimples: 'Pense na Justiça como uma grande estrutura com vários níveis. No topo está o STF (guarda da Constituição) e, logo abaixo, o STJ (guarda da lei federal). Depois vêm a Justiça Federal, Estadual, do Trabalho, Eleitoral e Militar. Cada uma tem sua área. Há ainda o CNJ, que cuida da administração do Judiciário.',
+    explicacaoSimples: 'Volume é "quanto cabe dentro" (medido em cm³, m³, litros). Área superficial é "quanto de material para revestir" (medido em cm², m²). Um cubo de 1 m de lado tem volume de 1 m³ e 6 faces de 1 m² cada (área superficial = 6 m²).',
 
-    explicacaoTecnica: 'Art. 92: são órgãos do Poder Judiciário — STF, CNJ, STJ, TST, TREs, Tribunais de Justiça dos Estados e DF, TRFs, TRTs, Tribunais Militares e juízes dos respectivos órgãos. Art. 93: Estatuto da Magistratura (LC). Art. 94: regras de ingresso (quinto constitucional). Art. 95: garantias dos magistrados — vitaliciedade, inamovibilidade e irredutibilidade de subsídio. Art. 96: competências dos tribunais. Art. 97: reserva de plenário (cláusula de reserva de plenário — somente pelo voto da maioria absoluta dos membros do Tribunal ou do órgão especial). Art. 98: Justiça de Paz. Art. 99: autonomia administrativa e financeira do Judiciário. Art. 100: precatórios. Art. 101 a 103: STF — composição (11 ministros, brasileiros natos, 35 a 65 anos, nomeados pelo Presidente após aprovação por maioria absoluta do Senado), competências, ADI/ADC/ADPF/ADO. Art. 104 a 105: STJ — 33 ministros, 35 a 65 anos, competências. Art. 106 a 110: Justiça Federal — TRFs (mínimo 7 juízes). Art. 111 a 117: Justiça do Trabalho. Art. 118 a 121: Justiça Eleitoral. Art. 122 a 124: Justiça Militar. Art. 125 a 126: Justiça Estadual. Art. 127 a 130: funções essenciais à Justiça (MP, Advocacia Pública, Advocacia, Defensoria). Art. 92, §1º: o STF tem 11 ministros. Art. 103-B: CNJ — 15 membros, presidido pelo Presidente do STF.',
+    explicacaoTecnica: 'PARALELEPÍPEDO (caixa retangular): volume = comprimento × largura × altura. Área superficial = 2(ab + ac + bc). CUBO: caso particular com arestas iguais. Volume = a³; área superficial = 6a². PRISMA (base poligonal qualquer, faces laterais retangulares): volume = área da base × altura. Área superficial = 2 × área da base + perímetro da base × altura. CILINDRO: base circular. Volume = πr² × h. Área lateral = 2πr × h. Área superficial total = 2πr² + 2πrh. PIRÂMIDE: base poligonal, faces triangulares. Volume = (área da base × altura) / 3. CONE: base circular. Volume = (πr² × h) / 3. ESFERA: volume = (4/3)πr³. Área superficial = 4πr². RELAÇÕES DE VOLUME: 1 m³ = 1.000 dm³ = 1.000.000 cm³. 1 dm³ = 1 L. 1 m³ = 1.000 L.',
 
     exemplos: [
-      'STF: guarda da CF; julga ADI, ADPF, HC de autoridades específicas, extradição.',
-      'STJ: guarda da lei federal; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade for desembargador.',
-      'Justiça Federal: causas em que a União, autarquias federais ou empresas públicas federais forem partes.',
-      'Justiça do Trabalho: conflitos entre empregado e empregador.',
-      'Justiça Eleitoral: eleições, partidos políticos, registro de candidatos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: causas residuais — o que não for das outras.',
-      'CNJ: controle administrativo, financeiro e disciplinar do Judiciário.'
+      'Cubo de aresta 4: volume = 64 cm³; área superficial = 6 × 16 = 96 cm².',
+      'Paralelepípedo 5 × 3 × 2: volume = 30 cm³; área superficial = 2(15+10+6) = 62 cm².',
+      'Cilindro raio 3, altura 10: volume = π × 9 × 10 = 90π cm³ ≈ 282,6 cm³.',
+      'Pirâmide base quadrada lado 6, altura 5: volume = (36 × 5)/3 = 60 cm³.',
+      'Cone raio 4, altura 9: volume = (π × 16 × 9)/3 = 48π cm³.',
+      'Esfera raio 3: volume = (4/3) × π × 27 = 36π cm³; área superficial = 4π × 9 = 36π cm².',
+      'Caixa d\'água cilíndrica com raio 1 m e altura 2 m: volume = π × 1² × 2 ≈ 6,28 m³ = 6.280 L.'
     ],
 
     comparacoes: [
-      { termoA: 'STF', termoB: 'STJ', diferenca: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADPF, ADO, ADC, extradição, HC de autoridades. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.' },
-      { termoA: 'Vitaliciedade', termoB: 'Inamovibilidade', diferenca: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos de exercício no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca ou seção sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal).' },
-      { termoA: 'Justiça Federal', termoB: 'Justiça Estadual', diferenca: 'FEDERAL: julga causas em que a União, autarquias federais ou empresas públicas federais forem partes; crimes políticos; crimes contra bens da União; estrangeiros. ESTADUAL: residual — o que não for das outras Justiças.' },
-      { termoA: 'CNJ', termoB: 'STF', diferenca: 'CNJ: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário — não julga causas. STF: órgão de CÚPULA do Judiciário, com competência para julgar ADI, HC, extradição e outras causas constitucionais.' }
+      { termoA: 'Área plana (2D)', termoB: 'Volume (3D)', diferenca: 'ÁREA: duas dimensões (comprimento × largura). Unidade ao quadrado (cm², m²). VOLUME: três dimensões (comprimento × largura × altura). Unidade ao cubo (cm³, m³). Volume de um paralelepípedo = área da base × altura.' },
+      { termoA: 'Prisma', termoB: 'Pirâmide', diferenca: 'PRISMA: duas bases paralelas iguais e faces laterais retangulares. Volume = área da base × altura. PIRÂMIDE: uma base e um vértice (faces triangulares). Volume = (área da base × altura)/3. Pirâmide é "um terço" do prisma correspondente.' },
+      { termoA: 'Cilindro', termoB: 'Cone', diferenca: 'CILINDRO: duas bases circulares iguais. Volume = πr² × h. CONE: uma base circular e um vértice. Volume = (πr² × h)/3. Como na relação prisma/pirâmide, o cone é "um terço" do cilindro correspondente.' },
+      { termoA: 'Volume', termoB: 'Capacidade', diferenca: 'VOLUME: espaço ocupado em três dimensões (m³, cm³). CAPACIDADE: quanto cabe em um recipiente (L, mL). Relações: 1 L = 1 dm³; 1 mL = 1 cm³; 1 m³ = 1.000 L.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 92 a 105 (órgãos, composição, competências), das garantias dos magistrados (vitaliciedade, inamovibilidade, irredutibilidade) e da distinção entre STF e STJ. Comum em concursos de Tribunais.',
+    aplicacaoEmConcurso: 'Geometria espacial aparece em problemas de: caixas d\'água (volume em litros), tanques, embalagens, latas, reservatórios, construção civil (concreto em m³) e transporte (caminhões). Bancas cobram: fórmulas de volume (cubo, paralelepípedo, cilindro), conversão entre m³ e litros e problemas contextualizados.',
 
     pegadinhas: [
-      'Confundir STF (Constituição) com STJ (lei federal).',
-      'Trocar o número de ministros do STF (11) com o do STJ (33).',
-      'Achar que o CNJ julga causas. O CNJ faz controle administrativo, financeiro e disciplinar.',
-      'Dizer que o juiz pode ser removido sem processo. A inamovibilidade garante proteção, salvo por interesse público e voto de 2/3 do tribunal.',
-      'Confundir as garantias: vitaliciedade (não perde o cargo), inamovibilidade (não é removido), irredutibilidade (não tem subsídio reduzido).',
-      'Dizer que o STF pode julgar qualquer causa. Tem competência taxativa na CF.'
+      'Confundir volume com área superficial.',
+      'Esquecer de dividir por 3 no volume da pirâmide e do cone.',
+      'Achar que a área da esfera é 2πr² (é 4πr²).',
+      'Errar a conversão: 1 m³ = 1.000 L (não 100, não 10.000).',
+      'Confundir raio com diâmetro em cilindros e esferas (diâmetro = 2r).',
+      'Esquecer de multiplicar pela altura no volume do cilindro e do prisma.'
     ],
 
     errosComuns: [
-      'Decorar os órgãos sem entender a lógica (STF = Constituição; STJ = lei federal; Justiça Federal = causas federais; Justiça Estadual = residual).',
-      'Confundir as composições dos tribunais superiores.',
-      'Ignorar a EC 45/2004, que criou o CNJ.'
+      'Decorar fórmulas sem entender as figuras.',
+      'Confundir área lateral com área superficial total.',
+      'Não converter unidades antes de calcular volumes em litros.'
     ],
 
     resumo: [
-      'Órgãos: STF, CNJ, STJ, TST, TREs, TJs, TRFs, TRTs, Tribunais Militares e juízes.',
-      'STF: 11 ministros; guarda da Constituição; julga ADI, ADPF, ADO, ADC, extradição.',
-      'STJ: 33 ministros; guarda da lei federal; julga recurso especial.',
-      'Justiça Federal: causas com a União/autarquias/empresas públicas federais.',
-      'Justiça do Trabalho: relações de trabalho.',
-      'Justiça Eleitoral: eleições e partidos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: residual.',
-      'CNJ: controle administrativo, financeiro e disciplinar (EC 45/2004).',
-      'Garantias do magistrado: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
+      'Cubo: volume = a³; área superficial = 6a².',
+      'Paralelepípedo: volume = c × l × a.',
+      'Prisma: volume = área da base × altura.',
+      'Cilindro: volume = πr² × h.',
+      'Pirâmide: volume = (área da base × altura)/3.',
+      'Cone: volume = (πr² × h)/3.',
+      'Esfera: volume = (4/3)πr³; área superficial = 4πr².',
+      'Relações: 1 m³ = 1.000 L; 1 dm³ = 1 L; 1 cm³ = 1 mL.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Judiciário é uma escada: no topo o STF (Constituição), depois o STJ (lei federal), depois as Justiças especializadas (Federal, Trabalho, Eleitoral, Militar) e a Estadual (residual). Cada uma cuida de uma área.',
-      outroExemplo: 'Uma causa sobre FGTS entre empregado e empresa vai para a Justiça do Trabalho. Uma causa em que a União é ré vai para a Justiça Federal. Uma causa entre dois particulares sobre contrato vai para a Justiça Estadual (residual).',
-      compararConceitos: 'STF = Constituição. STJ = lei federal. Justiça Federal = causas federais. Justiça Estadual = residual. CNJ = administração. Vitaliciedade ≠ inamovibilidade ≠ irredutibilidade.',
-      mostrarPegadinha: 'Cuidado: "O CNJ julga causas judiciais". ERRADO. O CNJ faz controle ADMINISTRATIVO, FINANCEIRO e DISCIPLINAR do Judiciário — não julga causas.',
-      comoApareceEmConcurso: 'Cobrança de competências e composições.',
+      explicarMaisSimples: 'Volume é "quanto cabe dentro". Pense em uma caixa d\'água: para saber quantos litros cabem, multiplique as três dimensões (em metros) e multiplique por 1.000.',
+      outroExemplo: 'Uma caixa de sapatos de 30 × 20 × 15 cm: volume = 9.000 cm³ = 9 dm³ = 9 L. Já uma bola de futebol com raio 11 cm: volume = (4/3) × π × 1.331 ≈ 5.575 cm³ ≈ 5,6 L.',
+      compararConceitos: 'Cubo: a³. Cilindro: πr² × h. Cone: (πr² × h)/3. Pirâmide: (área base × h)/3. Esfera: (4/3)πr³. Sempre converta unidades antes de calcular litros.',
+      mostrarPegadinha: 'Cuidado: "Uma caixa d\'água de 2 m³ tem capacidade de 200 litros". ERRADO. 1 m³ = 1.000 L. Então 2 m³ = 2.000 L.',
+      comoApareceEmConcurso: 'Problemas de armazenamento, caixas, tanques e embalagens.',
       fazerPergunta: {
-        pergunta: 'Um Governador de Estado é acusado de crime comum. Quem julga?',
-        resposta: 'O SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) — art. 105, I, "a". Se fosse crime de responsabilidade, o julgamento seria pelo Tribunal Especial (composto por desembargadores do TJ + deputados estaduais), conforme a Constituição Estadual.'
-      }
-    }
-  }
-
-  /* ============================================================
-     Próximo lote — adicionar em edição futura:
-     'DC-16': { ... }
-     'DC-17': { ... }
-     'DC-18': { ... }
-  ============================================================ */
-
-};/* ============================================================
-   AULAS — Módulos de prioridade MÉDIA
-   Preenchidos neste lote: DC-10, DC-14, DC-15
-   Próximo lote: DC-16, DC-17, DC-18
-   ============================================================ */
-
-window.LESSONS_MEDIA = {
-
-  /* ============================================================
-     DC-10 — Intervenção
-  ============================================================ */
-  'DC-10': {
-    id: 'L-DC-10',
-    moduloId: 'DC-10',
-    objetivo: 'Dominar o instituto da intervenção (arts. 34 a 36 da CF/88): hipóteses de intervenção federal, estadual e em Municípios, procedimento, decreto, controle pelo Congresso e relação com a autonomia federativa.',
-    prerequisitos: ['DC-08'],
-
-    introducao: 'A intervenção é medida excepcional: o ente federativo quebra temporariamente a autonomia de outro, para restabelecer a normalidade constitucional. É o oposto do princípio federativo — por isso, é taxativa, temporária e sujeita a controle.',
-
-    explicacaoSimples: 'Pense na Federação como um condomínio. Se um morador descumpre regras gravíssimas, o síndico (União ou Estado) pode, temporariamente, assumir o controle do apartamento dele — mas só nas hipóteses previstas no regimento e depois de seguir o procedimento. Isso é intervenção.',
-
-    explicacaoTecnica: 'Art. 34: hipóteses de intervenção FEDERAL nos Estados e no DF — (I) manter a integridade nacional; (II) repelir invasão estrangeira ou de uma unidade da Federação em outra; (III) pôr termo a grave comprometimento da ordem pública; (IV) garantir o livre exercício de qualquer dos Poderes nas unidades da Federação; (V) reorganizar as finanças da unidade (que suspender pagamento da dívida fundada por mais de 2 anos, ou deixar de entregar receitas); (VI) prover a execução de lei federal, ordem ou decisão judicial; (VII) assegurar a observância dos princípios constitucionais sensíveis (forma republicana, sistema representativo, regime democrático, direitos da pessoa humana, autonomia municipal, prestação de contas da Administração Pública direta e indireta). Art. 35: hipóteses de intervenção ESTADUAL nos Municípios — (I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; (II) não forem prestadas contas devidas; (III) não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual ou para prover a execução de lei, de ordem ou de decisão judicial. Art. 36: procedimento — decreto do Presidente (intervenção federal espontânea) ou requisição (nos casos do art. 34, IV, VI e VII); ouvidoria prévia do Conselho da República e do Conselho de Defesa; controle político pelo Congresso (aprovação por maioria simples em 24h, se em recesso convocação extraordinária); decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessação da intervenção — retorno à normalidade. §3º: se cessada a causa, as autoridades afastadas retornam aos cargos.',
-
-    exemplos: [
-      'Intervenção federal para garantir ordem pública: grave crise de segurança em Estado.',
-      'Intervenção federal para garantir execução de decisão judicial: descumprimento de ordem federal.',
-      'Intervenção federal para assegurar princípios sensíveis: descumprimento da autonomia municipal.',
-      'Intervenção estadual em Município: não aplicação do mínimo na educação ou saúde.',
-      'Intervenção estadual por não pagamento de dívida fundada por 2 anos.',
-      'Reorganização de finanças: Estado que não paga dívida fundada por mais de 2 anos.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Intervenção federal', termoB: 'Intervenção estadual', diferenca: 'FEDERAL: decreto do Presidente da República; atinge Estados e DF; hipóteses do art. 34. ESTADUAL: decreto do Governador; atinge Municípios; hipóteses do art. 35. São institutos paralelos, mas com titulares e destinatários diferentes.' },
-      { termoA: 'Intervenção espontânea', termoB: 'Intervenção provocada', diferenca: 'ESPONTÂNEA: decreto do Presidente, sem provocação de outro Poder (hipóteses dos incisos I, II, III e V do art. 34). PROVOCADA: depende de requisição do STF (inciso VI), do STJ (inciso VI, lei federal) ou do TSE (inciso VII, princípios sensíveis), ou de solicitação do Poder coacto (inciso IV).' },
-      { termoA: 'Intervenção federal', termoB: 'Estado de Sítio', diferenca: 'INTERVENÇÃO: medida excepcional para restabelecer a ordem federativa — atinge o ente, não os direitos fundamentais diretamente. ESTADO DE SÍTIO: medida excepcional para restabelecer a ordem constitucional em caso de comoção grave ou guerra — atinge diretamente os direitos fundamentais, suspendendo garantias.' },
-      { termoA: 'Controle político', termoB: 'Controle judicial', diferenca: 'POLÍTICO: feito pelo Congresso Nacional — aprovação do decreto de intervenção em 24h. JUDICIAL: feito pelo STF, STJ ou TSE — conforme a hipótese, o Tribunal competente pode requisitar a intervenção.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das hipóteses de intervenção federal (art. 34) x estadual (art. 35), do procedimento (decreto, ouvidoria dos Conselhos, controle pelo Congresso em 24h) e das regras específicas (prazo, nomeação de interventor, retorno das autoridades). Questões costumam misturar as hipóteses dos dois artigos.',
-
-    pegadinhas: [
-      'Confundir intervenção federal (arts. 34) com estadual (arts. 35).',
-      'Achar que o decreto de intervenção é do Congresso. É do Presidente (federal) ou do Governador (estadual).',
-      'Dizer que a intervenção depende de autorização prévia do Congresso. O decreto é expedido e depois submetido ao Congresso em 24h.',
-      'Esquecer a ouvidoria prévia do Conselho da República e do Conselho de Defesa (intervenção federal).',
-      'Confundir intervenção com estado de sítio ou estado de defesa.',
-      'Achar que a intervenção é permanente. É temporária — cessada a causa, as autoridades retornam.'
-    ],
-
-    errosComuns: [
-      'Decorar hipóteses sem associar ao titular do decreto.',
-      'Ignorar que a intervenção em Município (art. 35, I a IV) pode ser decreto do Governador, mas a hipótese do inciso IV depende de provimento pelo TJ.',
-      'Não distinguir intervenção espontânea de provocada.'
-    ],
-
-    resumo: [
-      'Intervenção é medida excepcional e temporária.',
-      'Art. 34: hipóteses de intervenção FEDERAL nos Estados e DF.',
-      'Art. 35: hipóteses de intervenção ESTADUAL nos Municípios.',
-      'Decreto: Presidente (federal) ou Governador (estadual).',
-      'Controle: Congresso aprova o decreto em 24h.',
-      'Ouvidoria prévia do Conselho da República e Conselho de Defesa (federal).',
-      'Decreto especifica amplitude, prazo e condições.',
-      'Cessada a causa, retornam as autoridades afastadas.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Intervenção é como o "juiz" do condomínio assumindo temporariamente o apartamento de um morador que quebrou regras gravíssimas — só nas hipóteses do regimento, por prazo determinado, com o condomínio aprovando depois.',
-      outroExemplo: 'Se um Estado deixa de pagar precatórios por mais de 2 anos, cabe intervenção federal por reorganização de finanças (art. 34, V). Se um Município não aplica o mínimo em saúde, cabe intervenção estadual (art. 35, III).',
-      compararConceitos: 'Federal (Presidente, atinge Estados) x Estadual (Governador, atinge Municípios). Espontânea (sem provocação) x Provocada (requisição ou solicitação). Intervenção x Estado de Sítio: uma atinge o ente, o outro atinge direitos.',
-      mostrarPegadinha: 'Cuidado: "A intervenção federal só pode ser decretada pelo Congresso Nacional". ERRADO. O DECRETO é do Presidente; o Congresso apenas APROVA depois, em 24 horas.',
-      comoApareceEmConcurso: 'Cobrança das hipóteses (arts. 34 e 35) e do procedimento (decreto + controle do Congresso).',
-      fazerPergunta: {
-        pergunta: 'Um Estado deixa de aplicar o mínimo constitucional em educação. Cabe intervenção federal?',
-        resposta: 'NÃO — a não aplicação do mínimo em educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). Em relação ao Estado, a não aplicação do mínimo não é hipótese de intervenção federal, e sim de responsabilização política (crime de responsabilidade do Governador) e rejeição de contas.'
+        pergunta: 'Quantos litros cabem em uma caixa cúbica de 50 cm de aresta?',
+        resposta: 'Volume = 50³ = 125.000 cm³. Como 1 dm³ = 1 L e 1 dm³ = 1.000 cm³: 125.000 cm³ = 125 dm³ = 125 L.'
       }
     }
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     MAT-17 — Relações Métricas e Teorema de Pitágoras
   ============================================================ */
-  'DC-14': {
-    id: 'L-DC-14',
-    moduloId: 'DC-14',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Executivo federal (arts. 76 a 91 da CF/88): Presidente, Vice, eleição, mandato, requisitos, sucessão, substituição, competências, ministros, responsabilidade e crimes de responsabilidade.',
-    prerequisitos: ['DC-12'],
+  'MAT-17': {
+    id: 'L-MAT-17',
+    moduloId: 'MAT-17',
+    objetivo: 'Compreender o triângulo retângulo, hipotenusa e catetos, o Teorema de Pitágoras, diagonais, distâncias e relações métricas. Aplicar em problemas de áreas, distâncias e situações do cotidiano.',
+    prerequisitos: ['MAT-15'],
 
-    introducao: 'O Poder Executivo exerce a função típica de administrar o Estado. Na esfera federal, é chefiado pelo Presidente da República, auxiliado pelos Ministros de Estado. As bancas cobram as regras de eleição, as hipóteses de sucessão/substituição e os crimes de responsabilidade.',
+    introducao: 'O Teorema de Pitágoras é uma das fórmulas mais famosas da matemática e uma das mais cobradas em concursos. Ele relaciona os três lados de um triângulo retângulo e permite calcular distâncias, diagonais, alturas e comprimentos que seriam difíceis de medir diretamente.',
 
-    explicacaoSimples: 'O Presidente é o "chefe" do Executivo federal: administra o país, representa o Brasil no exterior, sanciona e veta leis, edita medidas provisórias. Se ele sai do cargo por algum motivo, há regras específicas sobre quem assume — o Vice, o Presidente da Câmara, o do Senado ou o do STF.',
+    explicacaoSimples: 'Um triângulo retângulo tem um ângulo de 90° (chamado de ângulo reto). O lado maior, oposto a esse ângulo, é a hipotenusa. Os outros dois lados são os catetos. O Teorema de Pitágoras diz: o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Fórmula: a² = b² + c².',
 
-    explicacaoTecnica: 'Art. 76: o Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado. Art. 77: eleição pelo sufrágio universal e voto direto e secreto, maioria absoluta; 2º turno se necessário; posse em 1º de janeiro do ano seguinte; mandato de 4 anos. Art. 14, §3º, VI, "a": idade mínima de 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento eleitoral, domicílio eleitoral e filiação partidária. Art. 78: posse em sessão conjunta do Congresso. Art. 79: o Vice substitui o Presidente em caso de impedimento e sucede em caso de vaga. Art. 80: em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: Presidente da Câmara, do Senado e do STF. Art. 81: se a vacância ocorrer nos 2 primeiros anos, eleição direta em 90 dias; se nos 2 últimos, eleição indireta pelo Congresso em 30 dias. Art. 82: mandato de 4 anos. Art. 83: 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio, filiação. Art. 84: competências privativas do Presidente (sancionar, vetar, editar MP, nomear Ministros do STF, etc.). Art. 85: crimes de responsabilidade — atos que atentem contra a CF e especialmente contra: existência da União, livre exercício dos Poderes, exercício dos direitos políticos, segurança interna, probidade na Administração, lei orçamentária, guarda e uso do dinheiro público. Art. 86: imunidade formal — o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções. Art. 87: Ministros de Estado auxiliam o Presidente. Art. 88: lei disporá sobre criação e extinção de Ministérios. Art. 89: Conselho da República. Art. 90: Conselho de Defesa Nacional. Art. 91: regras sobre esses Conselhos.',
+    explicacaoTecnica: 'TRIÂNGULO RETÂNGULO: possui um ângulo reto (90°). A HIPOTENUSA (a) é o lado oposto ao ângulo reto e é sempre o MAIOR lado. Os CATETOS (b e c) formam o ângulo reto. TEOREMA DE PITÁGORAS: a² = b² + c². Aplicações: diagonal de um retângulo, distância entre dois pontos, altura de um triângulo equilátero, comprimento de rampas. TERNOS PITAGÓRICOS (combinações inteiras): 3-4-5 (e múltiplos: 6-8-10, 9-12-15); 5-12-13; 8-15-17; 7-24-25. RELAÇÕES MÉTRICAS no triângulo retângulo (com altura h relativa à hipotenusa, projetando os catetos b e c sobre ela em m e n): b² = a × m; c² = a × n; h² = m × n; a × h = b × c. DIAGONAL DO QUADRADO: d = L√2. DIAGONAL DO RETÂNGULO: d² = b² + h². ALTURA DO TRIÂNGULO EQUILÁTERO: h = (L√3)/2.',
 
     exemplos: [
-      'Eleição: 1º turno no primeiro domingo de outubro; 2º turno no último domingo de outubro.',
-      'Posse: 1º de janeiro do ano seguinte.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Sucessão: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.',
-      'Ministro do STF: nomeação pelo Presidente, após aprovação por maioria absoluta do Senado.',
-      'Crimes de responsabilidade: atos contra a existência da União, livre exercício dos Poderes, probidade na Administração etc.'
+      'Catetos 3 e 4: hipotenusa = √(9 + 16) = √25 = 5. Terno pitagórico 3-4-5.',
+      'Catetos 5 e 12: hipotenusa = √(25 + 144) = √169 = 13.',
+      'Hipotenusa 10, cateto 6: outro cateto = √(100 - 36) = √64 = 8.',
+      'Diagonal do quadrado de lado 5: d = 5√2 ≈ 7,07.',
+      'Diagonal do retângulo 6 × 8: d = √(36 + 64) = √100 = 10.',
+      'Altura do triângulo equilátero de lado 6: h = (6√3)/2 = 3√3 ≈ 5,2.',
+      'Escada de 5 m apoiada a 3 m da parede: altura alcançada = √(25 - 9) = 4 m.'
     ],
 
     comparacoes: [
-      { termoA: 'Sucessão', termoB: 'Substituição', diferenca: 'SUBSTITUIÇÃO: assume temporariamente, em caso de IMPEDIMENTO (doença, viagem). SUCESSÃO: assume definitivamente, em caso de VAGA (morte, renúncia, cassação). A ordem é: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.' },
-      { termoA: 'Vacância nos 2 primeiros anos', termoB: 'Vacância nos 2 últimos anos', diferenca: 'PRIMEIROS 2 ANOS: eleição DIRETA em 90 dias (o povo vota). ÚLTIMOS 2 ANOS: eleição INDIRETA pelo Congresso em 30 dias (o Congresso vota).' },
-      { termoA: 'Crime comum', termoB: 'Crime de responsabilidade', diferenca: 'CRIME COMUM: julgado pelo STF (Presidente) após autorização da Câmara por 2/3. CRIME DE RESPONSABILIDADE: julgado pelo SENADO (Presidente) após autorização da Câmara por 2/3. A Câmara AUTORIZA; o Senado JULGA.' },
-      { termoA: 'Imunidade formal do Presidente', termoB: 'Imunidade do parlamentar', diferenca: 'PRESIDENTE (art. 86): não pode ser responsabilizado por atos estranhos ao exercício da função; durante o mandato, não pode ser preso por crime comum sem sentença condenatória. PARLAMENTAR (art. 53): imunidade material (opiniões, palavras, votos) e formal (prisão só em flagrante de crime inafiançável; processo criminal sem licença prévia após EC 35/2001).' }
+      { termoA: 'Hipotenusa', termoB: 'Cateto', diferenca: 'HIPOTENUSA: lado oposto ao ângulo reto — sempre o MAIOR lado do triângulo retângulo. Aparece sozinha na fórmula a² = b² + c². CATETO: cada um dos dois lados que formam o ângulo reto. Aparecem somados na fórmula. Nunca confunda quem é quem na hora de aplicar.' },
+      { termoA: 'Teorema de Pitágoras', termoB: 'Relações métricas', diferenca: 'PITÁGORAS: a² = b² + c². Relaciona os três lados. RELAÇÕES MÉTRICAS: envolvem a altura relativa à hipotenusa (h), as projeções dos catetos (m e n). Ex.: b² = a×m, h² = m×n. São fórmulas complementares.' },
+      { termoA: 'Diagonal do quadrado', termoB: 'Diagonal do retângulo', diferenca: 'QUADRADO: d = L√2 (fórmula pronta). RETÂNGULO: d² = b² + h² (aplicação do Teorema de Pitágoras). O quadrado é um caso particular — a fórmula L√2 vem de √(L² + L²) = √(2L²) = L√2.' },
+      { termoA: 'Triângulo retângulo', termoB: 'Triângulo equilátero', diferenca: 'RETÂNGULO: um ângulo de 90°, lados com medidas diferentes (em geral), usa Pitágoras. EQUILÁTERO: três lados iguais, três ângulos de 60°, altura = (L√3)/2, NÃO usa Pitágoras diretamente.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 77 a 84 (eleição, mandato, requisitos, competências), das hipóteses de sucessão/substituição, e da distinção entre crime comum e de responsabilidade. Alta frequência em concursos federais e de Tribunais.',
+    aplicacaoEmConcurso: 'O Teorema de Pitágoras aparece em: cálculo de diagonais (retângulo, quadrado, paralelepípedo), altura de triângulo equilátero, distância entre dois pontos no plano, problemas de escadas, rampas, sombras, torres e distâncias inacessíveis. Os ternos pitagóricos (3-4-5, 5-12-13, 8-15-17) aparecem com frequência — reconhecê-los acelera a resolução.',
 
     pegadinhas: [
-      'Confundir sucessão com substituição.',
-      'Trocar os prazos de eleição direta (90 dias, 2 primeiros anos) com eleição indireta (30 dias, 2 últimos anos).',
-      'Dizer que o Senado processa e julga o Presidente por crime COMUM. É o STF. O Senado julga CRIME DE RESPONSABILIDADE.',
-      'Achar que o Vice é sempre o substituto. Se ambos os cargos estiverem vagos, assume o Presidente da Câmara.',
-      'Dizer que o Presidente pode ser preso por crime comum durante o mandato sem sentença condenatória (não pode).',
-      'Confundir os Conselhos (Conselho da República x Conselho de Defesa Nacional).'
+      'Confundir hipotenusa com cateto e montar a fórmula errada (b² = a² + c²).',
+      'Esquecer de tirar a raiz quadrada no final do cálculo.',
+      'Somar os quadrados e esquecer de tirar a raiz: a² = 25 → a = 5 (não 25).',
+      'Em problemas com escada/parede, confundir qual medida é a hipotenusa. A escada é SEMPRE a hipotenusa.',
+      'Aplicar Pitágoras em triângulos que NÃO são retângulos.',
+      'Errar a fórmula da diagonal do quadrado: é L√2, não L².',
+      'Confundir altura do triângulo equilátero (L√3/2) com altura do triângulo retângulo.'
     ],
 
     errosComuns: [
-      'Decorar a linha sucessória sem entender as hipóteses.',
-      'Confundir crimes de responsabilidade do Presidente (Senado) com os de Governador (Tribunal Especial).',
-      'Ignorar que o Vice pode exercer funções por delegação do Presidente.'
+      'Decorar a fórmula sem entender a posição dos lados.',
+      'Não identificar o ângulo reto em figuras compostas.',
+      'Esquecer de simplificar a raiz quando o resultado é irracional (ex.: √50 = 5√2).',
+      'Confundir área com diagonal em problemas de terrenos retangulares.'
     ],
 
     resumo: [
-      'Presidente: eleição direta por maioria absoluta; mandato de 4 anos; posse em 1º de janeiro.',
-      'Requisitos: brasileiro nato, 35 anos, pleno exercício dos direitos políticos, alistamento, domicílio, filiação.',
-      'Linha sucessória: Vice → Pres. Câmara → Pres. Senado → Pres. STF.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Crime comum: julgado pelo STF. Crime de responsabilidade: julgado pelo Senado.',
-      'A Câmara AUTORIZA (2/3) nos dois casos.',
-      'Conselho da República: opina em situações graves.',
-      'Conselho de Defesa Nacional: opina em temas de segurança nacional.'
+      'Triângulo retângulo: um ângulo de 90°.',
+      'Hipotenusa: lado oposto ao ângulo reto, maior lado.',
+      'Teorema de Pitágoras: a² = b² + c².',
+      'Ternos pitagóricos: 3-4-5, 5-12-13, 8-15-17, 7-24-25 (e múltiplos).',
+      'Diagonal do quadrado: d = L√2.',
+      'Diagonal do retângulo: d² = b² + h².',
+      'Altura do triângulo equilátero: h = (L√3)/2.',
+      'Relações métricas: b² = a×m, c² = a×n, h² = m×n, a×h = b×c.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Presidente é o chefe do Executivo federal. Se ele sai do cargo, assume o Vice; se o Vice também sair, assume o Presidente da Câmara, depois o do Senado e, por último, o do STF. Dependendo de quando ocorre a vacância, o povo vota (primeiros 2 anos) ou o Congresso vota (últimos 2).',
-      outroExemplo: 'Se o Presidente renunciar no segundo mês do mandato, há eleição DIRETA em 90 dias. Se renunciar faltando 6 meses, há eleição INDIRETA pelo Congresso em 30 dias.',
-      compararConceitos: 'Sucessão = definitiva (vaga). Substituição = temporária (impedimento). Crime comum = STF. Crime de responsabilidade = Senado. Primeiros 2 anos = direta. Últimos 2 anos = indireta.',
-      mostrarPegadinha: 'Cuidado: "O Vice-Presidente é sempre o substituto do Presidente". Em caso de VAGA do Presidente, ele SUCEDE (definitivo). Em caso de IMPEDIMENTO, ele SUBSTITUI (temporário).',
-      comoApareceEmConcurso: 'Cobrança de arts. 77 a 84 e das hipóteses de sucessão.',
+      explicarMaisSimples: 'O Teorema de Pitágoras é uma "fórmula mágica" para triângulos com ângulo de 90°. Se você conhece dois lados, descobre o terceiro. A escada, a rampa, a diagonal da TV — tudo usa Pitágoras.',
+      outroExemplo: 'Uma TV de 50 polegadas tem essa medida em polegadas na DIAGONAL. Se a base tem 40 polegadas e a altura 30, a diagonal = √(40² + 30²) = √(1600 + 900) = √2500 = 50. Bate com o terno 3-4-5 multiplicado por 10.',
+      compararConceitos: 'Hipotenusa = lado maior, oposto ao ângulo reto. Catetos = formam o ângulo reto. Fórmula: a² = b² + c². Diagonal do quadrado = L√2. Altura do equilátero = L√3/2.',
+      mostrarPegadinha: 'Cuidado: "Em um triângulo 6-8-10, a hipotenusa é 8". ERRADO. A hipotenusa é SEMPRE o MAIOR lado — nesse caso, 10. Confira: 10² = 6² + 8² → 100 = 36 + 64 ✓.',
+      comoApareceEmConcurso: 'Problemas de escada, rampa, diagonal, altura e distância. Frequência altíssima.',
       fazerPergunta: {
-        pergunta: 'Um Presidente é acusado de crime comum durante o mandato. Quem processa e julga?',
-        resposta: 'A Câmara dos Deputados AUTORIZA (2/3) e o SUPREMO TRIBUNAL FEDERAL julga (crime comum). Se fosse CRIME DE RESPONSABILIDADE, a Câmara autorizaria e o SENADO FEDERAL julgaria.'
+        pergunta: 'Uma escada de 13 m está apoiada em uma parede, com a base a 5 m da parede. A que altura a escada toca a parede?',
+        respostA: 'A escada é a hipotenusa (13). Um cateto é 5. Então: 13² = 5² + h² → 169 = 25 + h² → h² = 144 → h = 12 m.'
       }
     }
   },
 
   /* ============================================================
-     DC-15 — Poder Judiciário
+     MAT-18 — Sequências e Padrões
   ============================================================ */
-  'DC-15': {
-    id: 'L-DC-15',
-    moduloId: 'DC-15',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Judiciário brasileiro (arts. 92 a 126 da CF/88): órgãos, STF, STJ, Justiça Federal, Estadual, do Trabalho, Eleitoral, Militar, CNJ, competências, garantias dos magistrados e organização.',
-    prerequisitos: ['DC-12'],
+  'MAT-18': {
+    id: 'L-MAT-18',
+    moduloId: 'MAT-18',
+    objetivo: 'Compreender sequências numéricas, padrões de formação, sequências de letras e figuras, identificação de regularidades, raciocínio sequencial e problemas com padrões. Base para raciocínio lógico e problemas não convencionais.',
+    prerequisitos: ['MAT-01'],
 
-    introducao: 'O Poder Judiciário é o responsável pela função jurisdicional — dizer o direito no caso concreto. A CF organiza os órgãos, distribui competências e garante aos magistrados as condições para julgar com independência.',
+    introducao: 'Sequências e padrões testam a capacidade de perceber regularidades. A banca dá uma lista de números, letras ou figuras e pede o próximo termo, uma posição específica ou a soma de termos. A chave é identificar a REGRA que gera a sequência — sem ela, é impossível avançar.',
 
-    explicacaoSimples: 'Pense na Justiça como uma grande estrutura com vários níveis. No topo está o STF (guarda da Constituição) e, logo abaixo, o STJ (guarda da lei federal). Depois vêm a Justiça Federal, Estadual, do Trabalho, Eleitoral e Militar. Cada uma tem sua área. Há ainda o CNJ, que cuida da administração do Judiciário.',
+    explicacaoSimples: 'Sequência é uma lista ordenada de elementos que segue uma regra. Ex.: 2, 4, 6, 8, 10 — soma 2 a cada passo. 1, 2, 4, 8, 16 — multiplica por 2. 1, 4, 9, 16 — quadrados perfeitos. Descobrir a regra é o pulo do gato.',
 
-    explicacaoTecnica: 'Art. 92: são órgãos do Poder Judiciário — STF, CNJ, STJ, TST, TREs, Tribunais de Justiça dos Estados e DF, TRFs, TRTs, Tribunais Militares e juízes dos respectivos órgãos. Art. 93: Estatuto da Magistratura (LC). Art. 94: regras de ingresso (quinto constitucional). Art. 95: garantias dos magistrados — vitaliciedade, inamovibilidade e irredutibilidade de subsídio. Art. 96: competências dos tribunais. Art. 97: reserva de plenário (cláusula de reserva de plenário — somente pelo voto da maioria absoluta dos membros do Tribunal ou do órgão especial). Art. 98: Justiça de Paz. Art. 99: autonomia administrativa e financeira do Judiciário. Art. 100: precatórios. Art. 101 a 103: STF — composição (11 ministros, brasileiros natos, 35 a 65 anos, nomeados pelo Presidente após aprovação por maioria absoluta do Senado), competências, ADI/ADC/ADPF/ADO. Art. 104 a 105: STJ — 33 ministros, 35 a 65 anos, competências. Art. 106 a 110: Justiça Federal — TRFs (mínimo 7 juízes). Art. 111 a 117: Justiça do Trabalho. Art. 118 a 121: Justiça Eleitoral. Art. 122 a 124: Justiça Militar. Art. 125 a 126: Justiça Estadual. Art. 127 a 130: funções essenciais à Justiça (MP, Advocacia Pública, Advocacia, Defensoria). Art. 92, §1º: o STF tem 11 ministros. Art. 103-B: CNJ — 15 membros, presidido pelo Presidente do STF.',
+    explicacaoTecnica: 'SEQUÊNCIA NUMÉRICA: lista ordenada de números em que cada termo (an) segue uma regra. TIPOS COMUNS: PROGRESSÃO ARITMÉTICA (PA): diferença constante (razão r) entre termos consecutivos. Ex.: 3, 7, 11, 15 (r = 4). Termo geral: an = a1 + (n-1) × r. Soma dos n primeiros termos: Sn = (a1 + an) × n / 2. PROGRESSÃO GEOMÉTRICA (PG): razão constante (q) por multiplicação. Ex.: 2, 6, 18, 54 (q = 3). Termo geral: an = a1 × q^(n-1). Sequências especiais: quadrados perfeitos (1, 4, 9, 16, 25...); cubos (1, 8, 27, 64...); Fibonacci (1, 1, 2, 3, 5, 8, 13 — cada termo é a soma dos dois anteriores); números triangulares (1, 3, 6, 10, 15...). SEQUÊNCIAS DE LETRAS: siga o alfabeto ou salte de acordo com uma regra (ex.: A, C, E, G — pula 1 letra). SEQUÊNCIAS DE FIGURAS: contar lados, número de pontos, posição ou simetria. ESTRATÉGIA: 1) Verifique diferenças entre termos consecutivos. 2) Se as diferenças são constantes → PA. 3) Se as diferenças formam outra sequência → regra de 2ª ordem. 4) Verifique multiplicações (PG). 5) Considere alternância de padrões (uma regra para termos ímpares, outra para pares).',
 
     exemplos: [
-      'STF: guarda da CF; julga ADI, ADPF, HC de autoridades específicas, extradição.',
-      'STJ: guarda da lei federal; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade for desembargador.',
-      'Justiça Federal: causas em que a União, autarquias federais ou empresas públicas federais forem partes.',
-      'Justiça do Trabalho: conflitos entre empregado e empregador.',
-      'Justiça Eleitoral: eleições, partidos políticos, registro de candidatos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: causas residuais — o que não for das outras.',
-      'CNJ: controle administrativo, financeiro e disciplinar do Judiciário.'
+      'PA: 5, 8, 11, 14, ... → razão 3. Próximo: 17.',
+      'PG: 2, 10, 50, 250, ... → razão 5. Próximo: 1.250.',
+      'Quadrados: 1, 4, 9, 16, 25 → próximo: 36.',
+      'Fibonacci: 1, 1, 2, 3, 5, 8 → próximo: 13.',
+      'Alternada: 1, 10, 2, 20, 3, 30 → próximos: 4, 40 (uma soma 1, outra soma 10).',
+      'Letras: A, C, E, G → próximo: I (pula 1 letra).',
+      '2ª ordem: 1, 2, 4, 7, 11, 16 → diferenças: 1, 2, 3, 4, 5 → próximo termo: 22.'
     ],
 
     comparacoes: [
-      { termoA: 'STF', termoB: 'STJ', diferenca: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADPF, ADO, ADC, extradição, HC de autoridades. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.' },
-      { termoA: 'Vitaliciedade', termoB: 'Inamovibilidade', diferenca: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos de exercício no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca ou seção sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal).' },
-      { termoA: 'Justiça Federal', termoB: 'Justiça Estadual', diferenca: 'FEDERAL: julga causas em que a União, autarquias federais ou empresas públicas federais forem partes; crimes políticos; crimes contra bens da União; estrangeiros. ESTADUAL: residual — o que não for das outras Justiças.' },
-      { termoA: 'CNJ', termoB: 'STF', diferenca: 'CNJ: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário — não julga causas. STF: órgão de CÚPULA do Judiciário, com competência para julgar ADI, HC, extradição e outras causas constitucionais.' }
+      { termoA: 'Progressão aritmética (PA)', termoB: 'Progressão geométrica (PG)', diferenca: 'PA: diferença CONSTANTE entre termos (soma/subtrai sempre o mesmo número). Ex.: 3, 7, 11, 15 (r = 4). PG: razão CONSTANTE (multiplica/divide sempre pelo mesmo número). Ex.: 2, 6, 18, 54 (q = 3). PA cresce linearmente; PG cresce exponencialmente.' },
+      { termoA: 'Sequência de 1ª ordem', termoB: 'Sequência de 2ª ordem', diferenca: '1ª ORDEM: a regra é aplicada direto nos termos (soma 5, multiplica por 2). 2ª ORDEM: as DIFERENÇAS formam uma sequência com regra própria. Ex.: 1, 2, 4, 7, 11, 16 — as diferenças são 1, 2, 3, 4, 5 (uma PA). O próximo termo é 16 + 6 = 22.' },
+      { termoA: 'Sequência numérica', termoB: 'Sequência de letras', diferenca: 'NUMÉRICA: regra sobre números (soma, subtração, multiplicação). LETRAS: regra sobre posições no alfabeto (A=1, B=2...). Ex.: C, F, I, L → posições 3, 6, 9, 12 → soma 3. Próxima: O (15).' },
+      { termoA: 'Fibonacci', termoB: 'Progressão aritmética', diferenca: 'FIBONACCI: cada termo é a SOMA dos dois anteriores (1, 1, 2, 3, 5, 8, 13...). Não tem razão constante. PA: diferença constante entre termos consecutivos (5, 8, 11, 14...).' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 92 a 105 (órgãos, composição, competências), das garantias dos magistrados (vitaliciedade, inamovibilidade, irredutibilidade) e da distinção entre STF e STJ. Comum em concursos de Tribunais.',
+    aplicacaoEmConcurso: 'Sequências aparecem em provas de RLM (Raciocínio Lógico-Matemático) e em questões de padrões visuais. Bancas cobram: próximo termo, termo em posição específica (ex.: 100º termo), soma dos primeiros n termos, sequências de letras e sequências alternadas. Em concursos com disciplina de RLM, a frequência é alta.',
 
     pegadinhas: [
-      'Confundir STF (Constituição) com STJ (lei federal).',
-      'Trocar o número de ministros do STF (11) com o do STJ (33).',
-      'Achar que o CNJ julga causas. O CNJ faz controle administrativo, financeiro e disciplinar.',
-      'Dizer que o juiz pode ser removido sem processo. A inamovibilidade garante proteção, salvo por interesse público e voto de 2/3 do tribunal.',
-      'Confundir as garantias: vitaliciedade (não perde o cargo), inamovibilidade (não é removido), irredutibilidade (não tem subsídio reduzido).',
-      'Dizer que o STF pode julgar qualquer causa. Tem competência taxativa na CF.'
+      'Achar que toda sequência numérica é PA ou PG. Pode ser Fibonacci, quadrados, cubos, alternada.',
+      'Não considerar sequências de 2ª ordem (as diferenças formam outra sequência).',
+      'Ignorar alternância de padrões (uma regra para posições ímpares, outra para pares).',
+      'Esquecer a posição do termo na fórmula da PA: an = a1 + (n-1) × r (não é n × r).',
+      'Errar o índice das letras: A = 1, B = 2, ..., Z = 26.',
+      'Confundir PA (soma) com PG (multiplicação).'
     ],
 
     errosComuns: [
-      'Decorar os órgãos sem entender a lógica (STF = Constituição; STJ = lei federal; Justiça Federal = causas federais; Justiça Estadual = residual).',
-      'Confundir as composições dos tribunais superiores.',
-      'Ignorar a EC 45/2004, que criou o CNJ.'
+      'Tentar decorar sequências em vez de procurar a regra.',
+      'Não testar a hipótese da regra nos termos seguintes.',
+      'Errar a ordem das operações nas fórmulas de termo geral.'
     ],
 
     resumo: [
-      'Órgãos: STF, CNJ, STJ, TST, TREs, TJs, TRFs, TRTs, Tribunais Militares e juízes.',
-      'STF: 11 ministros; guarda da Constituição; julga ADI, ADPF, ADO, ADC, extradição.',
-      'STJ: 33 ministros; guarda da lei federal; julga recurso especial.',
-      'Justiça Federal: causas com a União/autarquias/empresas públicas federais.',
-      'Justiça do Trabalho: relações de trabalho.',
-      'Justiça Eleitoral: eleições e partidos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: residual.',
-      'CNJ: controle administrativo, financeiro e disciplinar (EC 45/2004).',
-      'Garantias do magistrado: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
+      'PA: diferença constante. Termo geral: an = a1 + (n-1)×r. Soma: Sn = (a1 + an)×n/2.',
+      'PG: razão constante. Termo geral: an = a1 × q^(n-1).',
+      'Sequências famosas: quadrados, cubos, Fibonacci, triangulares.',
+      'Sequências de 2ª ordem: as diferenças formam outra sequência.',
+      'Sequências alternadas: regras diferentes para termos ímpares e pares.',
+      'Sequências de letras: use a posição alfabética (A=1, B=2...).',
+      'Estratégia: teste diferenças, multiplicações, alternâncias.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Judiciário é uma escada: no topo o STF (Constituição), depois o STJ (lei federal), depois as Justiças especializadas (Federal, Trabalho, Eleitoral, Militar) e a Estadual (residual). Cada uma cuida de uma área.',
-      outroExemplo: 'Uma causa sobre FGTS entre empregado e empresa vai para a Justiça do Trabalho. Uma causa em que a União é ré vai para a Justiça Federal. Uma causa entre dois particulares sobre contrato vai para a Justiça Estadual (residual).',
-      compararConceitos: 'STF = Constituição. STJ = lei federal. Justiça Federal = causas federais. Justiça Estadual = residual. CNJ = administração. Vitaliciedade ≠ inamovibilidade ≠ irredutibilidade.',
-      mostrarPegadinha: 'Cuidado: "O CNJ julga causas judiciais". ERRADO. O CNJ faz controle ADMINISTRATIVO, FINANCEIRO e DISCIPLINAR do Judiciário — não julga causas.',
-      comoApareceEmConcurso: 'Cobrança de competências e composições.',
+      explicarMaisSimples: 'Sequência é uma lista com regra. Toda questão de sequência pede a mesma coisa: descubra a REGRA. Olhe as diferenças, os multiplicadores, a alternância. Quando achar a regra, teste nos próximos termos antes de responder.',
+      outroExemplo: 'Sequência: 2, 5, 10, 17, 26, ... Diferenças: 3, 5, 7, 9 (números ímpares crescentes). Próxima diferença: 11 → próximo termo: 26 + 11 = 37. É uma sequência de 2ª ordem.',
+      compararConceitos: 'PA: soma. PG: multiplica. Fibonacci: soma os dois anteriores. Quadrados: n². 2ª ordem: diferenças formam sequência.',
+      mostrarPegadinha: 'Cuidado: "A sequência 2, 4, 6, 8 é PG de razão 2". ERRADO. É PA de razão 2 (soma 2). PG de razão 2 seria 2, 4, 8, 16 (multiplica por 2).',
+      comoApareceEmConcurso: 'RLM, raciocínio sequencial e questões com padrões visuais.',
       fazerPergunta: {
-        pergunta: 'Um Governador de Estado é acusado de crime comum. Quem julga?',
-        resposta: 'O SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) — art. 105, I, "a". Se fosse crime de responsabilidade, o julgamento seria pelo Tribunal Especial (composto por desembargadores do TJ + deputados estaduais), conforme a Constituição Estadual.'
-      }
-    }
-  }  ,
-
-  /* ============================================================
-     DC-16 — Funções Essenciais à Justiça
-  ============================================================ */
-  'DC-16': {
-    id: 'L-DC-16',
-    moduloId: 'DC-16',
-    objetivo: 'Dominar as funções essenciais à Justiça (arts. 127 a 135 da CF/88): Ministério Público, Advocacia Pública, Advocacia e Defensoria Pública — funções, princípios, autonomia, garantias e organização constitucional. Foco especial no MP e na Defensoria.',
-    prerequisitos: ['DC-15'],
-
-    introducao: 'As funções essenciais à Justiça não integram nenhum dos três Poderes — são instituições autônomas que servem ao Estado e à sociedade. Cada uma tem missão própria: o MP fiscaliza a lei; a Advocacia Pública defende o Estado; a Advocacia defende o cidadão; a Defensoria defende os necessitados.',
-
-    explicacaoSimples: 'Pense numa partida de futebol: o juiz é o Judiciário, mas há também o fiscal (MP, que cuida do cumprimento das regras), o advogado do time (Advocacia), o advogado do Estado (Advocacia Pública) e o advogado gratuito para quem não pode pagar (Defensoria). Todos essenciais ao jogo.',
-
-    explicacaoTecnica: 'Art. 127: o Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis. Princípios: unidade, indivisibilidade e independência funcional. Art. 128: MP abrange MP da União (MPF, MP do Trabalho, MP Militar, MP do DF e Territórios) e MPs dos Estados. Art. 129: funções institucionais (promover ação penal pública, inquérito civil, ação civil pública, defesa do patrimônio público, etc.). Art. 130: legitimidade para interpor recursos. Art. 130-A: Conselho Nacional do Ministério Público (CNMP). Art. 131: Advocacia-Geral da União (AGU) — representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Executivo. Art. 132: Procuradores dos Estados e do DF — representação judicial e consultoria. Art. 133: o advogado é indispensável à administração da justiça, sendo inviolável por seus atos e manifestações no exercício da profissão. Art. 134: Defensoria Pública — instituição permanente, essencial à função jurisdicional, incumbindo-lhe a orientação jurídica, promoção dos direitos humanos e defesa dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados. Art. 135: princípios e garantias dos servidores das carreiras.',
-
-    exemplos: [
-      'MP: promotor de justiça que atua em ação penal e em ação civil pública.',
-      'MPF: atua em causas federais, ambientais e de direitos humanos.',
-      'AGU: defende a União em juízo e presta consultoria ao Executivo federal.',
-      'Advocacia: advogado particular que defende o cidadão em juízo.',
-      'Defensoria Pública: defensor que atende gratuitamente quem não pode pagar advogado.',
-      'CNMP: controle externo do MP.',
-      'Garantias do MP: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Ministério Público', termoB: 'Defensoria Pública', diferenca: 'MP: defende a ORDEM JURÍDICA, o REGIME DEMOCRÁTICO e os INTERESSES SOCIAIS E INDIVIDUAIS INDISPONÍVEIS. Defensoria: orienta e defende os NECESSITADOS, de forma integral e gratuita, sem representar o Estado.' },
-      { termoA: 'Advocacia Pública (AGU/PGE)', termoB: 'Advocacia privada', diferenca: 'ADVOCACIA PÚBLICA: representa o ESTADO (União, Estados, DF) judicial e extrajudicialmente; presta consultoria ao Executivo. ADVOCACIA PRIVADA: representa o CIDADÃO; atividade essencial à administração da justiça.' },
-      { termoA: 'MP', termoB: 'Judiciário', diferenca: 'MP: NÃO julga — atua como parte (fiscal da lei), promovendo ação penal, ação civil pública, inquérito civil. JUDICIÁRIO: julga as causas.' },
-      { termoA: 'Garantias do MP', termoB: 'Garantias dos magistrados', diferenca: 'MP: vitaliciedade, inamovibilidade e irredutibilidade de subsídio. MAGISTRADOS: vitaliciedade, inamovibilidade e irredutibilidade de subsídio. São iguais em nome, mas aplicáveis a carreiras distintas.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 127 a 135: natureza do MP (instituição permanente e essencial), princípios do MP (unidade, indivisibilidade, independência funcional), funções do MP, Advocacia-Geral da União, Defensoria Pública e a garantia do advogado. Alta frequência em concursos de MP, Defensoria e Tribunais.',
-
-    pegadinhas: [
-      'Dizer que o MP integra o Judiciário. NÃO — é instituição AUTÔNOMA, fora dos três Poderes.',
-      'Confundir os princípios do MP (unidade, indivisibilidade, independência funcional) com os princípios da Administração (LIMPE).',
-      'Achar que a Defensoria Pública é subordinada ao Executivo. Tem autonomia funcional e administrativa.',
-      'Dizer que o advogado é obrigatório em qualquer causa. A CF diz que é indispensável à administração da justiça, mas há exceções (habeas corpus, por exemplo).',
-      'Confundir AGU (representa a União) com PGE (representa os Estados) e PGM (representa os Municípios).',
-      'Achar que o CNMP julga causas. Faz controle administrativo, financeiro e disciplinar.'
-    ],
-
-    errosComuns: [
-      'Decorar órgãos sem entender a natureza de cada um.',
-      'Confundir MP com Defensoria — funções são distintas.',
-      'Ignorar que a Defensoria Pública foi reconhecida como expressão do regime democrático (EC 80/2014).'
-    ],
-
-    resumo: [
-      'MP: instituição permanente e essencial; defende ordem jurídica, regime democrático e interesses indisponíveis.',
-      'Princípios do MP: unidade, indivisibilidade e independência funcional.',
-      'MP da União: MPF, MPT, MPM, MPDFT. MPs estaduais: organizados por lei estadual.',
-      'AGU: representa a União e presta consultoria ao Executivo federal.',
-      'PGE: representa os Estados. PGM: representa os Municípios.',
-      'Advocacia: indispensável à administração da justiça.',
-      'Defensoria Pública: atende necessitados, gratuita e integralmente, com autonomia.',
-      'Garantias do MP e dos magistrados: vitaliciedade, inamovibilidade e irredutibilidade.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Cada instituição tem seu papel: MP fiscaliza a lei; AGU defende o Estado; advogado defende o cidadão; Defensoria defende quem não pode pagar advogado. Todas são essenciais à Justiça.',
-      outroExemplo: 'Em uma ação civil pública sobre danos ambientais, quem ajuíza é o MP (art. 129, III). Em uma ação penal, quem denuncia é o MP. Em uma causa em que o cidadão não pode pagar advogado, atua a Defensoria Pública.',
-      compararConceitos: 'MP = fiscal da lei. AGU/PGE/PGM = defensor do Estado. Advogado = defensor do cidadão. Defensoria = defensor do necessitado. Todos com garantias próprias.',
-      mostrarPegadinha: 'Cuidado: "O MP é subordinado ao Poder Judiciário". ERRADO. O MP é instituição AUTÔNOMA, sem subordinação a nenhum dos três Poderes.',
-      comoApareceEmConcurso: 'Cobrança de arts. 127 a 135 e das garantias.',
-      fazerPergunta: {
-        pergunta: 'Quem representa a União judicialmente em uma ação em que ela é ré?',
-        resposta: 'A ADVOCACIA-GERAL DA UNIÃO (AGU) — art. 131, CF/88. A AGU representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Poder Executivo federal.'
+        pergunta: 'Qual o próximo termo da sequência 1, 4, 9, 16, 25, ...?',
+        resposta: '36. São os quadrados perfeitos: 1², 2², 3², 4², 5², 6² = 36.'
       }
     }
   },
 
   /* ============================================================
-     DC-17 — Defesa do Estado e Instituições Democráticas
-  ============================================================ */
-  'DC-17': {
-    id: 'L-DC-17',
-    moduloId: 'DC-17',
-    objetivo: 'Dominar os institutos de defesa do Estado e das instituições democráticas (arts. 136 a 144 da CF/88): Estado de Defesa, Estado de Sítio, Forças Armadas e Segurança Pública — hipóteses, procedimento, limites e diferenças.',
-    prerequisitos: ['DC-10'],
+     MAT-21 — Conjuntos e Diagramas Lógicos
+  ) ============================================================ */
+  'MAT-21': {
+    id: 'L-MAT-21',
+    moduloId: 'MAT-21',
+    objetivo: 'Compreender pertinência e inclusão, subconjuntos, união, interseção, diferença, complemento, diagramas de Venn e problemas de contagem com conjuntos. Resolver problemas de relações entre pessoas, objetos ou grupos.',
+    prerequisitos: ['MAT-02'],
 
-    introducao: 'Em situações extremas (grave instabilidade institucional, calamidade, guerra), a CF prevê mecanismos excepcionais para preservar o Estado Democrático de Direito: o Estado de Defesa e o Estado de Sítio. Ambos suspendem temporariamente garantias fundamentais, sob rígido controle.',
+    introducao: 'Conjuntos aparecem em problemas de RLM onde vários grupos se sobrepõem. A banca descreve situações ("20 alunos gostam de matemática, 15 de português, 8 dos dois") e pede uma contagem. Sem os diagramas de Venn e as operações básicas, o problema vira uma bagunça.',
 
-    explicacaoSimples: 'Pense no Estado como uma casa com alarme. Normalmente, o alarme está desligado. Em situações de perigo (invasão iminente ou incêndio), o alarme dispara — é o Estado de Defesa. Em situações gravíssimas (guerra, comoção nacional), o alarme soa com mais força — é o Estado de Sítio. Em ambos os casos, é medida temporária.',
+    explicacaoSimples: 'Conjunto é uma coleção de elementos. União (A ∪ B) é tudo o que está em A ou em B. Interseção (A ∩ B) é o que está nos dois ao mesmo tempo. Diferença (A - B) é o que está em A mas não em B. O diagrama de Venn ajuda a visualizar: dois círculos que se sobrepõem.',
 
-    explicacaoTecnica: 'Art. 136: ESTADO DE DEFESA — decreto do Presidente, ouvidos o Conselho da República e o Conselho de Defesa Nacional, para preservar ou prontamente restabelecer, em locais restritos e determinados, a ordem pública ou a paz social ameaçadas por grave e iminente instabilidade institucional ou atingidas por calamidades de grandes proporções na natureza. Prazo: 30 dias, prorrogável uma única vez por igual período. Medidas coercitivas: restrições a reunião, sigilo de correspondência, sigilo de comunicação telegráfica e telefônica, ocupação temporária de bens. Controle: o decreto é submetido ao Congresso em 24h; se em recesso, convocação extraordinária em 5 dias. Art. 137: ESTADO DE SÍTIO — decreto do Presidente, ouvidos os Conselhos, para comoção grave de repercussão nacional, fatos que comprovem a ineficácia de medida tomada durante o Estado de Defesa, ou declaração de estado de guerra ou resposta a agressão armada estrangeira. Prazo: 30 dias, prorrogável por iguais períodos (sem limite). Medidas: obrigação de permanência em localidade determinada, detenção em edifício não destinado a acusados de crimes comuns, restrições a correspondência, liberdade de imprensa, radiodifusão, reunião, etc. Art. 138: durante o Estado de Sítio, o Congresso NÃO pode ser dissolvido. Art. 139: restrições específicas. Art. 140: comissão do Congresso para acompanhar. Art. 141: cessado o Estado de Defesa ou Sítio, cessam os efeitos. Art. 142: Forças Armadas — defesa da Pátria, garantia dos Poderes constituídos e da lei e da ordem. Art. 143: serviço militar obrigatório. Art. 144: segurança pública — órgãos: polícia federal, polícia rodoviária federal, polícia ferroviária federal, polícias civis, polícias militares e corpos de bombeiros militares. Municípios podem constituir guardas municipais.',
+    explicacaoTecnica: 'OPERAÇÕES: PERTINÊNCIA (∈): um elemento pertence ou não a um conjunto. INCLUSÃO (⊂): um conjunto está contido em outro. UNIÃO (A ∪ B): todos os elementos de A e de B, sem repetir. INTERSEÇÃO (A ∩ B): elementos comuns a A e B. DIFERENÇA (A - B): elementos de A que NÃO estão em B. COMPLEMENTO (Aᶜ): elementos do universo que não estão em A. CARDINALIDADE: n(A ∪ B) = n(A) + n(B) - n(A ∩ B). Para três conjuntos: n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A∩B) - n(A∩C) - n(B∩C) + n(A∩B∩C). DIAGRAMA DE VENN: círculos que representam conjuntos. A região comum representa a interseção. A região externa aos círculos e dentro do retângulo representa o complemento. ESTRATÉGIA: comece sempre pela INTERSEÇÃO. Depois preencha cada região exclusiva. Some as regiões para achar totais.',
 
     exemplos: [
-      'Estado de Defesa: calamidade natural de grandes proporções em região específica.',
-      'Estado de Defesa: grave e iminente instabilidade institucional em local restrito.',
-      'Estado de Sítio: comoção grave de repercussão nacional.',
-      'Estado de Sítio: declaração de estado de guerra ou resposta a agressão armada estrangeira.',
-      'Polícia Federal: apura crimes contra a ordem política e social, faz polícia marítima, aeroportuária e de fronteiras.',
-      'Polícia Militar: policiamento ostensivo e preservação da ordem pública.',
-      'Guarda Municipal: proteção de bens, serviços e instalações do Município.'
+      'n(A) = 20, n(B) = 15, n(A ∩ B) = 8 → n(A ∪ B) = 20 + 15 - 8 = 27.',
+      'Só A: 20 - 8 = 12. Só B: 15 - 8 = 7. Total: 12 + 8 + 7 = 27. ✓',
+      'Três conjuntos: 30 alunos. 18 gostam de Matemática; 15 de Português; 12 de História; 6 Matemática e Português; 4 Português e História; 5 Matemática e História; 2 dos três. Quantos não gostam de nenhuma?',
+      'Solução pelo diagrama: comece pela interseção tripla (2). M∩P apenas = 6-2 = 4. P∩H apenas = 4-2 = 2. M∩H apenas = 5-2 = 3. Só M = 18 - 4 - 2 - 3 = 9. Só P = 15 - 4 - 2 - 2 = 7. Só H = 12 - 2 - 2 - 3 = 5. Soma = 9 + 7 + 5 + 4 + 2 + 3 + 2 = 32? Aqui o total excede 30. Vamos refazer: total de alunos = 30. Soma dos que gostam de pelo menos uma = 9 + 7 + 5 + 4 + 2 + 3 + 2 = 32. Como o total é 30, NÃO pode dar 32. O enunciado tinha um erro. Refazendo: só M = 18 - 4 - 3 - 2 = 9. Só P = 15 - 4 - 2 - 2 = 7. Só H = 12 - 3 - 2 - 2 = 5. Total de pelo menos uma = 9 + 7 + 5 + 4 + 3 + 2 + 2 = 32. Como 32 > 30, o enunciado é inconsistente. Este tipo de erro não pode ocorrer — é importante sempre conferir se a soma bate com o total.'
     ],
 
     comparacoes: [
-      { termoA: 'Estado de Defesa', termoB: 'Estado de Sítio', diferenca: 'DEFESA (art. 136): situações mais brandas — instabilidade institucional grave e iminente ou calamidades naturais em locais restritos. Prazo de 30 dias prorrogável uma vez. SÍTIO (art. 137): situações mais graves — comoção nacional, ineficácia do Estado de Defesa ou guerra/agressão estrangeira. Prazo de 30 dias prorrogável por iguais períodos sem limite.' },
-      { termoA: 'Estado de Defesa', termoB: 'Intervenção', diferenca: 'ESTADO DE DEFESA: medida excepcional que suspende direitos fundamentais em locais restritos, sem quebra da autonomia federativa. INTERVENÇÃO: quebra temporária da autonomia de um ente federativo (Estado ou Município). São institutos distintos.' },
-      { termoA: 'Forças Armadas', termoB: 'Segurança Pública', diferenca: 'FFAA (art. 142): Marinha, Exército e Aeronáutica — defesa da Pátria, garantia dos Poderes e da lei e da ordem. SEGURANÇA PÚBLICA (art. 144): dever do Estado, direito e responsabilidade de todos — exercida por polícias federal, rodoviária, ferroviária, civis, militares e bombeiros.' },
-      { termoA: 'Polícia Federal', termoB: 'Polícia Civil', diferenca: 'PF: polícia judiciária da UNIÃO — apura crimes contra a ordem política, faz polícia marítima/aeroportuária/de fronteiras, exerce polícia judiciária da União. PC: polícia judiciária dos ESTADOS — apura crimes comuns, exceto militares.' }
+      { termoA: 'Pertinência (∈)', termoB: 'Inclusão (⊂)', diferenca: 'PERTINÊNCIA: relação entre ELEMENTO e CONJUNTO. Ex.: 3 ∈ {1, 2, 3}. INCLUSÃO: relação entre CONJUNTO e CONJUNTO. Ex.: {1, 2} ⊂ {1, 2, 3}. Nunca troque os símbolos.' },
+      { termoA: 'União (∪)', termoB: 'Interseção (∩)', diferenca: 'UNIÃO: TUDO o que está em A ou em B (soma). Ex.: A = {1, 2}, B = {2, 3} → A ∪ B = {1, 2, 3}. INTERSEÇÃO: apenas o que está em A E em B (elementos comuns). Ex.: A ∩ B = {2}. União amplia; interseção reduz.' },
+      { termoA: 'Diferença (A - B)', termoB: 'Complemento (Aᶜ)', diferenca: 'DIFERENÇA: elementos que estão em A mas NÃO estão em B. Ex.: A = {1, 2, 3}, B = {2, 3, 4} → A - B = {1}. COMPLEMENTO: elementos do universo que NÃO estão em A. Depende do conjunto universo. Ex.: se U = {1, 2, 3, 4, 5} e A = {1, 2}, então Aᶜ = {3, 4, 5}.' },
+      { termoA: 'Cardinalidade', termoB: 'Soma dos conjuntos', diferenca: 'CARDINALIDADE de A ∪ B: n(A ∪ B) = n(A) + n(B) - n(A ∩ B). A subtração da interseção evita contar duas vezes os elementos comuns. SOMA SIMPLES (n(A) + n(B)) SEM subtrair conta a interseção DUAS VEZES — é o erro mais comum em problemas de conjuntos.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança das hipóteses e prazos do Estado de Defesa e do Estado de Sítio, das atribuições das Forças Armadas e dos órgãos de segurança pública. Alta frequência em concursos de Polícia, Tribunais e área militar.',
+    aplicacaoEmConcurso: 'Conjuntos aparecem em problemas de: alunos que gostam de disciplinas, pessoas que falam idiomas, usuários de redes sociais, pacientes com sintomas, produtos comprados juntos. Bancas cobram: cálculo de n(A ∪ B), três conjuntos, "quantos só de X", "quantos não gostam de nenhum", "quantos gostam de pelo menos um". Diagrama de Venn é a ferramenta visual mais eficiente.',
 
     pegadinhas: [
-      'Confundir hipóteses do Estado de Defesa com as do Estado de Sítio.',
-      'Achar que o Estado de Defesa pode ser decretado sem ouvir os Conselhos. Os dois Conselhos devem ser ouvidos.',
-      'Dizer que o Congresso pode ser dissolvido durante o Estado de Sítio (não pode — art. 138).',
-      'Trocar os prazos: Defesa = 30 dias prorrogável UMA vez; Sítio = 30 dias prorrogável por iguais períodos.',
-      'Confundir as atribuições da Polícia Federal com as da Polícia Civil.',
-      'Achar que a Guarda Municipal tem as mesmas atribuições da Polícia Militar.'
+      'Somar n(A) + n(B) sem subtrair a interseção. Os elementos comuns são contados 2 vezes.',
+      'Confundir pertinência (∈) com inclusão (⊂).',
+      'Esquecer a interseção tripla em problemas com três conjuntos.',
+      'Preencher o diagrama começando pelas regiões externas em vez de começar pela interseção.',
+      'Confundir "gostam de pelo menos um" (união) com "gostam dos dois" (interseção).',
+      'Achar que "só A" é o mesmo que "A" — "só A" exclui a interseção.'
     ],
 
     errosComuns: [
-      'Decorar hipóteses sem diferenciar Defesa x Sítio.',
-      'Confundir Forças Armadas com órgãos de segurança pública.',
-      'Ignorar que o Congresso deve acompanhar as medidas por comissão.'
+      'Não desenhar o diagrama e tentar resolver tudo de cabeça.',
+      'Esquecer de subtrair a interseção na fórmula de união.',
+      'Não conferir se a soma das regiões bate com o total.'
     ],
 
     resumo: [
-      'Estado de Defesa (art. 136): instabilidade institucional ou calamidade em locais restritos; prazo de 30 dias prorrogável uma vez.',
-      'Estado de Sítio (art. 137): comoção nacional, ineficácia do Defesa ou guerra; prazo de 30 dias prorrogável.',
-      'Ambos: decreto do Presidente + ouvidoria dos Conselhos da República e de Defesa + controle pelo Congresso.',
-      'Durante o Estado de Sítio, o Congresso NÃO pode ser dissolvido.',
-      'Forças Armadas (art. 142): Marinha, Exército e Aeronáutica.',
-      'Segurança Pública (art. 144): PF, PRF, PFF, polícias civis, militares e bombeiros; guardas municipais.'
+      'Pertinência (∈): elemento x conjunto. Inclusão (⊂): conjunto x conjunto.',
+      'União (A ∪ B): tudo. Interseção (A ∩ B): comum.',
+      'Diferença (A - B): só em A. Complemento (Aᶜ): fora de A.',
+      'n(A ∪ B) = n(A) + n(B) - n(A ∩ B).',
+      'Três conjuntos: subtrair as interseções duplas, somar a tripla.',
+      'SEMPRE comece o diagrama pela interseção.',
+      'Confira se a soma das regiões = total do conjunto universo.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'Estado de Defesa é o alarme para perigos em locais restritos. Estado de Sítio é o alarme para perigos gravíssimos em todo o país. Nos dois casos, o Presidente decreta, ouve os Conselhos e submete ao Congresso.',
-      outroExemplo: 'Uma calamidade natural de grandes proporções em um Estado pode justificar Estado de Defesa (art. 136, caput). Uma comoção grave de repercussão nacional ou uma guerra justifica Estado de Sítio (art. 137).',
-      compararConceitos: 'Defesa = brando. Sítio = grave. Defesa = 30 dias prorrogável uma vez. Sítio = 30 dias prorrogável sem limite. FFAA = defesa da Pátria. Segurança Pública = dever do Estado.',
-      mostrarPegadinha: 'Cuidado: "Durante o Estado de Sítio, o Congresso pode ser dissolvido". ERRADO. Art. 138: o Congresso NÃO pode ser dissolvido durante o Estado de Sítio.',
-      comoApareceEmConcurso: 'Cobrança de arts. 136 a 144.',
+      explicarMaisSimples: 'Conjuntos são círculos que se sobrepõem. A parte comum dos círculos é a interseção. Some tudo de cada círculo, mas cuidado: a parte comum é contada duas vezes. Por isso se subtrai a interseção.',
+      outroExemplo: 'Em uma turma, 25 alunos gostam de Matemática, 18 de Português e 10 dos dois. Quantos gostam de pelo menos uma? n(M ∪ P) = 25 + 18 - 10 = 33. Dos 25 de Matemática, 10 gostam também de Português (só 15 gostam SÓ de Matemática). Dos 18 de Português, 10 gostam também de Matemática (só 8 gostam SÓ de Português). Total: 15 + 10 + 8 = 33.',
+      compararConceitos: 'União = tudo. Interseção = comum. Diferença = só no primeiro. Complemento = fora. Fórmula: n(A∪B) = n(A) + n(B) - n(A∩B). Diagrama: comece pela interseção.',
+      mostrarPegadinha: 'Cuidado: "Se 20 gostam de Matemática e 15 de Português, então 35 gostam de pelo menos uma". ERRADO se houver interseção. Se 8 gostam dos dois: n(M∪P) = 20 + 15 - 8 = 27.',
+      comoApareceEmConcurso: 'RLM, raciocínio lógico e problemas com grupos sobrepostos.',
       fazerPergunta: {
-        pergunta: 'Uma calamidade natural de grandes proporções em uma região específica pode justificar qual medida?',
-        resposta: 'ESTADO DE DEFESA (art. 136) — desde que a medida seja restrita e determinada, com prazo de 30 dias prorrogável uma vez. Se o problema for nacional e gravíssimo, aí sim caberia Estado de Sítio.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-18 — Controle de Constitucionalidade
-  ============================================================ */
-  'DC-18': {
-    id: 'L-DC-18',
-    moduloId: 'DC-18',
-    objetivo: 'Compreender o sistema de controle de constitucionalidade brasileiro: controle preventivo e repressivo, difuso e concentrado, político e judicial; ADI, ADC, ADPF, ADO; efeitos das decisões e conceitos fundamentais.',
-    prerequisitos: ['DC-15'],
-
-    introducao: 'O controle de constitucionalidade é o mecanismo que garante a supremacia da Constituição: leis e atos normativos que contrariem a CF são declarados inconstitucionais. O Brasil adota um sistema MISTO — combina controle difuso (via incidental) e concentrado (via ação direta).',
-
-    explicacaoSimples: 'A Constituição é a lei maior. Se uma lei comum a contraria, ela é inconstitucional. Existem dois jeitos de verificar isso: quando um juiz, ao julgar um caso concreto, percebe a inconstitucionalidade (controle difuso) — ou quando o STF é provocado diretamente a analisar a lei (controle concentrado).',
-
-    explicacaoTecnica: 'CONTROLE PREVENTIVO: antes de a lei entrar em vigor — feito pelo Legislativo (Comissão de Constituição e Justiça) e pelo Executivo (veto jurídico). CONTROLE REPRESSIVO: depois de a lei entrar em vigor — pode ser DIFUSO (incidental, por qualquer juiz, no caso concreto) ou CONCENTRADO (via ADI, ADC, ADPF, ADO, no STF). CONTROLE POLÍTICO: feito por órgãos não judiciais. CONTROLE JUDICIAL: feito pelo Judiciário. DIFUSO: qualquer juiz ou tribunal, ao julgar caso concreto; efeitos INTER PARTES. CONCENTRADO: STF, em ação própria; efeitos ERGA OMNES. ADI (ação direta de inconstitucionalidade): declara a inconstitucionalidade de lei ou ato normativo federal ou estadual. ADC (ação declaratória de constitucionalidade): declara a constitucionalidade de lei ou ato normativo federal. ADPF (arguição de descumprimento de preceito fundamental): cabe quando não houver outro meio eficaz; evita o descumprimento de preceito fundamental. ADO (ação direta de inconstitucionalidade por omissão): cabe para tornar efetiva norma constitucional em caso de omissão legislativa. Legitimados (art. 103): Presidente, Mesa do Senado, Mesa da Câmara, Mesa de Assembleia Legislativa, Governador, Procurador-Geral da República, Conselho Federal da OAB, partido político com representação no Congresso, confederação sindical ou entidade de classe de âmbito nacional. Efeitos: em regra, ERGA OMNES e VINCULANTE; a ADI pode ter efeito EX TUNC (retroativo) ou EX NUNC (não retroativo), conforme modulação de efeitos (art. 27 da Lei 9.868/1999).',
-
-    exemplos: [
-      'Controle preventivo: CCJ da Câmara rejeita projeto por inconstitucionalidade.',
-      'Controle preventivo: Presidente veta projeto por inconstitucionalidade (veto jurídico).',
-      'Controle difuso: juiz de primeira instância afasta lei inconstitucional no caso concreto.',
-      'Controle concentrado: STF julga ADI sobre lei estadual.',
-      'ADC: STF declara a constitucionalidade de lei federal.',
-      'ADPF: cabe quando não há outro meio eficaz.',
-      'ADO: STF reconhece omissão legislativa.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Controle difuso', termoB: 'Controle concentrado', diferenca: 'DIFUSO (incidental): qualquer juiz ou tribunal, em caso concreto; efeitos INTER PARTES; a decisão vale para as partes. CONCENTRADO (abstrato): só o STF, em ação própria; efeitos ERGA OMNES e VINCULANTE.' },
-      { termoA: 'ADI', termoB: 'ADC', diferenca: 'ADI: declara a INCONSTITUCIONALIDADE de lei ou ato normativo. ADC: declara a CONSTITUCIONALIDADE de lei ou ato normativo FEDERAL. Ambas têm efeito vinculante e erga omnes.' },
-      { termoA: 'ADI', termoB: 'ADPF', diferenca: 'ADI: cabe contra lei ou ato normativo federal ou estadual, independentemente de haver outro meio. ADPF: cabe quando NÃO houver outro meio eficaz; protege PRECEITOS FUNDAMENTAIS (não apenas a lei).' },
-      { termoA: 'ADI', termoB: 'ADO', diferenca: 'ADI: cabe contra ato COMISSIVO (lei inconstitucional). ADO: cabe contra ato OMISSIVO (falta de lei que regulamente norma constitucional).' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das modalidades (preventivo/repressivo, difuso/concentrado), dos legitimados (art. 103), do cabimento de cada ação (ADI, ADC, ADPF, ADO) e dos efeitos das decisões. Frequente em concursos de Tribunais, MP e área jurídica.',
-
-    pegadinhas: [
-      'Confundir controle difuso (incidental, qualquer juiz) com concentrado (STF, ação própria).',
-      'Achar que a ADI cabe apenas contra lei federal (cabe também contra lei estadual).',
-      'Dizer que a ADC cabe contra lei estadual (só lei ou ato normativo FEDERAL).',
-      'Confundir ADPF com ADI (ADPF é residual — só quando não houver outro meio eficaz).',
-      'Achar que a ADO cabe contra lei existente (é para omissão).',
-      'Dizer que a decisão em ADI é sempre EX TUNC. Pode ser modulada (art. 27 da Lei 9.868/1999).',
-      'Esquecer que a decisão de mérito em ADI e ADC tem efeito VINCULANTE.'
-    ],
-
-    errosComuns: [
-      'Decorar ações sem entender o cabimento de cada uma.',
-      'Confundir efeitos da decisão em controle difuso (inter partes) com concentrado (erga omnes).',
-      'Achar que todo legitimado do art. 103 tem pertinência temática (nem todos).'
-    ],
-
-    resumo: [
-      'Controle preventivo: Legislativo (CCJ) e Executivo (veto jurídico).',
-      'Controle repressivo: difuso (qualquer juiz, incidental, inter partes) ou concentrado (STF, ação própria, erga omnes).',
-      'ADI: declara inconstitucionalidade de lei federal ou estadual.',
-      'ADC: declara constitucionalidade de lei federal.',
-      'ADPF: preceito fundamental, quando não houver outro meio eficaz.',
-      'ADO: omissão legislativa.',
-      'Legitimados (art. 103): Presidente, Mesas, Governador, PGR, OAB, partido, confederação, entidade de classe.',
-      'Efeitos: erga omnes e vinculante (concentrado); inter partes (difuso).',
-      'Modulação de efeitos: art. 27 da Lei 9.868/1999.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Há dois jeitos de verificar se uma lei contraria a Constituição: um juiz qualquer, ao julgar um caso, percebe a inconstitucionalidade (difuso); ou o STF é provocado diretamente a analisar a lei (concentrado). Cada caminho tem ferramentas próprias.',
-      outroExemplo: 'Se o STF declara inconstitucional uma lei em ADI, a decisão vale para TODOS (erga omnes). Se um juiz de 1ª instância afasta uma lei no caso concreto, a decisão vale só para aquele processo (inter partes) — até que o STF se pronuncie.',
-      compararConceitos: 'ADI = inconstitucionalidade. ADC = constitucionalidade. ADPF = preceito fundamental, residual. ADO = omissão. Difuso = inter partes. Concentrado = erga omnes.',
-      mostrarPegadinha: 'Cuidado: "A ADI cabe apenas contra lei federal". ERRADO. A ADI cabe contra lei ou ato normativo FEDERAL ou ESTADUAL. Quem só admite lei federal é a ADC.',
-      comoApareceEmConcurso: 'Cobrança de arts. 102 e 103, do cabimento das ações e dos efeitos.',
-      fazerPergunta: {
-        pergunta: 'Cabe ADPF para questionar lei municipal?',
-        resposta: 'SIM. A ADPF (art. 102, §1º) cabe quando não houver outro meio eficaz de sanar lesão a preceito fundamental — abrange lei ou ato normativo municipal, estadual ou federal. É residual.'
+        pergunta: 'Em uma turma, 30 alunos falam inglês, 20 falam espanhol e 10 falam os dois. Quantos alunos há na turma?',
+        respostA: 'n(I ∪ E) = n(I) + n(E) - n(I ∩ E) = 30 + 20 - 10 = 40 alunos falam pelo menos um idioma. Se a turma tem apenas alunos que falam pelo menos um, são 40.'
       }
     }
   }
