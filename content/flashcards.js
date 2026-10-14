@@ -203,6 +203,223 @@ window.FLASHCARDS = [
     verso: 'LUCRO SOBRE CUSTO: base é o valor de compra. Ex.: comprou por 200, vendeu por 250 → lucro 50/200 = 25%. LUCRO SOBRE VENDA: base é o valor de venda. Ex.: mesmo caso → lucro 50/250 = 20%. O lucro absoluto é o mesmo; o percentual muda porque a base é diferente. As bancas usam isso como pegadinha.',
     dificuldade: 3,
     tags: ['porcentagem', 'lucro']
+  },
+
+  /* ============================================================
+     MAT-02 — Conjuntos Numéricos
+  ============================================================ */
+  {
+    id: 'F-MAT-02-0001',
+    moduloId: 'MAT-02',
+    topicoId: 'MAT-02',
+    frente: 'Quais são os conjuntos numéricos e como se relacionam?',
+    verso: 'ℕ = naturais (0, 1, 2, 3...); ℤ = inteiros (inclui negativos); ℚ = racionais (frações a/b, com b ≠ 0); 𝕀 = irracionais (√2, √3, π — decimais infinitos NÃO periódicos); ℝ = reais (ℚ ∪ 𝕀). Relações: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ; 𝕀 ⊂ ℝ. ℚ ∩ 𝕀 = ∅.',
+    dificuldade: 1,
+    tags: ['conjuntos']
+  },
+  {
+    id: 'F-MAT-02-0002',
+    moduloId: 'MAT-02',
+    topicoId: 'MAT-02',
+    frente: 'O que é módulo (valor absoluto) de um número e como se calcula?',
+    verso: 'Módulo é a DISTÂNCIA do número até o zero na reta numérica — sempre ≥ 0. Regra: |x| = x se x ≥ 0; |x| = -x se x < 0. Ex.: |7| = 7; |-7| = 7; |0| = 0. Nunca é negativo. Em expressões, resolva o módulo antes das operações externas.',
+    dificuldade: 2,
+    tags: ['módulo']
+  },
+  {
+    id: 'F-MAT-02-0003',
+    moduloId: 'MAT-02',
+    topicoId: 'MAT-02',
+    frente: 'Como funciona a notação de intervalos?',
+    verso: 'Colchete "de fora" ( ] ou [ ) indica extremo ABERTO (excluído). Colchete "de dentro" ( [ ou ] ) indica FECHADO (incluído). Exemplos: [2, 5] = {x | 2 ≤ x ≤ 5}; ]2, 5[ = {x | 2 < x < 5}; [2, 5[ = {x | 2 ≤ x < 5}; ]-∞, 3] = {x | x ≤ 3}.',
+    dificuldade: 3,
+    tags: ['intervalos']
+  },
+
+  /* ============================================================
+     MAT-04 — Divisibilidade, MDC e MMC
+  ============================================================ */
+  {
+    id: 'F-MAT-04-0001',
+    moduloId: 'MAT-04',
+    topicoId: 'MAT-04',
+    frente: 'Qual a diferença entre MDC e MMC e quando usar cada um?',
+    verso: 'MDC: MAIOR divisor comum — usado para DIVIDIR em partes iguais, formar grupos iguais, simplificar frações. MMC: MENOR múltiplo comum — usado para ENCONTROS periódicos, sincronização, soma de frações com denominadores diferentes. Regra: MDC ≤ menor número; MMC ≥ maior número.',
+    dificuldade: 2,
+    tags: ['MDC', 'MMC']
+  },
+  {
+    id: 'F-MAT-04-0002',
+    moduloId: 'MAT-04',
+    topicoId: 'MAT-04',
+    frente: 'Quais são os critérios de divisibilidade por 2, 3, 4, 5, 6, 8, 9 e 10?',
+    verso: 'Por 2: termina em par. Por 3: soma dos algarismos é múltiplo de 3. Por 4: últimos 2 algarismos formam múltiplo de 4. Por 5: termina em 0 ou 5. Por 6: divisível por 2 E por 3. Por 8: últimos 3 algarismos formam múltiplo de 8. Por 9: soma dos algarismos é múltiplo de 9. Por 10: termina em 0.',
+    dificuldade: 2,
+    tags: ['divisibilidade']
+  },
+  {
+    id: 'F-MAT-04-0003',
+    moduloId: 'MAT-04',
+    topicoId: 'MAT-04',
+    frente: 'Como calcular MDC e MMC pela decomposição em fatores primos?',
+    verso: 'Fatore cada número em primos. Ex.: 24 = 2³ × 3; 36 = 2² × 3². MDC: produto dos fatores COMUNS, cada um com o MENOR expoente → 2² × 3 = 12. MMC: produto de TODOS os fatores (comuns e não comuns), cada um com o MAIOR expoente → 2³ × 3² = 72. Relação: MDC × MMC = a × b.',
+    dificuldade: 3,
+    tags: ['MDC', 'MMC', 'fatoração']
+  },
+
+  /* ============================================================
+     MAT-05 — Potenciação, Radiciação e Expressões
+  ============================================================ */
+  {
+    id: 'F-MAT-05-0001',
+    moduloId: 'MAT-05',
+    topicoId: 'MAT-05',
+    frente: 'Quais são as principais propriedades das potências?',
+    verso: 'Mesma base: aᵐ × aⁿ = aᵐ⁺ⁿ (SOMA); aᵐ ÷ aⁿ = aᵐ⁻ⁿ (SUBTRAI). Potência de potência: (aᵐ)ⁿ = aᵐˣⁿ (MULTIPLICA). Distributiva: (a×b)ⁿ = aⁿ×bⁿ; (a÷b)ⁿ = aⁿ÷bⁿ. Casos especiais: a⁰ = 1 (a≠0); a¹ = a; a⁻ⁿ = 1/aⁿ; a^(m/n) = ⁿ√(aᵐ).',
+    dificuldade: 2,
+    tags: ['potenciação', 'propriedades']
+  },
+  {
+    id: 'F-MAT-05-0002',
+    moduloId: 'MAT-05',
+    topicoId: 'MAT-05',
+    frente: 'O que fazer com expoente NEGATIVO e qual o erro clássico?',
+    verso: 'Expoente negativo: INVERTE a base e torna o expoente positivo. a⁻ⁿ = 1/aⁿ. Ex.: 2⁻³ = 1/8 = 0,125; 5⁻² = 1/25. ERRO CLÁSSICO: achar que o resultado é negativo (não é!). Outro erro: -2² = -4 (sem parênteses, o sinal fica fora); (-2)² = +4 (com parênteses).',
+    dificuldade: 2,
+    tags: ['expoente negativo']
+  },
+  {
+    id: 'F-MAT-05-0003',
+    moduloId: 'MAT-05',
+    topicoId: 'MAT-05',
+    frente: 'Como converter um número para notação científica?',
+    verso: 'Formato: a × 10ⁿ, com 1 ≤ a < 10 (coeficiente) e n inteiro. Regra: desloque a vírgula até obter o coeficiente entre 1 e 10; o expoente é o número de casas deslocadas. Se deslocou para a esquerda (número grande), expoente POSITIVO; para a direita (número pequeno), NEGATIVO. Ex.: 480.000 = 4,8 × 10⁵; 0,00045 = 4,5 × 10⁻⁴.',
+    dificuldade: 3,
+    tags: ['notação científica']
+  },
+
+  /* ============================================================
+     MAT-09 — Expressões Algébricas e Equações do 1º Grau
+  ============================================================ */
+  {
+    id: 'F-MAT-09-0001',
+    moduloId: 'MAT-09',
+    topicoId: 'MAT-09',
+    frente: 'Como resolver uma equação do 1º grau com parênteses?',
+    verso: 'Passos: 1) Aplicar a propriedade distributiva para eliminar parênteses. 2) Agrupar termos semelhantes de cada lado. 3) Passar termos com x para um lado e números para o outro (TROCANDO O SINAL ao passar). 4) Dividir pelo coeficiente de x. Ex.: 3(x - 2) = 2(x + 1) → 3x - 6 = 2x + 2 → 3x - 2x = 2 + 6 → x = 8.',
+    dificuldade: 2,
+    tags: ['equação 1º grau', 'parênteses']
+  },
+  {
+    id: 'F-MAT-09-0002',
+    moduloId: 'MAT-09',
+    topicoId: 'MAT-09',
+    frente: 'O que é a propriedade distributiva e como usá-la?',
+    verso: 'a(b + c) = ab + ac; a(b - c) = ab - ac. Ex.: 3(x + 4) = 3x + 12; 5(x - 2) = 5x - 10. ERRO CLÁSSICO: esquecer de multiplicar o número por AMBOS os termos dentro dos parênteses — 3(x + 4) NÃO é 3x + 4. É também a base da FATORAÇÃO (operação inversa): 3x + 12 = 3(x + 4).',
+    dificuldade: 2,
+    tags: ['distributiva', 'fatoração']
+  },
+  {
+    id: 'F-MAT-09-0003',
+    moduloId: 'MAT-09',
+    topicoId: 'MAT-09',
+    frente: 'Como traduzir expressões comuns em álgebra?',
+    verso: 'Dobro de x = 2x. Triplo de x = 3x. Metade de x = x/2. Terça parte de x = x/3. x aumentado em 5 = x + 5. x diminuído de 5 = x - 5. Quadrado de x = x². Oposto de x = -x. Sucessor de x = x + 1. Antecessor = x - 1. CUIDADO: "o dobro de x, mais 5" = 2x + 5 (≠ 2(x+5)).',
+    dificuldade: 2,
+    tags: ['tradução', 'álgebra']
+  },
+
+  /* ============================================================
+     MAT-11 — Matemática Financeira
+  ============================================================ */
+  {
+    id: 'F-MAT-11-0001',
+    moduloId: 'MAT-11',
+    topicoId: 'MAT-11',
+    frente: 'Qual a diferença entre JUROS SIMPLES e JUROS COMPOSTOS?',
+    verso: 'SIMPLES: juros sempre sobre o CAPITAL inicial. Crescimento LINEAR. Fórmulas: J = C × i × t; M = C(1 + i×t). COMPOSTOS: juros sobre o MONTANTE acumulado (juros sobre juros). Crescimento EXPONENCIAL. Fórmula: M = C(1 + i)ᵗ. Para t = 1, os dois coincidem; para t > 1, compostos rendem mais.',
+    dificuldade: 3,
+    tags: ['juros simples', 'juros compostos']
+  },
+  {
+    id: 'F-MAT-11-0002',
+    moduloId: 'MAT-11',
+    topicoId: 'MAT-11',
+    frente: 'Como funcionam as taxas em juros simples x juros compostos?',
+    verso: 'JUROS SIMPLES: taxas PROPORCIONAIS. 2% ao mês = 24% ao ano (2 × 12). JUROS COMPOSTOS: taxas EQUIVALENTES. 2% ao mês = (1,02)¹² - 1 ≈ 26,82% ao ano. REGRA: em qualquer regime, TAXA e TEMPO devem estar na MESMA UNIDADE antes de aplicar as fórmulas.',
+    dificuldade: 3,
+    tags: ['taxas', 'equivalência']
+  },
+  {
+    id: 'F-MAT-11-0003',
+    moduloId: 'MAT-11',
+    topicoId: 'MAT-11',
+    frente: 'O que é desconto comercial simples e como calcular?',
+    verso: 'Desconto comercial (por fora): calculado sobre o VALOR NOMINAL (valor de face do título). Fórmula: D = N × i × t. Valor pago = N - D. Ex.: título de R$ 8.000, taxa 2% ao mês, 3 meses antes do vencimento: D = 8.000 × 0,02 × 3 = 480; valor pago = 7.520. Diferente do desconto RACIONAL (por dentro), que incide sobre o valor atual.',
+    dificuldade: 3,
+    tags: ['desconto', 'comercial']
+  },
+
+  /* ============================================================
+     MAT-12 — Sistemas de Medidas
+  ============================================================ */
+  {
+    id: 'F-MAT-12-0001',
+    moduloId: 'MAT-12',
+    topicoId: 'MAT-12',
+    frente: 'Quais são os fatores de conversão entre unidades consecutivas de comprimento, área e volume?',
+    verso: 'COMPRIMENTO (linear): × 10 (ou ÷ 10) por passo. Ex.: 1 m = 100 cm. ÁREA: × 100 (ou ÷ 100) por passo. Ex.: 1 m² = 10.000 cm². VOLUME: × 1.000 (ou ÷ 1.000) por passo. Ex.: 1 m³ = 1.000.000 cm³. A lógica: fator = 10 elevado à dimensão (1 = 10, 2 = 100, 3 = 1.000).',
+    dificuldade: 2,
+    tags: ['conversão', 'comprimento', 'área', 'volume']
+  },
+  {
+    id: 'F-MAT-12-0002',
+    moduloId: 'MAT-12',
+    topicoId: 'MAT-12',
+    frente: 'Quais são as relações entre litro e unidades de volume?',
+    verso: 'RELAÇÕES FUNDAMENTAIS: 1 L = 1 dm³. 1 mL = 1 cm³. 1 m³ = 1.000 L. 1 L = 1.000 mL. Para converter m³ em litros: multiplique por 1.000. Para cm³ em mL: são iguais. Para dm³ em L: são iguais. Sempre converta as dimensões para dm (ou m ou cm) antes de calcular volumes em litros.',
+    dificuldade: 2,
+    tags: ['litros', 'volume']
+  },
+  {
+    id: 'F-MAT-12-0003',
+    moduloId: 'MAT-12',
+    topicoId: 'MAT-12',
+    frente: 'Por que as unidades de tempo NÃO seguem o sistema decimal?',
+    verso: 'Porque o tempo é medido em BASE 60 (60 segundos = 1 minuto; 60 minutos = 1 hora) e BASE 24 (24 horas = 1 dia). Assim, 0,5 hora = 30 minutos (não 50) e 1,5 hora = 1 h 30 min (não 1 h 5 min). ERRO CLÁSSICO: tratar a parte decimal como se fosse base 100. Sempre multiplique a fração de hora por 60 para obter minutos.',
+    dificuldade: 2,
+    tags: ['tempo']
+  },
+
+  /* ============================================================
+     MAT-13 — Interpretação de Tabelas e Gráficos
+  ============================================================ */
+  {
+    id: 'F-MAT-13-0001',
+    moduloId: 'MAT-13',
+    topicoId: 'MAT-13',
+    frente: 'Qual o uso mais adequado de cada tipo de gráfico?',
+    verso: 'BARRAS: comparação entre CATEGORIAS (países, produtos) em um mesmo momento. LINHAS: EVOLUÇÃO no tempo — mostra tendências (crescimento, queda, estabilidade). SETORES (pizza): PROPORÇÃO em relação ao TODO — cada fatia é uma fração/porcentagem; a soma é 100%. Escolha pelo tipo de dado e pelo que se quer mostrar.',
+    dificuldade: 2,
+    tags: ['gráficos', 'tipos']
+  },
+  {
+    id: 'F-MAT-13-0002',
+    moduloId: 'MAT-13',
+    topicoId: 'MAT-13',
+    frente: 'Como calcular a variação percentual entre dois valores?',
+    verso: 'Variação = (Vfinal - Vinicial) / Vinicial × 100. O divisor é SEMPRE o valor INICIAL. Ex.: de R$ 400 para R$ 500 → (500-400)/400 × 100 = 25%. CUIDADO: não confunda com variação absoluta, que é apenas a diferença (500 - 400 = 100). Para comparar grandezas de tamanhos diferentes, sempre use a percentual.',
+    dificuldade: 2,
+    tags: ['variação percentual', 'gráficos']
+  },
+  {
+    id: 'F-MAT-13-0003',
+    moduloId: 'MAT-13',
+    topicoId: 'MAT-13',
+    frente: 'Como identificar a TENDÊNCIA em um gráfico de linhas?',
+    verso: 'Tendência é a DIREÇÃO GERAL da linha, não as oscilações pontuais. Olhe o conjunto todo: a linha sobe (crescimento), desce (queda) ou fica estável (estabilidade). Ex.: 22, 25, 28, 26, 24 — subiu e depois caiu; a tendência RECENTE é de queda. Cuidado: uma única queda não muda a tendência; olhe o padrão geral do período.',
+    dificuldade: 3,
+    tags: ['tendência', 'gráfico de linhas']
   }
 
 ];
