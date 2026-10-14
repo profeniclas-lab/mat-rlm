@@ -420,6 +420,192 @@ window.FLASHCARDS = [
     verso: 'Tendência é a DIREÇÃO GERAL da linha, não as oscilações pontuais. Olhe o conjunto todo: a linha sobe (crescimento), desce (queda) ou fica estável (estabilidade). Ex.: 22, 25, 28, 26, 24 — subiu e depois caiu; a tendência RECENTE é de queda. Cuidado: uma única queda não muda a tendência; olhe o padrão geral do período.',
     dificuldade: 3,
     tags: ['tendência', 'gráfico de linhas']
+  },
+
+  /* ============================================================
+     MAT-14 — Estatística Básica
+  ============================================================ */
+  {
+    id: 'F-MAT-14-0001',
+    moduloId: 'MAT-14',
+    topicoId: 'MAT-14',
+    frente: 'Qual a diferença entre MÉDIA, MEDIANA e MODA?',
+    verso: 'MÉDIA: soma dos valores ÷ quantidade. Sensível a extremos. MEDIANA: valor central dos dados ORDENADOS (par → média dos 2 centrais). Robusta a extremos. MODA: valor que mais aparece. Pode ser bimodal (2) ou amodal (nenhuma). Ex.: [1, 2, 3, 4, 100] → média 22 (distorcida); mediana 3 (representativa); moda: amodal.',
+    dificuldade: 2,
+    tags: ['estatística', 'medidas']
+  },
+  {
+    id: 'F-MAT-14-0002',
+    moduloId: 'MAT-14',
+    topicoId: 'MAT-14',
+    frente: 'Como calcular a MÉDIA PONDERADA?',
+    verso: 'Média ponderada = soma (valor × peso) ÷ soma dos pesos. Ex.: notas 7 (peso 3) e 9 (peso 2): (7×3 + 9×2)/(3+2) = (21+18)/5 = 7,8. Cuidado: dividir pela SOMA DOS PESOS (5), não pela quantidade de valores (2).',
+    dificuldade: 2,
+    tags: ['média ponderada']
+  },
+  {
+    id: 'F-MAT-14-0003',
+    moduloId: 'MAT-14',
+    topicoId: 'MAT-14',
+    frente: 'Qual a diferença entre frequência ABSOLUTA e RELATIVA?',
+    verso: 'ABSOLUTA (fi): número de vezes que um valor aparece na amostra (contagem). RELATIVA (fri): fi / total; pode ser expressa em fração, decimal ou porcentagem. Ex.: 15 meninas em 40 alunos → absoluta 15; relativa 15/40 = 0,375 = 37,5%. A soma das frequências relativas é sempre 100%.',
+    dificuldade: 2,
+    tags: ['frequência']
+  },
+
+  /* ============================================================
+     MAT-15 — Geometria Plana
+  ============================================================ */
+  {
+    id: 'F-MAT-15-0001',
+    moduloId: 'MAT-15',
+    topicoId: 'MAT-15',
+    frente: 'Quais são as fórmulas de ÁREA das principais figuras planas?',
+    verso: 'Quadrado: L². Retângulo: b × h. Triângulo: (b × h)/2. Trapézio: ((B + b) × h)/2. Paralelogramo: b × h. Círculo: πr². SEMPRE identificar a figura e converter as unidades para a mesma antes de calcular.',
+    dificuldade: 2,
+    tags: ['área', 'fórmulas']
+  },
+  {
+    id: 'F-MAT-15-0002',
+    moduloId: 'MAT-15',
+    topicoId: 'MAT-15',
+    frente: 'Qual a diferença entre PERÍMETRO e ÁREA?',
+    verso: 'PERÍMETRO: soma dos lados (contorno). Unidade linear (cm, m, km). Usado para cercar, contornar. ÁREA: superfície interna. Unidade quadrada (cm², m², km²). Usado para revestir, plantar, calcular valor. Em um retângulo b×h: perímetro = 2(b+h); área = b×h.',
+    dificuldade: 1,
+    tags: ['perímetro', 'área']
+  },
+  {
+    id: 'F-MAT-15-0003',
+    moduloId: 'MAT-15',
+    topicoId: 'MAT-15',
+    frente: 'Qual a diferença entre CÍRCULO e CIRCUNFERÊNCIA?',
+    verso: 'CIRCUNFERÊNCIA: a linha curva que delimita — comprimento = 2πr. CÍRCULO: a região interna delimitada pela circunferência — área = πr². Uma é o contorno; o outro é a superfície. NUNCA troque as duas fórmulas.',
+    dificuldade: 2,
+    tags: ['círculo', 'circunferência']
+  },
+
+  /* ============================================================
+     MAT-16 — Geometria Espacial
+  ============================================================ */
+  {
+    id: 'F-MAT-16-0001',
+    moduloId: 'MAT-16',
+    topicoId: 'MAT-16',
+    frente: 'Quais são as fórmulas de VOLUME das principais figuras espaciais?',
+    verso: 'Cubo: a³. Paralelepípedo: c × l × a. Prisma: área da base × altura. Cilindro: πr² × h. Pirâmide: (área da base × h)/3. Cone: (πr² × h)/3. Esfera: (4/3)πr³. A pirâmide e o cone são "um terço" do prisma/cilindro correspondente.',
+    dificuldade: 3,
+    tags: ['volume', 'fórmulas']
+  },
+  {
+    id: 'F-MAT-16-0002',
+    moduloId: 'MAT-16',
+    topicoId: 'MAT-16',
+    frente: 'Quais são as relações entre VOLUME e CAPACIDADE (litros)?',
+    verso: '1 m³ = 1.000 L. 1 dm³ = 1 L. 1 cm³ = 1 mL. Para converter m³ em litros, multiplique por 1.000. Para converter litros em m³, divida por 1.000. Ex.: caixa de 2 m³ → 2.000 L. Caixa de 500 cm³ → 0,5 L = 500 mL.',
+    dificuldade: 2,
+    tags: ['volume', 'litros']
+  },
+  {
+    id: 'F-MAT-16-0003',
+    moduloId: 'MAT-16',
+    topicoId: 'MAT-16',
+    frente: 'Qual a diferença entre VOLUME e ÁREA SUPERFICIAL?',
+    verso: 'VOLUME (3D, unidade ao cubo): quanto cabe dentro. Ex.: cubo a³; cilindro πr²h. ÁREA SUPERFICIAL (2D, unidade ao quadrado): quanto de material para revestir. Ex.: cubo 6a²; cilindro 2πr² + 2πrh; esfera 4πr². Volume → litros/capacidade. Área superficial → tinta, revestimento.',
+    dificuldade: 3,
+    tags: ['volume', 'área superficial']
+  },
+
+  /* ============================================================
+     MAT-17 — Relações Métricas e Teorema de Pitágoras
+  ============================================================ */
+  {
+    id: 'F-MAT-17-0001',
+    moduloId: 'MAT-17',
+    topicoId: 'MAT-17',
+    frente: 'Qual é o Teorema de Pitágoras e como aplicá-lo?',
+    verso: 'Em um triângulo retângulo: a² = b² + c², onde a é a HIPOTENUSA (maior lado, oposto ao ângulo de 90°) e b, c são os CATETOS. Ex.: catetos 6 e 8 → a² = 36+64 = 100 → a = 10. SEMPRE identificar quem é a hipotenusa antes de aplicar.',
+    dificuldade: 1,
+    tags: ['pitágoras']
+  },
+  {
+    id: 'F-MAT-17-0002',
+    moduloId: 'MAT-17',
+    topicoId: 'MAT-17',
+    frente: 'Quais são os ternos pitagóricos mais cobrados?',
+    verso: '3-4-5 (e múltiplos: 6-8-10, 9-12-15, 12-16-20...). 5-12-13. 8-15-17. 7-24-25. Reconhecer esses ternos acelera muito a resolução. Ex.: escada 13 m, base 5 m → altura 12 m (terno 5-12-13).',
+    dificuldade: 2,
+    tags: ['pitágoras', 'ternos']
+  },
+  {
+    id: 'F-MAT-17-0003',
+    moduloId: 'MAT-17',
+    topicoId: 'MAT-17',
+    frente: 'Como calcular a DIAGONAL do quadrado e do retângulo?',
+    verso: 'QUADRADO de lado L: diagonal = L√2 (fórmula pronta, vem de √(L² + L²)). RETÂNGULO b × h: diagonal² = b² + h² (aplicação direta de Pitágoras). Ex.: retângulo 9×12 → d² = 81+144 = 225 → d = 15. Diagonais dividem a figura em dois triângulos retângulos iguais.',
+    dificuldade: 2,
+    tags: ['diagonal', 'pitágoras']
+  },
+
+  /* ============================================================
+     MAT-18 — Sequências e Padrões
+  ============================================================ */
+  {
+    id: 'F-MAT-18-0001',
+    moduloId: 'MAT-18',
+    topicoId: 'MAT-18',
+    frente: 'Qual a diferença entre PROGRESSÃO ARITMÉTICA (PA) e PROGRESSÃO GEOMÉTRICA (PG)?',
+    verso: 'PA: diferença CONSTANTE entre termos (soma/subtrai sempre o mesmo). Ex.: 3, 7, 11, 15 (r = 4). Termo geral: an = a1 + (n-1)r. PG: razão CONSTANTE (multiplica/divide pelo mesmo). Ex.: 2, 6, 18, 54 (q = 3). Termo geral: an = a1 × q^(n-1). PA cresce linearmente; PG, exponencialmente.',
+    dificuldade: 2,
+    tags: ['PA', 'PG']
+  },
+  {
+    id: 'F-MAT-18-0002',
+    moduloId: 'MAT-18',
+    topicoId: 'MAT-18',
+    frente: 'Como resolver uma sequência quando as DIFERENÇAS formam outra sequência?',
+    verso: 'É uma sequência de 2ª ordem. Calcule as diferenças entre termos consecutivos. Se elas formam uma PA (ou outra regra clara), continue a sequência de diferenças e some ao último termo. Ex.: 2, 5, 10, 17, 26 → diferenças 3, 5, 7, 9 (PA de razão 2) → próxima diferença 11 → próximo termo 26+11 = 37.',
+    dificuldade: 3,
+    tags: ['sequências 2ª ordem']
+  },
+  {
+    id: 'F-MAT-18-0003',
+    moduloId: 'MAT-18',
+    topicoId: 'MAT-18',
+    frente: 'Como converter uma sequência de LETRAS em sequência numérica?',
+    verso: 'Converta cada letra para sua posição no alfabeto: A=1, B=2, C=3, ..., Z=26. Ex.: C, F, I, L → 3, 6, 9, 12 (soma 3). Próximo: 15 = O. Outras regras comuns: pular letras (A, C, E, G — pula 1); alternar direções; combinar com números. Sempre converta primeiro para números.',
+    dificuldade: 3,
+    tags: ['sequências de letras']
+  },
+
+  /* ============================================================
+     MAT-21 — Conjuntos e Diagramas Lógicos
+  ============================================================ */
+  {
+    id: 'F-MAT-21-0001',
+    moduloId: 'MAT-21',
+    topicoId: 'MAT-21',
+    frente: 'Qual a fórmula da UNIÃO de dois conjuntos?',
+    verso: 'n(A ∪ B) = n(A) + n(B) - n(A ∩ B). A subtração da interseção evita contar os elementos comuns duas vezes. Ex.: 30 gostam de inglês, 20 de espanhol, 10 dos dois → n(I ∪ E) = 30 + 20 - 10 = 40. SEM a subtração, daria 50 (errado, pois os 10 seriam contados 2 vezes).',
+    dificuldade: 2,
+    tags: ['conjuntos', 'união']
+  },
+  {
+    id: 'F-MAT-21-0002',
+    moduloId: 'MAT-21',
+    topicoId: 'MAT-21',
+    frente: 'Qual a diferença entre PERTINÊNCIA (∈) e INCLUSÃO (⊂)?',
+    verso: 'PERTINÊNCIA (∈): relação entre ELEMENTO e CONJUNTO. Ex.: 3 ∈ {1, 2, 3}. INCLUSÃO (⊂): relação entre CONJUNTO e CONJUNTO. Ex.: {1, 2} ⊂ {1, 2, 3}. São símbolos diferentes. Nunca troque. ∈ é elemento; ⊂ é subconjunto.',
+    dificuldade: 2,
+    tags: ['conjuntos', 'pertinência', 'inclusão']
+  },
+  {
+    id: 'F-MAT-21-0003',
+    moduloId: 'MAT-21',
+    topicoId: 'MAT-21',
+    frente: 'Como resolver problemas de conjuntos com o diagrama de Venn?',
+    verso: 'Passos: 1) Desenhe círculos sobrepostos (retângulo = universo). 2) Preencha PRIMEIRO a INTERSEÇÃO (ou interseção tripla em 3 conjuntos). 3) Calcule cada região exclusiva: só A = n(A) - n(A ∩ B) - n(A ∩ C) + n(A ∩ B ∩ C). 4) Some as regiões e confira com o total. "Nenhum" = total do universo - soma dos que estão em pelo menos um.',
+    dificuldade: 3,
+    tags: ['conjuntos', 'Venn']
   }
 
 ];
