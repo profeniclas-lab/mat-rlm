@@ -1,515 +1,377 @@
 /* ============================================================
-   MÓDULOS — Direito Constitucional
-   Áreas:
-     CF = Constituição Federal (DC-01 a DC-20)
-     CE = Constituição Estadual (DC-RN)
-   Prioridades (conforme currículo):
-     alta       = DC-02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, DC-RN
-     media      = DC-10, 14, 15, 16, 17, 18
-     baixa      = DC-01, 19, 20   (complementar)
+   MÓDULOS — Matemática e RLM
+   Áreas/blocos:
+     FUND = Fundamentos Matemáticos (MAT-01 a MAT-05)
+     PROP = Proporcionalidade e Álgebra (MAT-06 a MAT-10)
+     APLI = Matemática Aplicada (MAT-11 a MAT-14)
+     GEO  = Geometria e Matemática Espacial (MAT-15 a MAT-17)
+     RLM  = Raciocínio Lógico-Matemático (MAT-18 a MAT-22)
+   Prioridades:
+     essencial    = MAT-01, MAT-03, MAT-06, MAT-07, MAT-08
+     alta         = MAT-02, MAT-04, MAT-05, MAT-09, MAT-11, MAT-12, MAT-13
+     media        = MAT-14, MAT-15, MAT-16, MAT-17, MAT-18, MAT-21
+     condicional  = MAT-10, MAT-19, MAT-20, MAT-22
    ============================================================ */
 
 window.MODULES = [
 
-  /* ============ PRIORIDADE COMPLEMENTAR ============ */
+  /* ============ BLOCO A — FUNDAMENTOS MATEMÁTICOS ============ */
   {
-    id: 'DC-01',
-    area: 'CF',
-    titulo: 'Teoria da Constituição',
-    prioridade: 'baixa',
+    id: 'MAT-01',
+    area: 'FUND',
+    titulo: 'Operações Fundamentais',
+    prioridade: 'essencial',
     subtopicos: [
-      'Conceito de Constituição',
-      'Finalidade',
-      'Constitucionalismo',
-      'Constituição Federal de 1988',
-      'Classificações',
-      'Escrita e não escrita',
-      'Promulgada e outorgada',
-      'Rígida, flexível e semirrígida',
-      'Formal e material',
-      'Supremacia constitucional',
-      'Poder constituinte',
-      'Poder constituinte originário',
-      'Poder constituinte derivado',
-      'Poder constituinte reformador',
-      'Poder constituinte decorrente',
-      'Limitações ao poder de reforma',
-      'Cláusulas pétreas',
-      'Emendas constitucionais',
-      'Recepção',
-      'Eficácia e aplicabilidade das normas constitucionais'
+      'Adição',
+      'Subtração',
+      'Multiplicação',
+      'Divisão',
+      'Prioridade das operações',
+      'Cálculo mental',
+      'Estimativas',
+      'Problemas matemáticos',
+      'Interpretação de enunciados'
+    ]
+  },
+  {
+    id: 'MAT-02',
+    area: 'FUND',
+    titulo: 'Conjuntos Numéricos',
+    prioridade: 'alta',
+    subtopicos: [
+      'Números naturais',
+      'Números inteiros',
+      'Números racionais',
+      'Números irracionais',
+      'Números reais',
+      'Reta numérica',
+      'Módulo',
+      'Comparação',
+      'Ordenação',
+      'Intervalos'
+    ]
+  },
+  {
+    id: 'MAT-03',
+    area: 'FUND',
+    titulo: 'Frações e Números Decimais',
+    prioridade: 'essencial',
+    subtopicos: [
+      'Frações equivalentes',
+      'Simplificação',
+      'Comparação de frações',
+      'Operações com frações',
+      'Números mistos',
+      'Dízimas periódicas',
+      'Conversão entre fração, decimal e porcentagem'
+    ]
+  },
+  {
+    id: 'MAT-04',
+    area: 'FUND',
+    titulo: 'Divisibilidade, MDC e MMC',
+    prioridade: 'alta',
+    subtopicos: [
+      'Critérios de divisibilidade',
+      'Números primos',
+      'Decomposição em fatores primos',
+      'Divisores',
+      'Múltiplos',
+      'Máximo divisor comum (MDC)',
+      'Mínimo múltiplo comum (MMC)'
+    ]
+  },
+  {
+    id: 'MAT-05',
+    area: 'FUND',
+    titulo: 'Potenciação, Radiciação e Expressões Numéricas',
+    prioridade: 'alta',
+    subtopicos: [
+      'Propriedades das potências',
+      'Raízes',
+      'Expoentes',
+      'Expressões com parênteses e colchetes',
+      'Ordem das operações',
+      'Notação científica'
     ]
   },
 
-  /* ============ PRIORIDADE ALTA ============ */
+  /* ============ BLOCO B — PROPORCIONALIDADE E ÁLGEBRA ============ */
   {
-    id: 'DC-02',
-    area: 'CF',
-    titulo: 'Princípios Fundamentais',
-    prioridade: 'alta',
+    id: 'MAT-06',
+    area: 'PROP',
+    titulo: 'Razão, Proporção e Divisão Proporcional',
+    prioridade: 'essencial',
     subtopicos: [
-      'República',
-      'Federação',
-      'Estado Democrático de Direito',
-      'Soberania',
-      'Cidadania',
-      'Dignidade da pessoa humana',
-      'Valores sociais do trabalho',
-      'Livre iniciativa',
-      'Pluralismo político',
-      'Separação dos Poderes',
-      'Objetivos fundamentais',
-      'Princípios das relações internacionais',
-      'Independência nacional',
-      'Prevalência dos direitos humanos',
-      'Autodeterminação',
-      'Não intervenção',
-      'Defesa da paz',
-      'Solução pacífica dos conflitos',
-      'Repúdio ao terrorismo e ao racismo',
-      'Cooperação entre os povos',
-      'Asilo político'
+      'Razão entre grandezas',
+      'Proporções',
+      'Propriedade fundamental das proporções',
+      'Grandezas diretamente proporcionais',
+      'Grandezas inversamente proporcionais',
+      'Divisão em partes proporcionais'
     ]
   },
   {
-    id: 'DC-03',
-    area: 'CF',
-    titulo: 'Direitos e Deveres Individuais e Coletivos',
-    prioridade: 'alta',
+    id: 'MAT-07',
+    area: 'PROP',
+    titulo: 'Regra de Três Simples e Composta',
+    prioridade: 'essencial',
     subtopicos: [
-      'Direito à vida',
-      'Liberdade',
-      'Igualdade',
-      'Segurança',
-      'Propriedade',
-      'Princípio da legalidade',
-      'Liberdade de manifestação',
-      'Liberdade de expressão',
-      'Liberdade de consciência',
-      'Liberdade de crença',
-      'Inviolabilidade da intimidade',
-      'Vida privada',
-      'Honra',
-      'Imagem',
-      'Domicílio',
-      'Sigilo das comunicações',
-      'Liberdade profissional',
-      'Liberdade de reunião',
-      'Liberdade de associação',
-      'Propriedade e função social',
-      'Direito de informação',
-      'Direito de petição',
-      'Certidões',
-      'Acesso à Justiça',
-      'Devido processo legal',
-      'Contraditório',
-      'Ampla defesa',
-      'Juiz natural',
-      'Tribunal do Júri',
-      'Provas ilícitas',
-      'Presunção de inocência',
-      'Prisão',
-      'Direitos do preso',
-      'Extradição',
-      'Racismo',
-      'Tortura',
-      'Crimes hediondos',
-      'Assistência jurídica',
-      'Gratuidade',
-      'Duração razoável do processo'
+      'Identificação das grandezas',
+      'Montagem de tabelas',
+      'Regra de três direta',
+      'Regra de três inversa',
+      'Regra de três composta',
+      'Produtividade, trabalhadores, tempo e quantidade'
     ]
   },
   {
-    id: 'DC-04',
-    area: 'CF',
-    titulo: 'Direitos Sociais',
-    prioridade: 'alta',
+    id: 'MAT-08',
+    area: 'PROP',
+    titulo: 'Porcentagem',
+    prioridade: 'essencial',
     subtopicos: [
-      'Educação',
-      'Saúde',
-      'Alimentação',
-      'Trabalho',
-      'Moradia',
-      'Transporte',
-      'Lazer',
-      'Segurança',
-      'Previdência social',
-      'Proteção à maternidade',
-      'Proteção à infância',
-      'Assistência aos desamparados',
-      'Direitos dos trabalhadores',
-      'Salário',
-      'Jornada',
-      'Repouso',
-      'Férias',
-      'Greve',
-      'Sindicalização'
+      'Cálculo de porcentagens',
+      'Fração e decimal equivalentes',
+      'Aumentos e descontos',
+      'Variação percentual',
+      'Porcentagens sucessivas',
+      'Comparação de preços',
+      'Interpretação de problemas contextualizados'
     ]
   },
   {
-    id: 'DC-05',
-    area: 'CF',
-    titulo: 'Nacionalidade',
+    id: 'MAT-09',
+    area: 'PROP',
+    titulo: 'Expressões Algébricas e Equações do 1º Grau',
     prioridade: 'alta',
     subtopicos: [
-      'Brasileiro nato',
-      'Brasileiro naturalizado',
-      'Aquisição da nacionalidade',
-      'Critérios de nacionalidade',
-      'Cargos privativos de brasileiro nato',
-      'Perda da nacionalidade',
-      'Extradição',
-      'Diferenças entre nato e naturalizado'
+      'Variáveis e expressões',
+      'Simplificação algébrica',
+      'Propriedade distributiva',
+      'Equações',
+      'Problemas com incógnitas',
+      'Tradução de enunciados para equações'
     ]
   },
   {
-    id: 'DC-06',
-    area: 'CF',
-    titulo: 'Direitos Políticos e Partidos Políticos',
+    id: 'MAT-10',
+    area: 'PROP',
+    titulo: 'Equações do 2º Grau, Sistemas e Inequações',
+    prioridade: 'condicional',
+    subtopicos: [
+      'Equações quadráticas',
+      'Fatoração básica',
+      'Sistemas de equações',
+      'Métodos de substituição e eliminação',
+      'Inequações',
+      'Problemas aplicados'
+    ]
+  },
+
+  /* ============ BLOCO C — MATEMÁTICA APLICADA ============ */
+  {
+    id: 'MAT-11',
+    area: 'APLI',
+    titulo: 'Matemática Financeira',
     prioridade: 'alta',
     subtopicos: [
-      'Soberania popular',
-      'Sufrágio',
-      'Voto',
-      'Plebiscito',
-      'Referendo',
-      'Iniciativa popular',
-      'Alistamento eleitoral',
-      'Voto obrigatório',
-      'Voto facultativo',
-      'Condições de elegibilidade',
-      'Inelegibilidades',
-      'Perda dos direitos políticos',
-      'Suspensão dos direitos políticos',
-      'Partidos políticos',
-      'Autonomia partidária',
-      'Regras constitucionais sobre partidos'
+      'Sistema monetário brasileiro',
+      'Capital, taxa, tempo, juros e montante',
+      'Juros simples',
+      'Juros compostos',
+      'Descontos',
+      'Aumentos sucessivos',
+      'Taxas percentuais',
+      'Comparação de valores em situações financeiras'
     ]
   },
   {
-    id: 'DC-07',
-    area: 'CF',
-    titulo: 'Remédios Constitucionais',
+    id: 'MAT-12',
+    area: 'APLI',
+    titulo: 'Sistemas de Medidas',
     prioridade: 'alta',
     subtopicos: [
-      'Habeas corpus',
-      'Habeas data',
-      'Mandado de segurança',
-      'Mandado de segurança coletivo',
-      'Mandado de injunção',
-      'Ação popular',
-      'Finalidade',
-      'Cabimento',
-      'Legitimidade',
-      'Características',
-      'Diferenças entre os instrumentos'
+      'Comprimento',
+      'Massa',
+      'Capacidade',
+      'Volume',
+      'Área',
+      'Tempo',
+      'Conversão de unidades',
+      'Sistema métrico decimal',
+      'Medidas de superfície',
+      'Medidas cúbicas',
+      'Relações entre litros e unidades de volume'
     ]
   },
   {
-    id: 'DC-08',
-    area: 'CF',
-    titulo: 'Organização Político-Administrativa',
+    id: 'MAT-13',
+    area: 'APLI',
+    titulo: 'Interpretação de Tabelas e Gráficos',
     prioridade: 'alta',
     subtopicos: [
-      'Federação',
+      'Tabelas simples',
+      'Tabelas de dupla entrada',
+      'Gráficos de barras',
+      'Gráficos de linhas',
+      'Gráficos de setores',
+      'Comparação de dados',
+      'Variação absoluta e percentual',
+      'Identificação de tendências',
+      'Interpretação de informações incompletas'
+    ]
+  },
+  {
+    id: 'MAT-14',
+    area: 'APLI',
+    titulo: 'Estatística Básica',
+    prioridade: 'media',
+    subtopicos: [
+      'População e amostra',
+      'Frequência absoluta e relativa',
+      'Média aritmética simples',
+      'Média ponderada',
+      'Mediana',
+      'Moda',
+      'Amplitude',
+      'Interpretação de resultados estatísticos'
+    ]
+  },
+
+  /* ============ BLOCO D — GEOMETRIA E MATEMÁTICA ESPACIAL ============ */
+  {
+    id: 'MAT-15',
+    area: 'GEO',
+    titulo: 'Geometria Plana',
+    prioridade: 'media',
+    subtopicos: [
+      'Ponto, reta e plano',
+      'Ângulos',
+      'Triângulos',
+      'Quadriláteros',
+      'Polígonos',
+      'Perímetro',
+      'Área',
+      'Circunferência e círculo',
+      'Fórmulas geométricas',
+      'Problemas contextualizados'
+    ]
+  },
+  {
+    id: 'MAT-16',
+    area: 'GEO',
+    titulo: 'Geometria Espacial',
+    prioridade: 'media',
+    subtopicos: [
+      'Cubos e paralelepípedos',
+      'Prismas',
+      'Cilindros',
+      'Pirâmides',
+      'Cones e esferas',
+      'Volume',
+      'Área superficial',
+      'Conversão de unidades',
+      'Problemas envolvendo capacidade e armazenamento'
+    ]
+  },
+  {
+    id: 'MAT-17',
+    area: 'GEO',
+    titulo: 'Relações Métricas e Teorema de Pitágoras',
+    prioridade: 'media',
+    subtopicos: [
+      'Triângulo retângulo',
+      'Hipotenusa e catetos',
+      'Teorema de Pitágoras',
+      'Diagonais',
+      'Distâncias',
+      'Relações métricas',
+      'Aplicação em problemas'
+    ]
+  },
+
+  /* ============ BLOCO E — RACIOCÍNIO LÓGICO-MATEMÁTICO ============ */
+  {
+    id: 'MAT-18',
+    area: 'RLM',
+    titulo: 'Sequências e Padrões',
+    prioridade: 'media',
+    subtopicos: [
+      'Sequências numéricas',
+      'Padrões de formação',
+      'Sequências de letras e figuras',
+      'Identificação de regularidades',
+      'Raciocínio sequencial',
+      'Problemas com padrões'
+    ]
+  },
+  {
+    id: 'MAT-19',
+    area: 'RLM',
+    titulo: 'Lógica Proposicional',
+    prioridade: 'condicional',
+    subtopicos: [
+      'Proposições',
+      'Proposições simples e compostas',
+      'Valor lógico',
+      'Negação',
+      'Conectivos',
+      'Conjunção',
+      'Disjunção',
+      'Condicional',
+      'Bicondicional',
+      'Tabelas-verdade'
+    ]
+  },
+  {
+    id: 'MAT-20',
+    area: 'RLM',
+    titulo: 'Equivalências e Argumentação Lógica',
+    prioridade: 'condicional',
+    subtopicos: [
+      'Equivalências lógicas',
+      'Leis de De Morgan',
+      'Negação de proposições',
+      'Condições necessárias e suficientes',
+      'Argumentos',
+      'Premissas e conclusões',
+      'Validade de argumentos',
+      'Inferências e deduções'
+    ]
+  },
+  {
+    id: 'MAT-21',
+    area: 'RLM',
+    titulo: 'Conjuntos e Diagramas Lógicos',
+    prioridade: 'media',
+    subtopicos: [
+      'Pertinência e inclusão',
+      'Subconjuntos',
       'União',
-      'Estados',
-      'Distrito Federal',
-      'Municípios',
-      'Territórios',
-      'Autonomia',
-      'Soberania',
-      'Criação de Estados',
-      'Criação de Municípios',
-      'Regiões metropolitanas',
-      'Organização político-administrativa',
-      'Competências constitucionais'
+      'Interseção',
+      'Diferença',
+      'Complemento',
+      'Diagramas de Venn',
+      'Problemas de contagem com conjuntos',
+      'Relações entre pessoas, objetos ou grupos'
     ]
   },
   {
-    id: 'DC-09',
-    area: 'CF',
-    titulo: 'Repartição de Competências',
-    prioridade: 'alta',
+    id: 'MAT-22',
+    area: 'RLM',
+    titulo: 'Análise Combinatória e Probabilidade',
+    prioridade: 'condicional',
     subtopicos: [
-      'Competência material',
-      'Competência legislativa',
-      'Competência exclusiva',
-      'Competência privativa',
-      'Competência comum',
-      'Competência concorrente',
-      'Competência suplementar',
-      'Competências da União',
-      'Competências dos Estados',
-      'Competências dos Municípios',
-      'Competências do Distrito Federal',
-      'Interesse local',
-      'Regras de competência legislativa'
-    ]
-  },
-  {
-    id: 'DC-11',
-    area: 'CF',
-    titulo: 'Administração Pública na Constituição',
-    prioridade: 'alta',
-    subtopicos: [
-      'Art. 37',
-      'Legalidade',
-      'Impessoalidade',
-      'Moralidade',
-      'Publicidade',
-      'Eficiência',
-      'Concurso público',
-      'Cargos',
-      'Empregos',
-      'Funções públicas',
-      'Cargos em comissão',
-      'Funções de confiança',
-      'Acumulação',
-      'Remuneração',
-      'Teto constitucional',
-      'Servidores',
-      'Empregados públicos',
-      'Contratação temporária',
-      'Administração Direta',
-      'Administração Indireta',
-      'Autarquias',
-      'Empresas públicas',
-      'Sociedades de economia mista',
-      'Fundações públicas',
-      'Licitação',
-      'Serviços públicos',
-      'Responsabilidade civil do Estado',
-      'Improbidade'
-    ]
-  },
-  {
-    id: 'DC-12',
-    area: 'CF',
-    titulo: 'Poder Legislativo',
-    prioridade: 'alta',
-    subtopicos: [
-      'Congresso Nacional',
-      'Câmara dos Deputados',
-      'Senado Federal',
-      'Deputados',
-      'Senadores',
-      'Legislatura',
-      'Sessões',
-      'Comissões',
-      'Competências',
-      'Imunidades parlamentares',
-      'Fiscalização',
-      'Tribunal de Contas',
-      'Fiscalização contábil',
-      'Financeira',
-      'Orçamentária',
-      'Patrimonial'
-    ]
-  },
-  {
-    id: 'DC-13',
-    area: 'CF',
-    titulo: 'Processo Legislativo',
-    prioridade: 'alta',
-    subtopicos: [
-      'Emenda constitucional',
-      'Lei complementar',
-      'Lei ordinária',
-      'Lei delegada',
-      'Medida provisória',
-      'Decreto legislativo',
-      'Resolução',
-      'Iniciativa',
-      'Discussão',
-      'Votação',
-      'Aprovação',
-      'Sanção',
-      'Veto',
-      'Promulgação',
-      'Publicação',
-      'Maioria simples',
-      'Maioria absoluta',
-      'Maioria qualificada',
-      'Quóruns'
-    ]
-  },
-
-  /* ============ PRIORIDADE MÉDIA ============ */
-  {
-    id: 'DC-10',
-    area: 'CF',
-    titulo: 'Intervenção',
-    prioridade: 'media',
-    subtopicos: [
-      'Intervenção federal',
-      'Intervenção estadual',
-      'Intervenção nos Municípios',
-      'Hipóteses',
-      'Finalidade',
-      'Procedimento',
-      'Decreto',
-      'Controle pelo Congresso',
-      'Relação com autonomia federativa'
-    ]
-  },
-  {
-    id: 'DC-14',
-    area: 'CF',
-    titulo: 'Poder Executivo',
-    prioridade: 'media',
-    subtopicos: [
-      'Presidente',
-      'Vice-Presidente',
-      'Eleição',
-      'Mandato',
-      'Requisitos',
-      'Impedimentos',
-      'Sucessão',
-      'Substituição',
-      'Competências',
-      'Ministros',
-      'Responsabilidade',
-      'Crimes de responsabilidade'
-    ]
-  },
-  {
-    id: 'DC-15',
-    area: 'CF',
-    titulo: 'Poder Judiciário',
-    prioridade: 'media',
-    subtopicos: [
-      'Órgãos do Judiciário',
-      'STF',
-      'STJ',
-      'Justiça Federal',
-      'Justiça Estadual',
-      'Justiça do Trabalho',
-      'Justiça Eleitoral',
-      'Justiça Militar',
-      'CNJ',
-      'Competências básicas',
-      'Garantias dos magistrados',
-      'Organização'
-    ]
-  },
-  {
-    id: 'DC-16',
-    area: 'CF',
-    titulo: 'Funções Essenciais à Justiça',
-    prioridade: 'media',
-    subtopicos: [
-      'Ministério Público',
-      'Advocacia Pública',
-      'Advocacia',
-      'Defensoria Pública',
-      'Funções',
-      'Atribuições',
-      'Princípios',
-      'Autonomia',
-      'Organização constitucional'
-    ]
-  },
-  {
-    id: 'DC-17',
-    area: 'CF',
-    titulo: 'Defesa do Estado e Instituições Democráticas',
-    prioridade: 'media',
-    subtopicos: [
-      'Estado de Defesa',
-      'Estado de Sítio',
-      'Forças Armadas',
-      'Segurança pública',
-      'Órgãos de segurança pública',
-      'Diferenças entre Estado de Defesa e Estado de Sítio'
-    ]
-  },
-  {
-    id: 'DC-18',
-    area: 'CF',
-    titulo: 'Controle de Constitucionalidade',
-    prioridade: 'media',
-    subtopicos: [
-      'Constitucionalidade',
-      'Inconstitucionalidade',
-      'Controle preventivo',
-      'Controle repressivo',
-      'Controle difuso',
-      'Controle concentrado',
-      'Controle político',
-      'Controle judicial',
-      'STF',
-      'ADI',
-      'ADC',
-      'ADPF',
-      'ADO',
-      'Efeitos das decisões',
-      'Conceitos fundamentais'
-    ]
-  },
-
-  /* ============ PRIORIDADE COMPLEMENTAR ============ */
-  {
-    id: 'DC-19',
-    area: 'CF',
-    titulo: 'Ordem Econômica e Social',
-    prioridade: 'baixa',
-    subtopicos: [
-      'Ordem econômica — princípios',
-      'Livre iniciativa',
-      'Valorização do trabalho',
-      'Função social',
-      'Atuação do Estado',
-      'Seguridade',
-      'Saúde',
-      'Previdência',
-      'Assistência',
-      'Educação',
-      'Cultura',
-      'Desporto',
-      'Ciência e tecnologia',
-      'Meio ambiente',
-      'Família',
-      'Criança',
-      'Adolescente',
-      'Jovem',
-      'Idoso',
-      'Indígenas'
-    ]
-  },
-  {
-    id: 'DC-20',
-    area: 'CF',
-    titulo: 'ADCT e Atualizações Constitucionais',
-    prioridade: 'baixa',
-    subtopicos: [
-      'ADCT',
-      'Dispositivos relevantes',
-      'Emendas constitucionais',
-      'Alterações recentes',
-      'Assuntos constitucionais atualizados'
-    ]
-  },
-
-  /* ============ CONSTITUIÇÃO ESTADUAL ============ */
-  {
-    id: 'DC-RN',
-    area: 'CE',
-    titulo: 'Constituição do Estado do Rio Grande do Norte',
-    prioridade: 'alta',
-    subtopicos: [
-      'Princípios fundamentais',
-      'Organização estadual',
-      'Municípios',
-      'Poder Legislativo',
-      'Poder Executivo',
-      'Poder Judiciário',
-      'Ministério Público',
-      'Defensoria Pública',
-      'Tribunal de Contas',
-      'Administração Pública',
-      'Servidores públicos',
-      'Competências estaduais'
+      'Princípio fundamental da contagem',
+      'Princípio multiplicativo',
+      'Permutações',
+      'Arranjos e combinações',
+      'Espaço amostral',
+      'Eventos',
+      'Probabilidade simples',
+      'Casos favoráveis e possíveis',
+      'Problemas contextualizados'
     ]
   }
 
