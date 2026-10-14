@@ -1,230 +1,300 @@
 /* ============================================================
-   AULAS — Módulos de prioridade COMPLEMENTAR
-   Preenchidos: DC-01, DC-19, DC-20
+   AULAS — Módulos de prioridade CONDICIONAL
+   Preenchidos: MAT-10, MAT-19, MAT-20, MAT-22
    ============================================================ */
 
 window.LESSONS_COMPLEMENTAR = {
 
   /* ============================================================
-     DC-01 — Teoria da Constituição
+     MAT-10 — Equações do 2º Grau, Sistemas e Inequações
   ============================================================ */
-  'DC-01': {
-    id: 'L-DC-01',
-    moduloId: 'DC-01',
-    objetivo: 'Compreender o conceito, a finalidade e as classificações de Constituição; distinguir poder constituinte originário, derivado e decorrente; entender cláusulas pétreas, emendas, recepção e eficácia das normas constitucionais. Base para todo o Direito Constitucional.',
-    prerequisitos: [],
+  'MAT-10': {
+    id: 'L-MAT-10',
+    moduloId: 'MAT-10',
+    objetivo: 'Compreender equações quadráticas, fatoração básica, sistemas de equações (substituição e eliminação), inequações e problemas aplicados. Aprofundamento conforme o perfil das provas.',
+    prerequisitos: ['MAT-09'],
 
-    introducao: 'Antes de estudar os artigos da CF/88, é preciso entender o que é uma Constituição, como ela nasce, como muda e como se relaciona com as demais normas. É o alicerce teórico de todo o Direito Constitucional.',
+    introducao: 'Equações do 2º grau aparecem em problemas de área, queda livre, movimento e otimização. Sistemas de equações resolvem problemas com duas incógnitas. Inequações tratam de desigualdades. Este módulo é "condicional" porque só vale investir tempo nele quando o edital cobrar explicitamente — mas quando cobra, é decisivo.',
 
-    explicacaoSimples: 'A Constituição é o "manual de instruções" do país: diz como o Estado se organiza, quais são os direitos do povo e quais são os limites do poder. É a norma mais importante — todas as outras devem respeitá-la.',
+    explicacaoSimples: 'Uma equação do 2º grau tem x² como maior expoente (ex.: x² + 5x + 6 = 0). Ela pode ter 0, 1 ou 2 soluções. Um sistema de equações tem duas incógnitas e duas equações, resolvidas juntas. Uma inequação é como uma equação, mas com <, >, ≤ ou ≥ em vez de =.',
 
-    explicacaoTecnica: 'Constituição é a norma fundamental que organiza o Estado, distribui competências, define direitos fundamentais e estabelece o regime político. Conceito, finalidade e classificações variam conforme a doutrina. Classificações: quanto à forma (escrita x não escrita); quanto à origem (promulgada x outorgada); quanto à estabilidade (rígida, flexível, semirrígida); quanto ao conteúdo (formal x material); quanto à extensão (analítica x sintética); quanto à finalidade (garantia, dirigente, balanço). Poder constituinte: ORIGINÁRIO (cria a Constituição — inicial, ilimitado, incondicionado, soberano); DERIVADO (reforma a Constituição — reformador, revisor, decorrente); DECORRENTE (elabora as Constituições estaduais). Limitações ao poder de reforma: temporais, circunstanciais, materiais (cláusulas pétreas) e processuais. Cláusulas pétreas (art. 60, §4º): forma federativa de Estado, voto direto/secreto/universal/periodicidade, separação de Poderes, direitos e garantias individuais. Emendas: 3/5 em dois turnos em cada Casa. Recepção: lei anterior à nova Constituição que seja materialmente compatível continua válida. Eficácia das normas: plena, contida, limitada (Lei 4.657/1942 + doutrina de José Afonso da Silva).',
+    explicacaoTecnica: 'EQUAÇÃO DO 2º GRAU: ax² + bx + c = 0, com a ≠ 0. Fórmula de Bhaskara: x = (-b ± √Δ) / (2a), onde Δ = b² - 4ac. Análise do discriminante: Δ > 0 → 2 raízes reais distintas; Δ = 0 → 1 raiz real (dupla); Δ < 0 → nenhuma raiz real. Relações de Girard (soma e produto): S = x1 + x2 = -b/a; P = x1 × x2 = c/a. FATORAÇÃO: quando possível, escrever ax² + bx + c = a(x - x1)(x - x2). SISTEMAS DE EQUAÇÕES: dois métodos principais. SUBSTITUIÇÃO: isola uma incógnita em uma equação e substitui na outra. ELIMINAÇÃO (adição): soma ou subtrai as equações para cancelar uma incógnita. INEQUAÇÕES DO 1º GRAU: resolva como equação, mas ATENÇÃO: ao multiplicar ou dividir por número NEGATIVO, o sinal da desigualdade INVERTE.',
 
     exemplos: [
-      'Escrita: CF/88. Não escrita: Constituição inglesa.',
-      'Promulgada: CF/88 (Assembleia Constituinte). Outorgada: CF/37 (Vargas).',
-      'Rígida: CF/88 (emenda com quórum especial). Flexível: pode ser alterada como lei comum. Semirrígida: parte rígida, parte flexível (CF/1824).',
-      'Formal: normas solenemente inseridas na Constituição. Material: normas sobre organização do Estado e direitos fundamentais, independente de onde estejam.',
-      'Cláusulas pétreas: forma federativa, voto direto/secreto/universal/periodicidade, separação de Poderes, direitos e garantias individuais.',
-      'Recepção: Código Civil de 1916 recepcionado pela CF/88 até ser revogado pelo CC/2002.'
+      'Equação: x² - 5x + 6 = 0. Δ = 25 - 24 = 1. x = (5 ± 1)/2 → x1 = 3; x2 = 2.',
+      'Δ = 0: x² - 6x + 9 = 0 → Δ = 0 → x = 3 (raiz dupla).',
+      'Δ < 0: x² + x + 1 = 0 → Δ = 1 - 4 = -3 → sem raízes reais.',
+      'Girard: x² - 7x + 12 = 0 → S = 7; P = 12 → raízes 3 e 4.',
+      'Sistema por substituição: x + y = 10; x - y = 4 → x = 7; y = 3.',
+      'Sistema por eliminação: 2x + y = 8; x - y = 1 → somando: 3x = 9 → x = 3; y = 2.',
+      'Inequação: -2x > 6 → x < -3 (sinal invertido ao dividir por -2).'
     ],
 
     comparacoes: [
-      { termoA: 'Poder constituinte originário', termoB: 'Poder constituinte derivado', diferenca: 'ORIGINÁRIO: cria a Constituição; inicial, autônomo, ilimitado, incondicionado, soberano; não se submete a limites. DERIVADO (reformador): reforma a Constituição; submetido a limites (cláusulas pétreas, processuais, circunstanciais, temporais).' },
-      { termoA: 'Constituição rígida', termoB: 'Constituição flexível', diferenca: 'RÍGIDA: alteração por processo mais difícil que a lei comum (ex.: CF/88 — 3/5 em dois turnos). FLEXÍVEL: alteração pelo mesmo processo da lei comum. SEMIRRÍGIDA: parte rígida, parte flexível (ex.: CF/1824).' },
-      { termoA: 'Constituição formal', termoB: 'Constituição material', diferenca: 'FORMAL: normas solenemente inseridas no texto constitucional, independente do conteúdo. MATERIAL: normas sobre organização do Estado e direitos fundamentais, independente de onde estejam (podem estar em lei ordinária).' },
-      { termoA: 'Recepção', termoB: 'Repristinação', diferenca: 'RECEPÇÃO: lei anterior à nova Constituição que seja materialmente compatível continua válida. REPRISTINAÇÃO: lei revogada não volta a vigorar pela revogação da lei revogadora, salvo disposição expressa (art. 2º, §3º, LINDB).' }
+      { termoA: 'Equação do 1º grau', termoB: 'Equação do 2º grau', diferenca: '1º GRAU: ax + b = 0 → solução única x = -b/a. 2º GRAU: ax² + bx + c = 0 → até 2 raízes, calculadas por Bhaskara (x = (-b ± √Δ)/2a). A presença do x² muda tudo: análise do discriminante decide se há 0, 1 ou 2 raízes.' },
+      { termoA: 'Substituição', termoB: 'Eliminação', diferenca: 'SUBSTITUIÇÃO: isola uma incógnita em uma equação e substitui na outra. ELIMINAÇÃO: soma ou subtrai as equações para eliminar uma incógnita diretamente. Ambos resolvem o mesmo tipo de sistema — escolha o que for mais simples no caso concreto.' },
+      { termoA: 'Equação', termoB: 'Inequação', diferenca: 'EQUAÇÃO: usa sinal de igualdade (=). Tem soluções pontuais. INEQUAÇÃO: usa <, >, ≤ ou ≥. Tem intervalo de soluções. ATENÇÃO: ao multiplicar/dividir por número NEGATIVO em uma inequação, o SINAL INVERTE.' },
+      { termoA: 'Discriminante Δ > 0', termoB: 'Discriminante Δ = 0', diferenca: 'Δ > 0: duas raízes reais DISTINTAS (a parábola cruza o eixo x em 2 pontos). Δ = 0: uma raiz real DUPLA (a parábola toca o eixo x em 1 ponto). Δ < 0: nenhuma raiz real (a parábola não toca o eixo x).' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança das classificações de Constituição, das características do poder constituinte originário (ilimitado, inicial, incondicionado), das cláusulas pétreas (art. 60, §4º) e das limitações ao poder de reforma. Também cai a recepção e a eficácia das normas constitucionais. Tema cobrado em todo concurso de Direito Constitucional.',
+    aplicacaoEmConcurso: 'Cobrança conforme o edital. Aparece em problemas de área (terreno quadrado), movimento (queda livre, distância), mistura, otimização e em questões de RLM que exigem montar sistemas. Se o edital cita "equações do 2º grau", invista tempo. Caso contrário, foque nos sistemas (mais cobrados).',
 
     pegadinhas: [
-      'Dizer que o poder constituinte originário é limitado. NÃO — é ilimitado, inicial, incondicionado e soberano.',
-      'Achar que a CF/88 é semirrígida. É RÍGIDA.',
-      'Confundir Constituição formal com material.',
-      'Dizer que cláusulas pétreas podem ser alteradas por emenda. NÃO — têm limitação material.',
-      'Confundir recepção com repristinação.',
-      'Achar que a CF/88 é sintética. É ANALÍTICA (extensa, com 250 artigos).',
-      'Dizer que o poder constituinte derivado decorrente é o mesmo que o revisor.'
+      'Esquecer o sinal negativo em -b: a fórmula é (-b ± √Δ)/2a.',
+      'Errar o cálculo do Δ: Δ = b² - 4ac (não b - 4ac).',
+      'Achar que Δ < 0 significa "sem solução". Significa "sem raiz REAL" — mas ainda pode ter complexas.',
+      'Em sistemas, isolar errado ou esquecer de substituir o valor em uma das equações originais.',
+      'Em inequações, esquecer de INVERTER o sinal ao dividir por número negativo. Ex.: -2x > 6 → x < -3.',
+      'Confundir soma (S = -b/a) com produto (P = c/a) nas relações de Girard.'
     ],
 
     errosComuns: [
-      'Decorar classificações sem entender o critério.',
-      'Confundir as espécies de poder constituinte.',
-      'Não saber que cláusulas pétreas são limitações MATERIAIS.'
+      'Decorar Bhaskara sem entender o discriminante.',
+      'Não verificar a solução encontrada substituindo na equação original.',
+      'Confundir ax² + bx + c = 0 com ax² + bx = 0 (incompleta, resolve por fatoração: x(ax + b) = 0).',
+      'Em problemas contextualizados, aceitar raízes negativas (ex.: idade negativa não faz sentido).'
     ],
 
     resumo: [
-      'Constituição: norma fundamental que organiza o Estado e garante direitos.',
-      'Classificações: forma, origem, estabilidade, conteúdo, extensão, finalidade.',
-      'CF/88: escrita, promulgada, rígida, formal, analítica, dirigente.',
-      'Poder constituinte: originário (cria), derivado (reforma), decorrente (estaduais).',
-      'Originário: inicial, ilimitado, incondicionado, soberano.',
-      'Cláusulas pétreas (art. 60, §4º): forma federativa, voto direto/secreto/universal/periodicidade, separação de Poderes, direitos e garantias individuais.',
-      'Emenda: 3/5 em dois turnos em cada Casa.',
-      'Recepção: lei anterior compatível continua válida.',
-      'Eficácia: plena, contida e limitada.'
+      'Equação do 2º grau: ax² + bx + c = 0, com a ≠ 0.',
+      'Bhaskara: x = (-b ± √Δ) / 2a, com Δ = b² - 4ac.',
+      'Δ > 0: 2 raízes. Δ = 0: 1 raiz dupla. Δ < 0: 0 raízes reais.',
+      'Girard: S = -b/a; P = c/a.',
+      'Sistemas: substituição ou eliminação.',
+      'Inequação: INVERTE o sinal ao multiplicar/dividir por número negativo.',
+      'Sempre conferir a solução na equação original.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'A Constituição é o "manual do país". Existem vários tipos de Constituição — a do Brasil é escrita, promulgada, rígida e analítica. O poder de criar é ilimitado; o de reformar tem limites (cláusulas pétreas).',
-      outroExemplo: 'A CF/88 foi criada por uma Assembleia Constituinte (promulgada) e é alterada por emenda com quórum de 3/5 (rígida). Não pode ser mudada para abolir a separação de Poderes (cláusula pétrea).',
-      compararConceitos: 'Originário = cria. Derivado = reforma. Decorrente = estaduais. Rígida ≠ flexível. Formal ≠ material. Recepção ≠ repristinação.',
-      mostrarPegadinha: 'Cuidado: "A CF/88 é semirrígida, pois parte pode ser alterada por lei comum". ERRADO. É RÍGIDA — só emenda com 3/5 em dois turnos em cada Casa.',
-      comoApareceEmConcurso: 'Cobrança das classificações, do poder constituinte e das cláusulas pétreas.',
+      explicarMaisSimples: 'Equação do 2º grau é uma equação com x². O "delta" decide quantas raízes tem. Se positivo, duas; se zero, uma; se negativo, nenhuma real. O resto é aplicar Bhaskara.',
+      outroExemplo: 'Um terreno retangular tem área 60 m² e perímetro 34 m. Quais as dimensões? x + y = 17 (semiperímetro) e x × y = 60. Resolvendo: y = 17 - x → x(17 - x) = 60 → x² - 17x + 60 = 0 → Δ = 289 - 240 = 49 → x = (17 ± 7)/2 → x = 12 ou x = 5. Dimensões: 12 m × 5 m.',
+      compararConceitos: 'Bhaskara: fórmula geral. Discriminante: decide quantidade de raízes. Girard: atalho por soma/produto. Sistemas: substituição ou eliminação. Inequação: cuidado com sinal negativo.',
+      mostrarPegadinha: 'Cuidado: "-2x > 6 → x > -3". ERRADO. Ao dividir por -2 (negativo), o sinal INVERTE: x < -3. Esquecer isso é o erro mais comum em inequações.',
+      comoApareceEmConcurso: 'Problemas de área, otimização e sistemas de equações.',
       fazerPergunta: {
-        pergunta: 'Uma emenda constitucional que proponha abolir o voto direto pode ser aprovada?',
-        resposta: 'NÃO. O voto direto, secreto, universal e periódico é CLÁUSULA PÉTREA (art. 60, §4º, II). Não pode ser objeto de emenda tendente a aboli-la.'
+        pergunta: 'Quais as raízes da equação x² - 5x + 6 = 0?',
+        resposta: 'Δ = 25 - 24 = 1. x = (5 ± 1)/2 → x1 = 3 e x2 = 2. Verificando: 3² - 5×3 + 6 = 9 - 15 + 6 = 0 ✓; 2² - 5×2 + 6 = 4 - 10 + 6 = 0 ✓.'
       }
     }
   },
 
   /* ============================================================
-     DC-19 — Ordem Econômica e Social
+     MAT-19 — Lógica Proposicional
   ============================================================ */
-  'DC-19': {
-    id: 'L-DC-19',
-    moduloId: 'DC-19',
-    objetivo: 'Compreender os fundamentos da ordem econômica (arts. 170 a 181) e da ordem social (arts. 193 a 232) na CF/88: princípios da atividade econômica, atuação do Estado, seguridade social, saúde, previdência, assistência, educação, cultura, meio ambiente, família, criança, adolescente, idoso e indígenas.',
-    prerequisitos: ['DC-04'],
+  'MAT-19': {
+    id: 'L-MAT-19',
+    moduloId: 'MAT-19',
+    objetivo: 'Compreender proposições, proposições simples e compostas, valor lógico, negação, conectivos (conjunção, disjunção, condicional, bicondicional) e tabelas-verdade. Base para raciocínio lógico em concursos.',
+    prerequisitos: ['MAT-18'],
 
-    introducao: 'A CF/88 não se limita a organizar o Estado e garantir direitos individuais: ela também traça diretrizes para a economia e para as políticas sociais. Esse conjunto forma a ordem econômica e social — uma "constituição econômica" e uma "constituição social".',
+    introducao: 'Lógica proposicional é a base do raciocínio lógico cobrado em concursos. Trabalha com proposições (afirmações que podem ser verdadeiras ou falsas) e conectivos que as combinam. É muito cobrada em provas de RLM e áreas administrativas.',
 
-    explicacaoSimples: 'A ordem econômica diz como a economia deve funcionar: livre iniciativa, mas com justiça social, proteção ao consumidor, defesa do meio ambiente e redução das desigualdades. A ordem social trata das políticas públicas: saúde, educação, previdência, assistência, cultura, meio ambiente, família, criança, idoso, indígenas.',
+    explicacaoSimples: 'Proposição é uma frase que pode ser classificada como V (verdadeira) ou F (falsa). Ex.: "O céu é azul" (proposição). "Que horas são?" (não é proposição). Conectivos são palavras que juntam proposições: E, OU, SE... ENTÃO, SE E SOMENTE SE. Cada um tem uma tabela-verdade.',
 
-    explicacaoTecnica: 'ORDEM ECONÔMICA (arts. 170 a 181): fundamentada na valorização do trabalho humano e na livre iniciativa, tem por fim assegurar a todos existência digna, conforme os ditames da justiça social, observados os princípios: soberania nacional, propriedade privada, função social da propriedade, livre concorrência, defesa do consumidor, defesa do meio ambiente, redução das desigualdades regionais e sociais, busca do pleno emprego, tratamento favorecido para empresas de pequeno porte. Art. 173: exploração direta de atividade econômica pelo Estado só em casos de segurança nacional ou relevante interesse coletivo. Art. 174: Estado como agente normativo e regulador. Art. 175: serviços públicos — concessão e permissão. Art. 176 a 177: recursos minerais e energéticos. Art. 178 a 181: transporte, turismo, etc. ORDEM SOCIAL (arts. 193 a 232): tem como base o primado do trabalho e como objetivo o bem-estar e a justiça sociais. SEGURIDADE (arts. 194 a 204): saúde (196 a 200), previdência (201 a 202), assistência (203 a 204). EDUCAÇÃO, CULTURA E DESPORTO (arts. 205 a 217). CIÊNCIA, TECNOLOGIA E INOVAÇÃO (arts. 218 a 219). COMUNICAÇÃO SOCIAL (arts. 220 a 224). MEIO AMBIENTE (arts. 225). FAMÍLIA, CRIANÇA, ADOLESCENTE, JOVEM E IDOSO (arts. 226 a 230). ÍNDIOS (art. 231 a 232).',
+    explicacaoTecnica: 'PROPOSIÇÃO: sentença declarativa que pode ser V ou F. PROPOSIÇÕES SIMPLES (p, q, r): uma única afirmação. COMPOSTAS: duas ou mais, unidas por conectivos. CONECTIVOS E TABELAS-VERDADE (resumo): NEGAÇÃO (¬p): inverte o valor. CONJUNÇÃO (p ∧ q, "E"): só é V se ambas V. DISJUNÇÃO (p ∨ q, "OU"): só é F se ambas F. CONDICIONAL (p → q, "SE p ENTÃO q"): só é F quando p é V e q é F. BICONDICIONAL (p ↔ q, "p SE E SOMENTE SE q"): V quando ambas têm o mesmo valor. NÚMERO DE LINHAS DA TABELA: 2ⁿ, onde n = número de proposições simples. Ex.: 2 proposições → 4 linhas; 3 proposições → 8 linhas. PRIORIDADE DOS CONECTIVOS (da maior para a menor): ¬, ∧, ∨, →, ↔.',
 
     exemplos: [
-      'Ordem econômica: livre concorrência e defesa do consumidor.',
-      'Função social da propriedade: o proprietário deve dar destinação social ao bem.',
-      'Redução das desigualdades regionais: políticas de desenvolvimento para o Nordeste e o Norte.',
-      'Seguridade social: saúde (universal), previdência (contributiva) e assistência (para quem necessitar).',
-      'Educação: direito de todos, dever do Estado e da família.',
-      'Meio ambiente: direito de todos ao meio ambiente ecologicamente equilibrado.',
-      'Família: proteção especial do Estado.',
-      'Criança e adolescente: prioridade absoluta.',
-      'Idoso: proteção especial.',
-      'Índios: direitos originários sobre terras tradicionalmente ocupadas.'
+      'Proposição: "3 é primo" (V). Não proposição: "Você vai à festa?" (pergunta).',
+      'Conjunção p ∧ q: "Estudo e trabalho". Só é V se as duas forem V.',
+      'Disjunção p ∨ q: "Estudo ou trabalho". Só é F se as duas forem F.',
+      'Condicional p → q: "Se estudo, então passo". Só é F se p = V e q = F.',
+      'Bicondicional p ↔ q: "Estudo se e somente se passo". V quando p e q têm o mesmo valor.',
+      'Negação: ¬p inverte. Se p = V, ¬p = F.',
+      'Tabela com 3 proposições: 2³ = 8 linhas.'
     ],
 
     comparacoes: [
-      { termoA: 'Ordem econômica', termoB: 'Ordem social', diferenca: 'ECONÔMICA (arts. 170 a 181): regula a atividade econômica — livre iniciativa, concorrência, propriedade, consumidor, meio ambiente. SOCIAL (arts. 193 a 232): regula as políticas públicas — seguridade, educação, cultura, meio ambiente, família, criança, idoso, índios.' },
-      { termoA: 'Saúde', termoB: 'Previdência', diferenca: 'SAÚDE (art. 196): direito de todos e dever do Estado; universal e gratuita. PREVIDÊNCIA (art. 201): contributiva; exige contribuição para receber benefício.' },
-      { termoA: 'Assistência social', termoB: 'Previdência social', diferenca: 'ASSISTÊNCIA (art. 203): prestada a quem dela necessitar, INDEPENDENTE de contribuição. PREVIDÊNCIA (art. 201): CONTRIBUTIVA — só quem contribui recebe.' },
-      { termoA: 'Exploração direta', termoB: 'Regulação', diferenca: 'EXPLORAÇÃO DIRETA (art. 173): Estado atua como agente econômico — apenas em segurança nacional ou relevante interesse coletivo. REGULAÇÃO (art. 174): Estado atua como agente normativo e regulador — função típica.' }
+      { termoA: 'Conjunção (∧)', termoB: 'Disjunção (∨)', diferenca: 'CONJUNÇÃO ("E"): só é VERDADEIRA quando AMBAS as proposições são V. Ex.: "Chove e faz frio" → só V se ambos. DISJUNÇÃO ("OU"): só é FALSA quando AMBAS são F. Ex.: "Chove ou faz frio" → só F se ambos F. Lembre: ∧ é rigoroso (exige tudo V); ∨ é flexível (basta um V).' },
+      { termoA: 'Condicional (→)', termoB: 'Bicondicional (↔)', diferenca: 'CONDICIONAL (p → q): só é FALSA quando p = V e q = F. Em todos os outros casos, é V. BICONDICIONAL (p ↔ q): VERDADEIRO quando p e q têm o MESMO valor (V-V ou F-F); FALSO quando são diferentes (V-F ou F-V).' },
+      { termoA: 'Proposição simples', termoB: 'Proposição composta', diferenca: 'SIMPLES: uma única afirmação (p, q). COMPOSTA: duas ou mais simples unidas por conectivos (p ∧ q, p → q). O número de linhas da tabela-verdade depende do número de proposições simples: 2ⁿ.' },
+      { termoA: 'Negação (¬)', termoB: 'Contrário', diferenca: 'NEGAÇÃO (¬p): inverte o valor lógico. Se p = V, ¬p = F. É precisa: a negação de "todo A é B" é "existe A que não é B", NÃO "nenhum A é B". O contrário nem sempre é a negação lógica.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança dos princípios da ordem econômica (art. 170), da atuação do Estado (arts. 173 e 174), da seguridade social (arts. 194 a 204), dos direitos da criança/adolescente (prioridade absoluta), do idoso e dos indígenas. Aprofundamento proporcional à relevância para concursos administrativos.',
+    aplicacaoEmConcurso: 'Lógica proposicional é cobrada em praticamente todo concurso com RLM. Aparece como: identificação de proposições, análise de valor lógico, montagem de tabelas-verdade, equivalências lógicas e negações. É a base para os módulos MAT-20 (equivalências) e demais questões de lógica.',
 
     pegadinhas: [
-      'Confundir ordem econômica com ordem social.',
-      'Achar que saúde é contributiva. NÃO — é universal.',
-      'Dizer que a previdência é universal. NÃO — é contributiva.',
-      'Achar que a assistência social é só para quem contribui. NÃO — é para quem dela necessitar.',
-      'Dizer que o Estado só pode explorar atividade econômica em caso de segurança nacional. Também em relevante interesse coletivo.',
-      'Confundir função social da propriedade com desapropriação.',
-      'Achar que a proteção ao índio é só sobre terras. Envolve cultura, língua, tradições.'
+      'Achar que a condicional p → q é F quando p = F. NÃO — só é F quando p = V e q = F.',
+      'Confundir "ou" inclusivo (∨) com "ou exclusivo" (⊕). Em lógica clássica, o "ou" é INCLUSIVO (basta um V).',
+      'Errar a negação de "todo A é B". A negação é "existe A que não é B", NÃO "nenhum A é B".',
+      'Confundir o número de linhas da tabela-verdade: 2ⁿ (n = proposições simples), não 2 × n.',
+      'Trocar a ordem de avaliação dos conectivos (prioridade: ¬, ∧, ∨, →, ↔).',
+      'Achar que a negação de uma conjunção é a negação de cada parte. É: ¬(p ∧ q) = ¬p ∨ ¬q (De Morgan).'
     ],
 
     errosComuns: [
-      'Decorar os princípios da ordem econômica sem entender o equilíbrio entre livre iniciativa e justiça social.',
-      'Confundir as três áreas da seguridade (saúde, previdência, assistência).',
-      'Ignorar os dispositivos específicos sobre criança e adolescente (prioridade absoluta).'
+      'Decorar tabelas sem entender o significado dos conectivos.',
+      'Confundir a condicional com a bicondicional.',
+      'Esquecer de negar AMBAS as partes ao aplicar De Morgan.'
     ],
 
     resumo: [
-      'Ordem econômica (arts. 170 a 181): livre iniciativa + valorização do trabalho + justiça social.',
-      'Princípios: soberania nacional, propriedade privada, função social, livre concorrência, defesa do consumidor, defesa do meio ambiente, redução das desigualdades, pleno emprego, tratamento favorecido a pequenas empresas.',
-      'Estado: agente normativo e regulador (art. 174) + exploração direta em segurança nacional ou relevante interesse coletivo (art. 173).',
-      'Ordem social (arts. 193 a 232): primado do trabalho + bem-estar e justiça sociais.',
-      'Seguridade (arts. 194 a 204): saúde (universal), previdência (contributiva), assistência (para quem necessitar).',
-      'Educação (arts. 205 a 214), cultura (215 a 216), desporto (217).',
-      'Meio ambiente (art. 225): direito de todos ao meio ambiente ecologicamente equilibrado.',
-      'Família, criança, adolescente, jovem e idoso (arts. 226 a 230).',
-      'Índios (arts. 231 a 232): direitos originários sobre terras tradicionalmente ocupadas.'
+      'Proposição: sentença V ou F. Não: perguntas, exclamações, ordens.',
+      'Negação (¬): inverte o valor.',
+      'Conjunção (∧): V só se ambas V.',
+      'Disjunção (∨): F só se ambas F.',
+      'Condicional (→): F só quando V → F.',
+      'Bicondicional (↔): V se ambas iguais.',
+      'Tabela com n proposições simples: 2ⁿ linhas.',
+      'Prioridade: ¬, ∧, ∨, →, ↔.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'A ordem econômica diz como a economia funciona: liberdade para empreender, mas com justiça social, proteção ao consumidor e ao meio ambiente. A ordem social diz como o Estado cuida das pessoas: saúde, educação, previdência, assistência, cultura, família, criança, idoso, índios.',
-      outroExemplo: 'Quando a CF exige "função social da propriedade", quer dizer que o proprietário não pode deixar o bem sem uso — precisa dar destinação social. Se não dá, o Estado pode desapropriar para fins de reforma agrária, por exemplo.',
-      compararConceitos: 'Ordem econômica ≠ ordem social. Saúde = universal. Previdência = contributiva. Assistência = para quem necessitar. Criança = prioridade absoluta. Índio = direitos originários.',
-      mostrarPegadinha: 'Cuidado: "A previdência social é universal e gratuita". ERRADO. A SAÚDE é universal e gratuita; a PREVIDÊNCIA é CONTRIBUTIVA (só quem contribui recebe).',
-      comoApareceEmConcurso: 'Cobrança dos princípios da ordem econômica (art. 170) e dos dispositivos sobre seguridade social, criança, idoso e índios.',
+      explicarMaisSimples: 'Imagine uma prova de tiro ao alvo: a conjunção (E) exige acertar os DOIS alvos; a disjunção (OU) exige acertar PELO MENOS UM. A condicional (SE...ENTÃO) só falha quando o primeiro é verdadeiro e o segundo falso.',
+      outroExemplo: 'Se "vou à praia" (p) e "está sol" (q). A proposição p → q ("se vou à praia, então está sol") é FALSA se eu fui à praia e NÃO estava sol. Em todos os outros casos (não fui, ou fui e estava sol, ou não fui e não estava sol), é verdadeira.',
+      compararConceitos: '∧ = rigoroso (tudo V). ∨ = flexível (basta um V). → = só falha com V→F. ↔ = V quando iguais. ¬ = inverte.',
+      mostrarPegadinha: 'Cuidado: "A condicional é falsa quando p é falso". ERRADO. A condicional p → q só é FALSA quando p = V e q = F. Se p é falso, a condicional é automaticamente verdadeira ("verdade vazia").',
+      comoApareceEmConcurso: 'Toda prova de RLM cobra proposições e tabelas-verdade.',
       fazerPergunta: {
-        pergunta: 'Uma pessoa sem contribuição prévia tem direito a algum benefício da seguridade social?',
-        resposta: 'SIM. Tem direito à SAÚDE (universal e gratuita) e à ASSISTÊNCIA SOCIAL (para quem dela necessitar, sem contribuição). NÃO tem direito à PREVIDÊNCIA (que é contributiva).'
+        pergunta: 'Qual o valor lógico de "3 > 5 → 10 > 7"?',
+        respostA: 'VERDADEIRO. A primeira parte (3 > 5) é FALSA, então a condicional é automaticamente verdadeira. Lembre: F → V = V; F → F = V; V → F = F.'
       }
     }
   },
 
   /* ============================================================
-     DC-20 — ADCT e Atualizações Constitucionais
+     MAT-20 — Equivalências e Argumentação Lógica
   ============================================================ */
-  'DC-20': {
-    id: 'L-DC-20',
-    moduloId: 'DC-20',
-    objetivo: 'Compreender o papel do Ato das Disposições Constitucionais Transitórias (ADCT), identificar dispositivos relevantes, conhecer as emendas constitucionais mais importantes e estar atento às atualizações constitucionais recentes. Base para não ser surpreendido por questões sobre ECs.',
-    prerequisitos: ['DC-01'],
+  'MAT-20': {
+    id: 'L-MAT-20',
+    moduloId: 'MAT-20',
+    objetivo: 'Compreender equivalências lógicas, Leis de De Morgan, negação de proposições, condições necessárias e suficientes, argumentos, premissas e conclusões, validade de argumentos e inferências.',
+    prerequisitos: ['MAT-19'],
 
-    introducao: 'O ADCT é a parte da Constituição que cuida da transição entre o regime anterior e o novo. Ele tem a mesma força normativa da CF, mas vocação transitória. Além dele, as emendas constitucionais alteram o texto permanentemente — e é preciso conhecer as principais.',
+    introducao: 'Equivalências lógicas permitem reescrever uma proposição sem alterar seu valor lógico. As Leis de De Morgan são as mais cobradas. Argumentação lógica testa se uma conclusão segue necessariamente das premissas. É a continuação natural de MAT-19.',
 
-    explicacaoSimples: 'Quando a CF/88 entrou em vigor, muitas regras do regime anterior precisaram ser ajustadas. O ADCT é o "manual de transição": ele diz o que muda, quando e como. Já as EMENDAS são alterações no próprio texto da CF — feitas pelo Congresso com quórum de 3/5.',
+    explicacaoSimples: 'Duas proposições são equivalentes quando têm a mesma tabela-verdade. "Se chove, então uso guarda-chuva" é equivalente a "Se não uso guarda-chuva, então não chove". As Leis de De Morgan mostram como negar conjunções e disjunções. Argumento válido é aquele em que, se as premissas são verdadeiras, a conclusão é necessariamente verdadeira.',
 
-    explicacaoTecnica: 'ADCT: parte final da CF/88 (arts. 1º a 100). Tem a mesma força normativa da CF (é norma constitucional), mas natureza transitória — suas regras se esgotam com o tempo. Contém dispositivos sobre: instalação dos órgãos, revisão constitucional (art. 3º — já esgotada), direitos de servidores, anistia, FEF, DRU, desvinculação de receitas, precatórios (art. 100 do ADCT — EC 94/2016), Fundeb (art. 60 do ADCT — EC 108/2020), entre outros. EMENDAS CONSTITUCIONAIS: alterações do texto permanente, aprovadas por 3/5 em dois turnos em cada Casa (art. 60). Já foram mais de 130 emendas. As mais cobradas: EC 19/1998 (Reforma Gerencial — eficiência no art. 37); EC 20/1998 (reforma da previdência); EC 29/2000 (saúde — mínimo); EC 41/2003 (reforma da previdência); EC 45/2004 (Reforma do Judiciário — CNJ, súmula vinculante, repercussão geral); EC 47/2005 (paridade); EC 53/2006 (Fundeb); EC 64/2010 (alimentação no art. 6º); EC 72/2013 (domésticos); EC 80/2014 (Defensoria Pública); EC 87/2015 (ICMS); EC 90/2015 (transporte no art. 6º); EC 95/2016 (teto de gastos); EC 97/2017 (coligações proporcionais); EC 100/2019 (precatórios); EC 103/2019 (Reforma da Previdência); EC 105/2019 (transferência de recursos entre entes); EC 106/2020 (orçamento de guerra); EC 108/2020 (Fundeb); EC 109/2021 (emergencial); EC 111/2021 (fim das coligações proporcionais + fidelidade partidária); EC 113/2021 (precatórios); EC 114/2021 (combustíveis); EC 116/2022 (desoneração); EC 117/2022 (piso da enfermagem); EC 125/2022 (anistia de partidos); EC 126/2022 (piso da enfermagem); EC 128/2022 (PEC das monções); EC 129/2023 (reforma tributária); EC 130/2023 (sucessão); EC 131/2023 (nacionalidade — perda); EC 132/2023 (reforma tributária); EC 133/2024 (reforma tributária); EC 134/2024 (anistia); EC 135/2024 (segurança pública). ATUALIZAÇÕES RECENTES: reforma tributária (EC 129 a 133); alterações na nacionalidade (EC 131/2023); segurança pública (EC 135/2024).',
+    explicacaoTecnica: 'EQUIVALÊNCIAS FUNDAMENTAIS: p → q ≡ ¬q → ¬p (contrapositiva); p → q ≡ ¬p ∨ q; p ↔ q ≡ (p → q) ∧ (q → p). LEIS DE DE MORGAN: ¬(p ∧ q) ≡ ¬p ∨ ¬q (negação de "E" vira "OU" com as negações); ¬(p ∨ q) ≡ ¬p ∧ ¬q (negação de "OU" vira "E" com as negações). NEGAÇÃO DA CONDICIONAL: ¬(p → q) ≡ p ∧ ¬q ("mantém o primeiro, nega o segundo, troca o SE por E"). NEGAÇÃO DA BICONDICIONAL: ¬(p ↔ q) ≡ p ↔ ¬q (ou ¬p ↔ q). CONDIÇÃO NECESSÁRIA E SUFICIENTE: em p → q, p é SUFICIENTE para q; q é NECESSÁRIA para p. VALIDADE DE ARGUMENTO: um argumento é VÁLIDO quando a conclusão é consequência lógica das premissas (não é possível ter premissas V e conclusão F simultaneamente). Métodos de verificação: tabela-verdade; regras de inferência (modus ponens, modus tollens).',
 
     exemplos: [
-      'ADCT art. 100 (com EC 94/2016): regime especial de pagamento de precatórios.',
-      'ADCT art. 60 (com EC 108/2020): Fundeb — distribuição de recursos para educação.',
-      'EC 19/1998: inseriu a eficiência no caput do art. 37.',
-      'EC 45/2004: criou o CNJ, a súmula vinculante e a repercussão geral.',
-      'EC 72/2013: direitos dos trabalhadores domésticos.',
-      'EC 90/2015: transporte no art. 6º (direitos sociais).',
-      'EC 97/2017: fim das coligações proporcionais.',
-      'EC 111/2021: fim das coligações proporcionais + fidelidade partidária.',
-      'EC 131/2023: alterações na nacionalidade (perda).'
+      'Contrapositiva: "Se chove, uso guarda-chuva" ≡ "Se não uso guarda-chuva, não chove".',
+      'De Morgan: ¬(p ∧ q) ≡ ¬p ∨ ¬q. Ex.: negar "Estudo e trabalho" → "Não estudo OU não trabalho".',
+      'De Morgan: ¬(p ∨ q) ≡ ¬p ∧ ¬q. Ex.: negar "Estudo ou trabalho" → "Não estudo E não trabalho".',
+      'Negação da condicional: ¬("Se estudo, passo") ≡ "Estudo E não passo".',
+      'p → q ≡ ¬p ∨ q. Ex.: "Se chove, uso guarda-chuva" ≡ "Não chove ou uso guarda-chuva".',
+      'Modus ponens: p → q; p ∴ q. Ex.: Se chove, molho. Chove. Logo, molho.',
+      'Modus tollens: p → q; ¬q ∴ ¬p. Ex.: Se chove, molho. Não molho. Logo, não chove.'
     ],
 
     comparacoes: [
-      { termoA: 'ADCT', termoB: 'Parte permanente da CF', diferenca: 'ADCT: parte final da CF, com a mesma força normativa, mas natureza TRANSITÓRIA. Dispositivos se esgotam com o tempo. PARTE PERMANENTE: normas definitivas, que se aplicam continuamente.' },
-      { termoA: 'Emenda constitucional', termoB: 'Revisão constitucional', diferenca: 'EMENDA (art. 60): alteração permanente; 3/5 em dois turnos em cada Casa; pode ser quantas vezes forem necessárias. REVISÃO (art. 3º do ADCT): revisão única, em 1993, por maioria absoluta — já esgotada.' },
-      { termoA: 'EC 45/2004', termoB: 'EC 19/1998', diferenca: 'EC 45/2004 (Reforma do Judiciário): criou o CNJ, a súmula vinculante, a repercussão geral e alterou a competência do STF. EC 19/1998 (Reforma Gerencial): inseriu a eficiência no art. 37 e alterou a Administração Pública.' },
-      { termoA: 'EC 97/2017', termoB: 'EC 111/2021', diferenca: 'EC 97/2017: vedou coligações em eleições PROPORCIONAIS a partir de 2020. EC 111/2021: reformulou a fidelidade partidária e consolidou o fim das coligações proporcionais, além de tratar das sobras eleitorais.' }
+      { termoA: 'Negação', termoB: 'Equivalência', diferenca: 'NEGAÇÃO: inverte o valor lógico. ¬p é o oposto de p. EQUIVALÊNCIA: duas proposições com a MESMA tabela-verdade. p → q ≡ ¬q → ¬p. Negar ≠ equivalente: a negação de "Se chove, molho" é "Chove E não molho"; a contrapositiva é "Se não molho, então não chove".' },
+      { termoA: 'Modus ponens', termoB: 'Modus tollens', diferenca: 'MODUS PONENS: afirma o antecedente. Forma: p → q; p ∴ q. Ex.: "Se chove, molho. Chove. Logo, molho." MODUS TOLLENS: nega o consequente. Forma: p → q; ¬q ∴ ¬p. Ex.: "Se chove, molho. Não molho. Logo, não chove." São as duas regras de inferência mais usadas.' },
+      { termoA: 'Condição suficiente', termoB: 'Condição necessária', diferenca: 'Em p → q ("se p então q"): p é SUFICIENTE para q (basta p para ter q). q é NECESSÁRIA para p (sem q, não tem p). Ex.: "Se é mineiro, então é brasileiro" — ser mineiro é SUFICIENTE para ser brasileiro; ser brasileiro é NECESSÁRIO para ser mineiro.' },
+      { termoA: 'Argumento válido', termoB: 'Argumento verdadeiro', diferenca: 'VÁLIDO: a FORMA lógica garante que se as premissas forem verdadeiras, a conclusão será verdadeira. VERDADEIRO: as premissas são de fato verdadeiras. Um argumento pode ser válido com premissas falsas (a validade está na estrutura, não no conteúdo).' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de dispositivos do ADCT relevantes (precatórios, Fundeb, anistia) e das emendas constitucionais mais importantes. As bancas gostam de perguntar "qual EC inseriu X no art. 37?" ou "qual EC alterou Y?". Tema que exige atualização constante.',
+    aplicacaoEmConcurso: 'Cobrado intensamente em RLM. As questões pedem: negar proposições compostas, identificar equivalências (contrapositiva, De Morgan), avaliar validade de argumentos. As Leis de De Morgan e a negação da condicional são campeãs. É a base para resolver questões de raciocínio lógico mais complexas.',
 
     pegadinhas: [
-      'Achar que o ADCT é menos importante que a parte permanente. NÃO — tem a mesma força normativa.',
-      'Dizer que o ADCT é permanente. É TRANSITÓRIO (mas há dispositivos com eficácia prolongada).',
-      'Confundir emenda constitucional com revisão constitucional. A revisão foi uma única vez (1993).',
-      'Esquecer a EC que inseriu cada alteração (eficiência = 19/1998; CNJ = 45/2004; domésticos = 72/2013; transporte = 90/2015; coligações = 97/2017).',
-      'Achar que a CF/88 nunca foi alterada. Já teve mais de 130 emendas.',
-      'Ignorar as reformas recentes (tributária — EC 129 a 133; segurança pública — EC 135/2024).'
+      'Negar uma conjunção sem usar De Morgan: ¬(p ∧ q) NÃO é ¬p ∧ ¬q. É ¬p ∨ ¬q.',
+      'Confundir a recíproca (q → p) com a contrapositiva (¬q → ¬p). Só a contrapositiva é equivalente a p → q.',
+      'Errar a negação da condicional: ¬(p → q) ≡ p ∧ ¬q (mantém p, nega q). NÃO é ¬p → ¬q.',
+      'Achar que um argumento com premissas falsas é inválido. A validade é estrutural; as premissas podem ser falsas.',
+      'Confundir condição suficiente com necessária. Em p → q: p é suficiente; q é necessária.',
+      'Trocar as regras de Modus Ponens e Modus Tollens.'
     ],
 
     errosComuns: [
-      'Decorar ECs sem associar ao conteúdo alterado.',
-      'Não consultar a versão atualizada da CF (muitos dispositivos foram alterados).',
-      'Achar que todas as ECs são recentes — há ECs de 1992 (EC 1/1992).'
+      'Aplicar De Morgan sem negar as duas partes.',
+      'Confundir equivalência com recíproca.',
+      'Não verificar a validade estrutural em argumentos.'
     ],
 
     resumo: [
-      'ADCT: parte final da CF, mesma força normativa, mas transitório.',
-      'Revisão constitucional: única, em 1993, por maioria absoluta (art. 3º do ADCT).',
-      'Emenda constitucional: 3/5 em dois turnos em cada Casa (art. 60).',
-      'ECs relevantes: 19/1998 (eficiência), 20/1998 (previdência), 29/2000 (saúde), 45/2004 (Judiciário — CNJ, súmula vinculante), 53/2006 (Fundeb), 64/2010 (alimentação), 72/2013 (domésticos), 80/2014 (Defensoria), 87/2015 (ICMS), 90/2015 (transporte), 95/2016 (teto de gastos), 97/2017 (coligações), 100/2019 (precatórios), 103/2019 (previdência), 106/2020 (orçamento de guerra), 108/2020 (Fundeb), 111/2021 (fidelidade partidária), 129 a 133/2023 (reforma tributária), 135/2024 (segurança pública).',
-      'Precatórios (ADCT art. 100), Fundeb (ADCT art. 60) e DRU são dispositivos importantes.'
+      'Contrapositiva: p → q ≡ ¬q → ¬p.',
+      'De Morgan 1: ¬(p ∧ q) ≡ ¬p ∨ ¬q.',
+      'De Morgan 2: ¬(p ∨ q) ≡ ¬p ∧ ¬q.',
+      'Negação da condicional: ¬(p → q) ≡ p ∧ ¬q.',
+      'p → q ≡ ¬p ∨ q.',
+      'Modus ponens: p → q; p ∴ q.',
+      'Modus tollens: p → q; ¬q ∴ ¬p.',
+      'Suficiente: p em p → q. Necessária: q em p → q.',
+      'Argumento VÁLIDO: estrutura garante conclusão se premissas V.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O ADCT é o "manual de transição" da CF: diz o que muda em relação ao regime anterior. As emendas são alterações no próprio texto da CF, feitas pelo Congresso com quórum de 3/5.',
-      outroExemplo: 'A eficiência foi inserida no art. 37 pela EC 19/1998. O CNJ foi criado pela EC 45/2004. O transporte foi incluído no art. 6º pela EC 90/2015. Cada alteração tem sua EC específica.',
-      compararConceitos: 'ADCT = transitório. Parte permanente = definitivo. Emenda = permanente, pode ser quantas vezes. Revisão = única (1993).',
-      mostrarPegadinha: 'Cuidado: "A revisão constitucional pode ser feita a qualquer tempo". ERRADO. A revisão foi ÚNICA, em 1993, conforme art. 3º do ADCT — já esgotada.',
-      comoApareceEmConcurso: 'Cobrança de dispositivos do ADCT e das ECs que alteraram a CF.',
+      explicarMaisSimples: 'As Leis de De Morgan são o "truque" para negar "E" e "OU": nega tudo e troca o conectivo. "Estudo E trabalho" negado é "Não estudo OU não trabalho". Para negar "SE...ENTÃO", você mantém a primeira e nega a segunda, trocando o "se" por "e".',
+      outroExemplo: 'A proposição "Se bebo café, fico acordado" tem três equivalentes cobradas: contrapositiva ("Se não fico acordado, não bebo café"), com ∨ ("Não bebo café ou fico acordado") e negação ("Bebo café E não fico acordado"). Saber transitar entre elas é decisivo.',
+      compararConceitos: 'De Morgan: nega tudo e troca ∧ por ∨ (e vice-versa). Condicional: p → q ≡ ¬p ∨ q ≡ ¬q → ¬p. Negação da condicional: p ∧ ¬q. Suficiente x necessária: p suficiente; q necessária.',
+      mostrarPegadinha: 'Cuidado: "A negação de \'se estudo, então passo\' é \'se não estudo, então não passo\'". ERRADO. A negação é "Estudo E NÃO passo". A condicional só é falsa quando o antecedente é V e o consequente é F.',
+      comoApareceEmConcurso: 'RLM, toda prova cobra De Morgan, negação da condicional e validade de argumentos.',
       fazerPergunta: {
-        pergunta: 'Qual EC inseriu o princípio da eficiência no caput do art. 37?',
-        resposta: 'A EC 19/1998 (Reforma Gerencial). A EC 45/2004 (Reforma do Judiciário) criou o CNJ, a súmula vinculante e a repercussão geral — mas não mexeu no caput do art. 37.'
+        pergunta: 'Qual a negação de "Todos os alunos estudaram"?',
+        resposta: 'A negação de "todo A é B" é "algum A não é B". Portanto: "Algum aluno NÃO estudou". NUNCA "Nenhum aluno estudou" — essa é a contrária, não a negação lógica.'
+      }
+    }
+  },
+
+  /* ============================================================
+     MAT-22 — Análise Combinatória e Probabilidade
+  ============================================================ */
+  'MAT-22': {
+    id: 'L-MAT-22',
+    moduloId: 'MAT-22',
+    objetivo: 'Compreender o princípio fundamental da contagem, princípio multiplicativo, permutações, arranjos e combinações, espaço amostral, eventos, probabilidade simples, casos favoráveis e possíveis, e problemas contextualizados.',
+    prerequisitos: ['MAT-19'],
+
+    introducao: 'Análise combinatória conta possibilidades: de quantas formas posso organizar, escolher ou combinar elementos. Probabilidade mede a chance de um evento ocorrer. São temas muito cobrados em concursos de RLM e áreas administrativas — especialmente em problemas de senhas, filas, sorteios e grupos.',
+
+    explicacaoSimples: 'Se tenho 3 camisas e 4 calças, de quantas formas posso me vestir? 3 × 4 = 12 (princípio multiplicativo). Se quero ESCOLHER 2 entre 5 pessoas para uma comissão, uso combinação: C(5,2) = 10. Se a ORDEM importa (presidente e vice), uso arranjo: A(5,2) = 20. Se todos participam e a ordem importa (fila), uso permutação: P(5) = 120.',
+
+    explicacaoTecnica: 'PRINCÍPIO FUNDAMENTAL DA CONTAGEM: se uma decisão pode ser tomada de m formas e outra de n formas, o total é m × n. PERMUTAÇÃO: todos os n elementos são usados, a ordem importa. P(n) = n! = n × (n-1) × ... × 1. Ex.: fila de 4 pessoas = 4! = 24. ARRANJO: escolher p entre n, a ORDEM IMPORTA. A(n,p) = n! / (n-p)!. COMBINAÇÃO: escolher p entre n, a ORDEM NÃO IMPORTA. C(n,p) = n! / [p!(n-p)!]. PROBABILIDADE: P(E) = casos favoráveis / casos possíveis. Propriedades: 0 ≤ P(E) ≤ 1; P(∅) = 0; P(universo) = 1; P(não E) = 1 - P(E). Probabilidade da união: P(A ∪ B) = P(A) + P(B) - P(A ∩ B).',
+
+    exemplos: [
+      'Princípio multiplicativo: 3 camisas e 4 calças → 12 combinações.',
+      'Permutação: 5 pessoas em uma fila → 5! = 120.',
+      'Arranjo: 6 candidatos para 2 cargos (presidente e vice) → A(6,2) = 6!/4! = 30.',
+      'Combinação: 6 pessoas para formar comissão de 2 → C(6,2) = 6!/(2!4!) = 15.',
+      'Probabilidade: dado de 6 faces, P(sair número par) = 3/6 = 1/2.',
+      'Probabilidade: 3 bolas vermelhas e 2 azuis; P(retirar vermelha) = 3/5.',
+      'P(não chover) = 1 - P(chover). Ex.: se P(chover) = 0,3, então P(não chover) = 0,7.'
+    ],
+
+    comparacoes: [
+      { termoA: 'Arranjo', termoB: 'Combinação', diferenca: 'ARRANJO (A): a ORDEM importa. A(n,p) = n!/(n-p)!. Ex.: 6 candidatos para presidente e vice = 6 × 5 = 30. COMBINAÇÃO (C): a ORDEM NÃO importa. C(n,p) = n!/[p!(n-p)!]. Ex.: 6 candidatos para comissão de 2 = 15. Regra de ouro: se trocar a ordem gera resultado diferente, use ARRANJO; se não, use COMBINAÇÃO.' },
+      { termoA: 'Permutação', termoB: 'Arranjo', diferenca: 'PERMUTAÇÃO (P): todos os n elementos são usados (p = n). P(n) = n!. Ex.: fila de 5 pessoas = 5!. ARRANJO: usa apenas PARTE dos elementos (p < n). A(n,p) = n!/(n-p)!. Ex.: 5 pessoas para 2 cargos = 5 × 4 = 20.' },
+      { termoA: 'Probabilidade', termoB: 'Análise combinatória', diferenca: 'COMBINATÓRIA: conta possibilidades (de quantas formas posso fazer). PROBABILIDADE: mede chance (probabilidade de um evento). A probabilidade usa a combinatória como ferramenta: P = favoráveis / possíveis. Muitos problemas de probabilidade exigem primeiro a contagem combinatória.' },
+      { termoA: 'Evento complementar', termoB: 'Evento impossível', diferenca: 'COMPLEMENTAR: tudo o que NÃO é o evento. P(¬E) = 1 - P(E). Ex.: P(não chover) = 1 - P(chover). IMPOSSÍVEL: nunca ocorre. P = 0 (ex.: tirar 7 em um dado de 6 faces). Evento certo: P = 1 (ex.: tirar número de 1 a 6 em um dado).' }
+    ],
+
+    aplicacaoEmConcurso: 'Cobrança conforme edital, mas frequente em RLM. Aparece em problemas de: senhas, placas, filas, sorteios, comissões, agrupamentos, distribuição de prêmios, anagramas e probabilidades com cartas, dados e urnas. A distinção arranjo x combinação é a pegadinha mais comum.',
+
+    pegadinhas: [
+      'Confundir arranjo com combinação. Teste: "trocar a ordem dá resultado diferente?" Se sim, arranjo; se não, combinação.',
+      'Esquecer que 0! = 1 (por definição).',
+      'Aplicar a fórmula de combinação quando o problema envolve ordem (e vice-versa).',
+      'Somar probabilidades sem subtrair a interseção: P(A ∪ B) = P(A) + P(B) - P(A ∩ B).',
+      'Confundir "ao menos um" com "nenhum". "Ao menos um" = 1 - P(nenhum).',
+      'Errar o espaço amostral: contar como favoráveis eventos que não satisfazem exatamente a condição.'
+    ],
+
+    errosComuns: [
+      'Decorar fórmulas sem entender quando usar cada uma.',
+      'Esquecer de dividir pelo fatorial das repetições em combinações.',
+      'Não identificar se o problema pede arranjo ou combinação.'
+    ],
+
+    resumo: [
+      'Princípio multiplicativo: m × n formas.',
+      'Permutação: todos os elementos; ordem importa. P(n) = n!.',
+      'Arranjo: parte dos elementos; ordem importa. A(n,p) = n!/(n-p)!.',
+      'Combinação: parte dos elementos; ordem NÃO importa. C(n,p) = n!/[p!(n-p)!].',
+      'Probabilidade: P = favoráveis / possíveis.',
+      'P(¬E) = 1 - P(E).',
+      'P(A ∪ B) = P(A) + P(B) - P(A ∩ B).',
+      '0! = 1.',
+      'Regra de ouro: se a ordem importa → arranjo; se não → combinação.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Imagine uma fila. Se você quer saber quantas ORDENS diferentes de 5 pessoas existem, é permutação (5! = 120). Se você vai ESCOLHER 2 pessoas entre 5 para uma comissão SEM cargos definidos, é combinação (10). Se os 2 escolhidos vão ocupar cargos DIFERENTES (presidente e vice), é arranjo (20).',
+      outroExemplo: 'Quantos anagramas tem a palavra AMOR? São 4 letras diferentes: 4! = 24. Se fosse CASA (com A repetido 2 vezes): 4!/2! = 12. Quantas comissões de 3 pessoas posso formar com 7 candidatos? C(7,3) = 35. Se for escolher 3 pessoas para 3 cargos (presidente, secretário, tesoureiro), é arranjo: A(7,3) = 210.',
+      compararConceitos: 'Permutação: todos, ordem importa (n!). Arranjo: parte, ordem importa (n!/(n-p)!). Combinação: parte, ordem NÃO importa (n!/[p!(n-p)!]). Probabilidade: favoráveis/possíveis. Complemento: 1 - P(E).',
+      mostrarPegadinha: 'Cuidado: "Escolher 2 pessoas entre 5 para uma comissão é arranjo". ERRADO. Comissão NÃO tem ordem — é combinação: C(5,2) = 10. Se os cargos fossem presidente e vice, aí seria arranjo: A(5,2) = 20.',
+      comoApareceEmConcurso: 'RLM, probabilidade, contagem e problemas contextualizados (senhas, filas, comissões, sorteios).',
+      fazerPergunta: {
+        pergunta: 'De quantas formas posso escolher 2 cartas de um baralho de 4 cartas (A, B, C, D)?',
+        resposta: 'C(4,2) = 4!/(2!2!) = 24/4 = 6. As combinações são: AB, AC, AD, BC, BD, CD. A ordem NÃO importa (AB = BA), por isso é combinação.'
       }
     }
   }
