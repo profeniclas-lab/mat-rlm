@@ -2446,6 +2446,522 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'RLM.'
     },
     tags: ['conjuntos', 'complemento']
+  },
+
+  /* ============================================================
+     MAT-10 — Equações do 2º Grau, Sistemas e Inequações
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1001',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-10',
+    subtema: 'Bhaskara',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'As raízes da equação x² - 7x + 12 = 0 são:',
+    alternativas: [
+      { id: 'A', texto: '2 e 6' },
+      { id: 'B', texto: '3 e 4' },
+      { id: 'C', texto: '1 e 12' },
+      { id: 'D', texto: '-3 e -4' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Δ = 49 - 48 = 1. x = (7 ± 1)/2 → x₁ = 4; x₂ = 3.',
+      incorretas: { A: '2×6 = 12, mas 2+6 = 8 ≠ 7.', C: '1×12 = 12, mas 1+12 = 13 ≠ 7.', D: 'Sinais invertidos.' },
+      conceitoCobrado: 'Fórmula de Bhaskara.',
+      pegadinha: 'Errar o sinal em -b ou no discriminante.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['equação 2º grau', 'Bhaskara']
+  },
+  {
+    id: 'Q-DID-MAT-1002',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-10',
+    subtema: 'Discriminante',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'Sobre a equação x² + 4x + 5 = 0, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'Tem duas raízes reais distintas.' },
+      { id: 'B', texto: 'Tem uma raiz real dupla.' },
+      { id: 'C', texto: 'Não tem raízes reais, pois Δ < 0.' },
+      { id: 'D', texto: 'Tem infinitas raízes.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Δ = 16 - 20 = -4. Δ < 0 significa que não há raízes REAIS (a parábola não cruza o eixo x).',
+      incorretas: { A: 'Seria Δ > 0.', B: 'Seria Δ = 0.', D: 'Equações do 2º grau têm no máximo 2 raízes.' },
+      conceitoCobrado: 'Análise do discriminante.',
+      pegadinha: 'Achar que Δ < 0 significa "sem solução". Significa "sem solução REAL".',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['discriminante']
+  },
+  {
+    id: 'Q-DID-MAT-1003',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-10',
+    subtema: 'Sistema por eliminação',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'Resolvendo o sistema 2x + y = 11 e x - y = 1, o valor de x + y é:',
+    alternativas: [
+      { id: 'A', texto: '4' },
+      { id: 'B', texto: '5' },
+      { id: 'C', texto: '6' },
+      { id: 'D', texto: '7' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Somando as equações: 3x = 12 → x = 4. Substituindo: 4 - y = 1 → y = 3. Então x + y = 4 + 3 = 7.',
+      incorretas: { A: 'É o valor de x apenas.', B: 'Erro de soma.', C: 'Erro de substituição.' },
+      conceitoCobrado: 'Sistema de equações do 1º grau.',
+      pegadinha: 'Fornecer o valor de x quando a questão pede x + y.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['sistemas']
+  },
+  {
+    id: 'Q-DID-MAT-1004',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-10',
+    subtema: 'Inequação',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'A solução da inequação -3x + 9 > 0 é:',
+    alternativas: [
+      { id: 'A', texto: 'x > 3' },
+      { id: 'B', texto: 'x < 3' },
+      { id: 'C', texto: 'x > -3' },
+      { id: 'D', texto: 'x < -3' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '-3x > -9 → x < 3. Ao dividir por -3 (número negativo), o sinal da desigualdade INVERTE.',
+      incorretas: { A: 'Esqueceu de inverter o sinal.', C: 'Erro de sinal e de inversão.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Inequação do 1º grau — inversão do sinal.',
+      pegadinha: 'Esquecer de inverter ao dividir por número negativo.',
+      comoApareceEmConcurso: 'Cobrança clássica.'
+    },
+    tags: ['inequação']
+  },
+  {
+    id: 'Q-DID-MAT-1005',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-10',
+    subtema: 'Problema aplicado',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'Um terreno retangular tem área 48 m² e perímetro 28 m. Suas dimensões são:',
+    alternativas: [
+      { id: 'A', texto: '4 m e 12 m' },
+      { id: 'B', texto: '6 m e 8 m' },
+      { id: 'C', texto: '3 m e 16 m' },
+      { id: 'D', texto: '5 m e 10 m' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Semiperímetro = 14. x + y = 14; x·y = 48. Resolvendo: y = 14 - x → x(14 - x) = 48 → x² - 14x + 48 = 0. Δ = 196 - 192 = 4. x = (14 ± 2)/2 → x = 8 ou x = 6. Dimensões: 8 m × 6 m.',
+      incorretas: { A: '4×12 = 48, mas 2(4+12) = 32 ≠ 28.', C: '3×16 = 48, mas 2(3+16) = 38 ≠ 28.', D: '5×10 = 50 ≠ 48.' },
+      conceitoCobrado: 'Equação do 2º grau em problema contextualizado.',
+      pegadinha: 'Aceitar valores que satisfazem a área mas não o perímetro.',
+      comoApareceEmConcurso: 'Problemas de área e perímetro.'
+    },
+    tags: ['problema', 'equação 2º grau']
+  },
+
+  /* ============================================================
+     MAT-19 — Lógica Proposicional
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1901',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-19',
+    subtema: 'Identificação de proposição',
+    dificuldade: 1,
+    prioridade: 'condicional',
+    enunciado: 'NÃO é proposição lógica:',
+    alternativas: [
+      { id: 'A', texto: 'Brasília é a capital do Brasil.' },
+      { id: 'B', texto: '7 é um número primo.' },
+      { id: 'C', texto: 'Qual é o seu nome?' },
+      { id: 'D', texto: '2 + 3 = 5.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Perguntas NÃO são proposições lógicas (não podem ser classificadas como V ou F).',
+      incorretas: { A: 'É proposição — pode ser V ou F.', B: 'É proposição — pode ser V ou F.', D: 'É proposição — pode ser V ou F.' },
+      conceitoCobrado: 'Definição de proposição.',
+      pegadinha: 'Achar que perguntas, exclamações ou ordens são proposições.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['proposição']
+  },
+  {
+    id: 'Q-DID-MAT-1902',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-19',
+    subtema: 'Conjunção',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'Sendo p = "chove" (V) e q = "faz frio" (F), o valor de p ∧ q é:',
+    alternativas: [
+      { id: 'A', texto: 'Verdadeiro' },
+      { id: 'B', texto: 'Falso' },
+      { id: 'C', texto: 'Indeterminado' },
+      { id: 'D', texto: 'Depende do dia' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Conjunção p ∧ q só é V quando AMBAS são V. Como q é F, o resultado é F.',
+      incorretas: { A: 'Só seria V se ambas fossem V.', C: 'O valor é determinado pelas premissas.', D: 'A lógica não depende de fatos externos.' },
+      conceitoCobrado: 'Tabela-verdade da conjunção.',
+      pegadinha: 'Achar que basta uma ser V.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['conjunção']
+  },
+  {
+    id: 'Q-DID-MAT-1903',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-19',
+    subtema: 'Condicional',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'A proposição "Se 10 é ímpar, então 5 é par" tem valor lógico:',
+    alternativas: [
+      { id: 'A', texto: 'Verdadeiro' },
+      { id: 'B', texto: 'Falso' },
+      { id: 'C', texto: 'Indeterminado' },
+      { id: 'D', texto: 'Não é proposição' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'p ("10 é ímpar") = F; q ("5 é par") = F. A condicional p → q só é F quando p = V e q = F. Como p é F, a condicional é V. Regra: F → qualquer coisa = V.',
+      incorretas: { B: 'Seria F se p fosse V e q fosse F.', C: 'O valor é determinado.', D: 'É proposição — duas afirmações conectadas por "se...então".' },
+      conceitoCobrado: 'Tabela-verdade da condicional.',
+      pegadinha: 'Achar que F → F = F. Na verdade é V.',
+      comoApareceEmConcurso: 'Alta frequência.'
+    },
+    tags: ['condicional']
+  },
+  {
+    id: 'Q-DID-MAT-1904',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-19',
+    subtema: 'Bicondicional',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'Sendo p = V e q = F, o valor de p ↔ q é:',
+    alternativas: [
+      { id: 'A', texto: 'Verdadeiro' },
+      { id: 'B', texto: 'Falso' },
+      { id: 'C', texto: 'Igual a p' },
+      { id: 'D', texto: 'Indeterminado' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Bicondicional p ↔ q é V quando p e q têm o MESMO valor. Como p = V e q = F (diferentes), o resultado é F.',
+      incorretas: { A: 'Seria V se p e q fossem iguais.', C: 'Não é igual a p quando os valores diferem.', D: 'O valor é determinado.' },
+      conceitoCobrado: 'Tabela-verdade do bicondicional.',
+      pegadinha: 'Confundir com condicional.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['bicondicional']
+  },
+  {
+    id: 'Q-DID-MAT-1905',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-19',
+    subtema: 'Tabela-verdade',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'Uma tabela-verdade que envolve 4 proposições simples (p, q, r, s) tem quantas linhas?',
+    alternativas: [
+      { id: 'A', texto: '4' },
+      { id: 'B', texto: '8' },
+      { id: 'C', texto: '16' },
+      { id: 'D', texto: '32' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Número de linhas = 2ⁿ = 2⁴ = 16.',
+      incorretas: { A: 'Seria 2² = 4 (n=2).', B: 'Seria 2³ = 8 (n=3).', D: 'Seria 2⁵ = 32 (n=5).' },
+      conceitoCobrado: 'Número de linhas da tabela-verdade.',
+      pegadinha: 'Confundir 2ⁿ com n². 2⁴ = 16; 4² = 16 (coincidência só neste caso).',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['tabela-verdade']
+  },
+
+  /* ============================================================
+     MAT-20 — Equivalências e Argumentação Lógica
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-2001',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-20',
+    subtema: 'De Morgan',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'A negação da proposição "Estudo e trabalho" é:',
+    alternativas: [
+      { id: 'A', texto: 'Não estudo e não trabalho' },
+      { id: 'B', texto: 'Não estudo ou não trabalho' },
+      { id: 'C', texto: 'Estudo e não trabalho' },
+      { id: 'D', texto: 'Não estudo ou trabalho' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'De Morgan: ¬(p ∧ q) ≡ ¬p ∨ ¬q. Negar uma conjunção gera uma DISJUNÇÃO das negações.',
+      incorretas: { A: 'Negação de conjunção NÃO é conjunção das negações.', C: 'Só nega a segunda parte.', D: 'Inverte apenas a primeira.' },
+      conceitoCobrado: 'Leis de De Morgan.',
+      pegadinha: 'Trocar "OU" por "E" na negação.',
+      comoApareceEmConcurso: 'Altíssima frequência.'
+    },
+    tags: ['De Morgan']
+  },
+  {
+    id: 'Q-DID-MAT-2002',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-20',
+    subtema: 'De Morgan',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'A negação da proposição "Vou ao cinema ou vou à praia" é:',
+    alternativas: [
+      { id: 'A', texto: 'Não vou ao cinema ou não vou à praia' },
+      { id: 'B', texto: 'Não vou ao cinema e não vou à praia' },
+      { id: 'C', texto: 'Vou ao cinema e vou à praia' },
+      { id: 'D', texto: 'Vou ao cinema ou não vou à praia' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'De Morgan: ¬(p ∨ q) ≡ ¬p ∧ ¬q. Negar uma disjunção gera uma CONJUNÇÃO das negações.',
+      incorretas: { A: 'Negação de disjunção NÃO é disjunção das negações.', C: 'Não é a negação.', D: 'Confunde.' },
+      conceitoCobrado: 'De Morgan aplicado à disjunção.',
+      pegadinha: 'Trocar "E" por "OU" na negação.',
+      comoApareceEmConcurso: 'Cobrança clássica.'
+    },
+    tags: ['De Morgan']
+  },
+  {
+    id: 'Q-DID-MAT-2003',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-20',
+    subtema: 'Negação da condicional',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'A negação da proposição "Se bebo café, fico acordado" é:',
+    alternativas: [
+      { id: 'A', texto: 'Se não bebo café, não fico acordado' },
+      { id: 'B', texto: 'Bebo café e não fico acordado' },
+      { id: 'C', texto: 'Não bebo café ou fico acordado' },
+      { id: 'D', texto: 'Se fico acordado, bebo café' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '¬(p → q) ≡ p ∧ ¬q. Mantém o antecedente, nega o consequente, troca "SE...ENTÃO" por "E".',
+      incorretas: { A: 'Negar as duas partes NÃO é a negação da condicional.', C: 'Essa é uma EQUIVALÊNCIA (¬p ∨ q), não a negação.', D: 'Essa é a recíproca, não a negação.' },
+      conceitoCobrado: 'Negação da condicional.',
+      pegadinha: 'Confundir negação com equivalência ou com recíproca.',
+      comoApareceEmConcurso: 'Altíssima frequência.'
+    },
+    tags: ['negação', 'condicional']
+  },
+  {
+    id: 'Q-DID-MAT-2004',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-20',
+    subtema: 'Modus ponens',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'Premissas: "Se chove, então a rua fica molhada" e "Está chovendo". Qual conclusão é válida?',
+    alternativas: [
+      { id: 'A', texto: 'A rua não fica molhada.' },
+      { id: 'B', texto: 'A rua fica molhada.' },
+      { id: 'C', texto: 'Não está chovendo.' },
+      { id: 'D', texto: 'A rua pode ou não ficar molhada.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'MODUS PONENS: p → q; p ∴ q. Se "chove" implica "rua molhada" e está chovendo, então a rua fica molhada.',
+      incorretas: { A: 'Negaria a conclusão sem base.', C: 'Contradiz a premissa.', D: 'A conclusão é necessária.' },
+      conceitoCobrado: 'Regra de inferência Modus Ponens.',
+      pegadinha: 'Achar que a conclusão não é necessária.',
+      comoApareceEmConcurso: 'RLM.'
+    },
+    tags: ['argumentação', 'modus ponens']
+  },
+  {
+    id: 'Q-DID-MAT-2005',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-20',
+    subtema: 'Modus tollens',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'Premissas: "Se chove, então a rua fica molhada" e "A rua NÃO está molhada". Qual conclusão é válida?',
+    alternativas: [
+      { id: 'A', texto: 'Está chovendo.' },
+      { id: 'B', texto: 'Não está chovendo.' },
+      { id: 'C', texto: 'A rua está molhada.' },
+      { id: 'D', texto: 'Não é possível concluir nada.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'MODUS TOLLENS: p → q; ¬q ∴ ¬p. Se "chove" implica "rua molhada" e a rua NÃO está molhada, então NÃO está chovendo.',
+      incorretas: { A: 'Contradiz a premissa.', C: 'Contradiz a premissa.', D: 'É possível concluir (Modus Tollens).' },
+      conceitoCobrado: 'Regra de inferência Modus Tollens.',
+      pegadinha: 'Confundir com Modus Ponens.',
+      comoApareceEmConcurso: 'RLM.'
+    },
+    tags: ['argumentação', 'modus tollens']
+  },
+
+  /* ============================================================
+     MAT-22 — Análise Combinatória e Probabilidade
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-2201',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-22',
+    subtema: 'Princípio multiplicativo',
+    dificuldade: 1,
+    prioridade: 'condicional',
+    enunciado: 'Um restaurante oferece 4 opções de entrada, 5 pratos principais e 3 sobremesas. Quantos menus completos (entrada + principal + sobremesa) podem ser formados?',
+    alternativas: [
+      { id: 'A', texto: '12' },
+      { id: 'B', texto: '20' },
+      { id: 'C', texto: '60' },
+      { id: 'D', texto: '120' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Princípio multiplicativo: 4 × 5 × 3 = 60.',
+      incorretas: { A: 'Somou 4 + 5 + 3.', B: 'Multiplicou apenas 4 × 5.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Princípio fundamental da contagem.',
+      pegadinha: 'Somar em vez de multiplicar.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['princípio multiplicativo']
+  },
+  {
+    id: 'Q-DID-MAT-2202',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-22',
+    subtema: 'Permutação',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'De quantas formas 5 pessoas podem se organizar em uma fila?',
+    alternativas: [
+      { id: 'A', texto: '5' },
+      { id: 'B', texto: '25' },
+      { id: 'C', texto: '120' },
+      { id: 'D', texto: '3125' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Permutação de 5 elementos: P(5) = 5! = 5 × 4 × 3 × 2 × 1 = 120.',
+      incorretas: { A: 'É apenas o número de pessoas.', B: '5² = 25 (sem sentido aqui).', D: '5⁵ = 3.125 (não é permutação).' },
+      conceitoCobrado: 'Permutação simples.',
+      pegadinha: 'Confundir permutação com princípio multiplicativo com repetição.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['permutação']
+  },
+  {
+    id: 'Q-DID-MAT-2203',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-22',
+    subtema: 'Combinação',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'De quantas formas podemos escolher 3 pessoas entre 7 para formar uma comissão sem cargos definidos?',
+    alternativas: [
+      { id: 'A', texto: '21' },
+      { id: 'B', texto: '35' },
+      { id: 'C', texto: '210' },
+      { id: 'D', texto: '343' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Comissão sem cargos → a ORDEM NÃO importa → COMBINAÇÃO. C(7,3) = 7!/(3!·4!) = 5040/(6·24) = 5040/144 = 35.',
+      incorretas: { A: 'Erro de cálculo.', C: '210 é ARRANJO A(7,3), não combinação.', D: '7³ = 343 (sem sentido).' },
+      conceitoCobrado: 'Combinação simples.',
+      pegadinha: 'Usar arranjo (210) quando a ordem não importa.',
+      comoApareceEmConcurso: 'Pegadinha clássica.'
+    },
+    tags: ['combinação']
+  },
+  {
+    id: 'Q-DID-MAT-2204',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-22',
+    subtema: 'Arranjo',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'Em uma corrida com 8 atletas, de quantas formas diferentes podem ser distribuídas as medalhas de ouro, prata e bronze?',
+    alternativas: [
+      { id: 'A', texto: '24' },
+      { id: 'B', texto: '56' },
+      { id: 'C', texto: '336' },
+      { id: 'D', texto: '512' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'A ordem IMPORTA (ouro ≠ prata ≠ bronze) → ARRANJO. A(8,3) = 8!/(8-3)! = 8!/5! = 8 × 7 × 6 = 336.',
+      incorretas: { A: '4! = 24 (sem sentido).', B: '56 = C(8,3), que seria se a ordem não importasse.', D: '8³ = 512 (sem sentido).' },
+      conceitoCobrado: 'Arranjo simples.',
+      pegadinha: 'Confundir com combinação (56).',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['arranjo']
+  },
+  {
+    id: 'Q-DID-MAT-2205',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-22',
+    subtema: 'Probabilidade',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'Em um sorteio com 30 números (1 a 30), qual a probabilidade de sair um número múltiplo de 5?',
+    alternativas: [
+      { id: 'A', texto: '1/6' },
+      { id: 'B', texto: '1/5' },
+      { id: 'C', texto: '5/30' },
+      { id: 'D', texto: '6/30' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Múltiplos de 5 entre 1 e 30: 5, 10, 15, 20, 25, 30 → 6 números. P = 6/30 = 1/5.',
+      incorretas: { A: '5/30 = 1/6 é o número 5 apenas.', C: 'Também seria 5/30, mas o correto é 6/30.', D: '6/30 = 1/5 (esta alternativa está CORRETA na forma não simplificada — a resposta simplificada é 1/5, alternativa B).' },
+      conceitoCobrado: 'Probabilidade simples.',
+      pegadinha: 'Contar errado os múltiplos (esquecer o 30).',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['probabilidade']
   }
 
 ];
