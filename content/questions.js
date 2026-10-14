@@ -773,6 +773,905 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'Promoções em lojas.'
     },
     tags: ['porcentagem', 'descontos sucessivos']
+  },
+
+  /* ============================================================
+     MAT-02 — Conjuntos Numéricos
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-0201',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-02',
+    subtema: 'Classificação em conjuntos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Sobre o número √16, é correto afirmar que ele pertence a:',
+    alternativas: [
+      { id: 'A', texto: 'Apenas aos irracionais (𝕀).' },
+      { id: 'B', texto: 'Aos naturais (ℕ), inteiros (ℤ), racionais (ℚ) e reais (ℝ).' },
+      { id: 'C', texto: 'Apenas aos racionais (ℚ), sem ser natural.' },
+      { id: 'D', texto: 'Apenas aos reais (ℝ).' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '√16 = 4. Como 4 é natural, também é inteiro, racional e real. ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ.',
+      incorretas: { A: 'Só raízes não exatas (√2, √3, √5) são irracionais.', C: '4 é natural (e portanto também racional).', D: 'Pertence a todos os conjuntos numéricos citados, não apenas a ℝ.' },
+      conceitoCobrado: 'Classificação de raízes exatas.',
+      pegadinha: 'Achar que toda raiz é irracional. Raiz exata é racional.',
+      comoApareceEmConcurso: 'Cobrança direta de classificação.'
+    },
+    tags: ['conjuntos', 'raízes']
+  },
+  {
+    id: 'Q-DID-MAT-0202',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-02',
+    subtema: 'Comparação na reta numérica',
+    dificuldade: 1,
+    prioridade: 'alta',
+    enunciado: 'Na reta numérica, os números -3, -8, 0, 2 e -1, ordenados do MENOR para o MAIOR, ficam:',
+    alternativas: [
+      { id: 'A', texto: '-8, -3, -1, 0, 2' },
+      { id: 'B', texto: '2, 0, -1, -3, -8' },
+      { id: 'C', texto: '0, -1, -3, -8, 2' },
+      { id: 'D', texto: '-1, -3, -8, 0, 2' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Na reta numérica, quanto mais à esquerda, menor o número. Entre negativos, -8 é o menor (mais à esquerda) e -1 é o maior (mais à direita). Depois vêm 0 e 2.',
+      incorretas: { B: 'Está em ordem decrescente.', C: 'Confunde a posição do 0 e dos negativos.', D: 'Erra a ordem entre -1, -3 e -8.' },
+      conceitoCobrado: 'Ordenação na reta numérica.',
+      pegadinha: 'Achar que -8 é maior que -1 (porque 8 > 1). Em módulo, sim; na reta, não.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['reta numérica', 'ordenação']
+  },
+  {
+    id: 'Q-DID-MAT-0203',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-02',
+    subtema: 'Módulo',
+    dificuldade: 1,
+    prioridade: 'alta',
+    enunciado: 'O valor da expressão |−7| + |−3| − |2| é:',
+    alternativas: [
+      { id: 'A', texto: '-8' },
+      { id: 'B', texto: '8' },
+      { id: 'C', texto: '12' },
+      { id: 'D', texto: '-12' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '|-7| = 7, |-3| = 3, |2| = 2. Então: 7 + 3 - 2 = 8.',
+      incorretas: { A: 'Sinal trocado no resultado.', C: 'Somou em vez de subtrair o |2|.', D: 'Erro de sinal.' },
+      conceitoCobrado: 'Módulo (valor absoluto) — sempre positivo.',
+      pegadinha: 'Esquecer que o módulo transforma qualquer número em positivo.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['módulo', 'valor absoluto']
+  },
+  {
+    id: 'Q-DID-MAT-0204',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-02',
+    subtema: 'Intervalos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O intervalo ]2, 7] representa o conjunto dos números reais que são:',
+    alternativas: [
+      { id: 'A', texto: 'Maiores que 2 e menores que 7, sem incluir os extremos.' },
+      { id: 'B', texto: 'Maiores ou iguais a 2 e menores que 7, incluindo 2.' },
+      { id: 'C', texto: 'Maiores que 2 (excluindo 2) e menores ou iguais a 7 (incluindo 7).' },
+      { id: 'D', texto: 'Apenas os números inteiros entre 2 e 7.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'O colchete "de fora" ( ] ) indica extremo EXCLUÍDO; o "de dentro" ( ] invertido, ou seja, ] de fora e ] invertido) indica extremo INCLUÍDO. Assim: ]2, 7] = {x ∈ ℝ | 2 < x ≤ 7}.',
+      incorretas: { A: 'O 7 está incluído.', B: 'O 2 está excluído.', D: 'O intervalo é contínuo — inclui todos os reais, não só inteiros.' },
+      conceitoCobrado: 'Notação de intervalo.',
+      pegadinha: 'Confundir a abertura/fechadura dos colchetes.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['intervalos']
+  },
+  {
+    id: 'Q-DID-MAT-0205',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-02',
+    subtema: 'Racionais x irracionais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Sobre os números 0,333..., √25 e π, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'Os três são irracionais.' },
+      { id: 'B', texto: '0,333... é racional, √25 é racional e π é irracional.' },
+      { id: 'C', texto: 'Os três são racionais.' },
+      { id: 'D', texto: '0,333... é irracional, √25 é racional e π é racional.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '0,333... = 1/3 → racional. √25 = 5 → racional. π = 3,14159... (não periódico) → irracional.',
+      incorretas: { A: 'Só π é irracional.', C: 'π é irracional, não racional.', D: '0,333... é racional (dízima periódica), não irracional; π é irracional.' },
+      conceitoCobrado: 'Racional x irracional.',
+      pegadinha: 'Confundir dízima periódica (racional) com decimal infinito (irracional).',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['racionais', 'irracionais']
+  },
+
+  /* ============================================================
+     MAT-04 — Divisibilidade, MDC e MMC
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-0401',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-04',
+    subtema: 'Critérios de divisibilidade',
+    dificuldade: 1,
+    prioridade: 'alta',
+    enunciado: 'O número 4.752 é divisível por:',
+    alternativas: [
+      { id: 'A', texto: 'Apenas por 3.' },
+      { id: 'B', texto: 'Por 3 e por 9.' },
+      { id: 'C', texto: 'Por 2, 3 e 9, mas não por 5.' },
+      { id: 'D', texto: 'Por 2, 3, 5 e 9.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Por 2: termina em 2 (par). Por 3 e 9: soma dos algarismos = 4+7+5+2 = 18, que é múltiplo de 3 e de 9. Por 5: NÃO (não termina em 0 nem em 5).',
+      incorretas: { A: 'Também é divisível por 2 e 9.', B: 'Também é divisível por 2.', D: 'Não é divisível por 5 (não termina em 0 ou 5).' },
+      conceitoCobrado: 'Critérios de divisibilidade.',
+      pegadinha: 'Confundir múltiplos de 3 com múltiplos de 9 (todo múltiplo de 9 é de 3, mas o contrário não vale).',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['divisibilidade']
+  },
+  {
+    id: 'Q-DID-MAT-0402',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-04',
+    subtema: 'Números primos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'São números primos entre 10 e 20:',
+    alternativas: [
+      { id: 'A', texto: '11, 13, 17, 19' },
+      { id: 'B', texto: '11, 13, 15, 17' },
+      { id: 'C', texto: '10, 12, 14, 16' },
+      { id: 'D', texto: '12, 13, 17, 19' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Primos entre 10 e 20: 11, 13, 17, 19. Todos têm apenas 2 divisores (1 e ele mesmo).',
+      incorretas: { B: '15 tem mais de 2 divisores (1, 3, 5, 15).', C: 'Todos são pares e maiores que 2 (compostos).', D: '12 é composto (divisores: 1, 2, 3, 4, 6, 12).' },
+      conceitoCobrado: 'Números primos.',
+      pegadinha: 'Incluir números pares (exceto 2) ou múltiplos de 3/5.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['primos']
+  },
+  {
+    id: 'Q-DID-MAT-0403',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-04',
+    subtema: 'MDC em problemas',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Um professor tem 48 lápis e 72 canetas para distribuir em kits iguais, sem sobras, com o MAIOR número possível de kits. Quantos kits ele formará e quantos lápis terá cada kit?',
+    alternativas: [
+      { id: 'A', texto: '12 kits, 4 lápis cada' },
+      { id: 'B', texto: '24 kits, 2 lápis cada' },
+      { id: 'C', texto: '48 kits, 1 lápis cada' },
+      { id: 'D', texto: '36 kits, 3 lápis cada' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'MDC(48, 72): 48 = 2⁴ × 3; 72 = 2³ × 3². MDC = 2³ × 3 = 24. Lápis por kit: 48/24 = 2.',
+      incorretas: { A: '12 divide, mas não é o MAIOR número possível.', C: '48 é divisor de 48 mas não de 72.', D: '36 não divide 48.' },
+      conceitoCobrado: 'MDC aplicado — dividir em partes iguais.',
+      pegadinha: 'Confundir com MMC.',
+      comoApareceEmConcurso: 'Problemas contextualizados.'
+    },
+    tags: ['MDC']
+  },
+  {
+    id: 'Q-DID-MAT-0404',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-04',
+    subtema: 'MMC em problemas',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Um relógio A toca a cada 12 minutos e um relógio B toca a cada 18 minutos. Se ambos tocaram juntos agora, em quanto tempo tocarão juntos novamente?',
+    alternativas: [
+      { id: 'A', texto: '24 minutos' },
+      { id: 'B', texto: '30 minutos' },
+      { id: 'C', texto: '36 minutos' },
+      { id: 'D', texto: '48 minutos' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Encontro periódico → MMC(12, 18). 12 = 2² × 3; 18 = 2 × 3². MMC = 2² × 3² = 36 minutos.',
+      incorretas: { A: '24 é múltiplo de 12, mas não de 18.', B: '30 é múltiplo de 12? não; de 18? não.', D: '48 é múltiplo de 12, mas não de 18.' },
+      conceitoCobrado: 'MMC aplicado — encontros periódicos.',
+      pegadinha: 'Confundir com MDC (que seria 6).',
+      comoApareceEmConcurso: 'Problemas de periodicidade.'
+    },
+    tags: ['MMC']
+  },
+  {
+    id: 'Q-DID-MAT-0405',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-04',
+    subtema: 'Relação MDC × MMC',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Sabendo que MDC(60, 84) = 12, o MMC(60, 84) é:',
+    alternativas: [
+      { id: 'A', texto: '240' },
+      { id: 'B', texto: '360' },
+      { id: 'C', texto: '420' },
+      { id: 'D', texto: '520' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Relação: MDC × MMC = a × b. Então MMC = (60 × 84)/12 = 5.040/12 = 420.',
+      incorretas: { A: '60 × 4 = 240, mas não verifica a relação.', B: '360 = 60 × 6, mas não é múltiplo de 84.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Relação fundamental entre MDC e MMC.',
+      pegadinha: 'Não lembrar da relação e tentar calcular separadamente.',
+      comoApareceEmConcurso: 'Cobrança rápida por relação.'
+    },
+    tags: ['MDC', 'MMC', 'relação']
+  },
+
+  /* ============================================================
+     MAT-05 — Potenciação, Radiciação e Expressões Numéricas
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-0501',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-05',
+    subtema: 'Propriedades das potências',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O valor simplificado de (3² × 3⁵) ÷ 3⁴ é:',
+    alternativas: [
+      { id: 'A', texto: '3³ = 27' },
+      { id: 'B', texto: '3¹¹' },
+      { id: 'C', texto: '3⁻³' },
+      { id: 'D', texto: '3⁷' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: '3² × 3⁵ = 3⁷. Depois 3⁷ ÷ 3⁴ = 3³ = 27.',
+      incorretas: { B: 'Somou todos os expoentes, esquecendo a divisão.', C: 'Subtraiu os expoentes na ordem errada.', D: 'Esqueceu de subtrair o 3⁴ da divisão.' },
+      conceitoCobrado: 'Propriedades das potências de mesma base.',
+      pegadinha: 'Confundir soma e subtração de expoentes na multiplicação e na divisão.',
+      comoApareceEmConcurso: 'Expressões com potências.'
+    },
+    tags: ['potenciação']
+  },
+  {
+    id: 'Q-DID-MAT-0502',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-05',
+    subtema: 'Expoente negativo',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O valor de 5⁻² é:',
+    alternativas: [
+      { id: 'A', texto: '-25' },
+      { id: 'B', texto: '-10' },
+      { id: 'C', texto: '1/25' },
+      { id: 'D', texto: '1/10' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '5⁻² = 1/5² = 1/25 = 0,04.',
+      incorretas: { A: 'O sinal de menos NÃO torna o resultado negativo — inverte a base.', B: 'Confundiu potência com multiplicação.', D: 'Confundiu 5² (25) com 5×2 (10).' },
+      conceitoCobrado: 'Expoente negativo.',
+      pegadinha: 'Achar que o resultado é negativo.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['potenciação', 'expoente negativo']
+  },
+  {
+    id: 'Q-DID-MAT-0503',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-05',
+    subtema: 'Expressões numéricas',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'O valor da expressão 5 + 2² × (8 - 3) - √36 é:',
+    alternativas: [
+      { id: 'A', texto: '19' },
+      { id: 'B', texto: '15' },
+      { id: 'C', texto: '25' },
+      { id: 'D', texto: '13' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Parênteses primeiro: 8 - 3 = 5. Potência: 2² = 4. Raiz: √36 = 6. Depois: 5 + 4 × 5 - 6 = 5 + 20 - 6 = 19.',
+      incorretas: { B: 'Erro ao multiplicar 5 + 2² = 9 por 5 = 45, menos 6, daria 39.', C: 'Erro ao somar tudo antes de multiplicar.', D: 'Erro ao considerar √36 = 8.' },
+      conceitoCobrado: 'Ordem das operações + potência + raiz.',
+      pegadinha: 'Não respeitar a ordem.',
+      comoApareceEmConcurso: 'Expressões numéricas mistas.'
+    },
+    tags: ['expressões', 'potenciação', 'radiciação']
+  },
+  {
+    id: 'Q-DID-MAT-0504',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-05',
+    subtema: 'Notação científica',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O número 0,00045 em notação científica é:',
+    alternativas: [
+      { id: 'A', texto: '4,5 × 10⁻⁴' },
+      { id: 'B', texto: '4,5 × 10⁻³' },
+      { id: 'C', texto: '45 × 10⁻⁵' },
+      { id: 'D', texto: '4,5 × 10⁴' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: '0,00045 = 4,5 × 10⁻⁴. Andamos 4 casas para a direita até chegar a 4,5 (entre 1 e 10).',
+      incorretas: { B: 'Seria 0,0045.', C: 'O coeficiente deve estar entre 1 e 10.', D: 'Expoente positivo indica número grande, não pequeno.' },
+      conceitoCobrado: 'Notação científica.',
+      pegadinha: 'Errar o sinal do expoente ou o número de casas.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['notação científica']
+  },
+  {
+    id: 'Q-DID-MAT-0505',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'MAT-05',
+    subtema: 'Raízes',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O valor da expressão √49 + √81 - √100 é:',
+    alternativas: [
+      { id: 'A', texto: '8' },
+      { id: 'B', texto: '12' },
+      { id: 'C', texto: '14' },
+      { id: 'D', texto: '30' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '√49 = 7; √81 = 9; √100 = 10. 7 + 9 - 10 = 6 + 6 = 12.',
+      incorretas: { A: 'Erro de cálculo.', C: 'Erro ao somar 7 + 9 = 16, subtrair 2.', D: 'Somou as raízes sem resolver.' },
+      conceitoCobrado: 'Radiciação.',
+      pegadinha: 'Somar os radicandos (√49 + √81 ≠ √130).',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['radiciação']
+  },
+
+  /* ============================================================
+     MAT-09 — Expressões Algébricas e Equações do 1º Grau
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-0901',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-09',
+    subtema: 'Equação do 1º grau',
+    dificuldade: 1,
+    prioridade: 'alta',
+    enunciado: 'A solução da equação 5x - 8 = 3x + 12 é:',
+    alternativas: [
+      { id: 'A', texto: 'x = 4' },
+      { id: 'B', texto: 'x = 6' },
+      { id: 'C', texto: 'x = 10' },
+      { id: 'D', texto: 'x = 20' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '5x - 3x = 12 + 8 → 2x = 20 → x = 10. Verificação: 5(10)-8 = 42; 3(10)+12 = 42. ✓',
+      incorretas: { A: 'Erro ao passar termos.', B: 'Erro de sinal.', D: 'Esqueceu de dividir por 2.' },
+      conceitoCobrado: 'Equação do 1º grau.',
+      pegadinha: 'Errar o sinal ao passar termos de lado.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['equação 1º grau']
+  },
+  {
+    id: 'Q-DID-MAT-0902',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-09',
+    subtema: 'Equação com parênteses',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O valor de x na equação 4(x + 3) - 2(x - 1) = 24 é:',
+    alternativas: [
+      { id: 'A', texto: 'x = 5' },
+      { id: 'B', texto: 'x = 7' },
+      { id: 'C', texto: 'x = 9' },
+      { id: 'D', texto: 'x = 11' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Distributiva: 4x + 12 - 2x + 2 = 24. Simplificando: 2x + 14 = 24 → 2x = 10 → x = 5. Recalculemos: 4(5+3)-2(5-1) = 4(8) - 2(4) = 32 - 8 = 24 ✓. Aguarde: 4×8 = 32; 2×4 = 8; 32-8 = 24 ✓. Então x = 5. A alternativa correta é A.'
+    },
+    tags: ['equação', 'parênteses']
+  },
+  {
+    id: 'Q-DID-MAT-0903',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-09',
+    subtema: 'Equação com frações',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'A solução da equação x/2 + x/3 = 10 é:',
+    alternativas: [
+      { id: 'A', texto: 'x = 6' },
+      { id: 'B', texto: 'x = 10' },
+      { id: 'C', texto: 'x = 12' },
+      { id: 'D', texto: 'x = 24' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'MMC(2, 3) = 6. Multiplica toda a equação por 6: 3x + 2x = 60 → 5x = 60 → x = 12. Verificação: 12/2 + 12/3 = 6 + 4 = 10 ✓.',
+      incorretas: { A: 'Erro ao multiplicar.', B: 'Confundiu o resultado com o valor da soma.', D: 'Erro ao dobrar o resultado.' },
+      conceitoCobrado: 'Equação com frações.',
+      pegadinha: 'Não eliminar denominadores antes de resolver.',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['equação', 'frações']
+  },
+  {
+    id: 'Q-DID-MAT-0904',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-09',
+    subtema: 'Problemas com incógnitas',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'A soma de três números consecutivos é 87. O maior deles é:',
+    alternativas: [
+      { id: 'A', texto: '28' },
+      { id: 'B', texto: '29' },
+      { id: 'C', texto: '30' },
+      { id: 'D', texto: '31' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Sejam x, x+1, x+2. Soma: 3x + 3 = 87 → 3x = 84 → x = 28. Números: 28, 29, 30. Maior: 30.',
+      incorretas: { A: 'É o menor.', B: 'É o do meio.', D: 'Está um além do maior.' },
+      conceitoCobrado: 'Problemas com incógnitas.',
+      pegadinha: 'Confundir qual é o maior.',
+      comoApareceEmConcurso: 'Problemas clássicos.'
+    },
+    tags: ['equação', 'problemas']
+  },
+  {
+    id: 'Q-DID-MAT-0905',
+    tipo: 'DIDATICA',
+    area: 'PROP',
+    moduloId: 'MAT-09',
+    subtema: 'Tradução de enunciados',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'A expressão algébrica que representa "o dobro de um número, mais cinco" é:',
+    alternativas: [
+      { id: 'A', texto: '2x + 5' },
+      { id: 'B', texto: '2(x + 5)' },
+      { id: 'C', texto: 'x + 10' },
+      { id: 'D', texto: '5x + 2' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: '"O dobro de um número" = 2x. "Mais cinco" = somar 5. Resultado: 2x + 5.',
+      incorretas: { B: 'Isso seria "o dobro de (um número mais cinco)".', C: 'Isso seria "o dobro de (x + 5)" simplificado.', D: 'Inverteu a ordem.' },
+      conceitoCobrado: 'Tradução de linguagem natural para algébrica.',
+      pegadinha: 'Confundir "2x + 5" com "2(x+5)" pela posição da vírgula.',
+      comoApareceEmConcurso: 'Cobrança em problemas contextualizados.'
+    },
+    tags: ['tradução', 'álgebra']
+  },
+
+  /* ============================================================
+     MAT-11 — Matemática Financeira
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1101',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-11',
+    subtema: 'Juros simples',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Um capital de R$ 3.000 é aplicado a juros simples de 4% ao mês durante 5 meses. Os juros gerados são:',
+    alternativas: [
+      { id: 'A', texto: 'R$ 500' },
+      { id: 'B', texto: 'R$ 600' },
+      { id: 'C', texto: 'R$ 640' },
+      { id: 'D', texto: 'R$ 720' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'J = C × i × t = 3.000 × 0,04 × 5 = 600.',
+      incorretas: { A: 'Erro ao multiplicar.', C: 'Erro de cálculo.', D: 'Confundiu com juros compostos ou usou 6% em vez de 4%.' },
+      conceitoCobrado: 'Juros simples.',
+      pegadinha: 'Confundir juros com montante.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['juros simples']
+  },
+  {
+    id: 'Q-DID-MAT-1102',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-11',
+    subtema: 'Juros compostos',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Um capital de R$ 1.500 é aplicado a juros compostos de 20% ao ano durante 2 anos. O montante é:',
+    alternativas: [
+      { id: 'A', texto: 'R$ 2.100' },
+      { id: 'B', texto: 'R$ 2.160' },
+      { id: 'C', texto: 'R$ 2.200' },
+      { id: 'D', texto: 'R$ 2.250' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'M = C × (1 + i)ᵗ = 1.500 × (1,20)² = 1.500 × 1,44 = 2.160.',
+      incorretas: { A: '1.500 × 1,40 = 2.100 (juros simples de 20% ao ano × 2 = 40%).', C: 'Erro de cálculo.', D: 'Erro ao usar 1,50.' },
+      conceitoCobrado: 'Juros compostos.',
+      pegadinha: 'Confundir com juros simples (que daria 2.100).',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['juros compostos']
+  },
+  {
+    id: 'Q-DID-MAT-1103',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-11',
+    subtema: 'Conversão de taxa',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Uma aplicação rende 2% ao mês no regime de juros simples. A taxa anual equivalente é:',
+    alternativas: [
+      { id: 'A', texto: '20%' },
+      { id: 'B', texto: '24%' },
+      { id: 'C', texto: '26,82%' },
+      { id: 'D', texto: '12%' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Em JUROS SIMPLES, as taxas são proporcionais. 2% ao mês × 12 meses = 24% ao ano.',
+      incorretas: { A: 'Confundiu 2% com 20%.', C: '26,82% seria em JUROS COMPOSTOS (1,02¹² - 1).', D: 'Confundiu com 1% ao mês.' },
+      conceitoCobrado: 'Taxa proporcional em juros simples.',
+      pegadinha: 'Confundir com regime de juros compostos.',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['taxa', 'juros simples']
+  },
+  {
+    id: 'Q-DID-MAT-1104',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-11',
+    subtema: 'Desconto simples',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Um título de R$ 8.000 vence em 3 meses. Se for descontado hoje a uma taxa de desconto comercial simples de 2% ao mês, o valor pago será:',
+    alternativas: [
+      { id: 'A', texto: 'R$ 7.520' },
+      { id: 'B', texto: 'R$ 7.600' },
+      { id: 'C', texto: 'R$ 7.680' },
+      { id: 'D', texto: 'R$ 7.840' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Desconto comercial: D = N × i × t = 8.000 × 0,02 × 3 = 480. Valor pago = 8.000 - 480 = 7.520.',
+      incorretas: { B: 'Usou apenas 2,5 meses de desconto.', C: 'Erro de cálculo.', D: 'Usou 1 mês de desconto.' },
+      conceitoCobrado: 'Desconto simples comercial.',
+      pegadinha: 'Confundir desconto comercial com racional.',
+      comoApareceEmConcurso: 'Cobrança recorrente em bancos.'
+    },
+    tags: ['desconto', 'juros simples']
+  },
+  {
+    id: 'Q-DID-MAT-1105',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-11',
+    subtema: 'Aumentos sucessivos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Um produto sofreu aumento de 10% e, em seguida, mais 20%. O aumento total acumulado foi de:',
+    alternativas: [
+      { id: 'A', texto: '30%' },
+      { id: 'B', texto: '32%' },
+      { id: 'C', texto: '28%' },
+      { id: 'D', texto: '22%' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '1,10 × 1,20 = 1,32 → +32%.',
+      incorretas: { A: 'Somou os percentuais (10 + 20), mas eles devem ser multiplicados.', C: 'Erro de cálculo.', D: 'Erro de interpretação.' },
+      conceitoCobrado: 'Aumentos sucessivos.',
+      pegadinha: 'Somar percentuais em vez de multiplicar.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['porcentagem', 'aumentos sucessivos']
+  },
+
+  /* ============================================================
+     MAT-12 — Sistemas de Medidas
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1201',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-12',
+    subtema: 'Comprimento',
+    dificuldade: 1,
+    prioridade: 'alta',
+    enunciado: 'A distância de 2,5 km corresponde, em metros, a:',
+    alternativas: [
+      { id: 'A', texto: '25 m' },
+      { id: 'B', texto: '250 m' },
+      { id: 'C', texto: '2.500 m' },
+      { id: 'D', texto: '25.000 m' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '1 km = 1.000 m. Então 2,5 km = 2,5 × 1.000 = 2.500 m.',
+      incorretas: { A: 'Erro de fator.', B: 'Erro de fator.', D: 'Erro de fator.' },
+      conceitoCobrado: 'Conversão de comprimento.',
+      pegadinha: 'Deslocar a vírgula errado.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['comprimento']
+  },
+  {
+    id: 'Q-DID-MAT-1202',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-12',
+    subtema: 'Área',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Um terreno de 3 m² corresponde, em cm², a:',
+    alternativas: [
+      { id: 'A', texto: '300 cm²' },
+      { id: 'B', texto: '3.000 cm²' },
+      { id: 'C', texto: '30.000 cm²' },
+      { id: 'D', texto: '300.000 cm²' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '1 m² = 10.000 cm². Então 3 m² = 3 × 10.000 = 30.000 cm².',
+      incorretas: { A: 'Usou × 100 (fator de comprimento).', B: 'Usou × 1.000 (fator de volume).', D: 'Usou × 100.000.' },
+      conceitoCobrado: 'Conversão de área (× 100 por passo, 2 passos: m → dm → cm).',
+      pegadinha: 'Confundir com comprimento (× 10) ou volume (× 1.000).',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['área', 'conversão']
+  },
+  {
+    id: 'Q-DID-MAT-1203',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-12',
+    subtema: 'Relação litro × volume',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Uma caixa d\'água tem volume interno de 5.000 litros. Sua capacidade, em metros cúbicos, é:',
+    alternativas: [
+      { id: 'A', texto: '0,5 m³' },
+      { id: 'B', texto: '5 m³' },
+      { id: 'C', texto: '50 m³' },
+      { id: 'D', texto: '500 m³' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Relação: 1 m³ = 1.000 L. Então 5.000 L = 5 m³.',
+      incorretas: { A: 'Erro de fator.', C: 'Erro de fator.', D: 'Erro de fator.' },
+      conceitoCobrado: 'Relação litro × m³.',
+      pegadinha: 'Errar a relação (1 m³ = 1.000 L, não 100 nem 10.000).',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['volume', 'litros']
+  },
+  {
+    id: 'Q-DID-MAT-1204',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-12',
+    subtema: 'Volume de sólido',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Uma piscina retangular mede 8 m de comprimento, 4 m de largura e 2 m de profundidade. Sua capacidade em litros é:',
+    alternativas: [
+      { id: 'A', texto: '32.000 litros' },
+      { id: 'B', texto: '48.000 litros' },
+      { id: 'C', texto: '64.000 litros' },
+      { id: 'D', texto: '80.000 litros' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Volume = 8 × 4 × 2 = 64 m³. Como 1 m³ = 1.000 L, a capacidade é 64.000 L.',
+      incorretas: { A: 'Erro ao multiplicar (8×4 = 32, esqueceu a profundidade).', B: 'Erro de cálculo.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Volume de paralelepípedo + conversão para litros.',
+      pegadinha: 'Esquecer de multiplicar por 1.000 no final.',
+      comoApareceEmConcurso: 'Problemas de capacidade.'
+    },
+    tags: ['volume', 'litros']
+  },
+  {
+    id: 'Q-DID-MAT-1205',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-12',
+    subtema: 'Tempo',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Um evento durou 2,75 horas. Esse tempo corresponde a:',
+    alternativas: [
+      { id: 'A', texto: '2 h 75 min' },
+      { id: 'B', texto: '2 h 45 min' },
+      { id: 'C', texto: '2 h 30 min' },
+      { id: 'D', texto: '2 h 55 min' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '0,75 h = 0,75 × 60 = 45 min. Total: 2 h 45 min.',
+      incorretas: { A: 'A parte decimal é fração de 60, não de 100.', C: 'Erro de conversão.', D: 'Erro de conversão.' },
+      conceitoCobrado: 'Tempo — base 60 (não decimal).',
+      pegadinha: 'Tratar 0,75 h como 75 min (errado).',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['tempo']
+  },
+
+  /* ============================================================
+     MAT-13 — Interpretação de Tabelas e Gráficos
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1301',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-13',
+    subtema: 'Variação percentual',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'A produção de uma fábrica passou de 2.500 peças em janeiro para 3.000 peças em fevereiro. A variação percentual foi de:',
+    alternativas: [
+      { id: 'A', texto: '10%' },
+      { id: 'B', texto: '15%' },
+      { id: 'C', texto: '20%' },
+      { id: 'D', texto: '25%' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '(3.000 - 2.500)/2.500 × 100 = 500/2.500 × 100 = 20%.',
+      incorretas: { A: 'Usou base errada.', B: 'Erro de cálculo.', D: 'Usou a diferença como numerador mas com base no final.' },
+      conceitoCobrado: 'Variação percentual.',
+      pegadinha: 'Usar o valor final como base em vez do inicial.',
+      comoApareceEmConcurso: 'Cobrança recorrente em questões de tabelas/gráficos.'
+    },
+    tags: ['variação percentual', 'gráficos']
+  },
+  {
+    id: 'Q-DID-MAT-1302',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-13',
+    subtema: 'Gráfico de setores',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'Um gráfico de setores mostra a divisão de um orçamento: 45% saúde, 25% educação, 15% segurança e o restante em outras áreas. O percentual destinado a outras áreas é:',
+    alternativas: [
+      { id: 'A', texto: '10%' },
+      { id: 'B', texto: '15%' },
+      { id: 'C', texto: '20%' },
+      { id: 'D', texto: '25%' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A soma dos setores deve ser 100%. 45 + 25 + 15 = 85. Outras = 100 - 85 = 15%.',
+      incorretas: { A: 'Erro de cálculo.', C: 'Erro de cálculo.', D: 'Repetiu o valor de educação.' },
+      conceitoCobrado: 'Gráfico de setores — soma = 100%.',
+      pegadinha: 'Errar a soma.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['gráfico de setores']
+  },
+  {
+    id: 'Q-DID-MAT-1303',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-13',
+    subtema: 'Tendência em gráfico de linhas',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Um gráfico de linhas mostra a temperatura média em uma cidade ao longo de 5 meses: 22, 25, 28, 26, 24 (em °C). Sobre a tendência:',
+    alternativas: [
+      { id: 'A', texto: 'É de queda desde o início.' },
+      { id: 'B', texto: 'É estável, sem variação.' },
+      { id: 'C', texto: 'Cresceu nos primeiros meses e depois passou a cair, indicando tendência recente de queda.' },
+      { id: 'D', texto: 'É de crescimento contínuo.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'A linha sobe nos 3 primeiros meses (22→25→28), depois cai (28→26→24). A tendência recente é de queda.',
+      incorretas: { A: 'Não caiu desde o início — subiu primeiro.', B: 'Houve variação clara.', D: 'A partir do 3º mês, caiu.' },
+      conceitoCobrado: 'Análise de tendência em gráfico de linhas.',
+      pegadinha: 'Olhar apenas o início e o fim e ignorar o comportamento do meio.',
+      comoApareceEmConcurso: 'Interpretação de gráficos.'
+    },
+    tags: ['tendência', 'gráfico de linhas']
+  },
+  {
+    id: 'Q-DID-MAT-1304',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-13',
+    subtema: 'Tabela de dupla entrada',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Uma tabela de dupla entrada mostra vendas de uma loja por trimestre e por produto (A, B, C, D). No 2º trimestre, as vendas foram: A = 100, B = 250, C = 180, D = 70. O produto mais vendido e o menos vendido foram, respectivamente:',
+    alternativas: [
+      { id: 'A', texto: 'A e D' },
+      { id: 'B', texto: 'B e D' },
+      { id: 'C', texto: 'B e A' },
+      { id: 'D', texto: 'C e D' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Comparando os valores do 2º trimestre: A = 100, B = 250, C = 180, D = 70. Maior = B (250). Menor = D (70).',
+      incorretas: { A: 'A não é o maior.', C: 'A não é o menor — D tem 70.', D: 'C não é o maior.' },
+      conceitoCobrado: 'Leitura de tabela de dupla entrada.',
+      pegadinha: 'Confundir produtos/trimestres ou inverter a ordem da resposta.',
+      comoApareceEmConcurso: 'Leitura de tabelas.'
+    },
+    tags: ['tabela', 'dupla entrada']
+  },
+  {
+    id: 'Q-DID-MAT-1305',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-13',
+    subtema: 'Informação incompleta',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Uma tabela mostra que, de 500 alunos, 60% são do turno da manhã e o restante é dividido igualmente entre tarde e noite. Quantos alunos estudam à noite?',
+    alternativas: [
+      { id: 'A', texto: '100' },
+      { id: 'B', texto: '120' },
+      { id: 'C', texto: '150' },
+      { id: 'D', texto: '200' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Manhã: 60% de 500 = 300. Restante: 200, dividido igualmente entre tarde e noite = 100 cada.',
+      incorretas: { B: 'Erro de cálculo.', C: 'Erro de cálculo.', D: 'Considerou os 200 inteiros para a noite.' },
+      conceitoCobrado: 'Uso de porcentagem + divisão igualitária.',
+      pegadinha: 'Esquecer de dividir o restante por 2.',
+      comoApareceEmConcurso: 'Problemas com tabelas e porcentagem.'
+    },
+    tags: ['tabela', 'porcentagem', 'incompleta']
   }
 
 ];
