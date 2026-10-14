@@ -372,6 +372,231 @@ window.LESSONS_ALTA = {
         resposta: 'Perda de 6,25%. 100 × 1,25 × 0,75 = 93,75. Variação = (93,75 - 100)/100 = -6,25%. Um aumento e um desconto iguais NÃO se anulam — sempre há perda.'
       }
     }
+  },
+
+  /* ============================================================
+     MAT-02 — Conjuntos Numéricos
+  ============================================================ */
+  'MAT-02': {
+    id: 'L-MAT-02',
+    moduloId: 'MAT-02',
+    objetivo: 'Compreender os conjuntos numéricos (naturais, inteiros, racionais, irracionais e reais), a reta numérica, módulo, comparação, ordenação e intervalos. Base para álgebra, funções e estatística.',
+    prerequisitos: ['MAT-01'],
+
+    introducao: 'Os números que usamos no dia a dia pertencem a conjuntos organizados: os naturais (contagem), os inteiros (com negativos), os racionais (frações), os irracionais (raízes não exatas, π) e os reais (todos juntos). Saber a que conjunto pertence cada número é essencial para entender desigualdades, intervalos e problemas com sinal.',
+
+    explicacaoSimples: 'Pense nos conjuntos numéricos como caixas que se encaixam: os naturais estão dentro dos inteiros, que estão dentro dos racionais, que estão dentro dos reais. Os irracionais também estão dentro dos reais, mas ficam em uma caixa separada dos racionais. Juntos, racionais + irracionais formam os reais.',
+
+    explicacaoTecnica: 'NATURAIS (ℕ): {0, 1, 2, 3, ...} — contagem. INTEIROS (ℤ): {..., -3, -2, -1, 0, 1, 2, 3, ...} — incluem negativos. RACIONAIS (ℚ): todo número que pode ser escrito como fração a/b, com a e b inteiros e b ≠ 0 — inclui decimais exatos (0,25) e dízimas periódicas (0,333...). IRRACIONAIS (𝕀): não podem ser escritos como fração — decimais infinitos não periódicos (√2, √3, π, e). REAIS (ℝ): ℚ ∪ 𝕀 — todos os números que podem ser colocados na reta numérica. RELAÇÕES: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ; 𝕀 ⊂ ℝ; ℚ ∩ 𝕀 = ∅. RETA NUMÉRICA: cada número real corresponde a um ponto único; números à direita são maiores. MÓDULO (valor absoluto): |x| = x se x ≥ 0, e -x se x < 0. Representa a distância até o zero; nunca é negativo. INTERVALOS: aberto ]a, b[, fechado [a, b], semiabertos [a, b[ ou ]a, b], infinitos ]-∞, a[, [a, +∞[, etc.',
+
+    exemplos: [
+      '7 ∈ ℕ, ℤ, ℚ e ℝ. -4 ∈ ℤ, ℚ e ℝ (não é natural).',
+      '3/4 = 0,75 ∈ ℚ e ℝ. 0,333... = 1/3 ∈ ℚ e ℝ.',
+      '√2 ≈ 1,41421356... ∈ 𝕀 e ℝ (não é racional). π ∈ 𝕀 e ℝ.',
+      'Comparação: -5 < -2 < 0 < 3 < 8 (na reta, à direita é maior).',
+      'Módulo: |7| = 7; |-7| = 7; |0| = 0.',
+      'Intervalos: [2, 5] = {x ∈ ℝ | 2 ≤ x ≤ 5}; ]2, 5[ = {x ∈ ℝ | 2 < x < 5}; [2, +∞[ = {x ∈ ℝ | x ≥ 2}.'
+    ],
+
+    comparacoes: [
+      { termoA: 'Racionais (ℚ)', termoB: 'Irracionais (𝕀)', diferenca: 'RACIONAIS: podem ser escritos como fração a/b (b ≠ 0). Ex.: 3/4, 0,25, 0,333..., 7, -2. IRRACIONAIS: NÃO podem ser escritos como fração — decimais infinitos não periódicos. Ex.: √2, √3, π, e. A união dos dois forma os reais.' },
+      { termoA: 'Naturais (ℕ)', termoB: 'Inteiros (ℤ)', diferenca: 'NATURAIS: só os não negativos (0, 1, 2, 3...). INTEIROS: incluem os negativos (..., -2, -1, 0, 1, 2...). Todo natural é inteiro, mas nem todo inteiro é natural. ℕ ⊂ ℤ.' },
+      { termoA: 'Módulo de um número', termoB: 'Número oposto', diferenca: 'MÓDULO: distância até o zero, sempre ≥ 0. Ex.: |-5| = 5. OPOSTO (simétrico): número com sinal trocado. Ex.: oposto de -5 é +5. O módulo é sempre positivo; o oposto pode ser positivo ou negativo.' },
+      { termoA: 'Intervalo aberto', termoB: 'Intervalo fechado', diferenca: 'ABERTO ]a, b[: NÃO inclui as extremidades. Ex.: ]2, 5[ contém valores maiores que 2 e menores que 5, sem incluir 2 nem 5. FECHADO [a, b]: inclui as extremidades. Ex.: [2, 5] inclui 2 e 5. Semiabertos combinam: [2, 5[ inclui 2 mas não 5.' }
+    ],
+
+    aplicacaoEmConcurso: 'Cobrança de classificação de números em conjuntos (é natural? é racional?), comparação na reta numérica, cálculo de módulo, interpretação de intervalos e resolução de inequações. A classificação de √n como racional ou irracional é pegadinha clássica: √4 = 2 é racional, √2 é irracional.',
+
+    pegadinhas: [
+      'Dizer que todo número negativo é inteiro. NÃO — -1/2 = -0,5 é racional, mas não inteiro.',
+      'Confundir ℤ com ℕ. ℤ inclui negativos; ℕ não.',
+      'Achar que √n é sempre irracional. √4 = 2 (racional), √9 = 3 (racional), √2 (irracional).',
+      'Dizer que 0,333... é irracional. NÃO — é dízima periódica, portanto racional.',
+      'Errar o sinal do módulo: |-5| = 5 (positivo), não -5.',
+      'Confundir intervalo aberto ] com fechado [. O colchete "de fora" ( ] ou [ ) indica aberto; "de dentro" ( [ ou ] ) indica fechado.',
+      'Achar que a reta numérica "termina" — ela é infinita para os dois lados.'
+    ],
+
+    errosComuns: [
+      'Decorar as siglas sem entender o que cada conjunto representa.',
+      'Confundir racionais com irracionais em raízes e dízimas.',
+      'Ignorar a ordem correta dos números negativos (-10 é menor que -2).',
+      'Errar a notação de intervalo.'
+    ],
+
+    resumo: [
+      'ℕ = {0, 1, 2, 3, ...} — naturais.',
+      'ℤ = {..., -2, -1, 0, 1, 2, ...} — inteiros.',
+      'ℚ = frações a/b com b ≠ 0 — racionais (inclui decimais exatos e dízimas).',
+      '𝕀 = decimais infinitos não periódicos — irracionais (√2, π).',
+      'ℝ = ℚ ∪ 𝕀 — todos os números.',
+      'Relações: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ; 𝕀 ⊂ ℝ.',
+      'Módulo: |x| ≥ 0, sempre.',
+      'Na reta, à direita é maior. -5 < -2 < 0 < 3.',
+      'Intervalos: aberto ], fechado [, infinitos com ±∞.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Pense em caixas: ℕ (naturais) está dentro de ℤ (inteiros), que está dentro de ℚ (racionais), que está dentro de ℝ (reais). Os irracionais ficam em uma caixa à parte, também dentro de ℝ. Juntos, racionais e irracionais formam os reais.',
+      outroExemplo: 'O número 3/4 = 0,75 pertence a ℚ e ℝ (não é natural nem inteiro). Já o número 5 pertence a ℕ, ℤ, ℚ e ℝ. O número √2 ≈ 1,414... pertence a 𝕀 e ℝ (não é racional).',
+      compararConceitos: 'ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. ℚ ∩ 𝕀 = ∅ (nenhum número é racional e irracional ao mesmo tempo). |x| é distância até o zero; nunca negativo.',
+      mostrarPegadinha: 'Cuidado: "√9 é irracional". ERRADO. √9 = 3, que é natural, inteiro, racional e real. Só raízes NÃO EXATAS (√2, √3, √5...) são irracionais.',
+      comoApareceEmConcurso: 'Classificação de números em conjuntos, comparação na reta e interpretação de intervalos. Frequência alta.',
+      fazerPergunta: {
+        pergunta: 'O número 0,101001000100001... (não periódico) pertence a qual conjunto?',
+        resposta: 'É IRRACIONAL (𝕀) e REAL (ℝ). Ele não é uma dízima periódica (não tem um bloco que se repete infinitamente), então não pode ser escrito como fração.'
+      }
+    }
+  },
+
+  /* ============================================================
+     MAT-04 — Divisibilidade, MDC e MMC
+  ============================================================ */
+  'MAT-04': {
+    id: 'L-MAT-04',
+    moduloId: 'MAT-04',
+    objetivo: 'Dominar critérios de divisibilidade, números primos, decomposição em fatores primos, divisores, múltiplos, máximo divisor comum (MDC) e mínimo múltiplo comum (MMC). Base para frações, proporção e problemas de periodicidade.',
+    prerequisitos: ['MAT-01'],
+
+    introducao: 'MDC e MMC são ferramentas que reaparecem o tempo todo: para simplificar frações, somar frações com denominadores diferentes, resolver problemas de encontros periódicos (dois ônibus que partem em intervalos diferentes), dividir grupos em partes iguais, etc. Entender esses conceitos economiza muito tempo em prova.',
+
+    explicacaoSimples: 'MDC é o maior número que divide dois (ou mais) números ao mesmo tempo. MMC é o menor número que é múltiplo de dois (ou mais) números ao mesmo tempo. Um exemplo prático: dois atletas correm em voltas de 12 e 18 minutos. Depois de quanto tempo se encontram na linha de partida? Resposta: MMC(12, 18) = 36 minutos.',
+
+    explicacaoTecnica: 'DIVISIBILIDADE: por 2 (termina em 0, 2, 4, 6, 8); por 3 (soma dos algarismos é múltiplo de 3); por 4 (últimos 2 algarismos formam múltiplo de 4); por 5 (termina em 0 ou 5); por 6 (divisível por 2 e por 3); por 8 (últimos 3 algarismos formam múltiplo de 8); por 9 (soma dos algarismos é múltiplo de 9); por 10 (termina em 0). NÚMEROS PRIMOS: têm exatamente 2 divisores (1 e ele mesmo). 2 é o único primo par. DECOMPOSIÇÃO EM FATORES PRIMOS: escrever o número como produto de primos (ex.: 360 = 2³ × 3² × 5). MDC: produto dos fatores primos COMUNS, cada um com o MENOR expoente. MMC: produto de TODOS os fatores primos (comuns e não comuns), cada um com o MAIOR expoente. RELAÇÃO: MDC(a, b) × MMC(a, b) = a × b. PROCESSO PRÁTICO: decomposição simultânea (MMC) ou fatoração separada (MDC).',
+
+    exemplos: [
+      'Divisibilidade: 1.248 é divisível por 3 (1+2+4+8 = 15, múltiplo de 3) e por 4 (48 é múltiplo de 4).',
+      'Primos até 20: 2, 3, 5, 7, 11, 13, 17, 19.',
+      'Decomposição: 360 = 2³ × 3² × 5 (360 = 8 × 9 × 5).',
+      'MDC(24, 36): 24 = 2³ × 3; 36 = 2² × 3². Fatores comuns: 2² × 3 = 12.',
+      'MMC(24, 36): 2³ × 3² = 72.',
+      'Confirmação: MDC × MMC = 12 × 72 = 864 = 24 × 36. ✓',
+      'Problema prático: dois ônibus partem de 15 em 15 min e de 20 em 20 min. Se partiram juntos às 8h, voltam a partir juntos às 9h (MMC(15, 20) = 60 min = 1 h).'
+    ],
+
+    comparacoes: [
+      { termoA: 'MDC', termoB: 'MMC', diferenca: 'MDC: MAIOR divisor comum — usado em divisão em partes iguais, simplificação de fração, grupos iguais. MMC: MENOR múltiplo comum — usado em soma de frações (denominadores diferentes), periodicidade (encontros), sincronização. Fatores: MDC usa comuns com menor expoente; MMC usa todos com maior expoente.' },
+      { termoA: 'Número primo', termoB: 'Número composto', diferenca: 'PRIMO: apenas 2 divisores (1 e ele mesmo). Ex.: 2, 3, 5, 7, 11. COMPOSTO: mais de 2 divisores. Ex.: 4 (1, 2, 4), 6 (1, 2, 3, 6). Atenção: 1 NÃO é primo nem composto. 2 é o único primo par.' },
+      { termoA: 'Critério de divisibilidade por 3', termoB: 'Critério de divisibilidade por 9', diferenca: 'POR 3: soma dos algarismos é múltiplo de 3. Ex.: 123 (1+2+3 = 6, múltiplo de 3). POR 9: soma dos algarismos é múltiplo de 9. Ex.: 738 (7+3+8 = 18, múltiplo de 9). Todo múltiplo de 9 é múltiplo de 3, mas nem todo múltiplo de 3 é múltiplo de 9.' },
+      { termoA: 'Divisor', termoB: 'Múltiplo', diferenca: 'DIVISOR: número que divide outro sem deixar resto. Ex.: 3 é divisor de 12 (12 ÷ 3 = 4). MÚLTIPLO: resultado da multiplicação por um inteiro. Ex.: 12 é múltiplo de 3 (3 × 4 = 12). 12 tem divisores limitados (1, 2, 3, 4, 6, 12), mas tem infinitos múltiplos (0, 12, 24, 36...).' }
+    ],
+
+    aplicacaoEmConcurso: 'MDC e MMC aparecem em problemas de: divisão de grupos iguais, simplificação de frações, soma de frações com denominadores diferentes, encontros periódicos (ônibus, relógios, corridas), empacotamento, cortes de papel/tábua em pedaços iguais e sincronização. A banca costuma exigir a identificação de QUAL usar (MDC ou MMC) antes de calcular.',
+
+    pegadinhas: [
+      'Usar MMC quando o problema é de "dividir em partes iguais" (é MDC) ou MDC quando é de "encontros periódicos" (é MMC).',
+      'Achar que 1 é primo. NÃO é — 1 tem apenas 1 divisor.',
+      'Confundir a soma dos algarismos com o próprio número em critérios de divisibilidade.',
+      'Esquecer que 2 é primo (único primo par).',
+      'Errar o expoente na fatoração: 360 = 2³ × 3² × 5, NÃO 2 × 3 × 5.',
+      'Calcular MDC e MMC separadamente sem poder conferir pela relação MDC × MMC = a × b.'
+    ],
+
+    errosComuns: [
+      'Decorar critérios sem entender que eles vêm da decomposição.',
+      'Confundir divisor com múltiplo.',
+      'Não saber quando usar MDC ou MMC em problemas contextualizados.',
+      'Fatorar errado por não dividir até o fim (deixar número composto no resultado).'
+    ],
+
+    resumo: [
+      'Divisibilidade: por 2, 3, 4, 5, 6, 8, 9 e 10 têm regras próprias.',
+      'Primo: 2 divisores (1 e ele mesmo). 1 não é primo. 2 é o único primo par.',
+      'Decomposição em fatores primos: escreve como produto de primos.',
+      'MDC: fatores COMUNS, MENOR expoente.',
+      'MMC: TODOS os fatores, MAIOR expoente.',
+      'Relação: MDC(a, b) × MMC(a, b) = a × b.',
+      'Uso: MDC → dividir em partes iguais; MMC → encontros/periodicidade.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'MDC é "quem divide os dois ao mesmo tempo". MMC é "quem é múltiplo dos dois ao mesmo tempo". Uma dica: MDC sempre é menor ou igual ao menor número; MMC sempre é maior ou igual ao maior número.',
+      outroExemplo: 'MDC(12, 18): divisores de 12 = {1,2,3,4,6,12}; divisores de 18 = {1,2,3,6,9,18}. Maior comum = 6. MMC(12, 18): múltiplos de 12 = {12,24,36,48...}; de 18 = {18,36,54...}. Menor comum = 36. Verifique: 6 × 36 = 216 = 12 × 18. ✓',
+      compararConceitos: 'MDC = "MAIOR divisor". MMC = "MENOR múltiplo". MDC: expoentes mínimos dos comuns. MMC: expoentes máximos de todos. Problema de encontro → MMC. Problema de dividir igual → MDC.',
+      mostrarPegadinha: 'Cuidado: "O MDC de 8 e 12 é 4, o MMC é 24". Confira: 4 × 24 = 96 = 8 × 12. ✓ Agora cuidado com o erro clássico de usar o maior número como MMC (12 não é múltiplo de 8) nem o menor como MDC (8 não divide 12).',
+      comoApareceEmConcurso: 'Problemas contextualizados, soma de frações (denominadores diferentes) e simplificação de frações.',
+      fazerPergunta: {
+        pergunta: 'Um médico toma remédio A a cada 6 horas e remédio B a cada 8 horas. Se ele tomou os dois juntos às 8h, quando tomará os dois juntos novamente?',
+        resposta: 'MMC(6, 8) = 24. Ele tomará os dois juntos 24 horas depois, ou seja, às 8h do dia seguinte.'
+      }
+    }
+  },
+
+  /* ============================================================
+     MAT-05 — Potenciação, Radiciação e Expressões Numéricas
+  ============================================================ */
+  'MAT-05': {
+    id: 'L-MAT-05',
+    moduloId: 'MAT-05',
+    objetivo: 'Dominar propriedades das potências, raízes, expoentes, expressões com parênteses e colchetes, ordem das operações e notação científica. Base para álgebra, funções e problemas financeiros.',
+    prerequisitos: ['MAT-01'],
+
+    introducao: 'Potenciação é multiplicação repetida; radiciação é a operação inversa. Elas aparecem em problemas de crescimento exponencial, juros compostos, áreas e volumes, notação científica e simplificação de expressões. Saber as propriedades evita cálculos longos e erros.',
+
+    explicacaoSimples: 'Potência é multiplicar o mesmo número várias vezes: 2⁵ = 2 × 2 × 2 × 2 × 2 = 32. A raiz é o contrário: √25 = 5, porque 5² = 25. Existem regras que simplificam as contas — por exemplo, quando você multiplica potências de mesma base, soma os expoentes; quando divide, subtrai.',
+
+    explicacaoTecnica: 'POTENCIAÇÃO: aⁿ = a × a × ... × a (n vezes). Base a, expoente n. PROPRIEDADES: aᵐ × aⁿ = aᵐ⁺ⁿ (mesma base, soma expoentes). aᵐ ÷ aⁿ = aᵐ⁻ⁿ. (aᵐ)ⁿ = aᵐˣⁿ. (a × b)ⁿ = aⁿ × bⁿ. (a ÷ b)ⁿ = aⁿ ÷ bⁿ. CASOS ESPECIAIS: a⁰ = 1 (a ≠ 0). a¹ = a. a⁻ⁿ = 1/aⁿ. (a/b)⁻ⁿ = (b/a)ⁿ. Expoente fracionário: a^(m/n) = ⁿ√(aᵐ). RADICIAÇÃO: √a = b significa b² = a. Propriedades: √(a × b) = √a × √b; √(a ÷ b) = √a ÷ √b. NOTAÇÃO CIENTÍFICA: escrever número como a × 10ⁿ, com 1 ≤ a < 10 e n inteiro. Ex.: 3.500.000 = 3,5 × 10⁶; 0,00042 = 4,2 × 10⁻⁴. ORDEM DAS OPERAÇÕES: ( ) → [ ] → { } → potência/raiz → × e ÷ → + e -.',
+
+    exemplos: [
+      'Potência: 3⁴ = 3 × 3 × 3 × 3 = 81.',
+      'Mesma base: 2³ × 2⁴ = 2⁷ = 128.',
+      'Divisão: 5⁶ ÷ 5² = 5⁴ = 625.',
+      'Potência de potência: (3²)³ = 3⁶ = 729.',
+      'Expoente negativo: 2⁻³ = 1/2³ = 1/8 = 0,125.',
+      'Expoente zero: 7⁰ = 1 (com 7 ≠ 0).',
+      'Raiz: √144 = 12; √(2 × 8) = √16 = 4; √2 × √8 = 4.',
+      'Notação científica: 0,0000052 = 5,2 × 10⁻⁶; 480.000.000 = 4,8 × 10⁸.',
+      'Expressão: 2 + 3² × 4 - √16 = 2 + 9 × 4 - 4 = 2 + 36 - 4 = 34.'
+    ],
+
+    comparacoes: [
+      { termoA: 'Multiplicação de potências de mesma base', termoB: 'Potência de potência', diferenca: 'MESMA BASE: aᵐ × aⁿ = aᵐ⁺ⁿ (SOMA expoentes). Ex.: 2³ × 2⁵ = 2⁸. POTÊNCIA DE POTÊNCIA: (aᵐ)ⁿ = aᵐˣⁿ (MULTIPLICA expoentes). Ex.: (2³)⁵ = 2¹⁵. Confundir essas duas é o erro mais comum.' },
+      { termoA: 'Expoente negativo', termoB: 'Expoente fracionário', diferenca: 'NEGATIVO: a⁻ⁿ = 1/aⁿ (inverte a base e torna o expoente positivo). Ex.: 2⁻³ = 1/8. FRACIONÁRIO: a^(m/n) = ⁿ√(aᵐ) (raiz de índice n com radicando elevado a m). Ex.: 8^(1/3) = ∛8 = 2; 4^(3/2) = √(4³) = √64 = 8.' },
+      { termoA: 'Potência', termoB: 'Raiz', diferenca: 'POTÊNCIA: multiplicação repetida (3⁴ = 81). RAIZ: operação inversa (⁴√81 = 3). Toda raiz pode ser escrita como potência de expoente fracionário: ⁿ√a = a^(1/n).' },
+      { termoA: 'Notação científica', termoB: 'Notação decimal comum', diferenca: 'NOTAÇÃO CIENTÍFICA: a × 10ⁿ, com 1 ≤ a < 10. Ex.: 3,5 × 10⁶ = 3.500.000. NOTAÇÃO COMUM: escrever todos os algarismos. Ex.: 3.500.000. A científica é usada para números muito grandes ou muito pequenos.' }
+    ],
+
+    aplicacaoEmConcurso: 'Potenciação e radiciação aparecem em: juros compostos (1 + i)ⁿ, áreas e volumes (lado², lado³), crescimento populacional exponencial, notação científica em problemas de ciência, e expressões numéricas mistas com raízes. As bancas cobram principalmente as propriedades (especialmente em expressões longas) e a ordem das operações.',
+
+    pegadinhas: [
+      'Somar expoentes em (aᵐ)ⁿ em vez de multiplicar. (2³)⁴ = 2¹², não 2⁷.',
+      'Esquecer que a⁰ = 1 (com a ≠ 0). Muita gente marca 0.',
+      'Errar o sinal de expoente negativo: 2⁻² = 1/4 = 0,25 (não -4).',
+      'Achar que -2² = 4. ERRADO: -2² = -(2²) = -4. Só (-2)² = 4.',
+      'Somar raízes: √4 + √9 = 2 + 3 = 5; NÃO é √(4+9) = √13.',
+      'Converter mal para notação científica: 0,00042 = 4,2 × 10⁻⁴ (não 4,2 × 10⁴).',
+      'Em expressões numéricas, esquecer de resolver parênteses antes de potência.'
+    ],
+
+    errosComuns: [
+      'Confundir aᵐ × aⁿ com (aᵐ)ⁿ.',
+      'Errar o expoente 0.',
+      'Somar raízes em vez de simplificar cada uma.',
+      'Não saber converter expoente negativo ou fracionário.'
+    ],
+
+    resumo: [
+      'aⁿ = multiplicação repetida. a⁰ = 1 (a ≠ 0). a⁻ⁿ = 1/aⁿ.',
+      'aᵐ × aⁿ = aᵐ⁺ⁿ (soma). aᵐ ÷ aⁿ = aᵐ⁻ⁿ (subtrai). (aᵐ)ⁿ = aᵐˣⁿ (multiplica).',
+      '(a × b)ⁿ = aⁿ × bⁿ. (a/b)ⁿ = aⁿ/bⁿ.',
+      'a^(m/n) = ⁿ√(aᵐ).',
+      '√(a × b) = √a × √b. √(a/b) = √a/√b.',
+      '-2² = -4; (-2)² = 4.',
+      'Notação científica: a × 10ⁿ, com 1 ≤ a < 10.',
+      'Ordem: ( ) → [ ] → { } → potência/raiz → × e ÷ → + e -.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Potência é multiplicação abreviada. 2⁵ é 2 × 2 × 2 × 2 × 2. Raiz é o "desfazer" da potência. As regras servem para economizar contas: em vez de calcular 2³ × 2⁴ fatorando tudo, você soma os expoentes (2⁷).',
+      outroExemplo: 'A expressão 3² × 3³ = 9 × 27 = 243. Pela regra: 3⁵ = 243. Agora (3²)³ = 9³ = 729. Pela regra: 3⁶ = 729. Repare que 3² × 3³ ≠ (3²)³.',
+      compararConceitos: 'aᵐ × aⁿ = aᵐ⁺ⁿ (SOMA). (aᵐ)ⁿ = aᵐˣⁿ (MULTIPLICA). a⁻ⁿ = 1/aⁿ (INVERTE). a^(m/n) = ⁿ√(aᵐ). Notação científica: a × 10ⁿ.',
+      mostrarPegadinha: 'Cuidado: "-2² = 4". ERRADO. -2² significa -(2²) = -4. Só (-2)² = 4. A diferença é o parênteses: sem parênteses, o sinal de menos "espera" a potência.',
+      comoApareceEmConcurso: 'Expressões numéricas mistas, notação científica e problemas de crescimento exponencial.',
+      fazerPergunta: {
+        pergunta: 'Qual o valor de 2⁻⁴?',
+        resposta: '2⁻⁴ = 1/2⁴ = 1/16 = 0,0625. Expoente negativo inverte a base: 2⁻ⁿ = 1/2ⁿ.'
+      }
+    }
   }
 
 };
