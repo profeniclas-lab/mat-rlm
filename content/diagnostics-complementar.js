@@ -1,177 +1,234 @@
 /* ============================================================
-   DIAGNÓSTICOS — Módulos de prioridade COMPLEMENTAR
-   Preenchidos: DC-01, DC-19, DC-20
+   DIAGNÓSTICOS — Módulos de prioridade CONDICIONAL
+   Preenchidos: MAT-10, MAT-19, MAT-20, MAT-22
    ============================================================ */
 
 window.DIAGNOSTICS_COMPLEMENTAR = {
 
   /* ============================================================
-     DC-01 — Teoria da Constituição
+     MAT-10 — Equações do 2º Grau, Sistemas e Inequações
   ============================================================ */
-  'DC-01': {
-    id: 'D-DC-01',
-    moduloId: 'DC-01',
+  'MAT-10': {
+    id: 'D-MAT-10',
+    moduloId: 'MAT-10',
     itens: [
       {
-        id: 'D-DC-01-01',
+        id: 'D-MAT-10-01',
         tipo: 'multipla_escolha',
-        subtopico: 'Classificações de Constituição',
-        pergunta: 'Sobre a classificação da Constituição Federal de 1988, é correto afirmar que ela é:',
+        subtopico: 'Bhaskara',
+        pergunta: 'As raízes da equação x² - 5x + 6 = 0 são:',
         alternativas: [
-          { id: 'A', texto: 'Escrita, outorgada, rígida, formal e analítica.' },
-          { id: 'B', texto: 'Escrita, promulgada, rígida, formal e analítica.' },
-          { id: 'C', texto: 'Não escrita, promulgada, flexível, material e sintética.' },
-          { id: 'D', texto: 'Escrita, promulgada, semirrígida, material e analítica.' }
+          { id: 'A', texto: 'x = 1 e x = 6' },
+          { id: 'B', texto: 'x = 2 e x = 3' },
+          { id: 'C', texto: 'x = -2 e x = -3' },
+          { id: 'D', texto: 'x = 5 e x = 6' }
         ],
         gabarito: 'B',
-        explicacao: 'A CF/88 é: ESCRITA (documento formal), PROMULGADA (elaborada por Assembleia Constituinte), RÍGIDA (alteração por quórum especial — 3/5 em dois turnos), FORMAL (normas solenemente constitucionais), ANALÍTICA (extensa, com 250 artigos + ADCT).'
+        explicacao: 'Δ = 25 - 24 = 1. Bhaskara: x = (5 ± 1)/2 → x₁ = 3; x₂ = 2. Verificação: 2² - 5×2 + 6 = 0 ✓; 3² - 5×3 + 6 = 0 ✓.'
       },
       {
-        id: 'D-DC-01-02',
+        id: 'D-MAT-10-02',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Poder constituinte originário',
-        pergunta: 'O poder constituinte originário é inicial, autônomo, ilimitado, incondicionado e soberano, não se submetendo a limites jurídicos preexistentes.',
+        subtopico: 'Discriminante',
+        pergunta: 'Se o discriminante Δ de uma equação do 2º grau for negativo, a equação não possui raízes reais.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
         gabarito: 'V',
-        explicacao: 'Verdadeiro. O poder constituinte originário é aquele que cria a Constituição: inicial, autônomo, ilimitado, incondicionado e soberano. Não se submete a limites jurídicos — apenas a limites extrajurídicos (éticos, políticos, sociais).'
+        explicacao: 'Verdadeiro. Δ < 0 significa que √Δ não é real, então não há raízes reais. A parábola não cruza o eixo x. Δ = 0 → raiz dupla; Δ > 0 → duas raízes reais distintas.'
       },
       {
-        id: 'D-DC-01-03',
+        id: 'D-MAT-10-03',
         tipo: 'situacao',
-        subtopico: 'Cláusulas pétreas',
-        pergunta: 'Uma proposta de emenda constitucional pretende abolir a separação dos Poderes no Brasil. Sobre essa proposta:',
+        subtopico: 'Sistema de equações',
+        pergunta: 'Resolvendo o sistema x + y = 10 e x - y = 4, os valores de x e y são:',
         alternativas: [
-          { id: 'A', texto: 'É válida, pois a CF pode ser alterada por emenda em qualquer matéria.' },
-          { id: 'B', texto: 'É INCONSTITUCIONAL, pois a separação de Poderes é CLÁUSULA PÉTREA (art. 60, §4º, III), não podendo ser objeto de emenda tendente a aboli-la.' },
-          { id: 'C', texto: 'Só é válida se aprovada por unanimidade.' },
-          { id: 'D', texto: 'É válida porque a separação de Poderes está no art. 2º, não no art. 60.' }
+          { id: 'A', texto: 'x = 7 e y = 3' },
+          { id: 'B', texto: 'x = 6 e y = 4' },
+          { id: 'C', texto: 'x = 5 e y = 5' },
+          { id: 'D', texto: 'x = 8 e y = 2' }
         ],
-        gabarito: 'B',
-        explicacao: 'Art. 60, §4º, III: a separação de Poderes é cláusula pétrea. Emenda tendente a aboli-la é inconstitucional. As cláusulas pétreas são limitações MATERIAIS ao poder de reforma.'
+        gabarito: 'A',
+        explicacao: 'Somando as equações: 2x = 14 → x = 7. Substituindo: 7 + y = 10 → y = 3. Verificação: 7 + 3 = 10 ✓; 7 - 3 = 4 ✓.'
       },
       {
-        id: 'D-DC-01-04',
+        id: 'D-MAT-10-04',
         tipo: 'autoavaliacao',
-        subtopico: 'Classificações e poder constituinte',
-        pergunta: 'Você consegue, sem consultar, citar as principais classificações de Constituição e as características do poder constituinte originário, derivado e decorrente?',
-        resposta: 'CLASSIFICAÇÕES: forma (escrita x não escrita), origem (promulgada x outorgada), estabilidade (rígida, flexível, semirrígida), conteúdo (formal x material), extensão (analítica x sintética), finalidade (garantia, dirigente, balanço). PODER CONSTITUINTE: ORIGINÁRIO (cria a Constituição — inicial, autônomo, ilimitado, incondicionado, soberano); DERIVADO (reforma — reformador, revisor, decorrente; submetido a limites); DECORRENTE (elabora Constituições estaduais).'
+        subtopico: 'Inequações',
+        pergunta: 'Você lembra que, ao multiplicar ou dividir uma inequação por um número NEGATIVO, o sinal da desigualdade INVERTE?',
+        resposta: 'Sim. Ex.: -2x > 6 → dividindo por -2 (negativo), o sinal inverte: x < -3. Outro exemplo: 5 - 3x ≤ 2 → -3x ≤ -3 → x ≥ 1. Esquecer a inversão é o erro mais comum em inequações. Multiplicação/divisão por número POSITIVO NÃO inverte o sinal.'
       }
     ]
   },
 
   /* ============================================================
-     DC-19 — Ordem Econômica e Social
+     MAT-19 — Lógica Proposicional
   ============================================================ */
-  'DC-19': {
-    id: 'D-DC-19',
-    moduloId: 'DC-19',
+  'MAT-19': {
+    id: 'D-MAT-19',
+    moduloId: 'MAT-19',
     itens: [
       {
-        id: 'D-DC-19-01',
+        id: 'D-MAT-19-01',
         tipo: 'multipla_escolha',
-        subtopico: 'Princípios da ordem econômica',
-        pergunta: 'NÃO é princípio da ordem econômica previsto no art. 170 da CF/88:',
+        subtopico: 'Condicional',
+        pergunta: 'A proposição "Se 3 > 5, então 10 > 7" tem valor lógico:',
         alternativas: [
-          { id: 'A', texto: 'Livre concorrência e defesa do consumidor.' },
-          { id: 'B', texto: 'Função social da propriedade.' },
-          { id: 'C', texto: 'Redução das desigualdades regionais e sociais.' },
-          { id: 'D', texto: 'Gratuidade universal dos serviços públicos.' }
+          { id: 'A', texto: 'Verdadeiro' },
+          { id: 'B', texto: 'Falso' },
+          { id: 'C', texto: 'Indeterminado' },
+          { id: 'D', texto: 'Depende do contexto' }
         ],
-        gabarito: 'D',
-        explicacao: 'A gratuidade universal dos serviços públicos NÃO é princípio da ordem econômica. Os serviços públicos podem ser remunerados por tarifa ou taxa. Os princípios do art. 170 são: soberania nacional, propriedade privada, função social da propriedade, livre concorrência, defesa do consumidor, defesa do meio ambiente, redução das desigualdades regionais e sociais, busca do pleno emprego, tratamento favorecido para empresas de pequeno porte.'
+        gabarito: 'A',
+        explicacao: 'A condicional p → q só é FALSA quando p = V e q = F. Aqui, p ("3 > 5") é FALSA, então a condicional é automaticamente VERDADEIRA, independentemente de q. Regra: F → qualquer coisa = V.'
       },
       {
-        id: 'D-DC-19-02',
+        id: 'D-MAT-19-02',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Seguridade social',
-        pergunta: 'A seguridade social compreende a saúde, a previdência e a assistência social, sendo que apenas a previdência exige contribuição prévia para acesso aos benefícios.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Art. 194: seguridade social abrange SAÚDE (universal e gratuita), PREVIDÊNCIA (contributiva — exige contribuição) e ASSISTÊNCIA (para quem dela necessitar, sem contribuição). Só a previdência é contributiva.'
-      },
-      {
-        id: 'D-DC-19-03',
-        tipo: 'situacao',
-        subtopico: 'Ordem social — criança e adolescente',
-        pergunta: 'Sobre a proteção constitucional da criança e do adolescente (art. 227, CF/88), é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'É dever exclusivo da família.' },
-          { id: 'B', texto: 'É dever da família, da sociedade e do Estado, com PRIORIDADE ABSOLUTA, assegurando direitos como vida, saúde, dignidade, respeito, liberdade e convivência familiar e comunitária.' },
-          { id: 'C', texto: 'Só o Estado é responsável.' },
-          { id: 'D', texto: 'A proteção é opcional.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Art. 227: é dever da FAMÍLIA, da SOCIEDADE e do ESTADO assegurar à criança, ao adolescente e ao jovem, com ABSOLUTA PRIORIDADE, o direito à vida, à saúde, à alimentação, à educação, ao lazer, à profissionalização, à cultura, à dignidade, ao respeito, à liberdade e à convivência familiar e comunitária.'
-      },
-      {
-        id: 'D-DC-19-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Ordem econômica e social',
-        pergunta: 'Você consegue, sem consultar, diferenciar ordem econômica (art. 170) e ordem social (arts. 193 a 232) e citar exemplos de cada uma?',
-        resposta: 'ORDEM ECONÔMICA (arts. 170 a 181): regula a atividade econômica — livre iniciativa, livre concorrência, defesa do consumidor, função social da propriedade, redução das desigualdades, pleno emprego. ORDEM SOCIAL (arts. 193 a 232): regula as políticas públicas — seguridade social (saúde, previdência, assistência), educação, cultura, desporto, meio ambiente, família, criança, adolescente, idoso, indígenas. A ordem econômica olha o "mercado"; a ordem social olha o "bem-estar".'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-20 — ADCT e Atualizações Constitucionais
-  ============================================================ */
-  'DC-20': {
-    id: 'D-DC-20',
-    moduloId: 'DC-20',
-    itens: [
-      {
-        id: 'D-DC-20-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Natureza do ADCT',
-        pergunta: 'Sobre o Ato das Disposições Constitucionais Transitórias (ADCT), é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'Tem natureza de lei ordinária e pode ser alterado por maioria simples.' },
-          { id: 'B', texto: 'Tem a MESMA FORÇA NORMATIVA da Constituição (é norma constitucional), mas com natureza TRANSITÓRIA, e é alterado por emenda constitucional.' },
-          { id: 'C', texto: 'Não integra a Constituição.' },
-          { id: 'D', texto: 'Só pode ser alterado por nova Assembleia Constituinte.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'O ADCT integra a CF/88 e tem a MESMA FORÇA NORMATIVA (é norma constitucional). Sua natureza é TRANSITÓRIA, e suas regras são alteradas por EMENDA CONSTITUCIONAL (3/5 em dois turnos), como qualquer outra norma constitucional.'
-      },
-      {
-        id: 'D-DC-20-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Revisão constitucional',
-        pergunta: 'A revisão constitucional prevista no art. 3º do ADCT foi realizada em 1993, por maioria absoluta, e pode ser repetida sempre que o Congresso entender necessário.',
+        subtopico: 'Conjunção e disjunção',
+        pergunta: 'A conjunção p ∧ q ("p E q") é verdadeira quando pelo menos uma das proposições é verdadeira.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
         gabarito: 'F',
-        explicacao: 'Falso. A revisão constitucional foi ÚNICA (art. 3º do ADCT), realizada em 1993, por maioria absoluta do Congresso. NÃO pode ser repetida — o dispositivo foi esgotado. Alterações posteriores só por EMENDA (art. 60 — 3/5 em dois turnos).'
+        explicacao: 'Falso. A conjunção p ∧ q só é VERDADEIRA quando AMBAS são verdadeiras. Basta uma ser F para o resultado ser F. A descrição "pelo menos uma verdadeira" é da DISJUNÇÃO (∨), não da conjunção.'
       },
       {
-        id: 'D-DC-20-03',
+        id: 'D-MAT-19-03',
         tipo: 'situacao',
-        subtopico: 'Emendas constitucionais',
-        pergunta: 'A inserção do princípio da eficiência no caput do art. 37 da CF foi feita por qual emenda?',
+        subtopico: 'Tabela-verdade',
+        pergunta: 'Uma tabela-verdade que envolve 3 proposições simples (p, q, r) tem quantas linhas?',
         alternativas: [
-          { id: 'A', texto: 'EC 45/2004 (Reforma do Judiciário).' },
-          { id: 'B', texto: 'EC 19/1998 (Reforma Gerencial).' },
-          { id: 'C', texto: 'EC 20/1998 (Reforma da Previdência).' },
-          { id: 'D', texto: 'EC 90/2015 (Transporte).' }
+          { id: 'A', texto: '3' },
+          { id: 'B', texto: '6' },
+          { id: 'C', texto: '8' },
+          { id: 'D', texto: '9' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Número de linhas = 2ⁿ, onde n = número de proposições simples. Com n = 3: 2³ = 8 linhas. Cada proposição pode ser V ou F, gerando todas as combinações possíveis.'
+      },
+      {
+        id: 'D-MAT-19-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Conectivos',
+        pergunta: 'Você consegue montar a tabela-verdade de uma proposição composta com dois ou três conectivos (¬, ∧, ∨, →, ↔) e lembrar a prioridade de avaliação?',
+        resposta: 'Prioridade dos conectivos (do maior para o menor): 1) ¬ (negação); 2) ∧ (conjunção); 3) ∨ (disjunção); 4) → (condicional); 5) ↔ (bicondicional). Tabelas: com 2 proposições → 4 linhas; com 3 → 8 linhas; com 4 → 16 linhas (sempre 2ⁿ). Conjunção: V só se ambas V. Disjunção: F só se ambas F. Condicional: F só quando V→F. Bicondicional: V quando ambas têm o mesmo valor.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-20 — Equivalências e Argumentação Lógica
+  ============================================================ */
+  'MAT-20': {
+    id: 'D-MAT-20',
+    moduloId: 'MAT-20',
+    itens: [
+      {
+        id: 'D-MAT-20-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Leis de De Morgan',
+        pergunta: 'A negação da proposição "Estudo e trabalho" é:',
+        alternativas: [
+          { id: 'A', texto: 'Estudo e não trabalho' },
+          { id: 'B', texto: 'Não estudo ou não trabalho' },
+          { id: 'C', texto: 'Não estudo e não trabalho' },
+          { id: 'D', texto: 'Não estudo ou trabalho' }
         ],
         gabarito: 'B',
-        explicacao: 'A eficiência foi inserida pela EC 19/1998 (Reforma Gerencial), formando o LIMPE. A EC 45/2004 criou o CNJ, a súmula vinculante e a repercussão geral; a EC 20/1998 foi a reforma da previdência; a EC 90/2015 incluiu o transporte no art. 6º.'
+        explicacao: 'De Morgan: ¬(p ∧ q) ≡ ¬p ∨ ¬q. A negação de uma conjunção é a DISJUNÇÃO das negações. Portanto: "Não estudo OU não trabalho". Nunca usar "E" na negação de conjunção.'
       },
       {
-        id: 'D-DC-20-04',
+        id: 'D-MAT-20-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Contrapositiva',
+        pergunta: 'A proposição "Se chove, então uso guarda-chuva" é logicamente equivalente a "Se não uso guarda-chuva, então não chove".',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. Essa é a CONTRAPOSITIVA: p → q ≡ ¬q → ¬p. A recíproca ("Se uso guarda-chuva, então chove") NÃO é equivalente. Só a contrapositiva mantém a equivalência lógica.'
+      },
+      {
+        id: 'D-MAT-20-03',
+        tipo: 'situacao',
+        subtopico: 'Negação da condicional',
+        pergunta: 'A negação da proposição "Se estudo, então passo" é:',
+        alternativas: [
+          { id: 'A', texto: 'Se não estudo, então não passo' },
+          { id: 'B', texto: 'Estudo e não passo' },
+          { id: 'C', texto: 'Não estudo ou passo' },
+          { id: 'D', texto: 'Se passo, então estudo' }
+        ],
+        gabarito: 'B',
+        explicacao: '¬(p → q) ≡ p ∧ ¬q. Mantém o antecedente (p), nega o consequente (¬q) e troca "SE...ENTÃO" por "E". Assim: "Estudo E NÃO passo". A alternativa C é a equivalência ¬p ∨ q; a D é a recíproca (não a negação); a A é um erro comum (negar as duas partes).'
+      },
+      {
+        id: 'D-MAT-20-04',
         tipo: 'autoavaliacao',
-        subtopico: 'Emendas constitucionais',
-        pergunta: 'Você consegue citar as emendas constitucionais mais importantes e o que cada uma alterou?',
-        resposta: 'EC 19/1998: eficiência no art. 37 (Reforma Gerencial). EC 20/1998: reforma da previdência. EC 29/2000: mínimo de saúde. EC 41/2003: reforma da previdência. EC 45/2004: Reforma do Judiciário (CNJ, súmula vinculante, repercussão geral). EC 53/2006: Fundeb. EC 64/2010: alimentação no art. 6º. EC 72/2013: domésticos. EC 80/2014: Defensoria Pública. EC 90/2015: transporte no art. 6º. EC 95/2016: teto de gastos. EC 97/2017: fim das coligações proporcionais. EC 103/2019: reforma da previdência. EC 108/2020: Fundeb permanente. EC 111/2021: fidelidade partidária. EC 129 a 133/2023: reforma tributária. EC 131/2023: perda de nacionalidade. EC 135/2024: segurança pública.'
+        subtopico: 'Argumentação lógica',
+        pergunta: 'Você consegue distinguir um argumento VÁLIDO (estrutura garante a conclusão) de um argumento com premissas VERDADEIRAS, e aplicar Modus Ponens e Modus Tollens?',
+        resposta: 'VÁLIDO ≠ VERDADEIRO. Um argumento é válido quando, se as premissas são V, a conclusão é necessariamente V. As premissas podem ser factualmente F e o argumento continuar válido (validade é estrutural). MODUS PONENS: p → q; p ∴ q. Ex.: "Se chove, molho. Chove. Logo, molho." MODUS TOLLENS: p → q; ¬q ∴ ¬p. Ex.: "Se chove, molho. Não molho. Logo, não chove." Erros comuns: afirmar o consequente (p → q; q ∴ p) e negar o antecedente (p → q; ¬p ∴ ¬q) — ambos INVÁLIDOS.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-22 — Análise Combinatória e Probabilidade
+  ============================================================ */
+  'MAT-22': {
+    id: 'D-MAT-22',
+    moduloId: 'MAT-22',
+    itens: [
+      {
+        id: 'D-MAT-22-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Princípio multiplicativo',
+        pergunta: 'Uma pessoa tem 4 camisas e 3 calças. De quantas formas diferentes ela pode se vestir (uma camisa e uma calça)?',
+        alternativas: [
+          { id: 'A', texto: '7' },
+          { id: 'B', texto: '12' },
+          { id: 'C', texto: '24' },
+          { id: 'D', texto: '64' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Princípio fundamental da contagem: 4 × 3 = 12 combinações possíveis. Não se soma (4 + 3 = 7 está errado) — quando as escolhas são independentes, multiplica-se.'
+      },
+      {
+        id: 'D-MAT-22-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Arranjo x combinação',
+        pergunta: 'Escolher 3 pessoas entre 8 para formar uma comissão sem cargos definidos é um problema de ARRANJO, pois a ordem importa.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Comissão SEM cargos definidos é COMBINAÇÃO (a ordem NÃO importa). Se os 3 fossem ocupar cargos diferentes (presidente, secretário, tesoureiro), aí seria ARRANJO. Regra de ouro: se trocar a ordem gera resultado diferente, é arranjo; se não, combinação.'
+      },
+      {
+        id: 'D-MAT-22-03',
+        tipo: 'situacao',
+        subtopico: 'Probabilidade',
+        pergunta: 'Uma urna contém 5 bolas vermelhas e 3 bolas azuis. Retirando-se uma bola ao acaso, qual a probabilidade de ela ser vermelha?',
+        alternativas: [
+          { id: 'A', texto: '3/8' },
+          { id: 'B', texto: '5/8' },
+          { id: 'C', texto: '5/3' },
+          { id: 'D', texto: '1/2' }
+        ],
+        gabarito: 'B',
+        explicacao: 'P = casos favoráveis / casos possíveis = 5/8. Total de bolas = 5 + 3 = 8. Favoráveis (vermelhas) = 5. A probabilidade é sempre um número entre 0 e 1.'
+      },
+      {
+        id: 'D-MAT-22-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Escolha da fórmula',
+        pergunta: 'Diante de um problema de contagem, você consegue identificar rapidamente se deve usar permutação, arranjo, combinação ou apenas o princípio multiplicativo?',
+        resposta: 'Perguntas-chave: 1) TODOS os elementos serão usados? Se sim → PERMUTAÇÃO (P(n) = n!). 2) Apenas PARTE dos elementos? Aí: 2a) A ORDEM importa? Se sim → ARRANJO (A(n,p) = n!/(n-p)!). 2b) A ordem NÃO importa? → COMBINAÇÃO (C(n,p) = n!/[p!(n-p)!]). 3) Escolhas independentes em etapas? → PRINCÍPIO MULTIPLICATIVO (m × n). Exemplos: fila de 5 pessoas = permutação (5!); 3 pessoas para 3 cargos entre 7 = arranjo (A(7,3) = 210); 3 pessoas para comissão entre 7 = combinação (C(7,3) = 35); senha de 4 dígitos = princípio multiplicativo (10⁴).'
       }
     ]
   }
