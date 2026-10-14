@@ -597,6 +597,303 @@ window.LESSONS_ALTA = {
         resposta: '2⁻⁴ = 1/2⁴ = 1/16 = 0,0625. Expoente negativo inverte a base: 2⁻ⁿ = 1/2ⁿ.'
       }
     }
+  },
+
+  /* ============================================================
+     MAT-09 — Expressões Algébricas e Equações do 1º Grau
+  ============================================================ */
+  'MAT-09': {
+    id: 'L-MAT-09',
+    moduloId: 'MAT-09',
+    objetivo: 'Compreender variáveis, simplificação algébrica, propriedade distributiva, equações do 1º grau e tradução de enunciados para equações. Base para sistemas, funções e problemas contextualizados.',
+    prerequisitos: ['MAT-01', 'MAT-03'],
+
+    introducao: 'Álgebra é a matemática com letras. Em vez de trabalhar com números fixos, usamos variáveis (x, y, a, b) que representam valores desconhecidos. Isso permite resolver problemas que, com aritmética pura, seriam longos ou impossíveis. Equações do 1º grau são a porta de entrada para todo o resto.',
+
+    explicacaoSimples: 'Pense em uma balança de dois pratos. Tudo o que está à esquerda precisa pesar o mesmo que está à direita. Quando você mexe de um lado, precisa mexer do outro para manter o equilíbrio. Resolver uma equação é descobrir o valor do x que mantém essa balança em equilíbrio.',
+
+    explicacaoTecnica: 'EXPRESSÃO ALGÉBRICA: combinação de números, variáveis e operações. Ex.: 3x + 5, 2(a - b), x² - 4. SIMPLIFICAÇÃO: somar apenas termos semelhantes (mesma parte literal). Ex.: 3x + 5x = 8x; 2x + 3y não simplifica (partes literais diferentes). PROPRIEDADE DISTRIBUTIVA: a × (b + c) = a×b + a×c. Ex.: 3(x + 4) = 3x + 12. FATORAÇÃO: inverter a distributiva. Ex.: 3x + 12 = 3(x + 4). EQUAÇÃO DO 1º GRAU: ax + b = 0, com a ≠ 0. Solução: x = -b/a. RESOLUÇÃO: isolar x, aplicando as mesmas operações nos dois lados. Passos típicos: eliminar denominadores (multiplicando pelo MMC); eliminar parênteses (distributiva); agrupar termos semelhantes; isolar x. TRADUÇÃO DE ENUNCIADOS: "o dobro de x" = 2x; "a metade de x" = x/2; "x aumentado em 5" = x + 5; "o quadrado de x" = x²; "a soma de x com o triplo de y" = x + 3y.',
+
+    exemplos: [
+      'Simplificação: 4x + 3 + 2x - 1 = 6x + 2.',
+      'Distributiva: 5(x - 2) = 5x - 10.',
+      'Equação simples: 2x + 6 = 14 → 2x = 8 → x = 4.',
+      'Equação com parênteses: 3(x - 2) = 2(x + 1) → 3x - 6 = 2x + 2 → x = 8.',
+      'Equação com frações: x/2 + x/3 = 5 → MMC = 6 → 3x + 2x = 30 → 5x = 30 → x = 6.',
+      'Problema: a idade de João é o triplo da de Pedro. Somadas, dão 40. Quem tem quanto? x + 3x = 40 → x = 10 (Pedro), 30 (João).'
+    ],
+
+    comparacoes: [
+      { termoA: 'Expressão algébrica', termoB: 'Equação', diferenca: 'EXPRESSÃO: não tem sinal de igualdade (3x + 5). Não tem solução — pode apenas ser simplificada ou avaliada. EQUAÇÃO: tem sinal de igualdade (3x + 5 = 20). Tem uma incógnita cujo valor buscamos.' },
+      { termoA: 'Termo semelhante', termoB: 'Termo independente', diferenca: 'TERMO SEMELHANTE: mesma parte literal (3x e 5x são semelhantes; 3x e 3y não são). TERMO INDEPENDENTE: número sozinho (sem letra). Só se somam termos semelhantes; números se somam com números.' },
+      { termoA: 'Simplificação', termoB: 'Fatoração', diferenca: 'SIMPLIFICAR: reduzir termos semelhantes (4x + 5x = 9x). FATORAR: colocar o fator comum em evidência (9x + 6 = 3(3x + 2)). São operações inversas.' },
+      { termoA: 'Equação do 1º grau', termoB: 'Equação do 2º grau', diferenca: '1º GRAU: o maior expoente da incógnita é 1 (ex.: 3x + 5 = 0). Solução única e direta. 2º GRAU: maior expoente é 2 (ex.: x² - 5x + 6 = 0). Pode ter 0, 1 ou 2 soluções.' }
+    ],
+
+    aplicacaoEmConcurso: 'Equações do 1º grau aparecem em quase todo problema de concurso: idades, números, dinheiro, misturas, velocidades, percentuais. A banca cobra principalmente a tradução do enunciado para a equação — quem não sabe transformar palavras em símbolos perde a questão mesmo sabendo resolver.',
+
+    pegadinhas: [
+      'Somar termos NÃO semelhantes: 3x + 5y NÃO é 8xy.',
+      'Esquecer de aplicar a distributiva ao número que multiplica parênteses: 3(x + 2) = 3x + 6, NÃO 3x + 2.',
+      'Mudar de lado sem trocar o sinal: se 3x + 5 = 20, então 3x = 20 - 5 (o +5 vira -5).',
+      'Esquecer de aplicar a mesma operação dos dois lados.',
+      'Errar a tradução: "o dobro de um número mais 5" = 2x + 5 (não 2(x + 5)).',
+      'Não eliminar denominadores antes de resolver equações com frações.',
+      'Confundir "a metade de x" (x/2) com "a metade de x mais 3" ((x+3)/2).'
+    ],
+
+    errosComuns: [
+      'Resolver de cabeça sem escrever a equação — aumenta muito o risco de erro.',
+      'Não isolar o x corretamente (esquecer de dividir pelo coeficiente no final).',
+      'Errar sinais ao passar termos de um lado para o outro.',
+      'Confundir "x ao quadrado" com "o dobro de x".'
+    ],
+
+    resumo: [
+      'Expressão algébrica: combina números, letras e operações.',
+      'Termos semelhantes: mesma parte literal. Só esses se somam.',
+      'Distributiva: a(b + c) = ab + ac.',
+      'Equação do 1º grau: ax + b = 0 → x = -b/a.',
+      'Resolução: eliminar parênteses → eliminar denominadores → agrupar → isolar x.',
+      'Ao passar termo de lado, troque o sinal.',
+      'Traduza o enunciado com cuidado antes de resolver.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Uma equação é como uma balança em equilíbrio. Se você tira 5 de um lado, precisa tirar 5 do outro. Se divide um lado por 3, divide o outro por 3. O objetivo é deixar o x sozinho.',
+      outroExemplo: 'Um número somado ao seu dobro resulta em 30. Qual é o número? x + 2x = 30 → 3x = 30 → x = 10. Verificação: 10 + 20 = 30. ✓',
+      compararConceitos: 'Expressão: sem igualdade. Equação: com igualdade. Somar só termos semelhantes. Distributiva: multiplica tudo dentro dos parênteses. Ao passar termo de lado, troca o sinal.',
+      mostrarPegadinha: 'Cuidado: "3(x + 2) = 3x + 2". ERRADO. É 3x + 6 (o 3 multiplica o 2 também).',
+      comoApareceEmConcurso: 'Problemas de idade, dinheiro, mistura e porcentagem que exigem montar uma equação a partir do texto.',
+      fazerPergunta: {
+        pergunta: 'A soma de três números consecutivos é 72. Quais são?',
+        resposta: 'Sejam x, x+1, x+2. Soma: 3x + 3 = 72 → 3x = 69 → x = 23. Os números são 23, 24 e 25.'
+      }
+    }
+  },
+
+  /* ============================================================
+     MAT-11 — Matemática Financeira
+  ============================================================ */
+  'MAT-11': {
+    id: 'L-MAT-11',
+    moduloId: 'MAT-11',
+    objetivo: 'Compreender sistema monetário, capital, taxa, tempo, juros e montante; dominar juros simples e compostos, descontos, aumentos sucessivos e comparação de valores financeiros.',
+    prerequisitos: ['MAT-03', 'MAT-08'],
+
+    introducao: 'Matemática financeira é a aplicação da porcentagem ao dinheiro. Aparece em problemas de empréstimos, financiamentos, investimentos, descontos comerciais e compras a prazo. O raciocínio é o mesmo da porcentagem; só muda a nomenclatura (capital, juros, montante) e a fórmula.',
+
+    explicacaoSimples: 'Imagine que você empresta R$ 1.000 para alguém. Depois de um tempo, essa pessoa devolve R$ 1.000 mais um extra — esse extra são os juros. O valor original (R$ 1.000) é o CAPITAL. O extra é o JURO. O total devolvido é o MONTANTE. A porcentagem cobrada pelo tempo é a TAXA.',
+
+    explicacaoTecnica: 'CONCEITOS: CAPITAL (C): valor inicial. TAXA (i): percentual por período (ao mês, ao ano). TEMPO (t): duração. JURO (J): valor cobrado pelo uso do capital. MONTANTE (M): C + J. JUROS SIMPLES: incidem apenas sobre o capital inicial. Fórmula: J = C × i × t; M = C × (1 + i × t). JUROS COMPOSTOS: incidem sobre o montante acumulado (juros sobre juros). Fórmula: M = C × (1 + i)ᵗ; J = M - C. DESCONTO SIMPLES: comercial (por fora) ou racional (por dentro). AUMENTOS SUCESSIVOS: multiplicam-se os fatores, não se somam. TAXAS EQUIVALENTES: em juros simples, proporcionais ao tempo (2% ao mês = 24% ao ano); em juros compostos, diferentes (1,02¹² - 1 ≈ 26,82% ao ano). IMPORTANTE: taxa e tempo devem estar na MESMA UNIDADE (mensal com mês, anual com ano).',
+
+    exemplos: [
+      'Juros simples: C = 1.000, i = 2% ao mês, t = 3 meses. J = 1.000 × 0,02 × 3 = 60. M = 1.060.',
+      'Juros compostos: mesmos dados. M = 1.000 × (1,02)³ = 1.000 × 1,061208 ≈ 1.061,21.',
+      'Aumentos sucessivos: aumento de 10% + 20% = 1,10 × 1,20 = 1,32 = +32%.',
+      'Desconto simples comercial: título de R$ 5.000 com desconto de 3% ao mês, 4 meses antes do vencimento. Desconto = 5.000 × 0,03 × 4 = 600. Valor pago = 4.400.',
+      'Taxa mensal para anual (juros simples): 1,5% ao mês × 12 = 18% ao ano.',
+      'Taxa mensal para anual (juros compostos): (1,015)¹² - 1 ≈ 19,56% ao ano.'
+    ],
+
+    comparacoes: [
+      { termoA: 'Juros simples', termoB: 'Juros compostos', diferenca: 'SIMPLES: juros sempre sobre o CAPITAL inicial. Crescimento LINEAR. Fórmula: M = C(1 + i×t). COMPOSTOS: juros sobre o MONTANTE acumulado (juros sobre juros). Crescimento EXPONENCIAL. Fórmula: M = C(1 + i)ᵗ. Para t = 1, os dois coincidem; a partir de t = 2, compostos rendem mais.' },
+      { termoA: 'Capital', termoB: 'Montante', diferenca: 'CAPITAL (C): valor inicial aplicado ou emprestado. MONTANTE (M): valor final, após os juros. M = C + J. Em problemas, se o enunciado diz "recebeu R$ X", normalmente é MONTANTE; se diz "aplicou R$ X", é CAPITAL.' },
+      { termoA: 'Taxa nominal', termoB: 'Taxa efetiva', diferenca: 'NOMINAL: taxa declarada (ex.: 24% ao ano com capitalização mensal — 2% ao mês). EFETIVA: taxa que realmente incide no período (a composta de 2% ao mês durante 12 meses é ≈ 26,82% ao ano). Para juros simples, nominal e efetiva coincidem. Para juros compostos, diferem.' },
+      { termoA: 'Desconto comercial', termoB: 'Desconto racional', diferenca: 'COMERCIAL (por fora): desconto calculado sobre o VALOR NOMINAL (valor de face do título). Fórmula: D = N × i × t. RACIONAL (por dentro): desconto calculado sobre o VALOR ATUAL. Fórmula: D = A × i × t. As bases são diferentes; o comercial gera desconto maior para a mesma taxa.' }
+    ],
+
+    aplicacaoEmConcurso: 'Matemática financeira aparece em concursos administrativos e bancários: empréstimos, financiamentos, poupança, descontos de títulos, comparação de planos de pagamento. As bancas cobram principalmente: juros simples (fórmula direta), juros compostos (cálculo), taxas equivalentes e comparação entre regimes. É comum a pegadinha de misturar unidades (taxa anual com tempo mensal) — sempre converta antes de calcular.',
+
+    pegadinhas: [
+      'Somar taxas em juros compostos. NÃO — multiplicam-se (1,02 × 1,03 ≠ 1,05).',
+      'Usar taxa mensal com tempo em anos (ou vice-versa) sem converter.',
+      'Confundir juros simples com compostos em problemas de curto prazo (para t = 1, são iguais).',
+      'Achar que a taxa efetiva anual de 2% ao mês (compostos) é 24%. É ≈ 26,82%.',
+      'Confundir capital com montante na hora de aplicar a fórmula.',
+      'Em juros simples, usar (1 + i)ᵗ em vez de (1 + i×t).'
+    ],
+
+    errosComuns: [
+      'Decorar fórmulas sem entender a diferença entre os regimes.',
+      'Esquecer de converter a taxa para decimal: 2% = 0,02 (não 2).',
+      'Não verificar se taxa e tempo estão na mesma unidade.',
+      'Calcular juros e esquecer de somar ao capital para achar o montante.'
+    ],
+
+    resumo: [
+      'Capital (C): valor inicial. Juro (J): valor cobrado. Montante (M): C + J.',
+      'JUROS SIMPLES: J = C × i × t; M = C(1 + i×t). Crescimento linear.',
+      'JUROS COMPOSTOS: M = C(1 + i)ᵗ. Crescimento exponencial.',
+      'Taxa e tempo SEMPRE na mesma unidade.',
+      'Aumentos/descontos sucessivos: MULTIPLICAM-SE os fatores.',
+      'Taxa efetiva anual (compostos) ≠ 12 × taxa mensal.',
+      'Desconto comercial: sobre o nominal. Desconto racional: sobre o valor atual.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Juros simples é como contar degraus iguais: a cada mês, sobe o mesmo valor. Juros compostos é como bola de neve: a cada mês, o valor cresce sobre o que já estava lá. No curto prazo quase não muda; no longo prazo, a diferença é enorme.',
+      outroExemplo: 'Você empresta R$ 1.000 a 5% ao mês. Em juros simples, ao fim de 3 meses: M = 1.000 × (1 + 0,05×3) = 1.150. Em juros compostos: M = 1.000 × (1,05)³ = 1.157,63. A diferença (R$ 7,63) vem dos juros sobre juros.',
+      compararConceitos: 'Simples: linear, juros sobre capital. Compostos: exponencial, juros sobre montante. Capital: inicial. Montante: final. Taxa e tempo: mesma unidade.',
+      mostrarPegadinha: 'Cuidado: "Um empréstimo a 2% ao mês, no regime de juros simples, tem taxa anual de 24%". CERTO. Mas no regime de juros COMPOSTOS, é ≈ 26,82%.',
+      comoApareceEmConcurso: 'Empréstimos, financiamentos, poupança e comparação de planos. Frequência alta em bancos e administrativo.',
+      fazerPergunta: {
+        pergunta: 'Qual é o montante de um capital de R$ 2.000 aplicado a juros compostos de 10% ao ano durante 2 anos?',
+        resposta: 'M = 2.000 × (1,10)² = 2.000 × 1,21 = R$ 2.420. Juro = 2.420 - 2.000 = R$ 420.'
+      }
+    }
+  },
+
+  /* ============================================================
+     MAT-12 — Sistemas de Medidas
+  ============================================================ */
+  'MAT-12': {
+    id: 'L-MAT-12',
+    moduloId: 'MAT-12',
+    objetivo: 'Dominar unidades de comprimento, massa, capacidade, volume, área e tempo; conversão entre unidades; sistema métrico decimal; relações entre litros e unidades de volume.',
+    prerequisitos: ['MAT-01', 'MAT-03'],
+
+    introducao: 'Sistemas de medidas aparecem em quase todo problema de geometria, física, química e do dia a dia: quantos metros tem um km? quantos ml tem uma garrafa? quantos litros cabem em um cubo de 10 cm de aresta? Saber converter corretamente evita erros grosseiros.',
+
+    explicacaoSimples: 'Todas as unidades do sistema métrico seguem a lógica do 10: 1 km = 1.000 m, 1 m = 100 cm, 1 cm = 10 mm. Basta multiplicar ou dividir por 10 as vezes necessárias. Volume é um pouco diferente: como é tridimensional, cada passo multiplica por 1.000, não por 10.',
+
+    explicacaoTecnica: 'COMPRIMENTO: km, hm, dam, m, dm, cm, mm. Cada passo = × 10 (ou ÷ 10). MASSA: kg, hg, dag, g, dg, cg, mg. Mesma lógica. CAPACIDADE: kl, hl, dal, l, dl, cl, ml. Mesma lógica. ÁREA: km², hm², dam², m², dm², cm², mm². Cada passo = × 100 (ou ÷ 100), pois é bidimensional. VOLUME: km³, hm³, dam³, m³, dm³, cm³, mm³. Cada passo = × 1.000 (ou ÷ 1.000), pois é tridimensional. RELAÇÕES IMPORTANTES: 1 L = 1 dm³. 1 mL = 1 cm³. 1 m³ = 1.000 L. TEMPO: 1 h = 60 min; 1 min = 60 s; 1 h = 3.600 s; 1 dia = 24 h. ÁREA de figuras: retângulo = base × altura; triângulo = base × altura / 2; círculo = π × raio². VOLUME de sólidos: cubo = aresta³; paralelepípedo = comprimento × largura × altura.',
+
+    exemplos: [
+      'Conversão de comprimento: 3,5 km = 3.500 m = 350.000 cm.',
+      'Conversão de massa: 2,4 kg = 2.400 g = 2.400.000 mg.',
+      'Conversão de capacidade: 750 ml = 0,75 L.',
+      'Conversão de área: 2 m² = 20.000 cm² (2 × 10.000).',
+      'Conversão de volume: 5 m³ = 5.000 dm³ = 5.000 L.',
+      'Relação L/dm³: um cubo de 10 cm × 10 cm × 10 cm = 1.000 cm³ = 1 L.',
+      'Tempo: 2,5 h = 2 h 30 min = 150 min = 9.000 s.',
+      'Volume de caixa: paralelepípedo 2 m × 3 m × 4 m = 24 m³ = 24.000 L.'
+    ],
+
+    comparacoes: [
+      { termoA: 'Comprimento (linear)', termoB: 'Área (bidimensional)', diferenca: 'COMPRIMENTO: medida de uma dimensão (m, cm, km). Conversão × 10 (ou ÷ 10) por passo. ÁREA: medida de duas dimensões (m², cm², km²). Conversão × 100 (ou ÷ 100) por passo. A diferença vem do expoente: o passo é 10 elevado à dimensão.' },
+      { termoA: 'Área (bidimensional)', termoB: 'Volume (tridimensional)', diferenca: 'ÁREA: duas dimensões (m²). Conversão por 100 entre unidades consecutivas. VOLUME: três dimensões (m³). Conversão por 1.000 entre unidades consecutivas. Lembre: 1 m² = 10.000 cm²; 1 m³ = 1.000.000 cm³.' },
+      { termoA: 'Capacidade (litro)', termoB: 'Volume (m³)', diferenca: 'CAPACIDADE: medida do que cabe em um recipiente (L, mL). VOLUME: medida do espaço ocupado (m³, cm³). RELAÇÃO FUNDAMENTAL: 1 L = 1 dm³; 1 mL = 1 cm³; 1 m³ = 1.000 L. Saber essa relação é essencial para converter recipientes.' },
+      { termoA: 'Unidades de tempo', termoB: 'Unidades do sistema métrico', diferenca: 'TEMPO: base 60 (60 s = 1 min; 60 min = 1 h) e base 24 (24 h = 1 dia). NÃO segue o sistema decimal! SISTEMA MÉTRICO: base 10 (comprimento, massa, capacidade). Cuidado: 1,5 h = 1 h 30 min (não 1 h 5 min).' }
+    ],
+
+    aplicacaoEmConcurso: 'Cobrança de conversões diretas (km → m, kg → g), problemas de geometria (área, volume), receitas e misturas (capacidade), cálculos de tempo (velocidade × tempo) e comparação de recipientes. Erros de conversão são a principal causa de perda em provas de nível médio, especialmente em problemas que exigem unidades consistentes.',
+
+    pegadinhas: [
+      'Usar × 10 para área (é × 100) ou volume (é × 1.000).',
+      'Confundir litro com metro cúbico: 1 L = 1 dm³ (não 1 m³).',
+      'Achar que 1,5 h = 1 h 5 min. ERRADO: 1,5 h = 1 h 30 min.',
+      'Converter errado de cm³ para mL: 1 cm³ = 1 mL.',
+      'Esquecer que 1 m³ = 1.000 L (não 100).',
+      'Misturar unidades na mesma conta: usar comprimento em metros com tempo em minutos em problema de velocidade.',
+      'Achar que 1 kg = 1.000 mg. ERRADO: 1 kg = 1.000.000 mg (passa por g).'
+    ],
+
+    errosComuns: [
+      'Decorar tabelas sem entender a lógica das potências de 10.',
+      'Não converter todas as unidades para a mesma antes de calcular.',
+      'Confundir massa com peso (mas na prática de prova, são usados como sinônimos).',
+      'Errar a conversão de tempo por não usar base 60.'
+    ],
+
+    resumo: [
+      'Comprimento, massa e capacidade: base 10 (× 10 por passo).',
+      'Área: base 100 (× 100 por passo).',
+      'Volume: base 1.000 (× 1.000 por passo).',
+      '1 L = 1 dm³; 1 mL = 1 cm³; 1 m³ = 1.000 L.',
+      'Tempo: base 60 (min, s) e base 24 (h/dia).',
+      'Sempre converta para a mesma unidade antes de calcular.',
+      'Área do retângulo = base × altura; volume do paralelepípedo = c × l × a.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Converter é só "andar" a vírgula para um lado ou para o outro. Do km para o m, ande 3 casas à direita (× 1.000). Do m para o cm, ande 2 casas à direita (× 100). Em área, cada casa vale 100; em volume, cada casa vale 1.000.',
+      outroExemplo: 'Uma caixa d\'água tem 1 m × 1 m × 1 m = 1 m³ = 1.000 L. Se ela medisse 2 m × 2 m × 2 m = 8 m³ = 8.000 L. Sempre multiplique as três dimensões em metros e depois multiplique por 1.000 para obter litros.',
+      compararConceitos: 'Comprimento × 10; área × 100; volume × 1.000. L/dm³: 1 L = 1 dm³. Tempo: base 60 (não 100). Sempre converta antes de calcular.',
+      mostrarPegadinha: 'Cuidado: "1,5 h = 1 h 5 min". ERRADO. 1,5 h = 1 h + 0,5 h = 1 h + 30 min = 1 h 30 min. A parte decimal de hora é fração de 60, não de 100.',
+      comoApareceEmConcurso: 'Problemas de conversão, geometria, velocidade, capacidade de recipientes e receitas.',
+      fazerPergunta: {
+        pergunta: 'Quantos litros cabem em uma caixa de 50 cm × 40 cm × 30 cm?',
+        resposta: 'Volume em cm³: 50 × 40 × 30 = 60.000 cm³. Como 1 dm³ = 1 L e 1 dm³ = 1.000 cm³, temos 60.000 cm³ = 60 dm³ = 60 L.'
+      }
+    }
+  },
+
+  /* ============================================================
+     MAT-13 — Interpretação de Tabelas e Gráficos
+  ============================================================ */
+  'MAT-13': {
+    id: 'L-MAT-13',
+    moduloId: 'MAT-13',
+    objetivo: 'Dominar a leitura e interpretação de tabelas simples e de dupla entrada, gráficos de barras, linhas e setores; calcular variação absoluta e percentual; identificar tendências e lidar com informações incompletas. Base para questões de estatística, matemática aplicada e análise de dados.',
+    prerequisitos: ['MAT-08'],
+
+    introducao: 'Em concursos, tabelas e gráficos aparecem em praticamente todas as provas: índices econômicos, população, despesas públicas, resultados de pesquisa. Saber ler esses dados, comparar valores e calcular variações é decisivo. Muitas questões não exigem cálculo complexo — exigem leitura atenta.',
+
+    explicacaoSimples: 'Uma tabela organiza dados em linhas e colunas. Um gráfico transforma esses dados em imagem: barras para comparações, linhas para evolução no tempo, setores para proporções. Ler bem é olhar o título, os eixos, as unidades e comparar os valores com calma antes de calcular.',
+
+    explicacaoTecnica: 'TABELAS: simples (uma variável) ou de dupla entrada (cruzamento de duas variáveis). Sempre leia título, cabeçalhos, unidades e notas de rodapé. GRÁFICOS DE BARRAS: comparam valores entre categorias; a altura da barra é proporcional ao valor. Podem ser verticais ou horizontais, simples ou agrupados. GRÁFICOS DE LINHAS: mostram evolução no tempo; linhas sobem (crescimento), descem (queda) ou ficam estáveis. GRÁFICOS DE SETORES (pizza): representam proporções em relação ao total; cada setor corresponde a uma fração/porcentagem. VARIAÇÃO ABSOLUTA: diferença entre dois valores (ΔV = Vfinal - Vinicial). VARIAÇÃO PERCENTUAL: (Vfinal - Vinicial) / Vinicial × 100. TENDÊNCIA: crescimento, queda ou estabilidade ao longo do tempo — avaliada pela direção geral dos pontos, não por oscilações pontuais. INFORMAÇÕES INCOMPLETAS: alguns valores não aparecem e devem ser deduzidos usando proporções, somas ou a relação com o total.',
+
+    exemplos: [
+      'Tabela de dupla entrada: vendas por mês × produto. A célula "março/refrigerante = 150" cruza essas duas variáveis.',
+      'Gráfico de barras: comparar a produção de 4 fábricas. A mais alta produziu mais.',
+      'Gráfico de linhas: temperatura média por mês. A curva mostra quando fez mais calor e mais frio.',
+      'Gráfico de setores: divisão do orçamento (40% saúde, 30% educação, 20% segurança, 10% outros).',
+      'Variação absoluta: preço de 80 para 100 → 20.',
+      'Variação percentual: (100-80)/80 = 25%.',
+      'Informação incompleta: se o gráfico de setores tem 30% e 45% marcados, o restante (25%) é o terceiro setor.'
+    ],
+
+    comparacoes: [
+      { termoA: 'Gráfico de barras', termoB: 'Gráfico de linhas', diferenca: 'BARRAS: compara CATEGORIAS (produtos, países, setores). Ideal para mostrar quem tem mais/menos em um mesmo momento. LINHAS: mostra EVOLUÇÃO no tempo (meses, anos). Ideal para detectar tendências (crescimento, queda, estabilidade).' },
+      { termoA: 'Gráfico de linhas', termoB: 'Gráfico de setores', diferenca: 'LINHAS: evolução temporal (tempo no eixo x). Permite ver tendências. SETORES: proporção em relação a um TODO (cada fatia representa uma parte). A soma dos setores é sempre 100%.' },
+      { termoA: 'Variação absoluta', termoB: 'Variação percentual', diferenca: 'ABSOLUTA: diferença bruta (100 - 80 = 20). PERCENTUAL: diferença dividida pelo valor inicial, vezes 100 ((100-80)/80 × 100 = 25%). Duas variações absolutas iguais podem ter percentuais diferentes conforme a base. Sempre use a percentual para comparar grandezas de tamanhos diferentes.' },
+      { termoA: 'Tendência', termoB: 'Oscilação', diferenca: 'TENDÊNCIA: direção geral de um gráfico de linhas (crescente, decrescente, estável). OSCILAÇÃO: subidas e descidas pontuais em torno da tendência. Uma linha pode oscilar muito mas, no geral, subir — a tendência é de crescimento.' }
+    ],
+
+    aplicacaoEmConcurso: 'Tabelas e gráficos aparecem em questões de: economia (PIB, inflação, desemprego), saúde pública (casos, óbitos), educação (matrículas, evasão), segurança (ocorrências), orçamento (despesas por área) e pesquisas eleitorais. Bancas cobram: leitura direta de valores, cálculo de variação percentual, identificação de maior/menor, comparação entre períodos, análise de tendência e preenchimento de dados faltantes. É comum a banca fornecer um gráfico e pedir uma conclusão que exige cruzar vários dados.',
+
+    pegadinhas: [
+      'Confundir a ordem dos eixos. Sempre leia o título e as legendas antes de qualquer cálculo.',
+      'Somar valores de categorias quando a questão pede a média.',
+      'Usar base errada na variação percentual — o divisor é sempre o valor INICIAL.',
+      'Achar que uma oscilação pontual muda a tendência. Olhe a direção geral.',
+      'Esquecer de verificar as unidades (R$, milhares, milhões, %, toneladas).',
+      'Em gráficos de setores, achar que o maior valor absoluto tem o maior setor — pode ser que os dados estejam em unidades diferentes.',
+      'Não observar se os dados estão em escala (de 0 a 100 ou de 50 a 100). Isso altera a inclinação da linha, mas não os valores.'
+    ],
+
+    errosComuns: [
+      'Ler rápido e inverter linha/coluna em tabelas de dupla entrada.',
+      'Não considerar o contexto (o que o gráfico está medindo).',
+      'Tirar conclusões sobre tendência olhando apenas dois pontos.',
+      'Confundir "maior variação percentual" com "maior valor".',
+      'Deixar de usar os títulos e rodapés que indicam a fonte e as unidades.'
+    ],
+
+    resumo: [
+      'Tabelas: simples (1 variável) ou dupla entrada (2 variáveis cruzadas).',
+      'Gráficos de barras: comparação entre categorias.',
+      'Gráficos de linhas: evolução no tempo (tendências).',
+      'Gráficos de setores: proporção em relação ao todo (soma = 100%).',
+      'Variação absoluta = Vfinal - Vinicial.',
+      'Variação percentual = (Vfinal - Vinicial)/Vinicial × 100.',
+      'Tendência: direção geral, não oscilações pontuais.',
+      'Informações incompletas: deduza pelo total ou por proporção.',
+      'Sempre leia título, unidades e legendas antes de calcular.'
+    ],
+
+    modoProfessor: {
+      explicarMaisSimples: 'Tabela é uma lista organizada. Gráfico é a mesma lista em forma de desenho. Antes de calcular, leia tudo: título, unidades, legendas. Depois, se a questão pedir "aumentou quanto", use a variação percentual; se pedir "mais que", compare valores brutos.',
+      outroExemplo: 'Um gráfico de barras mostra a despesa de um órgão em 4 anos: 2018 (R$ 100 mi), 2019 (R$ 120 mi), 2020 (R$ 150 mi), 2021 (R$ 130 mi). A maior despesa foi em 2020. A variação percentual de 2018 para 2019 foi (120-100)/100 = 20%. De 2020 para 2021 foi (130-150)/150 ≈ -13,33%.',
+      compararConceitos: 'Barras: comparação. Linhas: evolução. Setores: proporção. Absoluta: diferença bruta. Percentual: diferença sobre a base. Tendência: direção geral. Oscilação: variação pontual.',
+      mostrarPegadinha: 'Cuidado: "Um aumento de 20% em uma despesa de R$ 1.000.000 é maior do que um aumento de 30% em uma despesa de R$ 500.000". Compare: 1.000.000 × 0,20 = 200.000; 500.000 × 0,30 = 150.000. Neste caso, o aumento de 20% vale MAIS em termos absolutos. Percentual ≠ absoluto.',
+      comoApareceEmConcurso: 'Em quase toda prova de nível médio, sobretudo em questões de atualidades, economia e administração pública.',
+      fazerPergunta: {
+        pergunta: 'Um gráfico de setores mostra 4 categorias com valores 30%, 25%, 20% e X%. Qual o valor de X?',
+        resposta: '5%. Em gráficos de setores, a soma deve ser 100%. 30 + 25 + 20 = 75. Logo, X = 100 - 75 = 5%.'
+      }
+    }
   }
 
 };
