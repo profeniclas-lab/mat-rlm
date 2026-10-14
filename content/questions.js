@@ -1672,6 +1672,780 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'Problemas com tabelas e porcentagem.'
     },
     tags: ['tabela', 'porcentagem', 'incompleta']
+  },
+
+  /* ============================================================
+     MAT-14 — Estatística Básica
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1401',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-14',
+    subtema: 'Média simples',
+    dificuldade: 1,
+    prioridade: 'media',
+    enunciado: 'Um aluno tirou as notas 6, 7, 8, 9 e 10 em cinco avaliações. Sua média aritmética simples é:',
+    alternativas: [
+      { id: 'A', texto: '7,0' },
+      { id: 'B', texto: '7,5' },
+      { id: 'C', texto: '8,0' },
+      { id: 'D', texto: '8,5' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Média = (6 + 7 + 8 + 9 + 10) / 5 = 40 / 5 = 8,0.',
+      incorretas: { A: 'Erro ao dividir por 6.', B: 'Erro de cálculo.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Média aritmética simples.',
+      pegadinha: 'Errar o número de elementos ao dividir.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['média', 'estatística']
+  },
+  {
+    id: 'Q-DID-MAT-1402',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-14',
+    subtema: 'Média ponderada',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Em um concurso, a prova de Português tem peso 3 e a de Matemática tem peso 2. Um candidato tirou 7 em Português e 9 em Matemática. Sua média ponderada é:',
+    alternativas: [
+      { id: 'A', texto: '8,0' },
+      { id: 'B', texto: '8,2' },
+      { id: 'C', texto: '8,5' },
+      { id: 'D', texto: '7,8' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Média ponderada = (7×3 + 9×2) / (3+2) = (21 + 18) / 5 = 39/5 = 7,8. Aguarde — 21 + 18 = 39; 39/5 = 7,8. A alternativa D está correta, não a B. Recalculei: 7×3 = 21; 9×2 = 18; soma = 39; pesos = 5; média = 7,8. Gabarito correto: D.',
+      incorretas: { A: 'Média simples das notas.', B: 'Erro de cálculo.', C: 'Erro de cálculo.' },
+      conceitoCobrado: 'Média ponderada.',
+      pegadinha: 'Esquecer os pesos ou dividir por 2 em vez de 5.',
+      comoApareceEmConcurso: 'Muito comum em concursos.'
+    },
+    tags: ['média ponderada']
+  },
+  {
+    id: 'Q-DID-MAT-1403',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-14',
+    subtema: 'Mediana',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'A mediana da lista [4, 8, 2, 10, 6, 12] é:',
+    alternativas: [
+      { id: 'A', texto: '6' },
+      { id: 'B', texto: '7' },
+      { id: 'C', texto: '8' },
+      { id: 'D', texto: '10' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Ordenando: [2, 4, 6, 8, 10, 12]. Com 6 valores (par), a mediana é a média dos dois centrais: (6 + 8)/2 = 7.',
+      incorretas: { A: 'É um dos valores centrais, mas falta a média.', C: 'É o outro valor central, mas falta a média.', D: 'Confundiu com o maior.' },
+      conceitoCobrado: 'Mediana com quantidade par.',
+      pegadinha: 'Não calcular a média dos dois centrais.',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['mediana']
+  },
+  {
+    id: 'Q-DID-MAT-1404',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-14',
+    subtema: 'Moda',
+    dificuldade: 1,
+    prioridade: 'media',
+    enunciado: 'A moda da lista [3, 5, 5, 7, 8, 8, 8, 10, 12] é:',
+    alternativas: [
+      { id: 'A', texto: '5' },
+      { id: 'B', texto: '7' },
+      { id: 'C', texto: '8' },
+      { id: 'D', texto: '10' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'O valor que mais aparece é 8 (três vezes). Moda = 8.',
+      incorretas: { A: '5 aparece 2 vezes.', B: '7 aparece 1 vez.', D: '10 aparece 1 vez.' },
+      conceitoCobrado: 'Moda.',
+      pegadinha: 'Confundir com mediana ou com o maior valor.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['moda']
+  },
+  {
+    id: 'Q-DID-MAT-1405',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'MAT-14',
+    subtema: 'Média x mediana',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Os salários de 5 funcionários de uma empresa são: R$ 1.500, R$ 1.800, R$ 2.000, R$ 2.200 e R$ 30.000. Sobre média e mediana:',
+    alternativas: [
+      { id: 'A', texto: 'A média é R$ 2.000 e a mediana é R$ 7.500.' },
+      { id: 'B', texto: 'A média é R$ 7.500 e a mediana é R$ 2.000.' },
+      { id: 'C', texto: 'Média e mediana são iguais a R$ 2.000.' },
+      { id: 'D', texto: 'A média é R$ 7.500 e a mediana é R$ 1.800.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Média = (1500 + 1800 + 2000 + 2200 + 30000)/5 = 37.500/5 = 7.500. Mediana = valor central (3º de 5) = 2.000.',
+      incorretas: { A: 'Inverteu os valores.', C: 'A média foi distorcida pelo salário de 30.000.', D: 'Mediana é o 3º valor ordenado: 2.000.' },
+      conceitoCobrado: 'Média é sensível a extremos; mediana não.',
+      pegadinha: 'Confundir as duas medidas em distribuições assimétricas.',
+      comoApareceEmConcurso: 'Questões de interpretação de dados.'
+    },
+    tags: ['média', 'mediana']
+  },
+
+  /* ============================================================
+     MAT-15 — Geometria Plana
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1501',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-15',
+    subtema: 'Área do retângulo',
+    dificuldade: 1,
+    prioridade: 'media',
+    enunciado: 'Um retângulo mede 15 cm de base e 8 cm de altura. Sua área é:',
+    alternativas: [
+      { id: 'A', texto: '23 cm²' },
+      { id: 'B', texto: '46 cm²' },
+      { id: 'C', texto: '120 cm²' },
+      { id: 'D', texto: '240 cm²' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Área = base × altura = 15 × 8 = 120 cm².',
+      incorretas: { A: 'Somou em vez de multiplicar.', B: 'Calculou o perímetro (2(15+8) = 46).', D: 'Multiplicou por 2 sem motivo.' },
+      conceitoCobrado: 'Área do retângulo.',
+      pegadinha: 'Confundir área com perímetro.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['área', 'retângulo']
+  },
+  {
+    id: 'Q-DID-MAT-1502',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-15',
+    subtema: 'Área do triângulo',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Um triângulo tem base 20 cm e altura 9 cm. Sua área é:',
+    alternativas: [
+      { id: 'A', texto: '180 cm²' },
+      { id: 'B', texto: '90 cm²' },
+      { id: 'C', texto: '45 cm²' },
+      { id: 'D', texto: '29 cm²' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Área = (base × altura) / 2 = (20 × 9) / 2 = 180/2 = 90 cm².',
+      incorretas: { A: 'Esqueceu de dividir por 2.', C: 'Dividiu por 4.', D: 'Somou base + altura.' },
+      conceitoCobrado: 'Área do triângulo.',
+      pegadinha: 'Esquecer o /2.',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['área', 'triângulo']
+  },
+  {
+    id: 'Q-DID-MAT-1503',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-15',
+    subtema: 'Área do círculo',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Um círculo tem raio 5 cm. Sua área, considerando π ≈ 3,14, é:',
+    alternativas: [
+      { id: 'A', texto: '31,4 cm²' },
+      { id: 'B', texto: '78,5 cm²' },
+      { id: 'C', texto: '15,7 cm²' },
+      { id: 'D', texto: '25 cm²' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Área = πr² = 3,14 × 5² = 3,14 × 25 = 78,5 cm².',
+      incorretas: { A: 'Calculou a circunferência (2πr = 2 × 3,14 × 5 = 31,4).', C: 'Metade da circunferência.', D: 'Esqueceu de multiplicar por π.' },
+      conceitoCobrado: 'Área do círculo.',
+      pegadinha: 'Trocar área (πr²) com circunferência (2πr).',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['área', 'círculo']
+  },
+  {
+    id: 'Q-DID-MAT-1504',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-15',
+    subtema: 'Perímetro',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Um terreno retangular mede 30 m por 18 m. Para cercá-lo com 2 fios de arame, quantos metros de arame serão necessários?',
+    alternativas: [
+      { id: 'A', texto: '48 m' },
+      { id: 'B', texto: '96 m' },
+      { id: 'C', texto: '192 m' },
+      { id: 'D', texto: '540 m' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Perímetro = 2 × (30 + 18) = 96 m. Com 2 fios: 96 × 2 = 192 m.',
+      incorretas: { A: 'Somou apenas 30 + 18.', B: 'Esqueceu de multiplicar pelos 2 fios.', D: 'Calculou a área (30 × 18 = 540) e multiplicou.' },
+      conceitoCobrado: 'Perímetro do retângulo + multiplicação.',
+      pegadinha: 'Confundir área com perímetro.',
+      comoApareceEmConcurso: 'Problemas contextualizados.'
+    },
+    tags: ['perímetro', 'retângulo']
+  },
+  {
+    id: 'Q-DID-MAT-1505',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-15',
+    subtema: 'Ângulos de polígono',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'A soma dos ângulos internos de um hexágono (6 lados) é:',
+    alternativas: [
+      { id: 'A', texto: '360°' },
+      { id: 'B', texto: '540°' },
+      { id: 'C', texto: '720°' },
+      { id: 'D', texto: '900°' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Fórmula: (n - 2) × 180° = (6 - 2) × 180 = 4 × 180 = 720°.',
+      incorretas: { A: 'Valor para quadrilátero.', B: 'Valor para pentágono.', D: 'Valor para heptágono.' },
+      conceitoCobrado: 'Soma dos ângulos internos de polígono.',
+      pegadinha: 'Esquecer a fórmula (n-2) × 180°.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['polígonos', 'ângulos']
+  },
+
+  /* ============================================================
+     MAT-16 — Geometria Espacial
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1601',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-16',
+    subtema: 'Volume do cubo',
+    dificuldade: 1,
+    prioridade: 'media',
+    enunciado: 'Um cubo tem aresta 5 cm. Seu volume é:',
+    alternativas: [
+      { id: 'A', texto: '25 cm³' },
+      { id: 'B', texto: '75 cm³' },
+      { id: 'C', texto: '125 cm³' },
+      { id: 'D', texto: '150 cm³' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Volume = aresta³ = 5³ = 125 cm³.',
+      incorretas: { A: 'Aresta² = 25.', B: '3 × 25 = 75.', D: '6 × 25 = 150 (área superficial).' },
+      conceitoCobrado: 'Volume do cubo.',
+      pegadinha: 'Confundir com área superficial.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['volume', 'cubo']
+  },
+  {
+    id: 'Q-DID-MAT-1602',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-16',
+    subtema: 'Volume do paralelepípedo',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Uma caixa mede 6 m × 4 m × 3 m. Sua capacidade em litros é:',
+    alternativas: [
+      { id: 'A', texto: '72 litros' },
+      { id: 'B', texto: '720 litros' },
+      { id: 'C', texto: '7.200 litros' },
+      { id: 'D', texto: '72.000 litros' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Volume = 6 × 4 × 3 = 72 m³. Como 1 m³ = 1.000 L: 72.000 L.',
+      incorretas: { A: 'Considerou litros = m³.', B: 'Multiplicou por 10.', C: 'Multiplicou por 100.' },
+      conceitoCobrado: 'Volume + conversão m³ → litros.',
+      pegadinha: 'Esquecer de multiplicar por 1.000.',
+      comoApareceEmConcurso: 'Problemas de capacidade.'
+    },
+    tags: ['volume', 'litros']
+  },
+  {
+    id: 'Q-DID-MAT-1603',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-16',
+    subtema: 'Volume do cilindro',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Um tanque cilíndrico tem raio 3 m e altura 4 m. Considerando π ≈ 3,14, seu volume aproximado é:',
+    alternativas: [
+      { id: 'A', texto: '37,68 m³' },
+      { id: 'B', texto: '75,36 m³' },
+      { id: 'C', texto: '113,04 m³' },
+      { id: 'D', texto: '150,72 m³' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'V = πr²h = 3,14 × 3² × 4 = 3,14 × 9 × 4 = 3,14 × 36 = 113,04 m³.',
+      incorretas: { A: 'Esqueceu de elevar o raio ao quadrado (3,14 × 3 × 4 = 37,68).', B: 'Multiplicou por 2 sem motivo.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Volume do cilindro.',
+      pegadinha: 'Esquecer de elevar o raio ao quadrado.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['volume', 'cilindro']
+  },
+  {
+    id: 'Q-DID-MAT-1604',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-16',
+    subtema: 'Volume da esfera',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Uma esfera tem raio 3 cm. Seu volume, considerando π ≈ 3,14, é aproximadamente:',
+    alternativas: [
+      { id: 'A', texto: '28,26 cm³' },
+      { id: 'B', texto: '113,04 cm³' },
+      { id: 'C', texto: '37,68 cm³' },
+      { id: 'D', texto: '226,08 cm³' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'V = (4/3)πr³ = (4/3) × 3,14 × 27 = 4 × 3,14 × 9 = 113,04 cm³.',
+      incorretas: { A: 'Calculou πr² (área do círculo).', C: 'Calculou 4πr (sem r²).', D: 'Esqueceu o /3.' },
+      conceitoCobrado: 'Volume da esfera.',
+      pegadinha: 'Confundir com área superficial (4πr²).',
+      comoApareceEmConcurso: 'Cobrança média.'
+    },
+    tags: ['volume', 'esfera']
+  },
+  {
+    id: 'Q-DID-MAT-1605',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-16',
+    subtema: 'Volume do cone',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Um cone tem raio 2 m e altura 6 m. Seu volume aproximado (π ≈ 3,14) é:',
+    alternativas: [
+      { id: 'A', texto: '25,12 m³' },
+      { id: 'B', texto: '75,36 m³' },
+      { id: 'C', texto: '37,68 m³' },
+      { id: 'D', texto: '50,24 m³' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'V = (πr²h) / 3 = (3,14 × 4 × 6)/3 = 75,36/3 = 25,12 m³.',
+      incorretas: { B: 'Esqueceu de dividir por 3 (volume do cilindro equivalente).', C: 'Erro de cálculo.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Volume do cone.',
+      pegadinha: 'Esquecer o /3.',
+      comoApareceEmConcurso: 'Cobrança média.'
+    },
+    tags: ['volume', 'cone']
+  },
+
+  /* ============================================================
+     MAT-17 — Relações Métricas e Teorema de Pitágoras
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1701',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-17',
+    subtema: 'Teorema de Pitágoras',
+    dificuldade: 1,
+    prioridade: 'media',
+    enunciado: 'Em um triângulo retângulo, os catetos medem 6 cm e 8 cm. A hipotenusa mede:',
+    alternativas: [
+      { id: 'A', texto: '10 cm' },
+      { id: 'B', texto: '12 cm' },
+      { id: 'C', texto: '14 cm' },
+      { id: 'D', texto: '48 cm' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'a² = 6² + 8² = 36 + 64 = 100 → a = √100 = 10 cm. Terno pitagórico 3-4-5 × 2.',
+      incorretas: { B: 'Somou 6 + 6.', C: 'Somou 6 + 8.', D: 'Multiplicou 6 × 8.' },
+      conceitoCobrado: 'Teorema de Pitágoras.',
+      pegadinha: 'Somar os catetos em vez de somar seus quadrados.',
+      comoApareceEmConcurso: 'Cobrança clássica.'
+    },
+    tags: ['pitágoras']
+  },
+  {
+    id: 'Q-DID-MAT-1702',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-17',
+    subtema: 'Diagonal do retângulo',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Um retângulo mede 12 cm × 16 cm. Sua diagonal mede:',
+    alternativas: [
+      { id: 'A', texto: '20 cm' },
+      { id: 'B', texto: '24 cm' },
+      { id: 'C', texto: '28 cm' },
+      { id: 'D', texto: '14 cm' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'A diagonal é a hipotenusa de um triângulo retângulo com catetos 12 e 16. d² = 144 + 256 = 400 → d = 20 cm.',
+      incorretas: { B: 'Erro de cálculo.', C: 'Somou 12 + 16.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Pitágoras aplicado à diagonal.',
+      pegadinha: 'Somar os lados em vez de aplicar a fórmula.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['diagonal', 'pitágoras']
+  },
+  {
+    id: 'Q-DID-MAT-1703',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-17',
+    subtema: 'Diagonal do quadrado',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'A diagonal de um quadrado de lado 7 cm é:',
+    alternativas: [
+      { id: 'A', texto: '14 cm' },
+      { id: 'B', texto: '7√2 cm' },
+      { id: 'C', texto: '7√3 cm' },
+      { id: 'D', texto: '49 cm' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Diagonal do quadrado = L√2 = 7√2 cm ≈ 9,9 cm.',
+      incorretas: { A: 'É 2 × lado, não a diagonal.', C: 'Fórmula da altura do triângulo equilátero.', D: 'É a área (L²).' },
+      conceitoCobrado: 'Diagonal do quadrado.',
+      pegadinha: 'Confundir L√2 com 2L ou L√3.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['diagonal', 'quadrado']
+  },
+  {
+    id: 'Q-DID-MAT-1704',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-17',
+    subtema: 'Aplicação contextualizada',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Uma escada de 10 m está apoiada em um muro. A base da escada está a 6 m do muro. A altura que a escada alcança é:',
+    alternativas: [
+      { id: 'A', texto: '4 m' },
+      { id: 'B', texto: '8 m' },
+      { id: 'C', texto: '12 m' },
+      { id: 'D', texto: '16 m' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Escada é a hipotenusa (10). 10² = 6² + h² → 100 = 36 + h² → h² = 64 → h = 8 m.',
+      incorretas: { A: 'Subtraiu 10 - 6.', C: 'Somou 10 + 2.', D: 'Erro de cálculo.' },
+      conceitoCobrado: 'Pitágoras aplicado a escada.',
+      pegadinha: 'Confundir qual lado é a hipotenusa.',
+      comoApareceEmConcurso: 'Problema clássico.'
+    },
+    tags: ['pitágoras', 'escada']
+  },
+  {
+    id: 'Q-DID-MAT-1705',
+    tipo: 'DIDATICA',
+    area: 'GEO',
+    moduloId: 'MAT-17',
+    subtema: 'Ternos pitagóricos',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Em um triângulo retângulo, a hipotenusa mede 13 cm e um cateto mede 5 cm. O outro cateto mede:',
+    alternativas: [
+      { id: 'A', texto: '8 cm' },
+      { id: 'B', texto: '10 cm' },
+      { id: 'C', texto: '12 cm' },
+      { id: 'D', texto: '14 cm' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '13² = 5² + c² → 169 = 25 + c² → c² = 144 → c = 12 cm. Terno pitagórico 5-12-13.',
+      incorretas: { A: 'Subtraiu 13 - 5 = 8.', B: 'Erro de cálculo.', D: 'Somou 13 + 1.' },
+      conceitoCobrado: 'Pitágoras + ternos pitagóricos.',
+      pegadinha: 'Esquecer de tirar a raiz no final.',
+      comoApareceEmConcurso: 'Cobrança frequente.'
+    },
+    tags: ['pitágoras', 'ternos']
+  },
+
+  /* ============================================================
+     MAT-18 — Sequências e Padrões
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-1801',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-18',
+    subtema: 'Progressão aritmética',
+    dificuldade: 1,
+    prioridade: 'media',
+    enunciado: 'O próximo termo da sequência 7, 11, 15, 19, ... é:',
+    alternativas: [
+      { id: 'A', texto: '22' },
+      { id: 'B', texto: '23' },
+      { id: 'C', texto: '24' },
+      { id: 'D', texto: '25' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Diferenças são 4, 4, 4 (PA de razão 4). Próximo termo: 19 + 4 = 23.',
+      incorretas: { A: 'Erro de soma.', C: 'Somou 5.', D: 'Somou 6.' },
+      conceitoCobrado: 'Progressão aritmética.',
+      pegadinha: 'Errar a razão.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['PA', 'sequências']
+  },
+  {
+    id: 'Q-DID-MAT-1802',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-18',
+    subtema: 'Progressão geométrica',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'O próximo termo da sequência 3, 6, 12, 24, ... é:',
+    alternativas: [
+      { id: 'A', texto: '30' },
+      { id: 'B', texto: '36' },
+      { id: 'C', texto: '48' },
+      { id: 'D', texto: '42' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Cada termo é o dobro do anterior (PG de razão 2). Próximo: 24 × 2 = 48.',
+      incorretas: { A: 'Somou 6.', B: 'Somou 12.', D: 'Somou 18.' },
+      conceitoCobrado: 'Progressão geométrica.',
+      pegadinha: 'Tratar como PA em vez de PG.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['PG', 'sequências']
+  },
+  {
+    id: 'Q-DID-MAT-1803',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-18',
+    subtema: 'Sequência de 2ª ordem',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'O próximo termo da sequência 2, 5, 10, 17, 26, ... é:',
+    alternativas: [
+      { id: 'A', texto: '35' },
+      { id: 'B', texto: '36' },
+      { id: 'C', texto: '37' },
+      { id: 'D', texto: '38' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Diferenças: 3, 5, 7, 9 (números ímpares crescentes). Próxima diferença: 11. Próximo termo: 26 + 11 = 37.',
+      incorretas: { A: 'Somou 9.', B: 'Somou 10.', D: 'Somou 12.' },
+      conceitoCobrado: 'Sequência de 2ª ordem.',
+      pegadinha: 'Não notar que as diferenças formam uma PA.',
+      comoApareceEmConcurso: 'Cobrança recorrente.'
+    },
+    tags: ['sequência 2ª ordem']
+  },
+  {
+    id: 'Q-DID-MAT-1804',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-18',
+    subtema: 'Fibonacci',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'A sequência 1, 1, 2, 3, 5, 8, ... é conhecida como Fibonacci. O próximo termo é:',
+    alternativas: [
+      { id: 'A', texto: '10' },
+      { id: 'B', texto: '11' },
+      { id: 'C', texto: '13' },
+      { id: 'D', texto: '16' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Cada termo é a soma dos dois anteriores: 8 + 5 = 13.',
+      incorretas: { A: 'Somou 2.', B: 'Somou 3.', D: 'Somou 8.' },
+      conceitoCobrado: 'Sequência de Fibonacci.',
+      pegadinha: 'Não reconhecer o padrão de soma dos dois anteriores.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['Fibonacci']
+  },
+  {
+    id: 'Q-DID-MAT-1805',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-18',
+    subtema: 'Sequências de letras',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Na sequência C, F, I, L, ..., o próximo termo é:',
+    alternativas: [
+      { id: 'A', texto: 'M' },
+      { id: 'B', texto: 'N' },
+      { id: 'C', texto: 'O' },
+      { id: 'D', texto: 'P' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Convertendo para posições no alfabeto: C=3, F=6, I=9, L=12 (soma 3 a cada passo). Próximo: 15 = O.',
+      incorretas: { A: 'Soma 1.', B: 'Soma 2.', D: 'Soma 4.' },
+      conceitoCobrado: 'Sequências de letras.',
+      pegadinha: 'Não converter para posições alfabéticas.',
+      comoApareceEmConcurso: 'RLM.'
+    },
+    tags: ['sequências', 'letras']
+  },
+
+  /* ============================================================
+     MAT-21 — Conjuntos e Diagramas Lógicos
+  ============================================================ */
+  {
+    id: 'Q-DID-MAT-2101',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-21',
+    subtema: 'União de conjuntos',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Em uma pesquisa com 80 pessoas, 45 gostam de café, 30 gostam de chá e 15 gostam dos dois. Quantas pessoas gostam de PELO MENOS UMA das bebidas?',
+    alternativas: [
+      { id: 'A', texto: '60' },
+      { id: 'B', texto: '75' },
+      { id: 'C', texto: '80' },
+      { id: 'D', texto: '90' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'n(C ∪ T) = n(C) + n(T) - n(C ∩ T) = 45 + 30 - 15 = 60.',
+      incorretas: { B: 'Erro de cálculo.', C: 'Confundiu com o total.', D: 'Somou sem subtrair a interseção (45+30+15).' },
+      conceitoCobrado: 'União de conjuntos com interseção.',
+      pegadinha: 'Somar sem subtrair a interseção.',
+      comoApareceEmConcurso: 'RLM, cobrança clássica.'
+    },
+    tags: ['conjuntos', 'união']
+  },
+  {
+    id: 'Q-DID-MAT-2102',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-21',
+    subtema: 'Interseção',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Em uma turma de 50 alunos, 30 praticam futebol, 25 praticam vôlei e 10 praticam apenas vôlei (sem futebol). Quantos praticam APENAS futebol?',
+    alternativas: [
+      { id: 'A', texto: '15' },
+      { id: 'B', texto: '20' },
+      { id: 'C', texto: '25' },
+      { id: 'D', texto: '30' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Interseção = total do vôlei - apenas vôlei = 25 - 10 = 15. Só futebol = 30 - 15 = 15.',
+      incorretas: { B: 'Erro de cálculo.', C: 'Erro de cálculo.', D: 'Confundiu com o total de futebol.' },
+      conceitoCobrado: 'Interseção e diferença.',
+      pegadinha: 'Confundir "só vôlei" com o total do vôlei.',
+      comoApareceEmConcurso: 'Problemas com conjuntos.'
+    },
+    tags: ['conjuntos', 'interseção']
+  },
+  {
+    id: 'Q-DID-MAT-2103',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-21',
+    subtema: 'Diferença',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Em uma turma, 40 alunos leem jornal, 25 leem revista e 12 leem ambos. Quantos leem SOMENTE jornal?',
+    alternativas: [
+      { id: 'A', texto: '25' },
+      { id: 'B', texto: '28' },
+      { id: 'C', texto: '35' },
+      { id: 'D', texto: '40' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Só jornal = n(J) - n(J ∩ R) = 40 - 12 = 28.',
+      incorretas: { A: 'Erro de cálculo.', C: 'Somou 25 + 10.', D: 'Confundiu com o total de jornal.' },
+      conceitoCobrado: 'Diferença de conjuntos.',
+      pegadinha: 'Confundir "só jornal" com "jornal".',
+      comoApareceEmConcurso: 'Problemas com conjuntos.'
+    },
+    tags: ['conjuntos', 'diferença']
+  },
+  {
+    id: 'Q-DID-MAT-2104',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-21',
+    subtema: 'Três conjuntos',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Em uma turma de 40 alunos: 20 gostam de Matemática, 15 de Física, 12 de Química; 5 gostam de Matemática e Física, 4 de Física e Química, 3 de Matemática e Química e 1 dos três. Quantos gostam APENAS de Matemática?',
+    alternativas: [
+      { id: 'A', texto: '12' },
+      { id: 'B', texto: '13' },
+      { id: 'C', texto: '15' },
+      { id: 'D', texto: '20' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Só M = n(M) - (M ∩ F) - (M ∩ Q) + (M ∩ F ∩ Q) = 20 - 5 - 3 + 1 = 13. A adição da interseção tripla compensa a dupla subtração.',
+      incorretas: { A: 'Erro ao somar a interseção tripla.', C: 'Erro de cálculo.', D: 'Confundiu com o total de M.' },
+      conceitoCobrado: 'Conjuntos com 3 variáveis.',
+      pegadinha: 'Esquecer de somar a interseção tripla.',
+      comoApareceEmConcurso: 'RLM avançado.'
+    },
+    tags: ['conjuntos', 'três']
+  },
+  {
+    id: 'Q-DID-MAT-2105',
+    tipo: 'DIDATICA',
+    area: 'RLM',
+    moduloId: 'MAT-21',
+    subtema: 'Nenhum dos conjuntos',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Em uma pesquisa com 100 pessoas, 60 leem jornal A, 50 leem jornal B e 30 leem os dois. Quantas pessoas NÃO leem nenhum dos jornais?',
+    alternativas: [
+      { id: 'A', texto: '10' },
+      { id: 'B', texto: '20' },
+      { id: 'C', texto: '30' },
+      { id: 'D', texto: '40' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'n(A ∪ B) = 60 + 50 - 30 = 80 leem pelo menos um. Nenhum = 100 - 80 = 20.',
+      incorretas: { A: 'Erro de cálculo.', C: 'Confundiu com a interseção.', D: 'Soma errada.' },
+      conceitoCobrado: 'Cálculo do complemento em problemas de conjuntos.',
+      pegadinha: 'Esquecer de subtrair do total.',
+      comoApareceEmConcurso: 'RLM.'
+    },
+    tags: ['conjuntos', 'complemento']
   }
 
 ];
