@@ -606,6 +606,130 @@ window.FLASHCARDS = [
     verso: 'Passos: 1) Desenhe círculos sobrepostos (retângulo = universo). 2) Preencha PRIMEIRO a INTERSEÇÃO (ou interseção tripla em 3 conjuntos). 3) Calcule cada região exclusiva: só A = n(A) - n(A ∩ B) - n(A ∩ C) + n(A ∩ B ∩ C). 4) Some as regiões e confira com o total. "Nenhum" = total do universo - soma dos que estão em pelo menos um.',
     dificuldade: 3,
     tags: ['conjuntos', 'Venn']
+  },
+
+  /* ============================================================
+     MAT-10 — Equações do 2º Grau, Sistemas e Inequações
+  ============================================================ */
+  {
+    id: 'F-MAT-10-0001',
+    moduloId: 'MAT-10',
+    topicoId: 'MAT-10',
+    frente: 'Qual é a fórmula de Bhaskara e como interpretar o discriminante?',
+    verso: 'Fórmula: x = (-b ± √Δ) / (2a), onde Δ = b² - 4ac. DISCRIMINANTE: Δ > 0 → duas raízes reais distintas; Δ = 0 → uma raiz real dupla; Δ < 0 → nenhuma raiz REAL (raízes complexas). Ex.: x² - 5x + 6 = 0 → Δ = 1 → x = 3 ou x = 2.',
+    dificuldade: 2,
+    tags: ['Bhaskara', 'discriminante']
+  },
+  {
+    id: 'F-MAT-10-0002',
+    moduloId: 'MAT-10',
+    topicoId: 'MAT-10',
+    frente: 'Quais são as Relações de Girard (soma e produto das raízes)?',
+    verso: 'Para ax² + bx + c = 0: SOMA das raízes: S = x₁ + x₂ = -b/a. PRODUTO das raízes: P = x₁ · x₂ = c/a. Atalho: quando a = 1, encontrar duas raízes que somem -b e multipliquem c. Ex.: x² - 7x + 12 = 0 → S = 7; P = 12 → raízes 3 e 4.',
+    dificuldade: 3,
+    tags: ['Girard', 'soma', 'produto']
+  },
+  {
+    id: 'F-MAT-10-0003',
+    moduloId: 'MAT-10',
+    topicoId: 'MAT-10',
+    frente: 'O que muda quando se resolve uma INEQUAÇÃO (≠ de equação)?',
+    verso: 'A grande diferença: ao MULTIPLICAR ou DIVIDIR a inequação por um número NEGATIVO, o sinal da desigualdade INVERTE. Ex.: -2x > 6 → x < -3 (não x > -3). Se o número for positivo, o sinal NÃO inverte. Em tudo o mais, resolve como equação.',
+    dificuldade: 3,
+    tags: ['inequação']
+  },
+
+  /* ============================================================
+     MAT-19 — Lógica Proposicional
+  ============================================================ */
+  {
+    id: 'F-MAT-19-0001',
+    moduloId: 'MAT-19',
+    topicoId: 'MAT-19',
+    frente: 'Quais são as tabelas-verdade dos 5 conectivos lógicos?',
+    verso: 'NEGAÇÃO (¬p): inverte o valor. CONJUNÇÃO (p ∧ q): V só se AMBAS V. DISJUNÇÃO (p ∨ q): F só se AMBAS F. CONDICIONAL (p → q): F só quando p = V e q = F. BICONDICIONAL (p ↔ q): V quando p e q têm o MESMO valor. Prioridade: ¬, ∧, ∨, →, ↔.',
+    dificuldade: 2,
+    tags: ['conectivos', 'tabela-verdade']
+  },
+  {
+    id: 'F-MAT-19-0002',
+    moduloId: 'MAT-19',
+    topicoId: 'MAT-19',
+    frente: 'Quando a CONDICIONAL p → q é FALSA?',
+    verso: 'SÓ quando p é VERDADEIRO e q é FALSO (V → F = F). Em todos os outros casos (V→V, F→V, F→F), a condicional é VERDADEIRA. Regra mnemônica: "a única condicional falsa é a que promete e não cumpre" — antecedente V, consequente F.',
+    dificuldade: 2,
+    tags: ['condicional']
+  },
+  {
+    id: 'F-MAT-19-0003',
+    moduloId: 'MAT-19',
+    topicoId: 'MAT-19',
+    frente: 'Quantas linhas tem uma tabela-verdade e como identificá-las?',
+    verso: 'Número de linhas = 2ⁿ, onde n = número de proposições simples. Ex.: 2 proposições → 4 linhas; 3 → 8; 4 → 16. Para montar: atribua V/F de forma alternada (para 2 proposições: VV, VF, FV, FF). A ordem importa para não repetir nem omitir combinações.',
+    dificuldade: 2,
+    tags: ['tabela-verdade']
+  },
+
+  /* ============================================================
+     MAT-20 — Equivalências e Argumentação Lógica
+  ============================================================ */
+  {
+    id: 'F-MAT-20-0001',
+    moduloId: 'MAT-20',
+    topicoId: 'MAT-20',
+    frente: 'Quais são as duas Leis de De Morgan?',
+    verso: 'De Morgan 1: ¬(p ∧ q) ≡ ¬p ∨ ¬q. (Negação de "E" vira "OU" com as negações). De Morgan 2: ¬(p ∨ q) ≡ ¬p ∧ ¬q. (Negação de "OU" vira "E" com as negações). Regra mnemônica: negue tudo e TROQUE o conectivo.',
+    dificuldade: 2,
+    tags: ['De Morgan']
+  },
+  {
+    id: 'F-MAT-20-0002',
+    moduloId: 'MAT-20',
+    topicoId: 'MAT-20',
+    frente: 'Como negar uma CONDICIONAL (p → q)?',
+    verso: '¬(p → q) ≡ p ∧ ¬q. Mantenha o ANTECEDENTE, negue o CONSEQUENTE e troque "SE...ENTÃO" por "E". Ex.: ¬("Se estudo, passo") = "Estudo E não passo". CUIDADO: negar as duas partes ("Se não estudo, então não passo") NÃO é a negação — é outro erro clássico.',
+    dificuldade: 3,
+    tags: ['negação', 'condicional']
+  },
+  {
+    id: 'F-MAT-20-0003',
+    moduloId: 'MAT-20',
+    topicoId: 'MAT-20',
+    frente: 'O que são Modus Ponens e Modus Tollens?',
+    verso: 'MODUS PONENS (afirma o antecedente): p → q; p ∴ q. Ex.: "Se chove, molho. Chove. Logo, molho." MODUS TOLLENS (nega o consequente): p → q; ¬q ∴ ¬p. Ex.: "Se chove, molho. Não molho. Logo, não chove." São as duas regras de inferência válidas mais usadas. Erros: afirmar o consequente (q ∴ p) e negar o antecedente (¬p ∴ ¬q) — ambos INVÁLIDOS.',
+    dificuldade: 3,
+    tags: ['argumentação', 'modus ponens', 'modus tollens']
+  },
+
+  /* ============================================================
+     MAT-22 — Análise Combinatória e Probabilidade
+  ============================================================ */
+  {
+    id: 'F-MAT-22-0001',
+    moduloId: 'MAT-22',
+    topicoId: 'MAT-22',
+    frente: 'Qual a diferença entre PERMUTAÇÃO, ARRANJO e COMBINAÇÃO?',
+    verso: 'PERMUTAÇÃO: usa TODOS os n elementos; ordem importa. P(n) = n!. Ex.: fila de 5 = 5! = 120. ARRANJO: escolhe PARTE (p entre n); ordem importa. A(n,p) = n!/(n-p)!. Ex.: 8 atletas para 3 medalhas = 8×7×6 = 336. COMBINAÇÃO: escolhe PARTE (p entre n); ordem NÃO importa. C(n,p) = n!/[p!(n-p)!]. Ex.: comissão de 3 entre 7 = 35.',
+    dificuldade: 3,
+    tags: ['permutação', 'arranjo', 'combinação']
+  },
+  {
+    id: 'F-MAT-22-0002',
+    moduloId: 'MAT-22',
+    topicoId: 'MAT-22',
+    frente: 'Como decidir entre ARRANJO e COMBINAÇÃO?',
+    verso: 'Regra de ouro: pergunte "trocar a ordem gera resultado diferente?". Se SIM → ARRANJO (ex.: pódio, senha, cargo específico). Se NÃO → COMBINAÇÃO (ex.: comissão, grupo, sorteio sem ordem). Ex.: escolher 3 pessoas para comissão = C. Escolher 3 pessoas para presidente, secretário, tesoureiro = A.',
+    dificuldade: 2,
+    tags: ['arranjo', 'combinação']
+  },
+  {
+    id: 'F-MAT-22-0003',
+    moduloId: 'MAT-22',
+    topicoId: 'MAT-22',
+    frente: 'Como calcular probabilidade simples e sua complementar?',
+    verso: 'P(E) = casos FAVORÁVEIS / casos POSSÍVEIS. Propriedades: 0 ≤ P(E) ≤ 1. P(evento impossível) = 0. P(evento certo) = 1. COMPLEMENTAR: P(não E) = 1 - P(E). Ex.: se P(chover) = 0,3, então P(não chover) = 0,7. Quando o problema pede "pelo menos um", muitas vezes é mais fácil calcular P(nenhum) e subtrair de 1.',
+    dificuldade: 2,
+    tags: ['probabilidade', 'complementar']
   }
 
 ];
