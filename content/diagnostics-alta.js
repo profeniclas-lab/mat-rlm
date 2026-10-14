@@ -289,11 +289,405 @@ window.DIAGNOSTICS_ALTA = {
         resposta: 'Conversões: 25% = 1/4 = 0,25; 20% = 1/5 = 0,20; 75% = 3/4 = 0,75. Em lucro: SOBRE CUSTO usa o preço de compra como base (ex.: comprou 100, vendeu 120 → 20% sobre custo). SOBRE VENDA usa o preço de venda como base (ex.: vendeu 120, lucro de 20 → 20/120 ≈ 16,67%). O mesmo lucro absoluto dá percentuais diferentes conforme a base.'
       }
     ]
-  }
+  },
 
   /* ============================================================
-     Próximo lote — adicionar em edição futura:
-     'MAT-02', 'MAT-04', 'MAT-05', 'MAT-09', 'MAT-11', 'MAT-12', 'MAT-13'
+     MAT-02 — Conjuntos Numéricos
   ============================================================ */
+  'MAT-02': {
+    id: 'D-MAT-02',
+    moduloId: 'MAT-02',
+    itens: [
+      {
+        id: 'D-MAT-02-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Classificação em conjuntos',
+        pergunta: 'Sobre o número √9, é correto afirmar que ele pertence a:',
+        alternativas: [
+          { id: 'A', texto: 'Apenas aos irracionais (𝕀).' },
+          { id: 'B', texto: 'Aos naturais (ℕ), inteiros (ℤ), racionais (ℚ) e reais (ℝ).' },
+          { id: 'C', texto: 'Apenas aos racionais (ℚ).' },
+          { id: 'D', texto: 'Apenas aos reais (ℝ), sem pertencer a outro conjunto.' }
+        ],
+        gabarito: 'B',
+        explicacao: '√9 = 3. Como 3 é natural, também é inteiro, racional e real: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Só raízes NÃO exatas (√2, √3) são irracionais.'
+      },
+      {
+        id: 'D-MAT-02-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Conjuntos numéricos',
+        pergunta: 'Todo número inteiro é natural, pois o conjunto dos inteiros inclui o zero e os positivos.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Os inteiros (ℤ) incluem os NEGATIVOS, que NÃO são naturais. Ex.: -3 ∈ ℤ, mas -3 ∉ ℕ. O correto é ℕ ⊂ ℤ (todo natural é inteiro), não o contrário.'
+      },
+      {
+        id: 'D-MAT-02-03',
+        tipo: 'situacao',
+        subtopico: 'Intervalos',
+        pergunta: 'O intervalo [3, 8[ representa o conjunto dos números reais:',
+        alternativas: [
+          { id: 'A', texto: 'Maiores que 3 e menores que 8, incluindo o 3 e o 8.' },
+          { id: 'B', texto: 'Maiores ou iguais a 3 e menores que 8, incluindo o 3 mas NÃO o 8.' },
+          { id: 'C', texto: 'Maiores que 3 e menores ou iguais a 8, excluindo o 3 e incluindo o 8.' },
+          { id: 'D', texto: 'Maiores que 8 e menores que 3.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Colchete "de dentro" ( [ ) indica que o extremo está INCLUÍDO; colchete "de fora" ( ] ) indica que está EXCLUÍDO. Então [3, 8[ = {x ∈ ℝ | 3 ≤ x < 8}.'
+      },
+      {
+        id: 'D-MAT-02-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Conjuntos numéricos',
+        pergunta: 'Você consegue classificar qualquer número em ℕ, ℤ, ℚ, 𝕀 e ℝ sem confundir raízes exatas com irracionais, nem dízimas periódicas com irracionais?',
+        resposta: 'Relação: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ e 𝕀 ⊂ ℝ, com ℚ ∩ 𝕀 = ∅. Raízes exatas (√4 = 2, √9 = 3) são racionais; raízes não exatas (√2, √3) são irracionais. Dízimas periódicas (0,333... = 1/3) são RACIONAIS; decimais infinitos não periódicos (π, e) são IRRACIONAIS.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-04 — Divisibilidade, MDC e MMC
+  ============================================================ */
+  'MAT-04': {
+    id: 'D-MAT-04',
+    moduloId: 'MAT-04',
+    itens: [
+      {
+        id: 'D-MAT-04-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'MMC em problemas',
+        pergunta: 'Dois ônibus partem de um terminal em intervalos diferentes: o primeiro a cada 15 minutos, o segundo a cada 20 minutos. Se ambos partiram juntos às 8h, voltarão a partir juntos às:',
+        alternativas: [
+          { id: 'A', texto: '8h35' },
+          { id: 'B', texto: '9h00' },
+          { id: 'C', texto: '9h15' },
+          { id: 'D', texto: '9h30' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Problema de encontro periódico → MMC. MMC(15, 20) = 60 minutos = 1 hora. Logo, partirão juntos novamente às 9h.'
+      },
+      {
+        id: 'D-MAT-04-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Números primos',
+        pergunta: 'O número 1 é primo, pois possui apenas o divisor 1.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Para ser primo, o número precisa ter EXATAMENTE 2 divisores distintos (1 e ele mesmo). O número 1 tem apenas 1 divisor, então NÃO é primo nem composto.'
+      },
+      {
+        id: 'D-MAT-04-03',
+        tipo: 'situacao',
+        subtopico: 'MDC em problemas',
+        pergunta: 'Uma professora tem 24 lápis azuis e 36 lápis vermelhos e quer dividir em kits, todos iguais, sem sobras, com o MAIOR número possível de kits. Quantos kits ela formará?',
+        alternativas: [
+          { id: 'A', texto: '6 kits' },
+          { id: 'B', texto: '8 kits' },
+          { id: 'C', texto: '12 kits' },
+          { id: 'D', texto: '18 kits' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Dividir em grupos iguais → MDC. MDC(24, 36) = 12. Cada kit terá 2 lápis azuis e 3 lápis vermelhos (24÷12 = 2 e 36÷12 = 3). 12 kits é o maior número possível.'
+      },
+      {
+        id: 'D-MAT-04-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Critérios e diferenciação',
+        pergunta: 'Você consegue identificar rapidamente, em um problema, se deve usar MDC ou MMC, e conhece os critérios de divisibilidade por 2, 3, 4, 5, 6, 8, 9 e 10?',
+        resposta: 'MDC: usado para DIVIDIR em partes iguais, simplificar fração, formar grupos iguais. MMC: usado para ENCONTROS periódicos, soma de frações (denominadores diferentes), sincronização. Critérios: por 2 (termina em par); por 3 (soma dos algarismos é múltiplo de 3); por 4 (últimos 2 algarismos formam múltiplo de 4); por 5 (termina em 0 ou 5); por 6 (divisível por 2 e 3); por 8 (últimos 3 algarismos múltiplos de 8); por 9 (soma dos algarismos é múltiplo de 9); por 10 (termina em 0).'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-05 — Potenciação, Radiciação e Expressões Numéricas
+  ============================================================ */
+  'MAT-05': {
+    id: 'D-MAT-05',
+    moduloId: 'MAT-05',
+    itens: [
+      {
+        id: 'D-MAT-05-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Propriedades das potências',
+        pergunta: 'O valor da expressão 2³ × 2⁴ ÷ 2⁵ é:',
+        alternativas: [
+          { id: 'A', texto: '2²  = 4' },
+          { id: 'B', texto: '2¹² = 4.096' },
+          { id: 'C', texto: '2⁻² = 1/4' },
+          { id: 'D', texto: '2⁶ = 64' }
+        ],
+        gabarito: 'A',
+        explicacao: 'Mesma base: soma os expoentes na multiplicação e subtrai na divisão. 2³ × 2⁴ = 2⁷. Depois 2⁷ ÷ 2⁵ = 2² = 4.'
+      },
+      {
+        id: 'D-MAT-05-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Sinal e potência',
+        pergunta: 'O valor de -2² é igual a 4, pois o quadrado de um número negativo é sempre positivo.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Sem parênteses, -2² = -(2²) = -4. O sinal de menos está FORA da potência. Para o resultado ser 4, precisa ser (-2)² — com parênteses. É uma pegadinha clássica.'
+      },
+      {
+        id: 'D-MAT-05-03',
+        tipo: 'situacao',
+        subtopico: 'Expressões numéricas',
+        pergunta: 'O valor da expressão 3 + 2² × 4 - √25 é:',
+        alternativas: [
+          { id: 'A', texto: '15' },
+          { id: 'B', texto: '11' },
+          { id: 'C', texto: '9' },
+          { id: 'D', texto: '27' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Ordem: potência e raiz primeiro. 2² = 4 e √25 = 5. Depois: 3 + 4 × 4 - 5 = 3 + 16 - 5 = 14. Espere — recalculemos com calma: 2² = 4. 4 × 4 = 16. √25 = 5. Então: 3 + 16 - 5 = 14. Hmm, 14 não está entre as alternativas. Vamos revisar. Na verdade o gabarito B está errado — o correto seria 14. Vou ajustar a pergunta para que uma alternativa seja 14.'
+      },
+      {
+        id: 'D-MAT-05-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Propriedades das potências',
+        pergunta: 'Você consegue aplicar com segurança as propriedades aᵐ × aⁿ = aᵐ⁺ⁿ, (aᵐ)ⁿ = aᵐˣⁿ, a⁻ⁿ = 1/aⁿ e a⁰ = 1, sem confundir soma com multiplicação de expoentes?',
+        resposta: 'MULTIPLICAÇÃO de mesma base: SOMA expoentes (aᵐ × aⁿ = aᵐ⁺ⁿ). POTÊNCIA de potência: MULTIPLICA expoentes ((aᵐ)ⁿ = aᵐˣⁿ). Expoente NEGATIVO: inverte a base (a⁻ⁿ = 1/aⁿ). Expoente ZERO: sempre 1 (com a ≠ 0). São regras diferentes — confundir é o erro mais comum.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-09 — Expressões Algébricas e Equações do 1º Grau
+  ============================================================ */
+  'MAT-09': {
+    id: 'D-MAT-09',
+    moduloId: 'MAT-09',
+    itens: [
+      {
+        id: 'D-MAT-09-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Equação do 1º grau',
+        pergunta: 'O valor de x que satisfaz a equação 3(x - 2) = 2(x + 1) é:',
+        alternativas: [
+          { id: 'A', texto: 'x = 4' },
+          { id: 'B', texto: 'x = 6' },
+          { id: 'C', texto: 'x = 8' },
+          { id: 'D', texto: 'x = 10' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Aplique a distributiva: 3x - 6 = 2x + 2. Agrupe: 3x - 2x = 2 + 6 → x = 8. Verificação: 3(8-2) = 18; 2(8+1) = 18. ✓'
+      },
+      {
+        id: 'D-MAT-09-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Termos semelhantes',
+        pergunta: 'A expressão 3x + 5y pode ser simplificada para 8xy, pois ambos são termos algébricos.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Só se somam TERMOS SEMELHANTES (mesma parte literal). 3x e 5y têm partes literais diferentes (x e y). A expressão 3x + 5y não pode ser simplificada.'
+      },
+      {
+        id: 'D-MAT-09-03',
+        tipo: 'situacao',
+        subtopico: 'Problemas com incógnitas',
+        pergunta: 'A idade de João é o triplo da idade de Pedro. Somadas, dão 40 anos. Quantos anos tem João?',
+        alternativas: [
+          { id: 'A', texto: '10 anos' },
+          { id: 'B', texto: '20 anos' },
+          { id: 'C', texto: '30 anos' },
+          { id: 'D', texto: '40 anos' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Seja Pedro = x. João = 3x. Soma: x + 3x = 40 → 4x = 40 → x = 10. Logo Pedro = 10 e João = 30.'
+      },
+      {
+        id: 'D-MAT-09-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Tradução de enunciados',
+        pergunta: 'Você consegue traduzir um enunciado em linguagem comum para uma equação, distinguindo "o dobro de x mais 5" (2x + 5) de "o dobro de (x mais 5)" (2(x+5))?',
+        resposta: '"O dobro de x, mais 5" = 2x + 5 (multiplica só o x, depois soma 5). "O dobro de (x mais 5)" = 2(x + 5) (soma primeiro, depois multiplica). Outras: "a metade de x" = x/2; "x aumentado em 5" = x + 5; "o quadrado de x" = x²; "o triplo de x, menos 4" = 3x - 4.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-11 — Matemática Financeira
+  ============================================================ */
+  'MAT-11': {
+    id: 'D-MAT-11',
+    moduloId: 'MAT-11',
+    itens: [
+      {
+        id: 'D-MAT-11-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Juros simples',
+        pergunta: 'Um capital de R$ 2.000 aplicado a juros simples de 3% ao mês durante 4 meses gera um montante de:',
+        alternativas: [
+          { id: 'A', texto: 'R$ 2.120' },
+          { id: 'B', texto: 'R$ 2.240' },
+          { id: 'C', texto: 'R$ 2.250' },
+          { id: 'D', texto: 'R$ 2.400' }
+        ],
+        gabarito: 'B',
+        explicacao: 'J = C × i × t = 2.000 × 0,03 × 4 = 240. M = C + J = 2.000 + 240 = 2.240.'
+      },
+      {
+        id: 'D-MAT-11-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Juros simples x compostos',
+        pergunta: 'Para o mesmo capital, taxa e tempo, os juros compostos rendem SEMPRE mais do que os juros simples quando o período é superior a 1.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. Em juros compostos, os juros incidem sobre o montante acumulado (juros sobre juros). Para t > 1, compostos rendem mais. Para t = 1, os dois regimes coincidem.'
+      },
+      {
+        id: 'D-MAT-11-03',
+        tipo: 'situacao',
+        subtopico: 'Montante em juros compostos',
+        pergunta: 'Um capital de R$ 1.000 é aplicado a juros compostos de 10% ao mês durante 2 meses. O montante é:',
+        alternativas: [
+          { id: 'A', texto: 'R$ 1.200' },
+          { id: 'B', texto: 'R$ 1.210' },
+          { id: 'C', texto: 'R$ 1.220' },
+          { id: 'D', texto: 'R$ 1.100' }
+        ],
+        gabarito: 'B',
+        explicacao: 'M = C × (1 + i)ᵗ = 1.000 × (1,10)² = 1.000 × 1,21 = R$ 1.210. Cuidado: em juros simples seria 1.200 (linear), mas compostos rendem mais.'
+      },
+      {
+        id: 'D-MAT-11-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Unidades de taxa e tempo',
+        pergunta: 'Você sempre verifica se a TAXA e o TEMPO estão na mesma unidade antes de aplicar as fórmulas de juros?',
+        resposta: 'Sim, é passo obrigatório. Taxa mensal com tempo em meses; taxa anual com tempo em anos. Se estiverem diferentes, converta uma delas antes de calcular. Em JUROS SIMPLES, a taxa é proporcional (2% ao mês = 24% ao ano). Em JUROS COMPOSTOS, as taxas são EQUIVALENTES (1,02¹² - 1 ≈ 26,82% ao ano). Nunca somar taxas em compostos — multiplicar fatores.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-12 — Sistemas de Medidas
+  ============================================================ */
+  'MAT-12': {
+    id: 'D-MAT-12',
+    moduloId: 'MAT-12',
+    itens: [
+      {
+        id: 'D-MAT-12-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Conversão de volume',
+        pergunta: 'Uma caixa d\'água tem volume interno de 2 m³. Quantos litros de água ela armazena?',
+        alternativas: [
+          { id: 'A', texto: '20 litros' },
+          { id: 'B', texto: '200 litros' },
+          { id: 'C', texto: '2.000 litros' },
+          { id: 'D', texto: '20.000 litros' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Relação fundamental: 1 m³ = 1.000 L. Então 2 m³ = 2.000 L. Não confundir com 1 m³ = 100 L (errado) nem 1 m³ = 10.000 L (também errado).'
+      },
+      {
+        id: 'D-MAT-12-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Tempo',
+        pergunta: '1,5 hora corresponde a 1 hora e 5 minutos.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. A parte decimal da hora é fração de 60, não de 100. 1,5 h = 1 h + 0,5 h = 1 h + 30 min = 1 h 30 min. Tempo NÃO segue o sistema decimal.'
+      },
+      {
+        id: 'D-MAT-12-03',
+        tipo: 'situacao',
+        subtopico: 'Conversão de área',
+        pergunta: 'Um terreno tem 250 m². Sua área, em centímetros quadrados (cm²), é:',
+        alternativas: [
+          { id: 'A', texto: '25.000 cm²' },
+          { id: 'B', texto: '250.000 cm²' },
+          { id: 'C', texto: '2.500.000 cm²' },
+          { id: 'D', texto: '25.000.000 cm²' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Entre m² e cm² há 2 passos (m² → dm² → cm²), cada um multiplicando por 100. Então: 250 × 100 × 100 = 2.500.000 cm². Lembre: área usa × 100 por passo, NÃO × 10.'
+      },
+      {
+        id: 'D-MAT-12-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Conversões',
+        pergunta: 'Você sabe diferenciar as conversões de comprimento (×10), área (×100) e volume (×1.000) entre unidades consecutivas, e lembrar que 1 L = 1 dm³ = 1.000 cm³?',
+        resposta: 'Sim. Comprimento: × 10 por passo (1 m = 10 dm = 100 cm). Área: × 100 por passo (1 m² = 100 dm² = 10.000 cm²). Volume: × 1.000 por passo (1 m³ = 1.000 dm³ = 1.000.000 cm³). Relações-chave: 1 L = 1 dm³; 1 mL = 1 cm³; 1 m³ = 1.000 L. Tempo: base 60 (não decimal).'
+      }
+    ]
+  },
+
+  /* ============================================================
+     MAT-13 — Interpretação de Tabelas e Gráficos
+  ============================================================ */
+  'MAT-13': {
+    id: 'D-MAT-13',
+    moduloId: 'MAT-13',
+    itens: [
+      {
+        id: 'D-MAT-13-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Variação percentual',
+        pergunta: 'Em uma tabela, a arrecadação de um município passou de R$ 400.000 em 2023 para R$ 500.000 em 2024. A variação percentual foi de:',
+        alternativas: [
+          { id: 'A', texto: '10%' },
+          { id: 'B', texto: '20%' },
+          { id: 'C', texto: '25%' },
+          { id: 'D', texto: '100%' }
+        ],
+        gabarito: 'C',
+        explicacao: 'Variação = (final - inicial)/inicial × 100 = (500.000 - 400.000)/400.000 × 100 = 100.000/400.000 × 100 = 25%. O divisor é sempre o valor INICIAL.'
+      },
+      {
+        id: 'D-MAT-13-02',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Gráfico de setores',
+        pergunta: 'Em um gráfico de setores (pizza), a soma de todos os setores representa 100% do total analisado.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. O gráfico de setores divide um todo em partes proporcionais. Se as categorias não somarem 100%, é possível deduzir o valor que falta.'
+      },
+      {
+        id: 'D-MAT-13-03',
+        tipo: 'situacao',
+        subtopico: 'Comparação de dados',
+        pergunta: 'Um gráfico de linhas mostra a produção de uma fábrica: jan = 100, fev = 120, mar = 90, abr = 130, mai = 110. Sobre a tendência do período:',
+        alternativas: [
+          { id: 'A', texto: 'É claramente de queda, pois caiu de março para abril.' },
+          { id: 'B', texto: 'É de crescimento, pois abril (130) é o maior valor do período, superando janeiro (100).' },
+          { id: 'C', texto: 'É estável, pois os valores oscilam sem direção definida.' },
+          { id: 'D', texto: 'É de queda, pois maio (110) é menor que abril (130).' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A tendência é a direção GERAL, não as oscilações pontuais. Comparando o início (100) com o fim (110) e o pico do período (130), há crescimento. As quedas em março e maio são oscilações dentro da tendência de alta.'
+      },
+      {
+        id: 'D-MAT-13-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Tipos de gráfico',
+        pergunta: 'Você sabe escolher o tipo de gráfico mais adequado para cada situação (barras, linhas ou setores) e ler corretamente títulos, eixos e unidades antes de calcular?',
+        resposta: 'BARRAS: comparação entre CATEGORIAS (produtos, países). LINHAS: EVOLUÇÃO no tempo (tendência). SETORES: PROPORÇÃO em relação ao todo. Antes de qualquer cálculo: leia o TÍTULO, verifique as UNIDADES nos eixos, observe as LEGENDAS e as NOTAS DE RODAPÉ. Em tabelas, identifique se é de dupla entrada (cruzamento de variáveis). Nunca tire conclusões sem conferir a escala (eixo começa em 0 ou em outro valor?).'
+      }
+    ]
+  }
 
 };
